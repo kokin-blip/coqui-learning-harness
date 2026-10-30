@@ -1,0 +1,72 @@
+TAP version 13
+# Subtest: pdf-reader source paths
+    # Subtest: absolute path reaches text tools and rendering as the same absolute path
+    ok 1 - absolute path reaches text tools and rendering as the same absolute path
+      ---
+      duration_ms: 395.664541
+      type: 'test'
+      ...
+    # Subtest: home-relative path reaches text tools and rendering as the same absolute path
+    ok 2 - home-relative path reaches text tools and rendering as the same absolute path
+      ---
+      duration_ms: 47.331291
+      type: 'test'
+      ...
+    # Subtest: a missing home-relative source fails before any model call
+    ok 3 - a missing home-relative source fails before any model call
+      ---
+      duration_ms: 0.407584
+      type: 'test'
+      ...
+    1..3
+ok 1 - pdf-reader source paths
+  ---
+  duration_ms: 444.645125
+  type: 'suite'
+  ...
+# Subtest: pdf-reader loop (faux engine)
+    # Subtest: triage → extract → final brief: pagesConsulted tracks the extract
+    ok 1 - triage → extract → final brief: pagesConsulted tracks the extract
+      ---
+      duration_ms: 5.574708
+      type: 'test'
+      ...
+    # Subtest: the unread-finish gate: a brief with zero consultation is bounced, not delivered
+    ok 2 - the unread-finish gate: a brief with zero consultation is bounced, not delivered
+      ---
+      duration_ms: 2.479792
+      type: 'test'
+      ...
+    # Subtest: the render path: images ride a user message after tool results; pages counted
+    ok 3 - the render path: images ride a user message after tool results; pages counted
+      ---
+      duration_ms: 76.908042
+      type: 'test'
+      ...
+    # Subtest: no Chrome: render calls degrade to an error note, text tools still work
+    ok 4 - no Chrome: render calls degrade to an error note, text tools still work
+      ---
+      duration_ms: 3.245792
+      type: 'test'
+      ...
+    # Subtest: an unreadable source fails deterministically before any model call
+    ok 5 - an unreadable source fails deterministically before any model call
+      ---
+      duration_ms: 1.020041
+      type: 'test'
+      ...
+    1..5
+ok 2 - pdf-reader loop (faux engine)
+  ---
+  duration_ms: 89.493291
+  type: 'suite'
+  ...
+1..2
+# tests 8
+# suites 2
+# pass 8
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 951.752667

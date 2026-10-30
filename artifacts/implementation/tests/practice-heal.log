@@ -1,0 +1,78 @@
+TAP version 13
+# Subtest: healEncodedArguments — the GLM incident
+    # Subtest: heals the double-encoded mode enum (the exact 19-call loop)
+    ok 1 - heals the double-encoded mode enum (the exact 19-call loop)
+      ---
+      duration_ms: 0.280916
+      type: 'test'
+      ...
+    # Subtest: END-TO-END: the healed args pass pi-ai validation where the raw threw
+    ok 2 - END-TO-END: the healed args pass pi-ai validation where the raw threw
+      ---
+      duration_ms: 2.890625
+      type: 'test'
+      ...
+    # Subtest: well-formed args pass through untouched — the SAME reference
+    ok 3 - well-formed args pass through untouched — the SAME reference
+      ---
+      duration_ms: 0.059
+      type: 'test'
+      ...
+    # Subtest: unhealable values stay — validation rejects them honestly
+    ok 4 - unhealable values stay — validation rejects them honestly
+      ---
+      duration_ms: 0.044042
+      type: 'test'
+      ...
+    1..4
+ok 1 - healEncodedArguments — the GLM incident
+  ---
+  duration_ms: 3.637875
+  type: 'suite'
+  ...
+# Subtest: healEncodedArguments — the sibling encodings
+    # Subtest: heals the conclude enums (outcome) and the null rung
+    ok 1 - heals the conclude enums (outcome) and the null rung
+      ---
+      duration_ms: 0.079333
+      type: 'test'
+      ...
+    # Subtest: heals the rung enum and the stringified boolean retest
+    ok 2 - heals the rung enum and the stringified boolean retest
+      ---
+      duration_ms: 0.041917
+      type: 'test'
+      ...
+    # Subtest: heals a stringified array (the extraction-bug sibling)
+    ok 3 - heals a stringified array (the extraction-bug sibling)
+      ---
+      duration_ms: 0.281084
+      type: 'test'
+      ...
+    # Subtest: leaves plain string properties alone (statement is a string schema)
+    ok 4 - leaves plain string properties alone (statement is a string schema)
+      ---
+      duration_ms: 0.069125
+      type: 'test'
+      ...
+    # Subtest: passes non-object shapes through (null, arrays, strings)
+    ok 5 - passes non-object shapes through (null, arrays, strings)
+      ---
+      duration_ms: 0.040916
+      type: 'test'
+      ...
+    1..5
+ok 2 - healEncodedArguments — the sibling encodings
+  ---
+  duration_ms: 0.608833
+  type: 'suite'
+  ...
+1..2
+# tests 9
+# suites 2
+# pass 9
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 220.0285

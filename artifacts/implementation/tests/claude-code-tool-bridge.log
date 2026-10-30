@@ -1,0 +1,82 @@
+TAP version 13
+# Subtest: lists exactly the given tools with their JSON schemas
+ok 1 - lists exactly the given tools with their JSON schemas
+  ---
+  duration_ms: 36.469833
+  type: 'test'
+  ...
+# Subtest: rejects requests without the bearer token
+ok 2 - rejects requests without the bearer token
+  ---
+  duration_ms: 5.962833
+  type: 'test'
+  ...
+# Subtest: binds 127.0.0.1
+ok 3 - binds 127.0.0.1
+  ---
+  duration_ms: 1005.433375
+  type: 'test'
+  ...
+# Subtest: tools/call stays pending until resolved and returns its text and image content
+ok 4 - tools/call stays pending until resolved and returns its text and image content
+  ---
+  duration_ms: 43.812834
+  type: 'test'
+  ...
+# Subtest: individual MCP cancellation removes only that request and leaves the other request resolvable
+ok 5 - individual MCP cancellation removes only that request and leaves the other request resolvable
+  ---
+  duration_ms: 12.802917
+  type: 'test'
+  ...
+# Subtest: waitForToolCalls resolves once that many calls are pending, in arrival order
+ok 6 - waitForToolCalls resolves once that many calls are pending, in arrival order
+  ---
+  duration_ms: 28.510167
+  type: 'test'
+  ...
+# Subtest: isError result becomes MCP isError true
+ok 7 - isError result becomes MCP isError true
+  ---
+  duration_ms: 6.40425
+  type: 'test'
+  ...
+# Subtest: close fails pending calls and frees the port
+ok 8 - close fails pending calls and frees the port
+  ---
+  duration_ms: 4.953916
+  type: 'test'
+  ...
+# Subtest: close rejects consumers still waiting for tool calls
+ok 9 - close rejects consumers still waiting for tool calls
+  ---
+  duration_ms: 0.540875
+  type: 'test'
+  ...
+# Subtest: mcpConfig is {"mcpServers":{"learnharness":{"type":"http","url":...,"headers":{"Authorization":"Bearer ..."}}}}
+ok 10 - mcpConfig is {"mcpServers":{"learnharness":{"type":"http","url":...,"headers":{"Authorization":"Bearer ..."}}}}
+  ---
+  duration_ms: 0.592125
+  type: 'test'
+  ...
+# Subtest: missing and reused Claude tool IDs are rejected rather than matched by arguments
+ok 11 - missing and reused Claude tool IDs are rejected rather than matched by arguments
+  ---
+  duration_ms: 10.734666
+  type: 'test'
+  ...
+# Subtest: toolNameFromMcp strips the bridge prefix
+ok 12 - toolNameFromMcp strips the bridge prefix
+  ---
+  duration_ms: 0.077375
+  type: 'test'
+  ...
+1..12
+# tests 12
+# suites 0
+# pass 12
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 1356.480959

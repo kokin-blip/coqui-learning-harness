@@ -1,0 +1,316 @@
+TAP version 13
+# Subtest: zoomRatioOf (the sigma-compatible camera ratio)
+    # Subtest: 1 at fit zoom, smaller when zoomed in, larger when zoomed out
+    ok 1 - 1 at fit zoom, smaller when zoomed in, larger when zoomed out
+      ---
+      duration_ms: 0.207709
+      type: 'test'
+      ...
+    1..1
+ok 1 - zoomRatioOf (the sigma-compatible camera ratio)
+  ---
+  duration_ms: 0.507875
+  type: 'suite'
+  ...
+# Subtest: labelAlpha (the single zoom gate)
+    # Subtest: fully visible at/below the threshold, faded out after the span
+    ok 1 - fully visible at/below the threshold, faded out after the span
+      ---
+      duration_ms: 0.066666
+      type: 'test'
+      ...
+    # Subtest: the span is PROPORTIONAL to the gate (2026-09-17), not absolute
+    ok 2 - the span is PROPORTIONAL to the gate (2026-09-17), not absolute
+      ---
+      duration_ms: 0.045667
+      type: 'test'
+      ...
+    # Subtest: node labels and cluster labels cross-fade over the exact same span
+    ok 3 - node labels and cluster labels cross-fade over the exact same span
+      ---
+      duration_ms: 0.154917
+      type: 'test'
+      ...
+    1..3
+ok 2 - labelAlpha (the single zoom gate)
+  ---
+  duration_ms: 0.341459
+  type: 'suite'
+  ...
+# Subtest: d3 camera composition (the persisted-camera restore path)
+    # Subtest: zoomIdentity.translate(X, Y).scale(K) === {k: K, x: X, y: Y}
+    ok 1 - zoomIdentity.translate(X, Y).scale(K) === {k: K, x: X, y: Y}
+      ---
+      duration_ms: 0.511292
+      type: 'test'
+      ...
+    1..1
+ok 3 - d3 camera composition (the persisted-camera restore path)
+  ---
+  duration_ms: 0.549292
+  type: 'suite'
+  ...
+# Subtest: fitTransform
+    # Subtest: centers the bbox and respects padding
+    ok 1 - centers the bbox and respects padding
+      ---
+      duration_ms: 0.082834
+      type: 'test'
+      ...
+    # Subtest: never returns a non-positive scale for degenerate bboxes
+    ok 2 - never returns a non-positive scale for degenerate bboxes
+      ---
+      duration_ms: 0.058958
+      type: 'test'
+      ...
+    1..2
+ok 4 - fitTransform
+  ---
+  duration_ms: 0.212792
+  type: 'suite'
+  ...
+# Subtest: arrowGeometry
+    # Subtest: the tip lands exactly on the target disc edge
+    ok 1 - the tip lands exactly on the target disc edge
+      ---
+      duration_ms: 0.105667
+      type: 'test'
+      ...
+    # Subtest: the shaft starts outside the source disc
+    ok 2 - the shaft starts outside the source disc
+      ---
+      duration_ms: 0.051458
+      type: 'test'
+      ...
+    # Subtest: the head triangle is symmetric around the shaft axis (0.8x wideness)
+    ok 3 - the head triangle is symmetric around the shaft axis (0.8x wideness)
+      ---
+      duration_ms: 0.058375
+      type: 'test'
+      ...
+    # Subtest: works at arbitrary angles (diagonal stays normalized)
+    ok 4 - works at arbitrary angles (diagonal stays normalized)
+      ---
+      duration_ms: 0.035041
+      type: 'test'
+      ...
+    # Subtest: null for coincident endpoints (never a NaN arrow)
+    ok 5 - null for coincident endpoints (never a NaN arrow)
+      ---
+      duration_ms: 0.028375
+      type: 'test'
+      ...
+    # Subtest: toRadius 0 — the tip lands exactly at the target CENTER (headless convergence)
+    ok 6 - toRadius 0 — the tip lands exactly at the target CENTER (headless convergence)
+      ---
+      duration_ms: 0.0245
+      type: 'test'
+      ...
+    # Subtest: fromRadius 0 — the shaft starts exactly at the source CENTER
+    ok 7 - fromRadius 0 — the shaft starts exactly at the source CENTER
+      ---
+      duration_ms: 0.027209
+      type: 'test'
+      ...
+    1..7
+ok 5 - arrowGeometry
+  ---
+  duration_ms: 0.4055
+  type: 'suite'
+  ...
+# Subtest: isImpNodeId (the pure-geometry law, rendering arc 2026-09-30)
+    # Subtest: arg_-prefixed ids are geometry; proposition ids are citizens
+    ok 1 - arg_-prefixed ids are geometry; proposition ids are citizens
+      ---
+      duration_ms: 0.024
+      type: 'test'
+      ...
+    1..1
+ok 6 - isImpNodeId (the pure-geometry law, rendering arc 2026-09-30)
+  ---
+  duration_ms: 0.040833
+  type: 'suite'
+  ...
+# Subtest: pickNearest (distance-check picking)
+    # Subtest: picks the nearest node within the pad
+    ok 1 - picks the nearest node within the pad
+      ---
+      duration_ms: 0.0425
+      type: 'test'
+      ...
+    # Subtest: the picking pad extends the hitbox beyond the disc
+    ok 2 - the picking pad extends the hitbox beyond the disc
+      ---
+      duration_ms: 0.021292
+      type: 'test'
+      ...
+    # Subtest: ties resolve deterministically (first scanned wins)
+    ok 3 - ties resolve deterministically (first scanned wins)
+      ---
+      duration_ms: 0.02025
+      type: 'test'
+      ...
+    # Subtest: empty node list picks nothing
+    ok 4 - empty node list picks nothing
+      ---
+      duration_ms: 0.017833
+      type: 'test'
+      ...
+    1..4
+ok 7 - pickNearest (distance-check picking)
+  ---
+  duration_ms: 0.139292
+  type: 'suite'
+  ...
+# Subtest: sanitizeRegionTuning (dev number inputs)
+    # Subtest: defaults survive untouched; partial input keeps the rest
+    ok 1 - defaults survive untouched; partial input keeps the rest
+      ---
+      duration_ms: 0.096917
+      type: 'test'
+      ...
+    # Subtest: garbage clamps: NaN falls back, out-of-range clamps
+    ok 2 - garbage clamps: NaN falls back, out-of-range clamps
+      ---
+      duration_ms: 0.029083
+      type: 'test'
+      ...
+    # Subtest: empty string / null / undefined values fall back per-field
+    ok 3 - empty string / null / undefined values fall back per-field
+      ---
+      duration_ms: 0.022542
+      type: 'test'
+      ...
+    1..3
+ok 8 - sanitizeRegionTuning (dev number inputs)
+  ---
+  duration_ms: 0.177167
+  type: 'suite'
+  ...
+# Subtest: boxBlurRound (premultiplied region blur)
+    # Subtest: spreads a single opaque px into its neighborhood and conserves sum
+    ok 1 - spreads a single opaque px into its neighborhood and conserves sum
+      ---
+      duration_ms: 0.127167
+      type: 'test'
+      ...
+    # Subtest: radius 0 is a plain copy
+    ok 2 - radius 0 is a plain copy
+      ---
+      duration_ms: 0.036959
+      type: 'test'
+      ...
+    1..2
+ok 9 - boxBlurRound (premultiplied region blur)
+  ---
+  duration_ms: 0.185917
+  type: 'suite'
+  ...
+# Subtest: sanitizePhysicsTuning (physics controls)
+    # Subtest: defaults survive untouched; partial input keeps the rest
+    ok 1 - defaults survive untouched; partial input keeps the rest
+      ---
+      duration_ms: 0.090333
+      type: 'test'
+      ...
+    # Subtest: garbage clamps: NaN falls back, out-of-range clamps
+    ok 2 - garbage clamps: NaN falls back, out-of-range clamps
+      ---
+      duration_ms: 0.042625
+      type: 'test'
+      ...
+    1..2
+ok 10 - sanitizePhysicsTuning (physics controls)
+  ---
+  duration_ms: 0.168167
+  type: 'suite'
+  ...
+# Subtest: wrapRegionLabel (wave 7: session names / file paths)
+    # Subtest: fits → single line, untouched
+    ok 1 - fits → single line, untouched
+      ---
+      duration_ms: 0.078083
+      type: 'test'
+      ...
+    # Subtest: wraps words, no cap hit
+    ok 2 - wraps words, no cap hit
+      ---
+      duration_ms: 0.061125
+      type: 'test'
+      ...
+    # Subtest: caps at maxLines with an ellipsis on the last line
+    ok 3 - caps at maxLines with an ellipsis on the last line
+      ---
+      duration_ms: 0.033958
+      type: 'test'
+      ...
+    # Subtest: char-splits an unbroken path longer than the width (the notes case)
+    ok 4 - char-splits an unbroken path longer than the width (the notes case)
+      ---
+      duration_ms: 0.042625
+      type: 'test'
+      ...
+    # Subtest: a remainder that FITS the width rides as a plain last line (no false ellipsis)
+    ok 5 - a remainder that FITS the width rides as a plain last line (no false ellipsis)
+      ---
+      duration_ms: 0.02775
+      type: 'test'
+      ...
+    # Subtest: the ellipsis itself never exceeds the width
+    ok 6 - the ellipsis itself never exceeds the width
+      ---
+      duration_ms: 0.024334
+      type: 'test'
+      ...
+    1..6
+ok 11 - wrapRegionLabel (wave 7: session names / file paths)
+  ---
+  duration_ms: 0.315834
+  type: 'suite'
+  ...
+# Subtest: applyClusterLabels (the label-only rename channel)
+    # Subtest: patches the matching cluster and re-wraps its region meta
+    ok 1 - patches the matching cluster and re-wraps its region meta
+      ---
+      duration_ms: 0.110542
+      type: 'test'
+      ...
+    # Subtest: hull silence: a null-label cluster never gains a label
+    ok 2 - hull silence: a null-label cluster never gains a label
+      ---
+      duration_ms: 0.03025
+      type: 'test'
+      ...
+    # Subtest: a label already matching is a no-op (no redraw)
+    ok 3 - a label already matching is a no-op (no redraw)
+      ---
+      duration_ms: 0.03125
+      type: 'test'
+      ...
+    # Subtest: an explicit null clears a labeled cluster's lines
+    ok 4 - an explicit null clears a labeled cluster's lines
+      ---
+      duration_ms: 0.03275
+      type: 'test'
+      ...
+    # Subtest: unknown ids in the map change nothing
+    ok 5 - unknown ids in the map change nothing
+      ---
+      duration_ms: 0.035916
+      type: 'test'
+      ...
+    1..5
+ok 12 - applyClusterLabels (the label-only rename channel)
+  ---
+  duration_ms: 0.2785
+  type: 'suite'
+  ...
+1..12
+# tests 37
+# suites 12
+# pass 37
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 259.840959

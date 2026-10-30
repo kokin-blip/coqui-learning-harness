@@ -1,0 +1,47 @@
+TAP version 13
+# Subtest: warm-token cache (mitigation D, owner 2026-09-27)
+    # Subtest: caches: concurrent and repeat mints share ONE promise and mint once
+    ok 1 - caches: concurrent and repeat mints share ONE promise and mint once
+      ---
+      duration_ms: 0.277083
+      type: 'test'
+      ...
+    # Subtest: a failed mint resets the cache — the next call re-mints (honest error path)
+    ok 2 - a failed mint resets the cache — the next call re-mints (honest error path)
+      ---
+      duration_ms: 0.175583
+      type: 'test'
+      ...
+    # Subtest: TTL expiry re-mints — a stale token is never served
+    ok 3 - TTL expiry re-mints — a stale token is never served
+      ---
+      duration_ms: 0.06075
+      type: 'test'
+      ...
+    # Subtest: refresh() re-mints in the background and caches the result for the next run
+    ok 4 - refresh() re-mints in the background and caches the result for the next run
+      ---
+      duration_ms: 0.069
+      type: 'test'
+      ...
+    # Subtest: refresh() swallows failure — a keyless page just doesn't warm
+    ok 5 - refresh() swallows failure — a keyless page just doesn't warm
+      ---
+      duration_ms: 1.414292
+      type: 'test'
+      ...
+    1..5
+ok 1 - warm-token cache (mitigation D, owner 2026-09-27)
+  ---
+  duration_ms: 2.391583
+  type: 'suite'
+  ...
+1..1
+# tests 5
+# suites 1
+# pass 5
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 71.469333

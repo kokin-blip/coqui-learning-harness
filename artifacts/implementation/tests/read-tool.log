@@ -1,0 +1,84 @@
+TAP version 13
+# Subtest: read tool — text semantics
+    # Subtest: reads a small file verbatim
+    ok 1 - reads a small file verbatim
+      ---
+      duration_ms: 3.488084
+      type: 'test'
+      ...
+    # Subtest: resolves relative paths against the learner's home (sources v1 anchoring)
+    ok 2 - resolves relative paths against the learner's home (sources v1 anchoring)
+      ---
+      duration_ms: 2.042084
+      type: 'test'
+      ...
+    # Subtest: honors offset (1-indexed) and limit
+    ok 3 - honors offset (1-indexed) and limit
+      ---
+      duration_ms: 0.662708
+      type: 'test'
+      ...
+    # Subtest: offset beyond EOF is an error the model sees
+    ok 4 - offset beyond EOF is an error the model sees
+      ---
+      duration_ms: 0.6645
+      type: 'test'
+      ...
+    # Subtest: a missing file throws (pi's error-result semantics)
+    ok 5 - a missing file throws (pi's error-result semantics)
+      ---
+      duration_ms: 0.23475
+      type: 'test'
+      ...
+    # Subtest: truncates at 2000 lines with a use-offset continuation notice
+    ok 6 - truncates at 2000 lines with a use-offset continuation notice
+      ---
+      duration_ms: 0.715459
+      type: 'test'
+      ...
+    # Subtest: truncates at 50KB with the same continuation notice
+    ok 7 - truncates at 50KB with the same continuation notice
+      ---
+      duration_ms: 1.588084
+      type: 'test'
+      ...
+    # Subtest: an explicit limit that stops short gets a remaining-lines notice
+    ok 8 - an explicit limit that stops short gets a remaining-lines notice
+      ---
+      duration_ms: 0.507042
+      type: 'test'
+      ...
+    1..8
+ok 1 - read tool — text semantics
+  ---
+  duration_ms: 10.437708
+  type: 'suite'
+  ...
+# Subtest: read tool — image semantics (native content parts)
+    # Subtest: returns native text + image parts for image files, details null (output-less part)
+    ok 1 - returns native text + image parts for image files, details null (output-less part)
+      ---
+      duration_ms: 41.422666
+      type: 'test'
+      ...
+    # Subtest: plain string results map to a single text part (parity)
+    ok 2 - plain string results map to a single text part (parity)
+      ---
+      duration_ms: 1.116333
+      type: 'test'
+      ...
+    1..2
+ok 2 - read tool — image semantics (native content parts)
+  ---
+  duration_ms: 42.669625
+  type: 'suite'
+  ...
+1..2
+# tests 10
+# suites 2
+# pass 10
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 188.938333

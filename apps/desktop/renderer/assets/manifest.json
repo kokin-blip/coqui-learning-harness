@@ -1,0 +1,102 @@
+[
+  {
+    "nodeId": "3:3",
+    "name": "imgCanopyAmbientLight",
+    "file": "3-3-1737d.svg"
+  },
+  {
+    "nodeId": "3:255",
+    "name": "imgIconCheck",
+    "file": "3-255-11bc7.svg"
+  },
+  {
+    "nodeId": "3:255",
+    "name": "imgStepStatus",
+    "file": "3-255-2336d.svg"
+  },
+  {
+    "nodeId": "3:255",
+    "name": "imgStepStatus1",
+    "file": "3-255-00aaa.svg"
+  },
+  {
+    "nodeId": "3:139",
+    "name": "imgMacOsWindowControls",
+    "file": "3-139-2a021.svg"
+  },
+  {
+    "nodeId": "3:139",
+    "name": "imgCoquiSymbol",
+    "file": "3-139-34dbe.svg"
+  },
+  {
+    "nodeId": "3:139",
+    "name": "imgIconPlus",
+    "file": "3-139-82ff2.svg"
+  },
+  {
+    "nodeId": "3:139",
+    "name": "imgIconMap",
+    "file": "3-139-61601.svg"
+  },
+  {
+    "nodeId": "3:139",
+    "name": "imgIconLearn",
+    "file": "3-139-c8519.svg"
+  },
+  {
+    "nodeId": "3:139",
+    "name": "imgIconReview",
+    "file": "3-139-d66a0.svg"
+  },
+  {
+    "nodeId": "3:139",
+    "name": "imgIconLibrary",
+    "file": "3-139-544be.svg"
+  },
+  {
+    "nodeId": "3:139",
+    "name": "imgIconShield",
+    "file": "3-139-3877c.svg"
+  },
+  {
+    "nodeId": "3:139",
+    "name": "imgIconSettings",
+    "file": "3-139-9d19a.svg"
+  },
+  {
+    "nodeId": "3:195",
+    "name": "imgIconSearch",
+    "file": "3-195-0d510.svg"
+  },
+  {
+    "nodeId": "3:195",
+    "name": "imgIconMore",
+    "file": "3-195-abab4.svg"
+  },
+  {
+    "nodeId": "3:195",
+    "name": "imgFrame",
+    "file": "3-195-dfd82.svg"
+  },
+  {
+    "nodeId": "3:216",
+    "name": "imgEllipse",
+    "file": "3-216-e46b7.svg"
+  },
+  {
+    "nodeId": "3:216",
+    "name": "imgEllipse1",
+    "file": "3-216-a5673.svg"
+  },
+  {
+    "nodeId": "3:216",
+    "name": "imgSelectedRadioCenter",
+    "file": "3-216-afc7c.svg"
+  },
+  {
+    "nodeId": "3:295",
+    "name": "imgIconMap",
+    "file": "3-295-761f0.svg"
+  }
+]

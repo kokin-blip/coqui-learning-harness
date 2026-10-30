@@ -1,0 +1,85 @@
+TAP version 13
+# Subtest: fitZoomFor
+    # Subtest: binds on the axis that runs out of room (wide box → width)
+    ok 1 - binds on the axis that runs out of room (wide box → width)
+      ---
+      duration_ms: 0.248209
+      type: 'test'
+      ...
+    # Subtest: binds on height for a tall box
+    ok 2 - binds on height for a tall box
+      ---
+      duration_ms: 0.046042
+      type: 'test'
+      ...
+    # Subtest: caps the fit at FIT_ZOOM_MAX — a tiny box must not blow up
+    ok 3 - caps the fit at FIT_ZOOM_MAX — a tiny box must not blow up
+      ---
+      duration_ms: 0.066167
+      type: 'test'
+      ...
+    # Subtest: degenerate viewport (zero-sized) renders at 1×
+    ok 4 - degenerate viewport (zero-sized) renders at 1×
+      ---
+      duration_ms: 0.047375
+      type: 'test'
+      ...
+    1..4
+ok 1 - fitZoomFor
+  ---
+  duration_ms: 0.767542
+  type: 'suite'
+  ...
+# Subtest: fitGraphView
+    # Subtest: centers the box at the given zoom
+    ok 1 - centers the box at the given zoom
+      ---
+      duration_ms: 0.284666
+      type: 'test'
+      ...
+    1..1
+ok 2 - fitGraphView
+  ---
+  duration_ms: 0.320709
+  type: 'suite'
+  ...
+# Subtest: zoomedGraphView
+    # Subtest: zooms to the focus point: the focus stays visually fixed
+    ok 1 - zooms to the focus point: the focus stays visually fixed
+      ---
+      duration_ms: 0.097459
+      type: 'test'
+      ...
+    # Subtest: clamps at the floor and re-fits + RE-CENTERS (the fit is the floor)
+    ok 2 - clamps at the floor and re-fits + RE-CENTERS (the fit is the floor)
+      ---
+      duration_ms: 0.074333
+      type: 'test'
+      ...
+    # Subtest: clamps at ZOOM_MAX
+    ok 3 - clamps at ZOOM_MAX
+      ---
+      duration_ms: 0.045
+      type: 'test'
+      ...
+    # Subtest: no-ops when the factor lands exactly on the current zoom
+    ok 4 - no-ops when the factor lands exactly on the current zoom
+      ---
+      duration_ms: 0.040125
+      type: 'test'
+      ...
+    1..4
+ok 3 - zoomedGraphView
+  ---
+  duration_ms: 0.3455
+  type: 'suite'
+  ...
+1..3
+# tests 9
+# suites 3
+# pass 9
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 58.400208

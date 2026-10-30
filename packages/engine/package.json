@@ -1,0 +1,8 @@
+{
+  "name": "@coquilearn/engine",
+  "version": "0.2.1",
+  "private": true,
+  "type": "module",
+  "license": "AGPL-3.0-only",
+  "homepage": "https://github.com/kokin-blip/coqui-learning-harness"
+}

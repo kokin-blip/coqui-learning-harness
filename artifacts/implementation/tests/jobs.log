@@ -1,0 +1,448 @@
+TAP version 13
+# Subtest: job store
+    # Subtest: create → get → update → list round-trips
+    ok 1 - create → get → update → list round-trips
+      ---
+      duration_ms: 3.432834
+      type: 'test'
+      ...
+    # Subtest: every mutation emits jobs-changed {chatId}; reads emit nothing
+    ok 2 - every mutation emits jobs-changed {chatId}; reads emit nothing
+      ---
+      duration_ms: 0.816125
+      type: 'test'
+      ...
+    1..2
+ok 1 - job store
+  ---
+  duration_ms: 4.588917
+  type: 'suite'
+  ...
+# Subtest: steer helpers (contracts.ts)
+    # Subtest: buildSubagentSteer: a native marker — brief on the model-facing content, artifact payload in details
+    ok 1 - buildSubagentSteer: a native marker — brief on the model-facing content, artifact payload in details
+      ---
+      duration_ms: 0.199
+      type: 'test'
+      ...
+    # Subtest: accumulateJobUsage: sums per model call; fields NO call reported stay undefined (absent is not zero)
+    ok 2 - accumulateJobUsage: sums per model call; fields NO call reported stay undefined (absent is not zero)
+      ---
+      duration_ms: 0.203792
+      type: 'test'
+      ...
+    # Subtest: buildAbortSteer: a subagent-abort marker — teacher-facing text on content, the abort payload in details
+    ok 3 - buildAbortSteer: a subagent-abort marker — teacher-facing text on content, the abort payload in details
+      ---
+      duration_ms: 0.122916
+      type: 'test'
+      ...
+    # Subtest: isSubagentFailure: failure shapes only (empty html/svg, failure brief)
+    ok 4 - isSubagentFailure: failure shapes only (empty html/svg, failure brief)
+      ---
+      duration_ms: 0.105834
+      type: 'test'
+      ...
+    # Subtest: steerDelivered: matches on the deterministic steer id (any steer kind)
+    ok 5 - steerDelivered: matches on the deterministic steer id (any steer kind)
+      ---
+      duration_ms: 0.095125
+      type: 'test'
+      ...
+    # Subtest: failure steers tell the teacher how to recover (research/demo/visual wording)
+    ok 6 - failure steers tell the teacher how to recover (research/demo/visual wording)
+      ---
+      duration_ms: 0.100083
+      type: 'test'
+      ...
+    # Subtest: pdf steers (sources v0): brief + page citations on success, PDF failed: shape on failure, abort wording per kind
+    ok 7 - pdf steers (sources v0): brief + page citations on success, PDF failed: shape on failure, abort wording per kind
+      ---
+      duration_ms: 0.107
+      type: 'test'
+      ...
+    1..7
+ok 2 - steer helpers (contracts.ts)
+  ---
+  duration_ms: 1.075625
+  type: 'suite'
+  ...
+# Subtest: dispatch (async protocol §2)
+    # Subtest: the research call resolves immediately with an ack; the turn continues and the runner steers
+    ok 1 - the research call resolves immediately with an ack; the turn continues and the runner steers
+      ---
+      duration_ms: 39.855458
+      type: 'test'
+      ...
+    1..1
+ok 3 - dispatch (async protocol §2)
+  ---
+  duration_ms: 39.936583
+  type: 'suite'
+  ...
+# Subtest: research runner (async protocol §3)
+    # Subtest: runJob completes the job: result + sources on the job, brief on the steer, activity recorded
+    ok 1 - runJob completes the job: result + sources on the job, brief on the steer, activity recorded
+      ---
+      duration_ms: 3.188334
+      type: 'test'
+      ...
+    # Subtest: a keyless fetch-only researcher still completes and delivers a sourced job result
+    ok 2 - a keyless fetch-only researcher still completes and delivers a sourced job result
+      ---
+      duration_ms: 2.696209
+      type: 'test'
+      ...
+    # Subtest: a failing runner still steers (the teacher learns the outcome) and the job lands error
+    ok 3 - a failing runner still steers (the teacher learns the outcome) and the job lands error
+      ---
+      duration_ms: 1.811458
+      type: 'test'
+      ...
+    # Subtest: runJob resolves the input from the transcript when dispatch-time input is absent (crash recovery)
+    ok 4 - runJob resolves the input from the transcript when dispatch-time input is absent (crash recovery)
+      ---
+      duration_ms: 2.143875
+      type: 'test'
+      ...
+    1..4
+ok 4 - research runner (async protocol §3)
+  ---
+  duration_ms: 9.957166
+  type: 'suite'
+  ...
+# Subtest: pdf runner (sources v0)
+    # Subtest: runJob completes a pdf job: brief + pagesConsulted land on the record, citation steer delivered
+    ok 1 - runJob completes a pdf job: brief + pagesConsulted land on the record, citation steer delivered
+      ---
+      duration_ms: 312.21125
+      type: 'test'
+      ...
+    # Subtest: resolves a home-relative PDF from dispatch input without rewriting history
+    ok 2 - resolves a home-relative PDF from dispatch input without rewriting history
+      ---
+      duration_ms: 9.646708
+      type: 'test'
+      ...
+    # Subtest: resolves a home-relative PDF from recovery input without rewriting history
+    ok 3 - resolves a home-relative PDF from recovery input without rewriting history
+      ---
+      duration_ms: 7.578167
+      type: 'test'
+      ...
+    # Subtest: an unreadable source: the job lands error with the PDF failed: brief and the steer flags the gap
+    ok 4 - an unreadable source: the job lands error with the PDF failed: brief and the steer flags the gap
+      ---
+      duration_ms: 2.260417
+      type: 'test'
+      ...
+    1..4
+ok 5 - pdf runner (sources v0)
+  ---
+  duration_ms: 332.672209
+  type: 'suite'
+  ...
+# Subtest: researcher agent
+    # Subtest: runs with the web tool set (no network touched)
+    ok 1 - runs with the web tool set (no network touched)
+      ---
+      duration_ms: 0.14925
+      type: 'test'
+      ...
+    # Subtest: the pdf-reader declares exactly the four skill tools (sources v0)
+    ok 2 - the pdf-reader declares exactly the four skill tools (sources v0)
+      ---
+      duration_ms: 0.253458
+      type: 'test'
+      ...
+    1..2
+ok 6 - researcher agent
+  ---
+  duration_ms: 0.43075
+  type: 'suite'
+  ...
+# Subtest: wake pipeline (src/server/jobs.ts)
+    # Subtest: delivers a PROBE HANDOFF steer the same way — the teacher's wake turn
+    ok 1 - delivers a PROBE HANDOFF steer the same way — the teacher's wake turn
+      ---
+      duration_ms: 757.341458
+      type: 'test'
+      ...
+    # Subtest: a redelivered handoff dedupes via the transcript (idempotent by steer id)
+    ok 2 - a redelivered handoff dedupes via the transcript (idempotent by steer id)
+      ---
+      duration_ms: 3.076542
+      type: 'test'
+      ...
+    # Subtest: delivers: fires the turn runner with the record + steer, then flips the job done
+    ok 3 - delivers: fires the turn runner with the record + steer, then flips the job done
+      ---
+      duration_ms: 758.125792
+      type: 'test'
+      ...
+    # Subtest: waits while a question part is pending, and fires once it clears
+    ok 4 - waits while a question part is pending, and fires once it clears
+      ---
+      duration_ms: 1984.247542
+      type: 'test'
+      ...
+    # Subtest: the dismissal pause holds deliveries — no wake until the user's next turn settles (A2)
+    ok 5 - the dismissal pause holds deliveries — no wake until the user's next turn settles (A2)
+      ---
+      duration_ms: 1985.301167
+      type: 'test'
+      ...
+    # Subtest: retries with backoff on a 409 (a client turn raced in) and delivers on the retry
+    ok 6 - retries with backoff on a 409 (a client turn raced in) and delivers on the retry
+      ---
+      duration_ms: 2011.957416
+      type: 'test'
+      ...
+    # Subtest: is idempotent: a steer already in the transcript flips the job without firing a turn
+    ok 7 - is idempotent: a steer already in the transcript flips the job without firing a turn
+      ---
+      duration_ms: 3.035417
+      type: 'test'
+      ...
+    # Subtest: Wave C: live steering handoff + settlement reconciliation
+        # Subtest: hands queued markers to the LIVE run (pi steering queue) — no wake fires, the registry waits
+        ok 1 - hands queued markers to the LIVE run (pi steering queue) — no wake fires, the registry waits
+          ---
+          duration_ms: 1206.577667
+          type: 'test'
+          ...
+        # Subtest: a handed marker the run never injected (stopper exit / missed poll) strands at settlement — the idle wake delivers it
+        ok 2 - a handed marker the run never injected (stopper exit / missed poll) strands at settlement — the idle wake delivers it
+          ---
+          duration_ms: 1160.708666
+          type: 'test'
+          ...
+        # Subtest: a probe-handoff NEVER rides a live run — it waits the turn out and wakes
+        ok 3 - a probe-handoff NEVER rides a live run — it waits the turn out and wakes
+          ---
+          duration_ms: 1961.403542
+          type: 'test'
+          ...
+        # Subtest: registerLiveAgent immediately steers pending markers into the NEW run (the parked-behind-quiz path)
+        ok 4 - registerLiveAgent immediately steers pending markers into the NEW run (the parked-behind-quiz path)
+          ---
+          duration_ms: 305.482791
+          type: 'test'
+          ...
+        # Subtest: only a durable marker acknowledges delivery, independently of worker completion
+        ok 5 - only a durable marker acknowledges delivery, independently of worker completion
+          ---
+          duration_ms: 2.357125
+          type: 'test'
+          ...
+        # Subtest: the idle wake carries EVERY pending marker in ONE turn
+        ok 6 - the idle wake carries EVERY pending marker in ONE turn
+          ---
+          duration_ms: 757.593209
+          type: 'test'
+          ...
+        1..6
+    ok 8 - Wave C: live steering handoff + settlement reconciliation
+      ---
+      duration_ms: 5394.7285
+      type: 'suite'
+      ...
+# [steer steer_job_dcdd306baa264e34ac25ce35f3626735] delivery remains pending: wake turn did not persist steer (status 500)
+    # Subtest: a failed start stays pending without changing the worker outcome
+    ok 9 - a failed start stays pending without changing the worker outcome
+      ---
+      duration_ms: 1769.195708
+      type: 'test'
+      ...
+    1..9
+ok 7 - wake pipeline (src/server/jobs.ts)
+  ---
+  duration_ms: 14667.913083
+  type: 'suite'
+  ...
+# Subtest: persistTurn (native history, Wave B)
+    # Subtest: stamps EMPTY ids (pi minted no id) at the canonical write and preserves existing ones
+    ok 1 - stamps EMPTY ids (pi minted no id) at the canonical write and preserves existing ones
+      ---
+      duration_ms: 3.143167
+      type: 'test'
+      ...
+    # Subtest: baseCount slices the turn's own messages (the agent's state is append-only across turns)
+    ok 2 - baseCount slices the turn's own messages (the agent's state is append-only across turns)
+      ---
+      duration_ms: 2.586333
+      type: 'test'
+      ...
+    # Subtest: drops clean question placeholders, keeps errored ones (fork 1: the record ends at the unanswered call)
+    ok 3 - drops clean question placeholders, keeps errored ones (fork 1: the record ends at the unanswered call)
+      ---
+      duration_ms: 1.025833
+      type: 'test'
+      ...
+    1..3
+ok 8 - persistTurn (native history, Wave B)
+  ---
+  duration_ms: 6.893
+  type: 'suite'
+  ...
+# Subtest: prompt composition
+    # Subtest: loads ONLY numeric-prefix fragments — README.md never enters the system prompt
+    ok 1 - loads ONLY numeric-prefix fragments — README.md never enters the system prompt
+      ---
+      duration_ms: 0.998583
+      type: 'test'
+      ...
+    # Subtest: the question principles compose into the teacher prompt; the probe's quick-measurement revision landed
+    ok 2 - the question principles compose into the teacher prompt; the probe's quick-measurement revision landed
+      ---
+      duration_ms: 0.722042
+      type: 'test'
+      ...
+    # Subtest: the predict-check cycle composes into the teacher; the craft chunk reaches BOTH agents (owner 2026-10-03)
+    ok 3 - the predict-check cycle composes into the teacher; the craft chunk reaches BOTH agents (owner 2026-10-03)
+      ---
+      duration_ms: 1.036875
+      type: 'test'
+      ...
+    # Subtest: the sources-v0 prompt lines compose: read/pdf doctrine in the teacher, the read line in the prober
+    ok 4 - the sources-v0 prompt lines compose: read/pdf doctrine in the teacher, the read line in the prober
+      ---
+      duration_ms: 0.693667
+      type: 'test'
+      ...
+    # Subtest: the sources-v1 shared fragment composes into BOTH agents (find/ls/grep doctrine)
+    ok 5 - the sources-v1 shared fragment composes into BOTH agents (find/ls/grep doctrine)
+      ---
+      duration_ms: 1.136417
+      type: 'test'
+      ...
+    # Subtest: guards prompt size — no fragment can silently balloon (the README-leak class)
+    ok 6 - guards prompt size — no fragment can silently balloon (the README-leak class)
+      ---
+      duration_ms: 0.562291
+      type: 'test'
+      ...
+    1..6
+ok 9 - prompt composition
+  ---
+  duration_ms: 5.231292
+  type: 'suite'
+  ...
+# Subtest: abort (src/server/jobs.ts abortJob)
+    # Subtest: kills the running loop: error "Aborted by learner" immediately, loop unwinds silently, teacher gets the abort steer
+    ok 1 - kills the running loop: error "Aborted by learner" immediately, loop unwinds silently, teacher gets the abort steer
+      ---
+      duration_ms: 804.34575
+      type: 'test'
+      ...
+    # Subtest: the usage folded so far survives the kill (money channel outlives the abort)
+    ok 2 - the usage folded so far survives the kill (money channel outlives the abort)
+      ---
+      duration_ms: 33.009
+      type: 'test'
+      ...
+    # Subtest: a finished worker with a queued result is no longer abortable
+    ok 3 - a finished worker with a queued result is no longer abortable
+      ---
+      duration_ms: 1179.6355
+      type: 'test'
+      ...
+    # Subtest: outcome reasons: not_found for unknown, not_running for settled jobs
+    ok 4 - outcome reasons: not_found for unknown, not_running for settled jobs
+      ---
+      duration_ms: 2.385541
+      type: 'test'
+      ...
+    1..4
+ok 10 - abort (src/server/jobs.ts abortJob)
+  ---
+  duration_ms: 2019.654584
+  type: 'suite'
+  ...
+# Subtest: stale-job recovery sweep (liveness-gated)
+    # Subtest: a running record with a LIVE loop registration is never recovered — however old (the double-run guard)
+    ok 1 - a running record with a LIVE loop registration is never recovered — however old (the double-run guard)
+      ---
+      duration_ms: 7.452583
+      type: 'test'
+      ...
+    # Subtest: a running record WITHOUT a registration is an orphan: the loop is re-spawned immediately (no age wait)
+    ok 2 - a running record WITHOUT a registration is an orphan: the loop is re-spawned immediately (no age wait)
+      ---
+      duration_ms: 3.398917
+      type: 'test'
+      ...
+# [job job_df758a2354f04c55a90d9a69bc7d5fb1] refused — {"error":"No model configured — set up your models first","code":"models_not_configured","missing":["cheap"]}
+# [job job_d71b240be4be4668b9ed75a818160887] refused — {"error":"No faux key is set — add one in Settings → Keys","code":"provider_key_missing","provider":"faux","slots":["cheap"]}
+    # Subtest: an orphan WITH a stored result is re-delivered: the wake fires and the job flips done
+    ok 3 - an orphan WITH a stored result is re-delivered: the wake fires and the job flips done
+      ---
+      duration_ms: 755.183875
+      type: 'test'
+      ...
+    1..3
+ok 11 - stale-job recovery sweep (liveness-gated)
+  ---
+  duration_ms: 766.218208
+  type: 'suite'
+  ...
+# Subtest: BYOK job refusal (no factory floor)
+    # Subtest: runJob with NO resolvable engine lands the job as error — the envelope wording, no phantom run
+    ok 1 - runJob with NO resolvable engine lands the job as error — the envelope wording, no phantom run
+      ---
+      duration_ms: 3.505541
+      type: 'test'
+      ...
+    1..1
+ok 12 - BYOK job refusal (no factory floor)
+  ---
+  duration_ms: 3.563625
+  type: 'suite'
+  ...
+# Subtest: provider-key job refusal (key-presence interlude)
+    # Subtest: an engine whose provider key is gone refuses the spawn — envelope wording, no phantom run
+    ok 1 - an engine whose provider key is gone refuses the spawn — envelope wording, no phantom run
+      ---
+      duration_ms: 1.636
+      type: 'test'
+      ...
+    1..1
+ok 13 - provider-key job refusal (key-presence interlude)
+  ---
+  duration_ms: 1.674625
+  type: 'suite'
+  ...
+# Subtest: composer steering: steerLiveChat + the deliver-or-requeue lifecycle
+    # Subtest: no live turn → false, nothing parked (the client falls back to a plain send)
+    ok 1 - no live turn → false, nothing parked (the client falls back to a plain send)
+      ---
+      duration_ms: 0.627417
+      type: 'test'
+      ...
+    # Subtest: live agent → steered AND parked (the stranding safety net)
+    ok 2 - live agent → steered AND parked (the stranding safety net)
+      ---
+      duration_ms: 0.545042
+      type: 'test'
+      ...
+    # Subtest: settlement reconciliation: delivered ids drop, stranded ones ride the NEXT run
+    ok 3 - settlement reconciliation: delivered ids drop, stranded ones ride the NEXT run
+      ---
+      duration_ms: 0.856416
+      type: 'test'
+      ...
+    1..3
+ok 14 - composer steering: steerLiveChat + the deliver-or-requeue lifecycle
+  ---
+  duration_ms: 2.06625
+  type: 'suite'
+  ...
+1..14
+# tests 55
+# suites 15
+# pass 55
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 18446.199208

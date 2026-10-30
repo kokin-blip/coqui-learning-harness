@@ -1,0 +1,1 @@
+The Electron renderer uses HTML/CSS. One static detector pass reported a layout animation on the title breadcrumb's margin. Its margin transition was removed. The final screenshots show the same settled geometry. No second detector pass was run. Glass, the Coqui palette, and system typography are user-approved product requirements.

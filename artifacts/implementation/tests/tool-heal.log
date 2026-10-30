@@ -1,0 +1,104 @@
+TAP version 13
+# Subtest: the death-loop shape — quiz type with quotes baked in
+    # Subtest: heals the quote-encoded literal (the ten-retry loop)
+    ok 1 - heals the quote-encoded literal (the ten-retry loop)
+      ---
+      duration_ms: 0.430041
+      type: 'test'
+      ...
+    # Subtest: END-TO-END: the healed args pass pi-ai validation where the raw threw
+    ok 2 - END-TO-END: the healed args pass pi-ai validation where the raw threw
+      ---
+      duration_ms: 4.178042
+      type: 'test'
+      ...
+    # Subtest: WIRING: bareQuestionTools (the registry with NO prepareArguments) now heals
+    ok 3 - WIRING: bareQuestionTools (the registry with NO prepareArguments) now heals
+      ---
+      duration_ms: 0.178458
+      type: 'test'
+      ...
+    # Subtest: WIRING: the 2026-09-26 string-options shape heals through the bare quiz too
+    ok 4 - WIRING: the 2026-09-26 string-options shape heals through the bare quiz too
+      ---
+      duration_ms: 0.082583
+      type: 'test'
+      ...
+    1..4
+ok 1 - the death-loop shape — quiz type with quotes baked in
+  ---
+  duration_ms: 5.301708
+  type: 'suite'
+  ...
+# Subtest: the colon shape — correctAnswer with copy-syntax debris
+    # Subtest: stripModelValueDebris: the observed shapes heal, interiors stay
+    ok 1 - stripModelValueDebris: the observed shapes heal, interiors stay
+      ---
+      duration_ms: 0.14025
+      type: 'test'
+      ...
+    # Subtest: coerceCorrectAnswer cleans non-matching entries (boundary check + grading seam)
+    ok 2 - coerceCorrectAnswer cleans non-matching entries (boundary check + grading seam)
+      ---
+      duration_ms: 0.35175
+      type: 'test'
+      ...
+    # Subtest: the incident's exact call passes the semantic boundary (quizInputProblems)
+    ok 3 - the incident's exact call passes the semantic boundary (quizInputProblems)
+      ---
+      duration_ms: 0.107334
+      type: 'test'
+      ...
+    # Subtest: normalizeQuizType heals a persisted wobbled record
+    ok 4 - normalizeQuizType heals a persisted wobbled record
+      ---
+      duration_ms: 0.061375
+      type: 'test'
+      ...
+    # Subtest: resolveTargetId heals copy-syntax on targets
+    ok 5 - resolveTargetId heals copy-syntax on targets
+      ---
+      duration_ms: 0.079708
+      type: 'test'
+      ...
+    1..5
+ok 2 - the colon shape — correctAnswer with copy-syntax debris
+  ---
+  duration_ms: 0.859625
+  type: 'suite'
+  ...
+# Subtest: the calculus retry loop — an exact answer was incorrectly stripped
+    # Subtest: the real probe tool accepts a label with its sentence-final period
+    ok 1 - the real probe tool accepts a label with its sentence-final period
+      ---
+      duration_ms: 0.488
+      type: 'test'
+      ...
+    1..1
+ok 3 - the calculus retry loop — an exact answer was incorrectly stripped
+  ---
+  duration_ms: 0.547
+  type: 'suite'
+  ...
+# Subtest: the display mirror — raw records heal on read
+    # Subtest: parseQuizInput renders the incident's persisted raw record (no invisible quiz)
+    ok 1 - parseQuizInput renders the incident's persisted raw record (no invisible quiz)
+      ---
+      duration_ms: 2.147417
+      type: 'test'
+      ...
+    1..1
+ok 4 - the display mirror — raw records heal on read
+  ---
+  duration_ms: 2.1975
+  type: 'suite'
+  ...
+1..4
+# tests 11
+# suites 4
+# pass 11
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 471.971292

@@ -1,0 +1,47 @@
+TAP version 13
+# Subtest: Nova-3 dictation language contract
+    # Subtest: offers monolingual languages/locales and a distinct multilingual mode
+    ok 1 - offers monolingual languages/locales and a distinct multilingual mode
+      ---
+      duration_ms: 0.642041
+      type: 'test'
+      ...
+    # Subtest: only language varies in the streaming URL; all tuned parameters survive
+    ok 2 - only language varies in the streaming URL; all tuned parameters survive
+      ---
+      duration_ms: 0.777291
+      type: 'test'
+      ...
+    # Subtest: old records default to English and explicit preferences resolve without a migration
+    ok 3 - old records default to English and explicit preferences resolve without a migration
+      ---
+      duration_ms: 0.203291
+      type: 'test'
+      ...
+    # Subtest: rejects invalid API values and drops invalid stored preferences
+    ok 4 - rejects invalid API values and drops invalid stored preferences
+      ---
+      duration_ms: 0.153417
+      type: 'test'
+      ...
+    1..4
+ok 1 - Nova-3 dictation language contract
+  ---
+  duration_ms: 2.124042
+  type: 'suite'
+  ...
+# Subtest: the section route persists language independently and rejects unsupported values without writing
+ok 2 - the section route persists language independently and rejects unsupported values without writing
+  ---
+  duration_ms: 410.271083
+  type: 'test'
+  ...
+1..2
+# tests 5
+# suites 1
+# pass 5
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 632.633625

@@ -1,0 +1,318 @@
+TAP version 13
+# Subtest: parseQuizInput
+    # Subtest: parses a boundary-valid TEACHER quiz and strips the teacher-only nodeId
+    ok 1 - parses a boundary-valid TEACHER quiz and strips the teacher-only nodeId
+      ---
+      duration_ms: 2.331416
+      type: 'test'
+      ...
+    # Subtest: parses a boundary-valid PROBER quiz (no nodeId at all)
+    ok 2 - parses a boundary-valid PROBER quiz (no nodeId at all)
+      ---
+      duration_ms: 0.404667
+      type: 'test'
+      ...
+    # Subtest: boundary parity: anything the TEACH schema accepts, the display parse accepts
+    ok 3 - boundary parity: anything the TEACH schema accepts, the display parse accepts
+      ---
+      duration_ms: 0.413291
+      type: 'test'
+      ...
+    # Subtest: boundary parity: anything the PROBE schema accepts, the display parse accepts
+    ok 4 - boundary parity: anything the PROBE schema accepts, the display parse accepts
+      ---
+      duration_ms: 0.243708
+      type: 'test'
+      ...
+    # Subtest: boundary parity: the 2026-09-26 string-options shape heals on read (universal-heal mirror, 2026-10-09)
+    ok 5 - boundary parity: the 2026-09-26 string-options shape heals on read (universal-heal mirror, 2026-10-09)
+      ---
+      duration_ms: 0.495667
+      type: 'test'
+      ...
+    # Subtest: boundary parity under Value.Convert: a NUMERIC correctAnswer parses (live-smoke lockout fix, 2026-09-26)
+    ok 6 - boundary parity under Value.Convert: a NUMERIC correctAnswer parses (live-smoke lockout fix, 2026-09-26)
+      ---
+      duration_ms: 1.334833
+      type: 'test'
+      ...
+    # Subtest: garbage never parses: non-object, missing question, missing correctAnswer
+    ok 7 - garbage never parses: non-object, missing question, missing correctAnswer
+      ---
+      duration_ms: 0.306083
+      type: 'test'
+      ...
+    1..7
+ok 1 - parseQuizInput
+  ---
+  duration_ms: 6.106166
+  type: 'suite'
+  ...
+# Subtest: parseAskInput
+    # Subtest: parses free-text mode (no options) and option mode
+    ok 1 - parses free-text mode (no options) and option mode
+      ---
+      duration_ms: 0.312208
+      type: 'test'
+      ...
+    # Subtest: the live crash shape — stringified options — does not parse
+    ok 2 - the live crash shape — stringified options — does not parse
+      ---
+      duration_ms: 0.083916
+      type: 'test'
+      ...
+    1..2
+ok 2 - parseAskInput
+  ---
+  duration_ms: 0.504458
+  type: 'suite'
+  ...
+# Subtest: parseProbeDoneInput
+    # Subtest: parses the valid assessment
+    ok 1 - parses the valid assessment
+      ---
+      duration_ms: 0.262708
+      type: 'test'
+      ...
+    # Subtest: boundary parity: anything the tool schema accepts, the display parse accepts
+    ok 2 - boundary parity: anything the tool schema accepts, the display parse accepts
+      ---
+      duration_ms: 0.142542
+      type: 'test'
+      ...
+    # Subtest: the live crash shape — assessment STRINGIFIED — does not parse
+    ok 3 - the live crash shape — assessment STRINGIFIED — does not parse
+      ---
+      duration_ms: 0.059625
+      type: 'test'
+      ...
+    # Subtest: a mid-stream partial (no strands yet) does not parse
+    ok 4 - a mid-stream partial (no strands yet) does not parse
+      ---
+      duration_ms: 0.038417
+      type: 'test'
+      ...
+    1..4
+ok 3 - parseProbeDoneInput
+  ---
+  duration_ms: 0.558542
+  type: 'suite'
+  ...
+# Subtest: LaTeX-escape restoration (the JSON-debris fix, owner ruling 2026-09-26)
+    # Subtest: presentation restores debris from parsed source fields (question + options + explanation)
+    ok 1 - presentation restores debris from parsed source fields (question + options + explanation)
+      ---
+      duration_ms: 7.400667
+      type: 'test'
+      ...
+    # Subtest: presentation restores debris from parsed ask option labels too
+    ok 2 - presentation restores debris from parsed ask option labels too
+      ---
+      duration_ms: 0.675959
+      type: 'test'
+      ...
+    # Subtest: restores TAB debris (the \\to case) inside spans only
+    ok 3 - restores TAB debris (the \\to case) inside spans only
+      ---
+      duration_ms: 1.987541
+      type: 'test'
+      ...
+    # Subtest: control chars OUTSIDE math spans are left alone (real prose/pasted text)
+    ok 4 - control chars OUTSIDE math spans are left alone (real prose/pasted text)
+      ---
+      duration_ms: 0.268083
+      type: 'test'
+      ...
+    # Subtest: unbalanced delimiters pass through untouched (mid-stream safety)
+    ok 5 - unbalanced delimiters pass through untouched (mid-stream safety)
+      ---
+      duration_ms: 0.148541
+      type: 'test'
+      ...
+    1..5
+ok 4 - LaTeX-escape restoration (the JSON-debris fix, owner ruling 2026-09-26)
+  ---
+  duration_ms: 10.588667
+  type: 'suite'
+  ...
+# Subtest: display-math newline rule (Option A, owner ruling 2026-09-27)
+    # Subtest: real newlines inside display math are kept — multi-line equations pass through untouched
+    ok 1 - real newlines inside display math are kept — multi-line equations pass through untouched
+      ---
+      duration_ms: 0.149
+      type: 'test'
+      ...
+    # Subtest: non-newline debris inside display math still restores (the \\right CR case)
+    ok 2 - non-newline debris inside display math still restores (the \\right CR case)
+      ---
+      duration_ms: 1.000584
+      type: 'test'
+      ...
+    # Subtest: sloppy \\neq in display math stays broken — the accepted cost (newline kept, byte-identical to a real line break)
+    ok 3 - sloppy \\neq in display math stays broken — the accepted cost (newline kept, byte-identical to a real line break)
+      ---
+      duration_ms: 0.302041
+      type: 'test'
+      ...
+    # Subtest: inline spans still restore newline debris (inline math is single-line by nature)
+    ok 4 - inline spans still restore newline debris (inline math is single-line by nature)
+      ---
+      duration_ms: 1.345834
+      type: 'test'
+      ...
+    1..4
+ok 5 - display-math newline rule (Option A, owner ruling 2026-09-27)
+  ---
+  duration_ms: 2.889167
+  type: 'suite'
+  ...
+# Subtest: dollar-delimiter recognition — existing escape restoration rules
+    # Subtest: restores question, option, and explanation debris in dollar math
+    ok 1 - restores question, option, and explanation debris in dollar math
+      ---
+      duration_ms: 1.290083
+      type: 'test'
+      ...
+    # Subtest: keeps the same six-character inline recovery map
+    ok 2 - keeps the same six-character inline recovery map
+      ---
+      duration_ms: 0.696417
+      type: 'test'
+      ...
+    # Subtest: preserves display newlines and real LaTeX row breaks
+    ok 3 - preserves display newlines and real LaTeX row breaks
+      ---
+      duration_ms: 0.622792
+      type: 'test'
+      ...
+    # Subtest: restores five display debris characters but keeps newline ambiguity unchanged
+    ok 4 - restores five display debris characters but keeps newline ambiguity unchanged
+      ---
+      duration_ms: 0.816375
+      type: 'test'
+      ...
+    # Subtest: restores all debris in one pass consistently across delimiter syntaxes
+    ok 5 - restores all debris in one pass consistently across delimiter syntaxes
+      ---
+      duration_ms: 0.265583
+      type: 'test'
+      ...
+    # Subtest: shares dollar recovery with ask and free-recall fields
+    ok 6 - shares dollar recovery with ask and free-recall fields
+      ---
+      duration_ms: 0.604708
+      type: 'test'
+      ...
+    # Subtest: leaves non-math debris, escaped opening dollars, and code examples untouched
+    ok 7 - leaves non-math debris, escaped opening dollars, and code examples untouched
+      ---
+      duration_ms: 0.636708
+      type: 'test'
+      ...
+    # Subtest: leaves unbalanced and mismatched delimiter runs untouched
+    ok 8 - leaves unbalanced and mismatched delimiter runs untouched
+      ---
+      duration_ms: 0.242875
+      type: 'test'
+      ...
+    # Subtest: recognizes native inline runs and longer display closing fences
+    ok 9 - recognizes native inline runs and longer display closing fences
+      ---
+      duration_ms: 0.153667
+      type: 'test'
+      ...
+    # Subtest: does not add an over-escaping repair or reprocess legacy spans
+    ok 10 - does not add an over-escaping repair or reprocess legacy spans
+      ---
+      duration_ms: 0.266166
+      type: 'test'
+      ...
+    1..10
+ok 6 - dollar-delimiter recognition — existing escape restoration rules
+  ---
+  duration_ms: 5.759083
+  type: 'suite'
+  ...
+# Subtest: parseExplainInput: the dock's display seam for explain calls
+    # Subtest: parses a valid call and strips the teacher-only nodeId
+    ok 1 - parses a valid call and strips the teacher-only nodeId
+      ---
+      duration_ms: 0.144875
+      type: 'test'
+      ...
+    # Subtest: an empty commitment never arms the dock
+    ok 2 - an empty commitment never arms the dock
+      ---
+      duration_ms: 0.079542
+      type: 'test'
+      ...
+    # Subtest: restores LaTeX escape debris inside math spans (the pi-ai streaming wobble)
+    ok 3 - restores LaTeX escape debris inside math spans (the pi-ai streaming wobble)
+      ---
+      duration_ms: 0.057542
+      type: 'test'
+      ...
+    # Subtest: wrong-shape input never arms the dock (numeric strings DO coerce — the seam's leniency)
+    ok 4 - wrong-shape input never arms the dock (numeric strings DO coerce — the seam's leniency)
+      ---
+      duration_ms: 0.117
+      type: 'test'
+      ...
+    1..4
+ok 7 - parseExplainInput: the dock's display seam for explain calls
+  ---
+  duration_ms: 0.445208
+  type: 'suite'
+  ...
+# Subtest: over-escaped command recovery after shape parsing
+    # Subtest: presentation heals a doubled question field (the gradient-descent msg-3 shape)
+    ok 1 - presentation heals a doubled question field (the gradient-descent msg-3 shape)
+      ---
+      duration_ms: 1.987042
+      type: 'test'
+      ...
+    # Subtest: presentation heals a quadrupled field (the agent's over-correction, msg 6)
+    ok 2 - presentation heals a quadrupled field (the agent's over-correction, msg 6)
+      ---
+      duration_ms: 0.999667
+      type: 'test'
+      ...
+    # Subtest: doubled option labels and explanations heal too (the inference-runtime msg-7 shape)
+    ok 3 - doubled option labels and explanations heal too (the inference-runtime msg-7 shape)
+      ---
+      duration_ms: 1.165291
+      type: 'test'
+      ...
+    # Subtest: presentation heals doubled ask-option descriptions the same way
+    ok 4 - presentation heals doubled ask-option descriptions the same way
+      ---
+      duration_ms: 0.315459
+      type: 'test'
+      ...
+    # Subtest: clean records pass through byte-identical (no over-heal)
+    ok 5 - clean records pass through byte-identical (no over-heal)
+      ---
+      duration_ms: 0.173542
+      type: 'test'
+      ...
+    # Subtest: legitimate row breaks inside matrices survive the seam
+    ok 6 - legitimate row breaks inside matrices survive the seam
+      ---
+      duration_ms: 0.140292
+      type: 'test'
+      ...
+    1..6
+ok 8 - over-escaped command recovery after shape parsing
+  ---
+  duration_ms: 4.859333
+  type: 'suite'
+  ...
+1..8
+# tests 42
+# suites 8
+# pass 42
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 267.066667

@@ -1,0 +1,96 @@
+TAP version 13
+# Subtest: demo builder (fake model + fake headless)
+    # Subtest: iterates write → run → fix → run → clean → delivers with notes
+    ok 1 - iterates write → run → fix → run → clean → delivers with notes
+      ---
+      duration_ms: 4.82125
+      type: 'test'
+      ...
+    # Subtest: verifies headlessly even when the model forgets run_demo before finishing
+    ok 2 - verifies headlessly even when the model forgets run_demo before finishing
+      ---
+      duration_ms: 0.465125
+      type: 'test'
+      ...
+    # Subtest: fails (empty html + FAILED notes) when the demo never passes verification
+    ok 3 - fails (empty html + FAILED notes) when the demo never passes verification
+      ---
+      duration_ms: 0.463125
+      type: 'test'
+      ...
+    # Subtest: fails fast with a clear message when no Chrome is available (never skips testing)
+    ok 4 - fails fast with a clear message when no Chrome is available (never skips testing)
+      ---
+      duration_ms: 0.08025
+      type: 'test'
+      ...
+    # Subtest: fails when the model never writes a demo
+    ok 5 - fails when the model never writes a demo
+      ---
+      duration_ms: 0.246042
+      type: 'test'
+      ...
+    1..5
+ok 1 - demo builder (fake model + fake headless)
+  ---
+  duration_ms: 6.455292
+  type: 'suite'
+  ...
+# Subtest: visual maker (fake model + fake headless)
+    # Subtest: write → render → look → finish delivers the svg with notes
+    ok 1 - write → render → look → finish delivers the svg with notes
+      ---
+      duration_ms: 44.811791
+      type: 'test'
+      ...
+    # Subtest: forces a look when the model finishes without rendering the final svg
+    ok 2 - forces a look when the model finishes without rendering the final svg
+      ---
+      duration_ms: 41.893042
+      type: 'test'
+      ...
+    # Subtest: edit_svg: exact-match single replacement, with fuzzy context on a miss
+    ok 3 - edit_svg: exact-match single replacement, with fuzzy context on a miss
+      ---
+      duration_ms: 77.673459
+      type: 'test'
+      ...
+    # Subtest: edit_svg before write_svg errors and never edits nothing into a deliverable
+    ok 4 - edit_svg before write_svg errors and never edits nothing into a deliverable
+      ---
+      duration_ms: 0.265041
+      type: 'test'
+      ...
+    # Subtest: feeds render errors back to the model instead of crashing
+    ok 5 - feeds render errors back to the model instead of crashing
+      ---
+      duration_ms: 37.438625
+      type: 'test'
+      ...
+    # Subtest: fails when the model never writes an svg
+    ok 6 - fails when the model never writes an svg
+      ---
+      duration_ms: 0.253833
+      type: 'test'
+      ...
+    # Subtest: fails with a clear message when no Chrome is available
+    ok 7 - fails with a clear message when no Chrome is available
+      ---
+      duration_ms: 0.088334
+      type: 'test'
+      ...
+    1..7
+ok 2 - visual maker (fake model + fake headless)
+  ---
+  duration_ms: 202.685291
+  type: 'suite'
+  ...
+1..2
+# tests 12
+# suites 2
+# pass 12
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 733.854917

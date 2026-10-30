@@ -1,0 +1,135 @@
+TAP version 13
+# Subtest: messageFingerprint — what changes it, what never does
+    # Subtest: a text edit changes the fingerprint; role participates
+    ok 1 - a text edit changes the fingerprint; role participates
+      ---
+      duration_ms: 0.46825
+      type: 'test'
+      ...
+    # Subtest: the message id is the provenance tag — part of exactly what the extractor saw
+    ok 2 - the message id is the provenance tag — part of exactly what the extractor saw
+      ---
+      duration_ms: 0.078167
+      type: 'test'
+      ...
+    # Subtest: marker messages are invisible — a plan-block attach never re-opens anything
+    ok 3 - marker messages are invisible — a plan-block attach never re-opens anything
+      ---
+      duration_ms: 0.269541
+      type: 'test'
+      ...
+    # Subtest: quiz Q&A is INVISIBLE under the teacher-prose ruling (owner, 2026-09-28)
+    ok 4 - quiz Q&A is INVISIBLE under the teacher-prose ruling (owner, 2026-09-28)
+      ---
+      duration_ms: 0.16025
+      type: 'test'
+      ...
+    # Subtest: learner messages and ALL tool results are invisible — clean or failed
+    ok 5 - learner messages and ALL tool results are invisible — clean or failed
+      ---
+      duration_ms: 0.054833
+      type: 'test'
+      ...
+    # Subtest: teacherProseBlocks — the prompt material: teacher text blocks only, plain, in order
+    ok 6 - teacherProseBlocks — the prompt material: teacher text blocks only, plain, in order
+      ---
+      duration_ms: 0.094416
+      type: 'test'
+      ...
+    1..6
+ok 1 - messageFingerprint — what changes it, what never does
+  ---
+  duration_ms: 1.467833
+  type: 'suite'
+  ...
+# Subtest: coverageOf — uncovered is DERIVED, never dual-tracked
+    # Subtest: diffs fingerprints: covered stays, uncovered counts, tokens split
+    ok 1 - diffs fingerprints: covered stays, uncovered counts, tokens split
+      ---
+      duration_ms: 0.155125
+      type: 'test'
+      ...
+    # Subtest: a mutated covered message re-opens itself, and only itself
+    ok 2 - a mutated covered message re-opens itself, and only itself
+      ---
+      duration_ms: 0.0845
+      type: 'test'
+      ...
+    1..2
+ok 2 - coverageOf — uncovered is DERIVED, never dual-tracked
+  ---
+  duration_ms: 0.300584
+  type: 'suite'
+  ...
+# Subtest: batchRuns — token-budgeted, consecutive, never splits a message
+    # Subtest: greedy oldest-first fill; the overflowing message starts the next run
+    ok 1 - greedy oldest-first fill; the overflowing message starts the next run
+      ---
+      duration_ms: 0.122208
+      type: 'test'
+      ...
+    # Subtest: a single message larger than the budget becomes its own over-budget run
+    ok 2 - a single message larger than the budget becomes its own over-budget run
+      ---
+      duration_ms: 0.081708
+      type: 'test'
+      ...
+    # Subtest: an empty or non-positive budget never drops messages into a void
+    ok 3 - an empty or non-positive budget never drops messages into a void
+      ---
+      duration_ms: 0.049459
+      type: 'test'
+      ...
+    # Subtest: learner messages and tool results never join a batch — teacher prose only (owner, 2026-09-28)
+    ok 4 - learner messages and tool results never join a batch — teacher prose only (owner, 2026-09-28)
+      ---
+      duration_ms: 0.281958
+      type: 'test'
+      ...
+    1..4
+ok 3 - batchRuns — token-budgeted, consecutive, never splits a message
+  ---
+  duration_ms: 0.610292
+  type: 'suite'
+  ...
+# Subtest: batchTag — deterministic, ref-stable, mutation-sensitive
+    # Subtest: the same members in the same order → the same 12-hex tag; a different order is a different batch
+    ok 1 - the same members in the same order → the same 12-hex tag; a different order is a different batch
+      ---
+      duration_ms: 0.14125
+      type: 'test'
+      ...
+    # Subtest: a re-opened member changes the tag — its observations land as new events
+    ok 2 - a re-opened member changes the tag — its observations land as new events
+      ---
+      duration_ms: 0.044208
+      type: 'test'
+      ...
+    1..2
+ok 4 - batchTag — deterministic, ref-stable, mutation-sensitive
+  ---
+  duration_ms: 0.2185
+  type: 'suite'
+  ...
+# Subtest: the all-sessions coverage GET is dead (extraction-UX close-out, 2026-09-24)
+    # Subtest: the route file is gone — the only coverage endpoint is the Extract POST
+    ok 1 - the route file is gone — the only coverage endpoint is the Extract POST
+      ---
+      duration_ms: 0.09425
+      type: 'test'
+      ...
+    1..1
+ok 5 - the all-sessions coverage GET is dead (extraction-UX close-out, 2026-09-24)
+  ---
+  duration_ms: 0.139916
+  type: 'suite'
+  ...
+1..5
+# tests 15
+# suites 5
+# pass 15
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 117.75625

@@ -1,0 +1,41 @@
+TAP version 13
+# Subtest: GET /api/chats/:id/markdown
+    # Subtest: 404s an unknown chat
+    ok 1 - 404s an unknown chat
+      ---
+      duration_ms: 4.046583
+      type: 'test'
+      ...
+    # Subtest: exports the session as an anchorless markdown attachment, filename from the title
+    ok 2 - exports the session as an anchorless markdown attachment, filename from the title
+      ---
+      duration_ms: 2.069458
+      type: 'test'
+      ...
+    # Subtest: an unsalvageable title falls back to 'session'
+    ok 3 - an unsalvageable title falls back to 'session'
+      ---
+      duration_ms: 0.61275
+      type: 'test'
+      ...
+    # Subtest: an empty session exports the bare header document
+    ok 4 - an empty session exports the bare header document
+      ---
+      duration_ms: 0.369791
+      type: 'test'
+      ...
+    1..4
+ok 1 - GET /api/chats/:id/markdown
+  ---
+  duration_ms: 119.507083
+  type: 'suite'
+  ...
+1..1
+# tests 4
+# suites 1
+# pass 4
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 642.413791

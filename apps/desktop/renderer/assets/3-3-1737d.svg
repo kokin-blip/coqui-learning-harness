@@ -1,0 +1,12 @@
+<svg preserveAspectRatio="none" overflow="visible" style="display: block;" width="880" height="1180" viewBox="0 0 880 1180" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Canopy ambient light" opacity="0.5" filter="url(#filter0_f_0_4)">
+<ellipse cx="440" cy="590" rx="350" ry="500" fill="#304B42"/>
+</g>
+<defs>
+<filter id="filter0_f_0_4" x="0" y="0" width="880" height="1180" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="45" result="effect1_foregroundBlur_0_4"/>
+</filter>
+</defs>
+</svg>

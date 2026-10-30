@@ -1,0 +1,296 @@
+TAP version 13
+# Subtest: activeProblemOf (the conclude-before-next-problem gate's fold)
+    # Subtest: no messages → nothing active
+    ok 1 - no messages → nothing active
+      ---
+      duration_ms: 0.279042
+      type: 'test'
+      ...
+    # Subtest: a posed problem (call + ack) is ACTIVE — the ack does not conclude
+    ok 2 - a posed problem (call + ack) is ACTIVE — the ack does not conclude
+      ---
+      duration_ms: 0.289125
+      type: 'test'
+      ...
+    # Subtest: thinking submissions keep it active (nudges never conclude)
+    ok 3 - thinking submissions keep it active (nudges never conclude)
+      ---
+      duration_ms: 0.184625
+      type: 'test'
+      ...
+    # Subtest: a conclude call deactivates
+    ok 4 - a conclude call deactivates
+      ---
+      duration_ms: 0.061916
+      type: 'test'
+      ...
+    # Subtest: an ERRORED pose never activates (the BKT phantom — honest activation)
+    ok 5 - an ERRORED pose never activates (the BKT phantom — honest activation)
+      ---
+      duration_ms: 0.053584
+      type: 'test'
+      ...
+    # Subtest: a clean pose UNDER an errored rejection stays active (the scan skips refusals)
+    ok 6 - a clean pose UNDER an errored rejection stays active (the scan skips refusals)
+      ---
+      duration_ms: 0.064042
+      type: 'test'
+      ...
+    # Subtest: an ERRORED conclude does not free (only the clean ack frees)
+    ok 7 - an ERRORED conclude does not free (only the clean ack frees)
+      ---
+      duration_ms: 0.044583
+      type: 'test'
+      ...
+    # Subtest: a DANGLING pose (mid-turn, no result) does not activate — it has not gone through
+    ok 8 - a DANGLING pose (mid-turn, no result) does not activate — it has not gone through
+      ---
+      duration_ms: 0.049666
+      type: 'test'
+      ...
+    # Subtest: a dismissal marker deactivates immediately (the card closes at Esc)
+    ok 9 - a dismissal marker deactivates immediately (the card closes at Esc)
+      ---
+      duration_ms: 0.076875
+      type: 'test'
+      ...
+    # Subtest: a NEWER problem after a conclude is the active one
+    ok 10 - a NEWER problem after a conclude is the active one
+      ---
+      duration_ms: 0.081041
+      type: 'test'
+      ...
+    1..10
+ok 1 - activeProblemOf (the conclude-before-next-problem gate's fold)
+  ---
+  duration_ms: 1.623667
+  type: 'suite'
+  ...
+# Subtest: pendingProblemDismissalOf (the marker waiting for its synthesis)
+    # Subtest: a trailing dismissal marker pends
+    ok 1 - a trailing dismissal marker pends
+      ---
+      duration_ms: 0.075125
+      type: 'test'
+      ...
+    # Subtest: the synthesized pair clears it
+    ok 2 - the synthesized pair clears it
+      ---
+      duration_ms: 0.098667
+      type: 'test'
+      ...
+    # Subtest: a plain record pends nothing
+    ok 3 - a plain record pends nothing
+      ---
+      duration_ms: 0.027167
+      type: 'test'
+      ...
+    1..3
+ok 2 - pendingProblemDismissalOf (the marker waiting for its synthesis)
+  ---
+  duration_ms: 0.261125
+  type: 'suite'
+  ...
+# Subtest: the thinking input
+    # Subtest: parses and appends the marker against the active problem (ONE lane)
+    ok 1 - parses and appends the marker against the active problem (ONE lane)
+      ---
+      duration_ms: 0.135
+      type: 'test'
+      ...
+    # Subtest: 400s against a stale or unknown problem call
+    ok 2 - 400s against a stale or unknown problem call
+      ---
+      duration_ms: 0.1435
+      type: 'test'
+      ...
+    # Subtest: empty text 400s at parse
+    ok 3 - empty text 400s at parse
+      ---
+      duration_ms: 0.026708
+      type: 'test'
+      ...
+    1..3
+ok 3 - the thinking input
+  ---
+  duration_ms: 0.332166
+  type: 'suite'
+  ...
+# Subtest: the next input
+    # Subtest: parses bare and appends the practice-next marker in an idle practice session
+    ok 1 - parses bare and appends the practice-next marker in an idle practice session
+      ---
+      duration_ms: 0.04525
+      type: 'test'
+      ...
+    # Subtest: 400s outside practice sessions (the affordance is practice-only)
+    ok 2 - 400s outside practice sessions (the affordance is practice-only)
+      ---
+      duration_ms: 0.038958
+      type: 'test'
+      ...
+    # Subtest: 400s while a problem is active (mid-problem input rides the dock)
+    ok 3 - 400s while a problem is active (mid-problem input rides the dock)
+      ---
+      duration_ms: 0.028625
+      type: 'test'
+      ...
+    # Subtest: rides AFTER a pending dismissal conclusion, exactly like text
+    ok 4 - rides AFTER a pending dismissal conclusion, exactly like text
+      ---
+      duration_ms: 0.049666
+      type: 'test'
+      ...
+    1..4
+ok 4 - the next input
+  ---
+  duration_ms: 0.193041
+  type: 'suite'
+  ...
+# Subtest: the dismissal's conclude synthesis rides the next input
+    # Subtest: text after a dismissal prepends the conclude pair before the user message
+    ok 1 - text after a dismissal prepends the conclude pair before the user message
+      ---
+      duration_ms: 0.063958
+      type: 'test'
+      ...
+    # Subtest: continue after a dismissal carries the pair alone
+    ok 2 - continue after a dismissal carries the pair alone
+      ---
+      duration_ms: 0.04225
+      type: 'test'
+      ...
+    # Subtest: with nothing pending, text appends only the user message
+    ok 3 - with nothing pending, text appends only the user message
+      ---
+      duration_ms: 0.0285
+      type: 'test'
+      ...
+    1..3
+ok 5 - the dismissal's conclude synthesis rides the next input
+  ---
+  duration_ms: 0.16275
+  type: 'suite'
+  ...
+# Subtest: the dismiss-problem input (ask-style discard)
+    # Subtest: parses and appends the UI-only marker against the active problem
+    ok 1 - parses and appends the UI-only marker against the active problem
+      ---
+      duration_ms: 0.065416
+      type: 'test'
+      ...
+    # Subtest: 400s when nothing active or a stale id
+    ok 2 - 400s when nothing active or a stale id
+      ---
+      duration_ms: 0.042292
+      type: 'test'
+      ...
+    1..2
+ok 6 - the dismiss-problem input (ask-style discard)
+  ---
+  duration_ms: 0.127917
+  type: 'suite'
+  ...
+# Subtest: toLlmMessages (practice shapes)
+    # Subtest: the thinking marker flattens to a labeled user message
+    ok 1 - the thinking marker flattens to a labeled user message
+      ---
+      duration_ms: 0.108
+      type: 'test'
+      ...
+    # Subtest: the dismissal marker is UI-only (the synthesized pair carries the face)
+    ok 2 - the dismissal marker is UI-only (the synthesized pair carries the face)
+      ---
+      duration_ms: 0.0325
+      type: 'test'
+      ...
+    # Subtest: the synthesized pair passes through natively
+    ok 3 - the synthesized pair passes through natively
+      ---
+      duration_ms: 0.068333
+      type: 'test'
+      ...
+    1..3
+ok 7 - toLlmMessages (practice shapes)
+  ---
+  duration_ms: 0.240042
+  type: 'suite'
+  ...
+# Subtest: needsContinuation (a persisted pose ack owes nothing)
+    # Subtest: a record ending on a problem-pose ack does NOT wake a continuation
+    ok 1 - a record ending on a problem-pose ack does NOT wake a continuation
+      ---
+      duration_ms: 0.080166
+      type: 'test'
+      ...
+    # Subtest: a mixed batch (conclude ack then pose ack) still owes nothing — the pose is terminal
+    ok 2 - a mixed batch (conclude ack then pose ack) still owes nothing — the pose is terminal
+      ---
+      duration_ms: 0.0395
+      type: 'test'
+      ...
+    # Subtest: an ERROR result is not a pose — the agent loop continues past it, so a record ending there (an abort) is owed the wake like any interrupted tool
+    ok 3 - an ERROR result is not a pose — the agent loop continues past it, so a record ending there (an abort) is owed the wake like any interrupted tool
+      ---
+      duration_ms: 0.038625
+      type: 'test'
+      ...
+    1..3
+ok 8 - needsContinuation (a persisted pose ack owes nothing)
+  ---
+  duration_ms: 0.189625
+  type: 'suite'
+  ...
+# Subtest: modelSolutionForConclude (the conclusion's hero is the pose's commitment)
+    # Subtest: returns the cleanly-posed problem's modelSolution before the conclude
+    ok 1 - returns the cleanly-posed problem's modelSolution before the conclude
+      ---
+      duration_ms: 0.061416
+      type: 'test'
+      ...
+    # Subtest: skips refused poses — a rejected pose revealed nothing
+    ok 2 - skips refused poses — a rejected pose revealed nothing
+      ---
+      duration_ms: 0.0265
+      type: 'test'
+      ...
+    # Subtest: the newest pose before ITS conclude wins (multi-problem records)
+    ok 3 - the newest pose before ITS conclude wins (multi-problem records)
+      ---
+      duration_ms: 0.033916
+      type: 'test'
+      ...
+    # Subtest: projectView enriches the conclude part with the reveal
+    ok 4 - projectView enriches the conclude part with the reveal
+      ---
+      duration_ms: 0.220959
+      type: 'test'
+      ...
+    1..4
+ok 9 - modelSolutionForConclude (the conclusion's hero is the pose's commitment)
+  ---
+  duration_ms: 0.377083
+  type: 'suite'
+  ...
+# Subtest: projectView renders the move-on signal
+    # Subtest: the practice-next marker projects the compact part (the centered NEXT PROBLEM line)
+    ok 1 - the practice-next marker projects the compact part (the centered NEXT PROBLEM line)
+      ---
+      duration_ms: 0.085333
+      type: 'test'
+      ...
+    1..1
+ok 10 - projectView renders the move-on signal
+  ---
+  duration_ms: 0.113625
+  type: 'suite'
+  ...
+1..10
+# tests 36
+# suites 10
+# pass 36
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 214.403417

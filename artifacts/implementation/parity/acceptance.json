@@ -1,0 +1,99 @@
+{
+  "at": "2026-10-30T20:21:05.333Z",
+  "packaged": true,
+  "checks": [
+    {
+      "name": "Native question variant: multi",
+      "passed": true,
+      "sessionId": "chat_34ce87206f524819ae194445b2b500d3"
+    },
+    {
+      "name": "Native question variant: probe",
+      "passed": true,
+      "sessionId": "chat_e6410d88c22e4aac9f301960985c78dd"
+    },
+    {
+      "name": "Native question variant: explain",
+      "passed": true,
+      "sessionId": "chat_52f6a25d0b104ef1b6cec94d87244766"
+    },
+    {
+      "name": "Native question variant: recall",
+      "passed": true,
+      "sessionId": "chat_85b0a19ef3974f47beba4785b1f5971b"
+    },
+    {
+      "name": "Native question variant: ask",
+      "passed": true,
+      "sessionId": "chat_6f6fc737d1db4c969b1b062bf4c1a6d7"
+    },
+    {
+      "name": "Native question variant: ask-choice",
+      "passed": true,
+      "sessionId": "chat_9e3893db3b044c3d8377a2c2bb4a6dd6"
+    },
+    {
+      "name": "Native question variant: ask-multi",
+      "passed": true,
+      "sessionId": "chat_ce5a5c5c6a304894a233eb475703d9d4"
+    },
+    {
+      "name": "Global learner-thinking shortcut expands and collapses recorded reasoning",
+      "passed": true
+    },
+    {
+      "name": "I-don’t-know omits confidence/selection; single-choice Other replaces a listed choice",
+      "passed": true
+    },
+    {
+      "name": "Practice recall/discrimination/composition render hinted, moved-on and surrendered outcomes and pause for Next",
+      "passed": true
+    },
+    {
+      "name": "Markdown, alerts, code/table/TeX/Mermaid copying, diagram focus, literal Find and model shortcut",
+      "passed": true
+    },
+    {
+      "name": "Plan rewrite preserves frozen snapshots; focus view supports zoom, fit and one Escape",
+      "passed": true
+    },
+    {
+      "name": "Paginated history, persisted kind filter, keyboard search and F2 rename",
+      "passed": true
+    },
+    {
+      "name": "Chain hierarchy/search/sort, selection over 64, bulk deletion/Undo and shared-source preservation",
+      "passed": true
+    },
+    {
+      "name": "Per-file import identities isolate corrupt files, retain source inspection and detect renamed duplicates",
+      "passed": true
+    },
+    {
+      "name": "Native picker grants isolate files; selection skips unselected files and per-file retry recovers a missing file",
+      "passed": true
+    },
+    {
+      "name": "Strong and independent background thinking preferences persist; existing session preferences remain unchanged",
+      "passed": true
+    },
+    {
+      "name": "Service death during streaming preserves one input and reports an explicit interrupted response",
+      "passed": true
+    },
+    {
+      "name": "Native View zoom follows the audited ladder through 200% and resets",
+      "passed": true
+    }
+  ],
+  "errors": [],
+  "build": {
+    "version": "0.2.1",
+    "packaged": true,
+    "electron": "44.10.0",
+    "node": "24.22.1",
+    "upstreamCommit": "dc4c398d5167865b84b0ccb3ec809eb88bf8f65f",
+    "appPayloadSha256": "b1bb6f098e7b4f70a9a0ef77ae9c73d9e366ef8b5e273757d2da8aeaaf468453"
+  },
+  "passed": true
+}

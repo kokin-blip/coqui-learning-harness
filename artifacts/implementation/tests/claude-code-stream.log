@@ -1,0 +1,377 @@
+TAP version 13
+# Subtest: toClaudeArgs includes every isolation flag from Global Constraints
+ok 1 - toClaudeArgs includes every isolation flag from Global Constraints
+  ---
+  duration_ms: 0.776667
+  type: 'test'
+  ...
+# Subtest: toEffort maps low..max verbatim, minimal to "low", undefined to "medium"
+ok 2 - toEffort maps low..max verbatim, minimal to "low", undefined to "medium"
+  ---
+  duration_ms: 0.068792
+  type: 'test'
+  ...
+# Subtest: text scenario streams start, text_start, text_delta…, text_end, done(stop)
+ok 3 - text scenario streams start, text_start, text_delta…, text_end, done(stop)
+  ---
+  duration_ms: 108.190583
+  type: 'test'
+  ...
+# Subtest: thinking deltas map to thinking_*
+ok 4 - thinking deltas map to thinking_*
+  ---
+  duration_ms: 85.1475
+  type: 'test'
+  ...
+# Subtest: tool scenario ends with toolcall_end (Claude's tool_use id, unprefixed name) and done(toolUse)
+ok 5 - tool scenario ends with toolcall_end (Claude's tool_use id, unprefixed name) and done(toolUse)
+  ---
+  duration_ms: 128.75825
+  type: 'test'
+  ...
+# Subtest: unsupported native tool intent fails without exposing executable calls
+ok 6 - unsupported native tool intent fails without exposing executable calls
+  ---
+  duration_ms: 79.041
+  type: 'test'
+  ...
+# Subtest: usage maps input/output/cacheRead/cacheWrite with zero cost, message_delta overriding message_start
+ok 7 - usage maps input/output/cacheRead/cacheWrite with zero cost, message_delta overriding message_start
+  ---
+  duration_ms: 110.036583
+  type: 'test'
+  ...
+# Subtest: missing binary → error "claude CLI not found"
+ok 8 - missing binary → error "claude CLI not found"
+  ---
+  duration_ms: 13.483292
+  type: 'test'
+  ...
+# Subtest: signed-out fixture → error "not signed in"
+ok 9 - signed-out fixture → error "not signed in"
+  ---
+  duration_ms: 92.519125
+  type: 'test'
+  ...
+# Subtest: other assistant errors surface their text
+ok 10 - other assistant errors surface their text
+  ---
+  duration_ms: 76.877
+  type: 'test'
+  ...
+# Subtest: result error before message_stop surfaces the result text
+ok 11 - result error before message_stop surfaces the result text
+  ---
+  duration_ms: 75.569833
+  type: 'test'
+  ...
+# Subtest: result error without result text surfaces its errors
+ok 12 - result error without result text surfaces its errors
+  ---
+  duration_ms: 76.254917
+  type: 'test'
+  ...
+# Subtest: result error without result text or errors surfaces its subtype
+ok 13 - result error without result text or errors surfaces its subtype
+  ---
+  duration_ms: 75.37525
+  type: 'test'
+  ...
+# Subtest: refusal stop reason → error
+ok 14 - refusal stop reason → error
+  ---
+  duration_ms: 74.239417
+  type: 'test'
+  ...
+# Subtest: non-zero exit mid-stream → error naming the exit code, stderr logged not shown, process and temp dirs gone
+ok 15 - non-zero exit mid-stream → error naming the exit code, stderr logged not shown, process and temp dirs gone
+  ---
+  duration_ms: 87.0355
+  type: 'test'
+  ...
+# Subtest: exit without stderr names the exit code
+ok 16 - exit without stderr names the exit code
+  ---
+  duration_ms: 78.3265
+  type: 'test'
+  ...
+# Subtest: abort kills the process and ends with error(aborted)
+ok 17 - abort kills the process and ends with error(aborted)
+  ---
+  duration_ms: 89.854542
+  type: 'test'
+  ...
+# Subtest: cwd is an empty temp dir; prompt and mcp config live in a separate private dir
+ok 18 - cwd is an empty temp dir; prompt and mcp config live in a separate private dir
+  ---
+  duration_ms: 72.820292
+  type: 'test'
+  ...
+# Subtest: spawns with the model alias, effort, bridge tools, MCP_TOOL_TIMEOUT and the caller's HOME
+ok 19 - spawns with the model alias, effort, bridge tools, MCP_TOOL_TIMEOUT and the caller's HOME
+  ---
+  duration_ms: 73.06225
+  type: 'test'
+  ...
+# Subtest: preserves existing CLI environment authentication without a subscription guarantee
+ok 20 - preserves existing CLI environment authentication without a subscription guarantee
+  ---
+  duration_ms: 71.663833
+  type: 'test'
+  ...
+# Subtest: does not inject credentials reflected only from LearnHarness's key store
+ok 21 - does not inject credentials reflected only from LearnHarness's key store
+  ---
+  duration_ms: 72.900125
+  type: 'test'
+  ...
+# Subtest: writes one user prompt after local-only control initialization and summary request
+ok 22 - writes one user prompt after local-only control initialization and summary request
+  ---
+  duration_ms: 73.388
+  type: 'test'
+  ...
+# Subtest: parseCliLine ignores non-JSON, system, rate-limit and successful result lines
+ok 23 - parseCliLine ignores non-JSON, system, rate-limit and successful result lines
+  ---
+  duration_ms: 0.103875
+  type: 'test'
+  ...
+# Subtest: trailing toolResults matching a live process continue it: held calls answered, new assistant message streamed, no new spawn
+ok 24 - trailing toolResults matching a live process continue it: held calls answered, new assistant message streamed, no new spawn
+  ---
+  duration_ms: 116.411875
+  type: 'test'
+  ...
+# Subtest: sequential identical calls split one response and correlate results by id, not arguments
+ok 25 - sequential identical calls split one response and correlate results by id, not arguments
+  ---
+  duration_ms: 102.540416
+  type: 'test'
+  ...
+# Subtest: mismatched result id starts fresh and kills the old process
+ok 26 - mismatched result id starts fresh and kills the old process
+  ---
+  duration_ms: 199.907
+  type: 'test'
+  ...
+# Subtest: user message after tool results starts fresh with unfinished calls in the replay
+ok 27 - user message after tool results starts fresh with unfinished calls in the replay
+  ---
+  duration_ms: 197.476916
+  type: 'test'
+  ...
+# Subtest: output while waiting for tool results kills the process
+ok 28 - output while waiting for tool results kills the process
+  ---
+  duration_ms: 88.727417
+  type: 'test'
+  ...
+# claude CLI stderr: tool denied
+# Subtest: unadmitted tool intent never becomes an executable call
+ok 29 - unadmitted tool intent never becomes an executable call
+  ---
+  duration_ms: 86.075334
+  type: 'test'
+  ...
+# Subtest: a CLI-rejected malformed call is not exposed for execution
+ok 30 - a CLI-rejected malformed call is not exposed for execution
+  ---
+  duration_ms: 85.702667
+  type: 'test'
+  ...
+# Subtest: abort while waiting kills the process and closes the bridge
+ok 31 - abort while waiting kills the process and closes the bridge
+  ---
+  duration_ms: 116.394042
+  type: 'test'
+  ...
+# Subtest: idle timeout kills an orphaned waiting process
+ok 32 - idle timeout kills an orphaned waiting process
+  ---
+  duration_ms: 167.601625
+  type: 'test'
+  ...
+# Subtest: a tool result arriving after the idle timeout starts fresh with the call and its result in the replay
+ok 33 - a tool result arriving after the idle timeout starts fresh with the call and its result in the replay
+  ---
+  duration_ms: 531.405167
+  type: 'test'
+  ...
+# Subtest: a tool result arriving late but before the idle timeout still continues the waiting process
+ok 34 - a tool result arriving late but before the idle timeout still continues the waiting process
+  ---
+  duration_ms: 620.502292
+  type: 'test'
+  ...
+# Subtest: CLI denial cannot execute a tool in the native Pi loop
+ok 35 - CLI denial cannot execute a tool in the native Pi loop
+  ---
+  duration_ms: 106.299833
+  type: 'test'
+  ...
+# Subtest: pre-aborted requests do not spawn a process
+ok 36 - pre-aborted requests do not spawn a process
+  ---
+  duration_ms: 0.363833
+  type: 'test'
+  ...
+# Subtest: missing MCP identity fails closed without emitting executable calls
+ok 37 - missing MCP identity fails closed without emitting executable calls
+  ---
+  duration_ms: 114.5315
+  type: 'test'
+  ...
+# Subtest: a parallel identity failure after an admitted slice is reported on continuation, not hidden by replay
+ok 38 - a parallel identity failure after an admitted slice is reported on continuation, not hidden by replay
+  ---
+  duration_ms: 113.44125
+  type: 'test'
+  ...
+# Subtest: output after MCP admission fails continuation instead of silently replaying
+ok 39 - output after MCP admission fails continuation instead of silently replaying
+  ---
+  duration_ms: 116.252417
+  type: 'test'
+  ...
+# Subtest: normal completion escalates termination when the child ignores SIGTERM
+ok 40 - normal completion escalates termination when the child ignores SIGTERM
+  ---
+  duration_ms: 1095.495125
+  type: 'test'
+  ...
+# claude CLI turn failed: Error: synthetic spawn failure
+#     at <anonymous> (/Users/kokinmartinez/Documents/ChatGPT/coqui-learning harness/packages/engine/tests/claude-code-stream.test.ts:914:9)
+#     at startProcess (/Users/kokinmartinez/Documents/ChatGPT/coqui-learning harness/packages/engine/src/agent/claude-code/stream.ts:659:17)
+# Subtest: a synchronous spawn failure removes both temp directories and the bridge
+ok 41 - a synchronous spawn failure removes both temp directories and the bridge
+  ---
+  duration_ms: 8.059791
+  type: 'test'
+  ...
+# claude CLI turn failed: ClaudeLaunchError: Claude Code requires an update
+#     at <anonymous> (/Users/kokinmartinez/Documents/ChatGPT/coqui-learning harness/packages/engine/tests/claude-code-stream.test.ts:913:50)
+#     at startProcess (/Users/kokinmartinez/Documents/ChatGPT/coqui-learning harness/packages/engine/src/agent/claude-code/stream.ts:659:17)
+# Subtest: an asynchronous version-check failure removes both temp directories and the bridge
+ok 42 - an asynchronous version-check failure removes both temp directories and the bridge
+  ---
+  duration_ms: 2.898042
+  type: 'test'
+  ...
+# Subtest: a malformed JSON event shape fails the turn rather than escaping the readline handler
+ok 43 - a malformed JSON event shape fails the turn rather than escaping the readline handler
+  ---
+  duration_ms: 98.4325
+  type: 'test'
+  ...
+# Subtest: a mismatched MCP identity cannot admit a streamed call
+ok 44 - a mismatched MCP identity cannot admit a streamed call
+  ---
+  duration_ms: 111.819209
+  type: 'test'
+  ...
+# Subtest: a changed model prevents reuse of a held process
+ok 45 - a changed model prevents reuse of a held process
+  ---
+  duration_ms: 166.953416
+  type: 'test'
+  ...
+# Subtest: a changed effort prevents reuse of a held process
+ok 46 - a changed effort prevents reuse of a held process
+  ---
+  duration_ms: 168.234708
+  type: 'test'
+  ...
+# Subtest: a changed system prompt prevents reuse of a held process
+ok 47 - a changed system prompt prevents reuse of a held process
+  ---
+  duration_ms: 169.967209
+  type: 'test'
+  ...
+# Subtest: a changed tool schema prevents reuse of a held process
+ok 48 - a changed tool schema prevents reuse of a held process
+  ---
+  duration_ms: 171.542375
+  type: 'test'
+  ...
+# Subtest: a changed tool description prevents reuse of a held process
+ok 49 - a changed tool description prevents reuse of a held process
+  ---
+  duration_ms: 169.848875
+  type: 'test'
+  ...
+# Subtest: a changed history prevents reuse of a held process
+ok 50 - a changed history prevents reuse of a held process
+  ---
+  duration_ms: 169.475084
+  type: 'test'
+  ...
+# Subtest: a changed authentication environment prevents reuse of a held process
+ok 51 - a changed authentication environment prevents reuse of a held process
+  ---
+  duration_ms: 169.271458
+  type: 'test'
+  ...
+# Subtest: one registered stream isolates two sessions with colliding tool IDs and different histories
+ok 52 - one registered stream isolates two sessions with colliding tool IDs and different histories
+  ---
+  duration_ms: 215.512083
+  type: 'test'
+  ...
+# Subtest: one registered stream isolates two sessions with colliding tool IDs and identical histories
+ok 53 - one registered stream isolates two sessions with colliding tool IDs and identical histories
+  ---
+  duration_ms: 210.667041
+  type: 'test'
+  ...
+# Subtest: a caller without a session ID uses fresh replay and retains no held process
+ok 54 - a caller without a session ID uses fresh replay and retains no held process
+  ---
+  duration_ms: 199.765917
+  type: 'test'
+  ...
+# Subtest: CLI window metadata stays on its own process and survives a held-tool continuation
+ok 55 - CLI window metadata stays on its own process and survives a held-tool continuation
+  ---
+  duration_ms: 201.472625
+  type: 'test'
+  ...
+# Subtest: missing/unsupported CLI window never prevents a normal response: {"FAKE_CLAUDE_INIT":"error"}
+ok 56 - missing/unsupported CLI window never prevents a normal response: {"FAKE_CLAUDE_INIT":"error"}
+  ---
+  duration_ms: 73.931542
+  type: 'test'
+  ...
+# Subtest: missing/unsupported CLI window never prevents a normal response: {"FAKE_CLAUDE_WINDOW":"-1"}
+ok 57 - missing/unsupported CLI window never prevents a normal response: {"FAKE_CLAUDE_WINDOW":"-1"}
+  ---
+  duration_ms: 72.745292
+  type: 'test'
+  ...
+# Subtest: missing/unsupported CLI window never prevents a normal response: {}
+ok 58 - missing/unsupported CLI window never prevents a normal response: {}
+  ---
+  duration_ms: 72.29225
+  type: 'test'
+  ...
+# Subtest: two concurrent stream owners keep separate processes
+ok 59 - two concurrent stream owners keep separate processes
+  ---
+  duration_ms: 108.0275
+  type: 'test'
+  ...
+# Subtest: two concurrent stream owners keep separate processes even with identical call IDs and arguments
+ok 60 - two concurrent stream owners keep separate processes even with identical call IDs and arguments
+  ---
+  duration_ms: 107.374792
+  type: 'test'
+  ...
+1..60
+# tests 60
+# suites 0
+# pass 60
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 8507.215917

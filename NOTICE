@@ -1,0 +1,6 @@
+CoquiLearn includes code, prompts, and tests adapted from LearnHarness 0.4.0 by Amos Blomqvist.
+Source: https://github.com/amosblomqvist/learnharness
+Pinned revision: dc4c398d5167865b84b0ccb3ec809eb88bf8f65f
+License: AGPL-3.0-only; see LICENSE.
+Adapted engine source and original regression fixtures are in packages/engine.
+CoquiLearn modifications include the desktop host, private transport, SQLite adapters, UI, review scheduling, imports, evidence, and recovery.

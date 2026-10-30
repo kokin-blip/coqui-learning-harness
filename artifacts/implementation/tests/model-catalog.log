@@ -1,0 +1,215 @@
+TAP version 13
+# Subtest: the model catalog projection
+    # Subtest: serves the keyed providers' catalogs with the picker's DTO shape
+    ok 1 - serves the keyed providers' catalogs with the picker's DTO shape
+      ---
+      duration_ms: 4.318958
+      type: 'test'
+      ...
+    # Subtest: defaults: the strong slot verbatim; null when unset (BYOK, per-session models 2026-09-28)
+    ok 2 - defaults: the strong slot verbatim; null when unset (BYOK, per-session models 2026-09-28)
+      ---
+      duration_ms: 0.068584
+      type: 'test'
+      ...
+    # Subtest: toModelDto projects the raw catalog model verbatim
+    ok 3 - toModelDto projects the raw catalog model verbatim
+      ---
+      duration_ms: 0.109
+      type: 'test'
+      ...
+    1..3
+ok 1 - the model catalog projection
+  ---
+  duration_ms: 4.834708
+  type: 'suite'
+  ...
+# Subtest: the background roles' resolved pins (rolePins)
+    # Subtest: no record → every role is NULL (BYOK: no phantom defaults)
+    ok 1 - no record → every role is NULL (BYOK: no phantom defaults)
+      ---
+      duration_ms: 0.06575
+      type: 'test'
+      ...
+    # Subtest: a slot re-tiers its roles; overrides win for that role only
+    ok 2 - a slot re-tiers its roles; overrides win for that role only
+      ---
+      duration_ms: 0.068458
+      type: 'test'
+      ...
+    # Subtest: catalogRolePins matches the same resolution the engine wiring uses
+    ok 3 - catalogRolePins matches the same resolution the engine wiring uses
+      ---
+      duration_ms: 0.053166
+      type: 'test'
+      ...
+    1..3
+ok 2 - the background roles' resolved pins (rolePins)
+  ---
+  duration_ms: 0.261
+  type: 'suite'
+  ...
+# Subtest: the model slots surface (model slots wave, 2026-09-20)
+    # Subtest: catalogSlots projects the record's tiers — NULL only where a tier holds no model
+    ok 1 - catalogSlots projects the record's tiers — NULL only where a tier holds no model
+      ---
+      duration_ms: 0.073583
+      type: 'test'
+      ...
+    # Subtest: catalogProviders reads keys env-wins, fresh per call
+    ok 2 - catalogProviders reads keys env-wins, fresh per call
+      ---
+      duration_ms: 0.179334
+      type: 'test'
+      ...
+    1..2
+ok 3 - the model slots surface (model slots wave, 2026-09-20)
+  ---
+  duration_ms: 0.3155
+  type: 'suite'
+  ...
+# Subtest: the models-section validation gate
+    # Subtest: accepts a valid slot and rejects unknown provider/model
+    ok 1 - accepts a valid slot and rejects unknown provider/model
+      ---
+      duration_ms: 0.189417
+      type: 'test'
+      ...
+    # Subtest: thinking levels never reject a slot write (owner, interlude 2026-09-22)
+    ok 2 - thinking levels never reject a slot write (owner, interlude 2026-09-22)
+      ---
+      duration_ms: 0.114416
+      type: 'test'
+      ...
+    # Subtest: clampModelsLevels: the slot's own model translates the pin (the owner's exact case)
+    ok 3 - clampModelsLevels: the slot's own model translates the pin (the owner's exact case)
+      ---
+      duration_ms: 0.163958
+      type: 'test'
+      ...
+    # Subtest: accepts empty settings (the clear-slots write)
+    ok 4 - accepts empty settings (the clear-slots write)
+      ---
+      duration_ms: 0.023917
+      type: 'test'
+      ...
+    1..4
+ok 4 - the models-section validation gate
+  ---
+  duration_ms: 0.540292
+  type: 'suite'
+  ...
+# Subtest: the settings validation gate
+    # Subtest: thinking levels never reject a chat write (owner, interlude 2026-09-22)
+    ok 1 - thinking levels never reject a chat write (owner, interlude 2026-09-22)
+      ---
+      duration_ms: 0.087584
+      type: 'test'
+      ...
+    # Subtest: clampChatLevel: the body's model, else the strong slot, translates the pin
+    ok 2 - clampChatLevel: the body's model, else the strong slot, translates the pin
+      ---
+      duration_ms: 0.104333
+      type: 'test'
+      ...
+    # Subtest: rejects unknown providers and models
+    ok 3 - rejects unknown providers and models
+      ---
+      duration_ms: 0.060084
+      type: 'test'
+      ...
+    # Subtest: accepts empty settings (the clear-overrides write)
+    ok 4 - accepts empty settings (the clear-overrides write)
+      ---
+      duration_ms: 0.029
+      type: 'test'
+      ...
+    1..4
+ok 5 - the settings validation gate
+  ---
+  duration_ms: 0.316792
+  type: 'suite'
+  ...
+# Subtest: pi thinking truth (pinned against pi-ai upgrades)
+    # Subtest: glm-5.3-flash: low|high|max; anything else clamps to the nearest
+    ok 1 - glm-5.3-flash: low|high|max; anything else clamps to the nearest
+      ---
+      duration_ms: 0.054166
+      type: 'test'
+      ...
+    # Subtest: the engine factory clamps explicit levels; unknown models throw honestly
+    ok 2 - the engine factory clamps explicit levels; unknown models throw honestly
+      ---
+      duration_ms: 0.244292
+      type: 'test'
+      ...
+    # Subtest: UNSET levels resolve from the baked DEFAULT_THINKING_ORDER (owner, 2026-09-22)
+    ok 3 - UNSET levels resolve from the baked DEFAULT_THINKING_ORDER (owner, 2026-09-22)
+      ---
+      duration_ms: 0.352
+      type: 'test'
+      ...
+    # Subtest: the legacy piEngineFor role entry point throws honestly (BYOK: no pins)
+    ok 4 - the legacy piEngineFor role entry point throws honestly (BYOK: no pins)
+      ---
+      duration_ms: 0.088834
+      type: 'test'
+      ...
+    1..4
+ok 6 - pi thinking truth (pinned against pi-ai upgrades)
+  ---
+  duration_ms: 0.77175
+  type: 'suite'
+  ...
+# Subtest: the claude-code provider (native CLI authentication, no LearnHarness key)
+    # Subtest: modelCatalog() lists claude-code opus/sonnet/haiku when the CLI is installed
+    ok 1 - modelCatalog() lists claude-code opus/sonnet/haiku when the CLI is installed
+      ---
+      duration_ms: 1.146917
+      type: 'test'
+      ...
+    # Subtest: catalogProviders() marks claude-code present when the CLI is installed
+    ok 2 - catalogProviders() marks claude-code present when the CLI is installed
+      ---
+      duration_ms: 0.432083
+      type: 'test'
+      ...
+    # Subtest: catalogProviders() marks claude-code absent and modelCatalog() hides it when the CLI is missing
+    ok 3 - catalogProviders() marks claude-code absent and modelCatalog() hides it when the CLI is missing
+      ---
+      duration_ms: 0.6895
+      type: 'test'
+      ...
+    # Subtest: catalogContextLimits() never advertises placeholder CLI limits, even when installed
+    ok 4 - catalogContextLimits() never advertises placeholder CLI limits, even when installed
+      ---
+      duration_ms: 0.500208
+      type: 'test'
+      ...
+    # Subtest: piEngineForSpec({ provider: "claude-code", id: "sonnet" }) resolves
+    ok 5 - piEngineForSpec({ provider: "claude-code", id: "sonnet" }) resolves
+      ---
+      duration_ms: 0.036292
+      type: 'test'
+      ...
+    # Subtest: providerKeyPresent("claude-code") requires both explicit opt-in and executable presence
+    ok 6 - providerKeyPresent("claude-code") requires both explicit opt-in and executable presence
+      ---
+      duration_ms: 1.2685
+      type: 'test'
+      ...
+    1..6
+ok 7 - the claude-code provider (native CLI authentication, no LearnHarness key)
+  ---
+  duration_ms: 4.123959
+  type: 'suite'
+  ...
+1..7
+# tests 26
+# suites 7
+# pass 26
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 422.973375

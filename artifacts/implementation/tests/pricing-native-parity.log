@@ -1,0 +1,22 @@
+TAP version 13
+# Subtest: API catalog models price through Pi at every tier boundary; native CLI stays unpriced and saved usage is never mutated
+ok 1 - API catalog models price through Pi at every tier boundary; native CLI stays unpriced and saved usage is never mutated
+  ---
+  duration_ms: 14.351708
+  type: 'test'
+  ...
+# Subtest: job capture preserves individual tier sizes and one-hour writes; old tier aggregates are unknown
+ok 2 - job capture preserves individual tier sizes and one-hour writes; old tier aggregates are unknown
+  ---
+  duration_ms: 0.217125
+  type: 'test'
+  ...
+1..2
+# tests 2
+# suites 0
+# pass 2
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 421.284333

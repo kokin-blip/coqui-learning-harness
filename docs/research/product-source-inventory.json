@@ -1,0 +1,1057 @@
+{
+  "kind": "static-source-inventory",
+  "commit": "dc4c398d5167865b84b0ccb3ec809eb88bf8f65f",
+  "version": "0.4.0",
+  "route_count": 34,
+  "routes": [
+    {
+      "path": "/api/activity/abort",
+      "source": "app/api/activity/abort/route.ts",
+      "methods": [
+        {
+          "method": "POST",
+          "line": 22
+        }
+      ]
+    },
+    {
+      "path": "/api/activity",
+      "source": "app/api/activity/route.ts",
+      "methods": [
+        {
+          "method": "GET",
+          "line": 12
+        }
+      ]
+    },
+    {
+      "path": "/api/chat",
+      "source": "app/api/chat/route.ts",
+      "methods": [
+        {
+          "method": "POST",
+          "line": 3
+        }
+      ]
+    },
+    {
+      "path": "/api/chats/[id]/artifact-ui",
+      "source": "app/api/chats/[id]/artifact-ui/route.ts",
+      "methods": [
+        {
+          "method": "POST",
+          "line": 15
+        }
+      ]
+    },
+    {
+      "path": "/api/chats/[id]/dismiss",
+      "source": "app/api/chats/[id]/dismiss/route.ts",
+      "methods": [
+        {
+          "method": "POST",
+          "line": 25
+        }
+      ]
+    },
+    {
+      "path": "/api/chats/[id]/markdown",
+      "source": "app/api/chats/[id]/markdown/route.ts",
+      "methods": [
+        {
+          "method": "GET",
+          "line": 26
+        }
+      ]
+    },
+    {
+      "path": "/api/chats/[id]",
+      "source": "app/api/chats/[id]/route.ts",
+      "methods": [
+        {
+          "method": "GET",
+          "line": 3
+        },
+        {
+          "method": "PUT",
+          "line": 36
+        },
+        {
+          "method": "DELETE",
+          "line": 68
+        }
+      ]
+    },
+    {
+      "path": "/api/chats/[id]/settings",
+      "source": "app/api/chats/[id]/settings/route.ts",
+      "methods": [
+        {
+          "method": "PUT",
+          "line": 27
+        }
+      ]
+    },
+    {
+      "path": "/api/chats/[id]/steer",
+      "source": "app/api/chats/[id]/steer/route.ts",
+      "methods": [
+        {
+          "method": "POST",
+          "line": 16
+        }
+      ]
+    },
+    {
+      "path": "/api/chats/[id]/stream",
+      "source": "app/api/chats/[id]/stream/route.ts",
+      "methods": [
+        {
+          "method": "GET",
+          "line": 18
+        }
+      ]
+    },
+    {
+      "path": "/api/chats",
+      "source": "app/api/chats/route.ts",
+      "methods": [
+        {
+          "method": "GET",
+          "line": 13
+        },
+        {
+          "method": "POST",
+          "line": 22
+        }
+      ]
+    },
+    {
+      "path": "/api/claude-code",
+      "source": "app/api/claude-code/route.ts",
+      "methods": [
+        {
+          "method": "GET",
+          "line": 4
+        }
+      ]
+    },
+    {
+      "path": "/api/custom-provider",
+      "source": "app/api/custom-provider/route.ts",
+      "methods": [
+        {
+          "method": "GET",
+          "line": 6
+        },
+        {
+          "method": "POST",
+          "line": 7
+        },
+        {
+          "method": "PATCH",
+          "line": 8
+        },
+        {
+          "method": "DELETE",
+          "line": 9
+        }
+      ]
+    },
+    {
+      "path": "/api/events",
+      "source": "app/api/events/route.ts",
+      "methods": [
+        {
+          "method": "GET",
+          "line": 13
+        }
+      ]
+    },
+    {
+      "path": "/api/graph/costs",
+      "source": "app/api/graph/costs/route.ts",
+      "methods": [
+        {
+          "method": "GET",
+          "line": 17
+        }
+      ]
+    },
+    {
+      "path": "/api/graph/coverage/extract",
+      "source": "app/api/graph/coverage/extract/route.ts",
+      "methods": [
+        {
+          "method": "POST",
+          "line": 17
+        }
+      ]
+    },
+    {
+      "path": "/api/graph/import",
+      "source": "app/api/graph/import/route.ts",
+      "methods": [
+        {
+          "method": "POST",
+          "line": 43
+        }
+      ]
+    },
+    {
+      "path": "/api/graph/nodes/[id]",
+      "source": "app/api/graph/nodes/[id]/route.ts",
+      "methods": [
+        {
+          "method": "DELETE",
+          "line": 20
+        }
+      ]
+    },
+    {
+      "path": "/api/graph/positions",
+      "source": "app/api/graph/positions/route.ts",
+      "methods": [
+        {
+          "method": "PUT",
+          "line": 16
+        }
+      ]
+    },
+    {
+      "path": "/api/graph/render-settings",
+      "source": "app/api/graph/render-settings/route.ts",
+      "methods": [
+        {
+          "method": "GET",
+          "line": 19
+        },
+        {
+          "method": "PUT",
+          "line": 23
+        }
+      ]
+    },
+    {
+      "path": "/api/graph",
+      "source": "app/api/graph/route.ts",
+      "methods": [
+        {
+          "method": "GET",
+          "line": 11
+        }
+      ]
+    },
+    {
+      "path": "/api/graph/status",
+      "source": "app/api/graph/status/route.ts",
+      "methods": [
+        {
+          "method": "GET",
+          "line": 14
+        }
+      ]
+    },
+    {
+      "path": "/api/jobs",
+      "source": "app/api/jobs/route.ts",
+      "methods": [
+        {
+          "method": "GET",
+          "line": 14
+        }
+      ]
+    },
+    {
+      "path": "/api/keys/[id]",
+      "source": "app/api/keys/[id]/route.ts",
+      "methods": [
+        {
+          "method": "PUT",
+          "line": 25
+        },
+        {
+          "method": "DELETE",
+          "line": 44
+        }
+      ]
+    },
+    {
+      "path": "/api/keys",
+      "source": "app/api/keys/route.ts",
+      "methods": [
+        {
+          "method": "GET",
+          "line": 24
+        }
+      ]
+    },
+    {
+      "path": "/api/models",
+      "source": "app/api/models/route.ts",
+      "methods": [
+        {
+          "method": "GET",
+          "line": 9
+        }
+      ]
+    },
+    {
+      "path": "/api/search",
+      "source": "app/api/search/route.ts",
+      "methods": [
+        {
+          "method": "GET",
+          "line": 16
+        }
+      ]
+    },
+    {
+      "path": "/api/settings/[section]",
+      "source": "app/api/settings/[section]/route.ts",
+      "methods": [
+        {
+          "method": "PUT",
+          "line": 53
+        }
+      ]
+    },
+    {
+      "path": "/api/settings/prompts/[...segment]",
+      "source": "app/api/settings/prompts/[...segment]/route.ts",
+      "methods": [
+        {
+          "method": "PUT",
+          "line": 45
+        },
+        {
+          "method": "DELETE",
+          "line": 63
+        }
+      ]
+    },
+    {
+      "path": "/api/settings/prompts",
+      "source": "app/api/settings/prompts/route.ts",
+      "methods": [
+        {
+          "method": "GET",
+          "line": 23
+        }
+      ]
+    },
+    {
+      "path": "/api/settings",
+      "source": "app/api/settings/route.ts",
+      "methods": [
+        {
+          "method": "GET",
+          "line": 21
+        }
+      ]
+    },
+    {
+      "path": "/api/stt/token",
+      "source": "app/api/stt/token/route.ts",
+      "methods": [
+        {
+          "method": "GET",
+          "line": 18
+        }
+      ]
+    },
+    {
+      "path": "/api/subscriptions/browser",
+      "source": "app/api/subscriptions/browser/route.ts",
+      "methods": [
+        {
+          "method": "GET",
+          "line": 5
+        },
+        {
+          "method": "POST",
+          "line": 6
+        }
+      ]
+    },
+    {
+      "path": "/api/subscriptions",
+      "source": "app/api/subscriptions/route.ts",
+      "methods": [
+        {
+          "method": "GET",
+          "line": 5
+        },
+        {
+          "method": "POST",
+          "line": 6
+        }
+      ]
+    }
+  ],
+  "dependencies": {
+    "@earendil-works/pi-agent-core": {
+      "declared": "1.4.0",
+      "source_mentions": [
+        "components/model-picker.tsx",
+        "components/setup-dialog.tsx",
+        "components/session-core.ts",
+        "components/thinking-default.ts",
+        "components/settings/agent-section.tsx",
+        "src/core/compaction.ts",
+        "src/core/settings.ts",
+        "src/core/native-messages.ts",
+        "src/core/settings-resolution.ts",
+        "src/server/compaction.ts",
+        "src/server/turn-service.ts",
+        "src/server/model-catalog.ts",
+        "src/server/jobs.ts",
+        "src/server/settings-body.ts",
+        "src/agent/tool-execute.ts",
+        "src/agent/teacher-agent.ts",
+        "src/agent/subscription-request-cycle.ts",
+        "src/agent/tools.ts",
+        "src/agent/models.ts",
+        "src/agent/tools/read.ts",
+        "src/agent/tools/find.ts",
+        "src/agent/tools/probe.ts",
+        "src/agent/tools/jobs.ts",
+        "src/agent/tools/send-to-user.ts",
+        "src/agent/tools/ls.ts",
+        "src/agent/tools/practice.ts",
+        "src/agent/tools/grep.ts",
+        "src/agent/tools/graph.ts",
+        "src/agent/tools/heal.ts",
+        "src/agent/tools/web.ts",
+        "src/agent/tools/plan.ts",
+        "src/agent/tools/pdf-read.ts",
+        "src/agent/subagents/submit-agent.ts",
+        "src/agent/subagents/pi-run.ts",
+        "src/agent/subagents/demo-builder.ts",
+        "src/agent/subagents/researcher.ts",
+        "src/agent/subagents/extraction.ts",
+        "src/server/pi/ui-stream.ts",
+        "src/server/pi/call-ids.ts",
+        "src/core/contracts/chat.ts",
+        "src/core/contracts/models.ts"
+      ]
+    },
+    "@earendil-works/pi-ai": {
+      "declared": "1.4.0",
+      "source_mentions": [
+        "components/session-core.ts",
+        "src/core/session-markdown.ts",
+        "src/core/compaction.ts",
+        "src/core/context-usage.ts",
+        "src/core/view.ts",
+        "src/core/plan-blocks.ts",
+        "src/core/native-messages.ts",
+        "src/server/web-subscriptions.ts",
+        "src/server/compaction.ts",
+        "src/server/pricing.ts",
+        "src/server/turn-service.ts",
+        "src/server/model-catalog.ts",
+        "src/server/custom-provider.ts",
+        "src/server/chat-handler.ts",
+        "src/agent/teacher-agent.ts",
+        "src/agent/subscription-request-cycle.ts",
+        "src/agent/subscription-stream.ts",
+        "src/agent/models.ts",
+        "src/agent/subscription-bridge.ts",
+        "src/agent/chatgpt-bridge.ts",
+        "src/agent/chatgpt-stream.ts",
+        "src/agent/claude-code/reuse-context.ts",
+        "src/agent/claude-code/tool-bridge.ts",
+        "src/agent/claude-code/stream.ts",
+        "src/agent/claude-code/cli-events.ts",
+        "src/agent/claude-code/transcript.ts",
+        "src/agent/claude-code/provider.ts",
+        "src/agent/tools/read.ts",
+        "src/agent/subagents/submit-agent.ts",
+        "src/agent/subagents/pi-run.ts",
+        "src/agent/subagents/demo-builder.ts",
+        "src/agent/subagents/researcher.ts",
+        "src/agent/subagents/visual-maker.ts",
+        "src/agent/subagents/extraction.ts",
+        "src/agent/subagents/pdf-reader.ts",
+        "src/core/contracts/subscriptions.ts",
+        "electron/subscriptions.cjs"
+      ]
+    },
+    "@modelcontextprotocol/sdk": {
+      "declared": "1.32.1",
+      "source_mentions": [
+        "src/agent/claude-code/tool-bridge.ts"
+      ]
+    },
+    "@mozilla/readability": {
+      "declared": "^0.6.0",
+      "source_mentions": [
+        "src/agent/tools/web.ts"
+      ]
+    },
+    "@radix-ui/react-use-controllable-state": {
+      "declared": "^1.2.6",
+      "source_mentions": [
+        "components/ai-elements/reasoning.tsx"
+      ]
+    },
+    "@resvg/resvg-js": {
+      "declared": "^2.6.2",
+      "source_mentions": [
+        "src/agent/subagents/headless.ts"
+      ]
+    },
+    "@rive-app/react-webgl2": {
+      "declared": "^4.32.1",
+      "source_mentions": []
+    },
+    "@silvia-odwyer/photon-node": {
+      "declared": "0.3.4",
+      "source_mentions": [
+        "src/agent/image-processing/photon.mjs"
+      ]
+    },
+    "@streamdown/cjk": {
+      "declared": "^1.0.3",
+      "source_mentions": [
+        "components/ai-elements/message.tsx"
+      ]
+    },
+    "@streamdown/code": {
+      "declared": "^1.1.1",
+      "source_mentions": [
+        "components/ai-elements/message.tsx"
+      ]
+    },
+    "@streamdown/math": {
+      "declared": "^1.0.2",
+      "source_mentions": [
+        "components/ai-elements/message.tsx"
+      ]
+    },
+    "@streamdown/mermaid": {
+      "declared": "^1.0.2",
+      "source_mentions": [
+        "components/mermaid-render.ts"
+      ]
+    },
+    "@xyflow/react": {
+      "declared": "^12.11.3",
+      "source_mentions": []
+    },
+    "ansi-to-react": {
+      "declared": "^6.2.6",
+      "source_mentions": []
+    },
+    "class-variance-authority": {
+      "declared": "^0.7.1",
+      "source_mentions": [
+        "components/ui/button-group.tsx",
+        "components/ui/button.tsx"
+      ]
+    },
+    "clsx": {
+      "declared": "^2.1.1",
+      "source_mentions": []
+    },
+    "cmdk": {
+      "declared": "^1.1.1",
+      "source_mentions": []
+    },
+    "d3-force": {
+      "declared": "^3.0.0",
+      "source_mentions": [
+        "components/graph-view.tsx",
+        "components/graph-canvas.ts",
+        "src/core/layout.ts"
+      ]
+    },
+    "d3-selection": {
+      "declared": "^3.0.0",
+      "source_mentions": [
+        "components/graph-canvas.ts"
+      ]
+    },
+    "d3-shape": {
+      "declared": "^3.2.0",
+      "source_mentions": [
+        "components/plan-block.tsx"
+      ]
+    },
+    "d3-zoom": {
+      "declared": "^3.0.0",
+      "source_mentions": [
+        "components/graph-canvas.ts"
+      ]
+    },
+    "dagre-d3-es": {
+      "declared": "7.0.14",
+      "source_mentions": [
+        "components/plan-block.tsx"
+      ]
+    },
+    "electron-updater": {
+      "declared": "^6.8.9",
+      "source_mentions": [
+        "electron/main.cjs"
+      ]
+    },
+    "embla-carousel-react": {
+      "declared": "^8.6.0",
+      "source_mentions": []
+    },
+    "jose": {
+      "declared": "^6.2.12",
+      "source_mentions": [
+        "electron/chatgpt.cjs"
+      ]
+    },
+    "katex": {
+      "declared": "0.18.2",
+      "source_mentions": [
+        "app/layout.tsx",
+        "components/md-blocks.tsx",
+        "components/latex-glyph.tsx",
+        "components/session-find-dom.ts",
+        "src/core/content-reader.ts"
+      ]
+    },
+    "linkedom": {
+      "declared": "^0.18.13",
+      "source_mentions": [
+        "components/focus-hygiene.ts",
+        "components/enter-submits.ts",
+        "components/session-find-dom.ts",
+        "src/agent/tools/web.ts"
+      ]
+    },
+    "lucide-react": {
+      "declared": "^1.33.0",
+      "source_mentions": [
+        "components/activity-dock.tsx",
+        "components/md-blocks.tsx",
+        "components/dictation.tsx",
+        "components/question-dock.tsx",
+        "components/minimal-home.tsx",
+        "components/home.tsx",
+        "components/chain-table.tsx",
+        "components/practice-dock.tsx",
+        "components/composer.tsx",
+        "components/composer-actions.tsx",
+        "components/session-overlay.tsx",
+        "components/sidebar.tsx",
+        "components/file-path-chip.tsx",
+        "components/chat.tsx",
+        "components/thinking-block.tsx",
+        "components/file-path-drop-zone.tsx",
+        "components/graph-view.tsx",
+        "components/graph-context-card.tsx",
+        "components/session-find.tsx",
+        "components/plan-block.tsx",
+        "components/artifacts/steer-card.tsx",
+        "components/artifacts/probe-done-card.tsx",
+        "components/artifacts/live-tool-card.tsx",
+        "components/artifacts/tool-call-card.tsx",
+        "components/artifacts/demo-card.tsx",
+        "components/artifacts/visual-card.tsx",
+        "components/artifacts/dispatch-card.tsx",
+        "components/ai-elements/reasoning.tsx",
+        "components/ai-elements/conversation.tsx",
+        "components/ai-elements/message.tsx"
+      ]
+    },
+    "mdast-util-from-markdown": {
+      "declared": "2.0.3",
+      "source_mentions": [
+        "src/core/content-reader.ts"
+      ]
+    },
+    "mdast-util-math": {
+      "declared": "3.0.0",
+      "source_mentions": [
+        "src/core/content-reader.ts"
+      ]
+    },
+    "media-chrome": {
+      "declared": "^4.19.2",
+      "source_mentions": []
+    },
+    "micromark-extension-math": {
+      "declared": "3.1.0",
+      "source_mentions": [
+        "src/core/content-reader.ts"
+      ]
+    },
+    "mermaid": {
+      "declared": "^11.17.0",
+      "source_mentions": [
+        "components/md-blocks.tsx",
+        "components/mermaid-render.ts",
+        "components/session-overlay.tsx",
+        "components/pan-zoom.ts",
+        "components/chat.tsx",
+        "components/plan-block.tsx",
+        "components/mermaid-error.tsx",
+        "components/ai-elements/reasoning.tsx",
+        "components/ai-elements/message.tsx",
+        "src/agent/tools/jobs.ts",
+        "src/agent/tools/mermaid-plan.ts",
+        "src/agent/tools/plan.ts",
+        "src/core/contracts/jobs.ts",
+        "src/core/contracts/plan.ts"
+      ]
+    },
+    "motion": {
+      "declared": "^13.1.1",
+      "source_mentions": [
+        "components/phase-divider.tsx",
+        "components/extraction-coverage.tsx",
+        "components/sidebar.tsx",
+        "components/chat.tsx",
+        "components/graph-canvas.ts",
+        "components/braille-spinner.tsx",
+        "components/ai-elements/reasoning.tsx",
+        "components/ai-elements/shimmer.tsx"
+      ]
+    },
+    "nanoid": {
+      "declared": "^6.0.1",
+      "source_mentions": [
+        "src/core/contracts/graph.ts"
+      ]
+    },
+    "next": {
+      "declared": "^16.4.3",
+      "source_mentions": [
+        "app/layout.tsx",
+        "app/settings/page.tsx",
+        "app/api/chats/[id]/settings/route.ts",
+        "app/api/chats/[id]/dismiss/route.ts",
+        "app/api/chats/[id]/steer/route.ts",
+        "app/api/graph/import/route.ts",
+        "app/api/settings/[section]/route.ts",
+        "app/chat/[id]/page.tsx",
+        "components/activity-dock.tsx",
+        "components/answered-card.tsx",
+        "components/dictation.tsx",
+        "components/question-dock.tsx",
+        "components/model-picker.tsx",
+        "components/settings-signal.ts",
+        "components/delete-session-dialog.tsx",
+        "components/new-session.tsx",
+        "components/menu-shell.tsx",
+        "components/setup-dialog.tsx",
+        "components/phase-divider.tsx",
+        "components/home.tsx",
+        "components/queued-steers.tsx",
+        "components/session-core.ts",
+        "components/focus-hygiene.ts",
+        "components/chain-table.tsx",
+        "components/dictation-state.ts",
+        "components/extraction-coverage.tsx",
+        "components/keyboard-shortcuts.tsx",
+        "components/composer.tsx",
+        "components/abort-turn-dialog.tsx",
+        "components/sidebar.tsx",
+        "components/chat.tsx",
+        "components/path-input.tsx",
+        "components/graph-view.tsx",
+        "components/enter-submits.ts",
+        "components/graph-canvas.ts",
+        "components/path-input-dom.ts",
+        "components/settings/appearance-section.tsx",
+        "components/settings/subscription-connections.tsx",
+        "components/settings/chatgpt-connection.tsx",
+        "components/settings/claude-code-status.tsx",
+        "components/settings/keyboard-section.tsx",
+        "components/settings/keys-section.tsx",
+        "components/settings/appearance.tsx",
+        "components/settings/settings-dialog.tsx",
+        "components/settings/agent-section.tsx",
+        "components/settings/update-settings.tsx",
+        "components/settings/controls.tsx",
+        "components/artifacts/demo-card.tsx",
+        "components/artifacts/visual-card.tsx",
+        "components/artifacts/svg-image.tsx",
+        "components/ai-elements/reasoning.tsx",
+        "components/ai-elements/message.tsx",
+        "src/core/keyboard.ts",
+        "src/core/question-core.ts",
+        "src/core/graph-deletion.ts",
+        "src/core/content-reader.ts",
+        "src/core/compaction.ts",
+        "src/core/settings.ts",
+        "src/core/plan-tree.ts",
+        "src/core/view.ts",
+        "src/core/file-paths.ts",
+        "src/core/phases.ts",
+        "src/core/math-delims.ts",
+        "src/core/input-events.ts",
+        "src/core/ports.ts",
+        "src/core/layout-settle.ts",
+        "src/core/layout.ts",
+        "src/core/native-messages.ts",
+        "src/server/web-subscription-http.ts",
+        "src/server/turn-runs.ts",
+        "src/server/search.ts",
+        "src/server/chats.ts",
+        "src/server/compaction.ts",
+        "src/server/turn-service.ts",
+        "src/server/jobs.ts",
+        "src/server/turn-liveness.ts",
+        "src/server/custom-provider.ts",
+        "src/server/chat-handler.ts",
+        "src/agent/provider-events.ts",
+        "src/agent/tool-execute.ts",
+        "src/agent/teacher-agent.ts",
+        "src/agent/tools.ts",
+        "src/store/chats.ts",
+        "src/store/jobs.ts",
+        "src/store/graph.ts",
+        "src/agent/tools/probe.ts",
+        "src/agent/tools/practice.ts",
+        "src/agent/tools/plan.ts",
+        "src/agent/subagents/aborts.ts",
+        "src/agent/subagents/researcher.ts",
+        "src/agent/subagents/visual-maker.ts",
+        "src/agent/subagents/extraction.ts",
+        "src/agent/subagents/bg-llm-semaphore.ts",
+        "src/agent/subagents/runner.ts",
+        "src/agent/subagents/headless.ts",
+        "src/agent/image-processing/mime.mjs",
+        "src/agent/image-processing/resize-core.mjs",
+        "src/server/pi/ui-stream.ts",
+        "src/server/pi/call-ids.ts",
+        "src/core/contracts/chat.ts",
+        "electron/chatgpt.cjs",
+        "electron/subscriptions.cjs",
+        "electron/main.cjs"
+      ]
+    },
+    "next-themes": {
+      "declared": "^0.4.6",
+      "source_mentions": []
+    },
+    "pdfjs-dist": {
+      "declared": "^6.3.289",
+      "source_mentions": [
+        "src/agent/subagents/pdf-ops.ts",
+        "src/agent/subagents/headless.ts"
+      ]
+    },
+    "puppeteer-core": {
+      "declared": "^25.8.0",
+      "source_mentions": [
+        "src/agent/subagents/headless.ts"
+      ]
+    },
+    "radix-ui": {
+      "declared": "^1.6.7",
+      "source_mentions": [
+        "components/ui/button-group.tsx",
+        "components/ui/tooltip.tsx",
+        "components/ui/separator.tsx",
+        "components/ui/button.tsx",
+        "components/ui/collapsible.tsx",
+        "components/ai-elements/reasoning.tsx"
+      ]
+    },
+    "react": {
+      "declared": "^19.2.8",
+      "source_mentions": [
+        "components/dock-height.ts",
+        "components/activity-dock.tsx",
+        "components/md-blocks.tsx",
+        "components/answered-card.tsx",
+        "components/stats-bar.tsx",
+        "components/dictation.tsx",
+        "components/question-dock.tsx",
+        "components/minimal-home.tsx",
+        "components/model-picker.tsx",
+        "components/settings-signal.ts",
+        "components/delete-session-dialog.tsx",
+        "components/practice-cards.tsx",
+        "components/new-session.tsx",
+        "components/session-navigation.tsx",
+        "components/menu-shell.tsx",
+        "components/plan-window.tsx",
+        "components/jobs-context.ts",
+        "components/reading-thinking.tsx",
+        "components/backdrop-dismiss.ts",
+        "components/confidence-rail.tsx",
+        "components/server-events.tsx",
+        "components/setup-dialog.tsx",
+        "components/field-cycle.ts",
+        "components/home.tsx",
+        "components/model-catalog.ts",
+        "components/setup-cta.tsx",
+        "components/delete-node-dialog.tsx",
+        "components/chain-table.tsx",
+        "components/dictation-state.ts",
+        "components/extraction-coverage.tsx",
+        "components/session.ts",
+        "components/practice-dock.tsx",
+        "components/keyboard-shortcuts.tsx",
+        "components/composer.tsx",
+        "components/abort-turn-dialog.tsx",
+        "components/composer-actions.tsx",
+        "components/session-overlay.tsx",
+        "components/sidebar.tsx",
+        "components/file-path-chip.tsx",
+        "components/chat.tsx",
+        "components/path-input.tsx",
+        "components/dictation-language.tsx",
+        "components/thinking-block.tsx",
+        "components/file-path-drop-zone.tsx",
+        "components/graph-view.tsx",
+        "components/enter-submits.ts",
+        "components/top-bar.tsx",
+        "components/graph-context-card.tsx",
+        "components/session-find.tsx",
+        "components/popover-dismiss.ts",
+        "components/dictation-preference.ts",
+        "components/plan-block.tsx",
+        "components/notes-import.tsx",
+        "components/ui/tooltip.tsx",
+        "components/ui/hint.tsx",
+        "components/ui/separator.tsx",
+        "components/ui/button.tsx",
+        "components/ui/textarea.tsx",
+        "components/ui/input.tsx",
+        "components/settings/connection-controls.tsx",
+        "components/settings/appearance-section.tsx",
+        "components/settings/subscription-connections.tsx",
+        "components/settings/chatgpt-connection.tsx",
+        "components/settings/search-menu-list.tsx",
+        "components/settings/claude-code-status.tsx",
+        "components/settings/model-menu.tsx",
+        "components/settings/keyboard-section.tsx",
+        "components/settings/keys-section.tsx",
+        "components/settings/appearance.tsx",
+        "components/settings/settings-dialog.tsx",
+        "components/settings/agent-section.tsx",
+        "components/settings/update-settings.tsx",
+        "components/settings/controls.tsx",
+        "components/settings/subscription-client.ts",
+        "components/artifacts/steer-card.tsx",
+        "components/artifacts/probe-done-card.tsx",
+        "components/artifacts/live-tool-card.tsx",
+        "components/artifacts/tool-call-card.tsx",
+        "components/artifacts/demo-card.tsx",
+        "components/artifacts/index.ts",
+        "components/artifacts/visual-card.tsx",
+        "components/artifacts/dispatch-card.tsx",
+        "components/ai-elements/reasoning.tsx",
+        "components/ai-elements/shimmer.tsx",
+        "components/ai-elements/conversation.tsx",
+        "components/ai-elements/message.tsx",
+        "src/core/view.ts",
+        "src/core/input-events.ts",
+        "src/core/native-messages.ts",
+        "src/server/dismissal-park.ts",
+        "src/server/chat-handler.ts",
+        "src/core/contracts/plan.ts",
+        "electron/main.cjs"
+      ]
+    },
+    "react-dom": {
+      "declared": "^19.2.8",
+      "source_mentions": [
+        "components/delete-session-dialog.tsx",
+        "components/practice-cards.tsx",
+        "components/menu-shell.tsx",
+        "components/setup-dialog.tsx",
+        "components/delete-node-dialog.tsx",
+        "components/abort-turn-dialog.tsx",
+        "components/path-input.tsx",
+        "components/settings/connection-controls.tsx",
+        "components/settings/settings-dialog.tsx"
+      ]
+    },
+    "react-jsx-parser": {
+      "declared": "^2.4.1",
+      "source_mentions": []
+    },
+    "remark-breaks": {
+      "declared": "^4.0.0",
+      "source_mentions": [
+        "components/ai-elements/reasoning.tsx",
+        "components/ai-elements/message.tsx"
+      ]
+    },
+    "streamdown": {
+      "declared": "^2.5.0",
+      "source_mentions": [
+        "components/md-blocks.tsx",
+        "components/mermaid-render.ts",
+        "components/mermaid-error.tsx",
+        "components/ai-elements/reasoning.tsx",
+        "components/ai-elements/message.tsx"
+      ]
+    },
+    "tailwind-merge": {
+      "declared": "^3.6.0",
+      "source_mentions": []
+    },
+    "tokenlens": {
+      "declared": "^1.3.1",
+      "source_mentions": []
+    },
+    "turndown": {
+      "declared": "^7.2.4",
+      "source_mentions": [
+        "src/agent/tools/web.ts"
+      ]
+    },
+    "typebox": {
+      "declared": "^1.3.27",
+      "source_mentions": [
+        "src/core/question-core.ts",
+        "src/core/tool-parts.ts",
+        "src/agent/tool-execute.ts",
+        "src/agent/tools.ts",
+        "src/agent/tools/read.ts",
+        "src/agent/tools/find.ts",
+        "src/agent/tools/jobs.ts",
+        "src/agent/tools/send-to-user.ts",
+        "src/agent/tools/ls.ts",
+        "src/agent/tools/practice.ts",
+        "src/agent/tools/grep.ts",
+        "src/agent/tools/graph.ts",
+        "src/agent/tools/web.ts",
+        "src/agent/tools/plan.ts",
+        "src/agent/tools/pdf-read.ts",
+        "src/agent/subagents/submit-agent.ts",
+        "src/agent/subagents/demo-builder.ts",
+        "src/agent/subagents/visual-maker.ts",
+        "src/agent/subagents/extraction.ts",
+        "src/agent/subagents/pdf-reader.ts",
+        "src/core/contracts/probe.ts"
+      ]
+    },
+    "use-stick-to-bottom": {
+      "declared": "^1.1.6",
+      "source_mentions": [
+        "components/session-navigation.tsx",
+        "components/chat.tsx",
+        "components/ai-elements/conversation.tsx"
+      ]
+    },
+    "zod": {
+      "declared": "^4.4.3",
+      "source_mentions": [
+        "src/core/tool-parts.ts",
+        "src/agent/claude-code/tool-bridge.ts",
+        "src/agent/subagents/submit-agent.ts",
+        "src/agent/subagents/extraction.ts",
+        "src/agent/subagents/pdf-reader.ts"
+      ]
+    }
+  },
+  "limits": [
+    "Mentions are lexical, not proof of import or runtime execution.",
+    "Only app/api/**/route.ts exported HTTP function and const declarations are enumerated.",
+    "No application code or tests were executed."
+  ]
+}

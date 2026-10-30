@@ -1,0 +1,387 @@
+{
+  "kind": "selected-file-byte-and-source-comparison",
+  "audit_date": "2026-10-29",
+  "tag_name": "v0.3.8",
+  "annotated_tag_object": "4354a9bc12c2d8fced227a2584d77653412057b2",
+  "peeled_tag_commit": "3dc88472eea41eed0d5e5f29c2f16f8d063c415b",
+  "main_commit": "dc4c398d5167865b84b0ccb3ec809eb88bf8f65f",
+  "extracted_files": [
+    {
+      "path": "electron/chatgpt.cjs",
+      "shipped_bytes": 26716,
+      "shipped_sha256": "011c46b4942c156e61da529d05d8bfba8dcef5712860f6e44166618554c7c505",
+      "tag_sha256": "011c46b4942c156e61da529d05d8bfba8dcef5712860f6e44166618554c7c505",
+      "byte_equal_to_v0_3_8": true,
+      "byte_equal_to_main": true
+    },
+    {
+      "path": "electron/desktop-api.cjs",
+      "shipped_bytes": 1366,
+      "shipped_sha256": "6c8abb07c6d4c4b54a0cdb3fe08df541e4b7c515050b88af60b40d38c6841bb4",
+      "tag_sha256": "6c8abb07c6d4c4b54a0cdb3fe08df541e4b7c515050b88af60b40d38c6841bb4",
+      "byte_equal_to_v0_3_8": true,
+      "byte_equal_to_main": true
+    },
+    {
+      "path": "electron/main.cjs",
+      "shipped_bytes": 32953,
+      "shipped_sha256": "c216c09dc965d9b587867ebf535bf6b1c8db3189ac9398d7e850599e62cfd5d8",
+      "tag_sha256": "c216c09dc965d9b587867ebf535bf6b1c8db3189ac9398d7e850599e62cfd5d8",
+      "byte_equal_to_v0_3_8": true,
+      "byte_equal_to_main": true
+    },
+    {
+      "path": "electron/preload.cjs",
+      "shipped_bytes": 5124,
+      "shipped_sha256": "851aff87e90c8523a057f22c04846fa12fa91c89fa6e050bb6069776aad45db0",
+      "tag_sha256": "851aff87e90c8523a057f22c04846fa12fa91c89fa6e050bb6069776aad45db0",
+      "byte_equal_to_v0_3_8": true,
+      "byte_equal_to_main": false
+    },
+    {
+      "path": "electron/subscription-store.cjs",
+      "shipped_bytes": 3352,
+      "shipped_sha256": "c3dca6abc886d9004e8c1c25063e377ca7cefdea65d9aad57405abc79919c752",
+      "tag_sha256": "c3dca6abc886d9004e8c1c25063e377ca7cefdea65d9aad57405abc79919c752",
+      "byte_equal_to_v0_3_8": true,
+      "byte_equal_to_main": true
+    },
+    {
+      "path": "electron/subscriptions.cjs",
+      "shipped_bytes": 17318,
+      "shipped_sha256": "45d3e1a8680cb274be23fc2fac14c629235dad51c4ca1e5b66ea7fd781718fa8",
+      "tag_sha256": "45d3e1a8680cb274be23fc2fac14c629235dad51c4ca1e5b66ea7fd781718fa8",
+      "byte_equal_to_v0_3_8": true,
+      "byte_equal_to_main": true
+    },
+    {
+      "path": "package.json",
+      "shipped_bytes": 2078,
+      "shipped_sha256": "94c61d8ebdfe09780d6b05d1b4f7bd06f1b23f53dd039d280125a4fe12b53aa8",
+      "tag_sha256": "3779ac575618da803f2e81b7e9c444baef8d4ced55b583af8ea652e1ea067542",
+      "byte_equal_to_v0_3_8": false,
+      "byte_equal_to_main": false
+    }
+  ],
+  "packaged_manifest_comparison": {
+    "tag_version": "0.3.8",
+    "shipped_version": "0.3.8",
+    "omitted_tag_top_level_keys": [
+      "devDependencies",
+      "scripts"
+    ],
+    "all_shared_keys_semantically_equal": true
+  },
+  "selected_source_comparisons": [
+    {
+      "path": "components/graph-view.tsx",
+      "v0_3_8_exists": true,
+      "main_exists": true,
+      "v0_3_8_sha256": "7b1f5a3b9c03f70a94fd58b73130d666bccbc92e995c00eafd72c2ba7556635a",
+      "main_sha256": "7b1f5a3b9c03f70a94fd58b73130d666bccbc92e995c00eafd72c2ba7556635a",
+      "same_source_bytes": true
+    },
+    {
+      "path": "components/graph-canvas.ts",
+      "v0_3_8_exists": true,
+      "main_exists": true,
+      "v0_3_8_sha256": "d8e626dfddc65994a308f08724ef65085c084f4d835b80315a5cac2bbecb1f1a",
+      "main_sha256": "d8e626dfddc65994a308f08724ef65085c084f4d835b80315a5cac2bbecb1f1a",
+      "same_source_bytes": true
+    },
+    {
+      "path": "components/chain-table.tsx",
+      "v0_3_8_exists": true,
+      "main_exists": true,
+      "v0_3_8_sha256": "a91a26d46a2f4fdb3b2b594d54881d3168369dbe30b227cf789f83ec4e5f9866",
+      "main_sha256": "a91a26d46a2f4fdb3b2b594d54881d3168369dbe30b227cf789f83ec4e5f9866",
+      "same_source_bytes": true
+    },
+    {
+      "path": "components/plan-block.tsx",
+      "v0_3_8_exists": true,
+      "main_exists": true,
+      "v0_3_8_sha256": "352f03cad20262938789019bc5f65cc48762ae4b217862cfd1cba3a2eecccf24",
+      "main_sha256": "352f03cad20262938789019bc5f65cc48762ae4b217862cfd1cba3a2eecccf24",
+      "same_source_bytes": true
+    },
+    {
+      "path": "components/artifacts/demo-card.tsx",
+      "v0_3_8_exists": true,
+      "main_exists": true,
+      "v0_3_8_sha256": "12cc1bed243b550c031be142417cf1e5ef8160ffcf33368f6ae8ef7c8b030eda",
+      "main_sha256": "12cc1bed243b550c031be142417cf1e5ef8160ffcf33368f6ae8ef7c8b030eda",
+      "same_source_bytes": true
+    },
+    {
+      "path": "components/artifacts/visual-card.tsx",
+      "v0_3_8_exists": true,
+      "main_exists": true,
+      "v0_3_8_sha256": "7e0f1c738868155b10062c808b0ed2424618a04a374dd9192ae89bdbeddd293b",
+      "main_sha256": "7e0f1c738868155b10062c808b0ed2424618a04a374dd9192ae89bdbeddd293b",
+      "same_source_bytes": true
+    },
+    {
+      "path": "components/session-find.tsx",
+      "v0_3_8_exists": true,
+      "main_exists": true,
+      "v0_3_8_sha256": "23dc16156ec941f6039c1f8248552c3fa211065b03cd9149ed90341521df61d7",
+      "main_sha256": "23dc16156ec941f6039c1f8248552c3fa211065b03cd9149ed90341521df61d7",
+      "same_source_bytes": true
+    },
+    {
+      "path": "components/keyboard-shortcuts.tsx",
+      "v0_3_8_exists": true,
+      "main_exists": true,
+      "v0_3_8_sha256": "05fde0562aeddfe7f028505496ef356ec8797dfb14e6b52d55db39ad4cbec1c3",
+      "main_sha256": "05fde0562aeddfe7f028505496ef356ec8797dfb14e6b52d55db39ad4cbec1c3",
+      "same_source_bytes": true
+    },
+    {
+      "path": "components/extraction-coverage.tsx",
+      "v0_3_8_exists": true,
+      "main_exists": true,
+      "v0_3_8_sha256": "103142a1bfc980b8f7108d5ddcdbc6499d5d9a1e2d2bd2314cb7c4a25f07e168",
+      "main_sha256": "103142a1bfc980b8f7108d5ddcdbc6499d5d9a1e2d2bd2314cb7c4a25f07e168",
+      "same_source_bytes": true
+    },
+    {
+      "path": "src/agent/subagents/extraction.ts",
+      "v0_3_8_exists": true,
+      "main_exists": true,
+      "v0_3_8_sha256": "31530a6810e7ec9ac957411d9796bf8bf07704f7e60d107ff8efbd61510b2bf5",
+      "main_sha256": "31530a6810e7ec9ac957411d9796bf8bf07704f7e60d107ff8efbd61510b2bf5",
+      "same_source_bytes": true
+    },
+    {
+      "path": "src/core/graph-deletion.ts",
+      "v0_3_8_exists": true,
+      "main_exists": true,
+      "v0_3_8_sha256": "25e3dc3d2837ffce208a4c80a215d151542f3826a324e7ce125d55c67e2dd6bf",
+      "main_sha256": "25e3dc3d2837ffce208a4c80a215d151542f3826a324e7ce125d55c67e2dd6bf",
+      "same_source_bytes": true
+    },
+    {
+      "path": "src/core/session-clusters.ts",
+      "v0_3_8_exists": true,
+      "main_exists": true,
+      "v0_3_8_sha256": "ec9a0deea2b928ad2a364efecb1af4a87449985d500f46b7b0a1c254f8338028",
+      "main_sha256": "ec9a0deea2b928ad2a364efecb1af4a87449985d500f46b7b0a1c254f8338028",
+      "same_source_bytes": true
+    },
+    {
+      "path": "electron/main.cjs",
+      "v0_3_8_exists": true,
+      "main_exists": true,
+      "v0_3_8_sha256": "c216c09dc965d9b587867ebf535bf6b1c8db3189ac9398d7e850599e62cfd5d8",
+      "main_sha256": "c216c09dc965d9b587867ebf535bf6b1c8db3189ac9398d7e850599e62cfd5d8",
+      "same_source_bytes": true
+    },
+    {
+      "path": "electron/preload.cjs",
+      "v0_3_8_exists": true,
+      "main_exists": true,
+      "v0_3_8_sha256": "851aff87e90c8523a057f22c04846fa12fa91c89fa6e050bb6069776aad45db0",
+      "main_sha256": "48c6c373d6eec02d5fcba36f79efd7978b349e105c1ecbd74b1b481cbcd8a8ef",
+      "same_source_bytes": false
+    },
+    {
+      "path": "electron/chatgpt.cjs",
+      "v0_3_8_exists": true,
+      "main_exists": true,
+      "v0_3_8_sha256": "011c46b4942c156e61da529d05d8bfba8dcef5712860f6e44166618554c7c505",
+      "main_sha256": "011c46b4942c156e61da529d05d8bfba8dcef5712860f6e44166618554c7c505",
+      "same_source_bytes": true
+    },
+    {
+      "path": "electron/subscriptions.cjs",
+      "v0_3_8_exists": true,
+      "main_exists": true,
+      "v0_3_8_sha256": "45d3e1a8680cb274be23fc2fac14c629235dad51c4ca1e5b66ea7fd781718fa8",
+      "main_sha256": "45d3e1a8680cb274be23fc2fac14c629235dad51c4ca1e5b66ea7fd781718fa8",
+      "same_source_bytes": true
+    },
+    {
+      "path": "electron/desktop-api.cjs",
+      "v0_3_8_exists": true,
+      "main_exists": true,
+      "v0_3_8_sha256": "6c8abb07c6d4c4b54a0cdb3fe08df541e4b7c515050b88af60b40d38c6841bb4",
+      "main_sha256": "6c8abb07c6d4c4b54a0cdb3fe08df541e4b7c515050b88af60b40d38c6841bb4",
+      "same_source_bytes": true
+    },
+    {
+      "path": "electron/subscription-store.cjs",
+      "v0_3_8_exists": true,
+      "main_exists": true,
+      "v0_3_8_sha256": "c3dca6abc886d9004e8c1c25063e377ca7cefdea65d9aad57405abc79919c752",
+      "main_sha256": "c3dca6abc886d9004e8c1c25063e377ca7cefdea65d9aad57405abc79919c752",
+      "same_source_bytes": true
+    },
+    {
+      "path": "components/dictation-language.tsx",
+      "v0_3_8_exists": false,
+      "main_exists": true,
+      "v0_3_8_sha256": null,
+      "main_sha256": "52115813738f171e35a2c5d91c1bcbf35c85fe009a58f0e4618b58daa9e322bb",
+      "same_source_bytes": false
+    },
+    {
+      "path": "components/path-input.tsx",
+      "v0_3_8_exists": false,
+      "main_exists": true,
+      "v0_3_8_sha256": null,
+      "main_sha256": "57f0de9d1880a0e6f376bb2a1edef6304f8f65803962f0926c800aedc37e7a16",
+      "same_source_bytes": false
+    },
+    {
+      "path": "components/file-path-drop-zone.tsx",
+      "v0_3_8_exists": false,
+      "main_exists": true,
+      "v0_3_8_sha256": null,
+      "main_sha256": "c5df43979d9795f0223b9a1c8d684dd4e0a12d37b9b2eb07f28aa822e9b232cd",
+      "same_source_bytes": false
+    },
+    {
+      "path": "src/core/dictation.ts",
+      "v0_3_8_exists": false,
+      "main_exists": true,
+      "v0_3_8_sha256": null,
+      "main_sha256": "2f351410452c33555abf71a356a972a4aa50314b018810b1116725f7d774eb16",
+      "same_source_bytes": false
+    },
+    {
+      "path": "app/api/custom-provider/route.ts",
+      "v0_3_8_exists": false,
+      "main_exists": true,
+      "v0_3_8_sha256": null,
+      "main_sha256": "875505fd9856bdf0cc0e957b1cf4046b5a78e4f7a58400f1a52b0df949b3f911",
+      "same_source_bytes": false
+    },
+    {
+      "path": "app/api/claude-code/route.ts",
+      "v0_3_8_exists": false,
+      "main_exists": true,
+      "v0_3_8_sha256": null,
+      "main_sha256": "e11a5502398ef9be14a6bec1b55682e3e0b8fe8ae012d52a6fd0da6d97b5902a",
+      "same_source_bytes": false
+    },
+    {
+      "path": "components/start-session.ts",
+      "v0_3_8_exists": false,
+      "main_exists": true,
+      "v0_3_8_sha256": null,
+      "main_sha256": "f53efaf7f10e8f622cc84565f4722b02f41d55c9814d349326c561b09fbb87ed",
+      "same_source_bytes": false
+    },
+    {
+      "path": "components/opening-prompt.ts",
+      "v0_3_8_exists": false,
+      "main_exists": true,
+      "v0_3_8_sha256": null,
+      "main_sha256": "286b4b368648309582413f64102d38b5d15f74610aba56f9d375f1dbf193d74b",
+      "same_source_bytes": false
+    },
+    {
+      "path": "components/dock-height.ts",
+      "v0_3_8_exists": false,
+      "main_exists": true,
+      "v0_3_8_sha256": null,
+      "main_sha256": "60cccce450d66305d06f4a8b68c065e387dac7ae8d39db88a026a3fb3a6d033c",
+      "same_source_bytes": false
+    },
+    {
+      "path": "src/core/input-events.ts",
+      "v0_3_8_exists": true,
+      "main_exists": true,
+      "v0_3_8_sha256": "8332fe8411735cd1f24c8a5a718c88331cc0912e9b105c82b776102f0ef38a3c",
+      "main_sha256": "ded376500e9f8c1ab83ddbcf7cd00a9768c23db80e08bc5ce98de3a4ed587436",
+      "same_source_bytes": false
+    },
+    {
+      "path": "src/core/native-messages.ts",
+      "v0_3_8_exists": true,
+      "main_exists": true,
+      "v0_3_8_sha256": "7741ae3bc5d1e13f588fb091ab4d2dd0d86cf56b2e830415fdcf45f99adacd96",
+      "main_sha256": "4382ef9fcf8d3389b77713c68cd07c7aa6133c6a94c58c4382cc33e401201c49",
+      "same_source_bytes": false
+    },
+    {
+      "path": "src/core/pending.ts",
+      "v0_3_8_exists": true,
+      "main_exists": true,
+      "v0_3_8_sha256": "7307cd573816b7ad13f0c0474a7e60db54d6636127e9a6a37189f5ec088eeb93",
+      "main_sha256": "0da8a1eaf813785db178240951d7f5e3a5b33a725187e02f1489c41902cdb084",
+      "same_source_bytes": false
+    },
+    {
+      "path": "src/core/phases.ts",
+      "v0_3_8_exists": true,
+      "main_exists": true,
+      "v0_3_8_sha256": "01bc0a910ffca8a5eb6c5cabcd0ffd2d9c7ad209eaef46f655b9a0094f3e6a99",
+      "main_sha256": "611ad03c8db7b1714095f792da99ee5ca3139c526b5ebd23b92267bbe370c50d",
+      "same_source_bytes": false
+    },
+    {
+      "path": "src/agent/tools/read.ts",
+      "v0_3_8_exists": true,
+      "main_exists": true,
+      "v0_3_8_sha256": "5f8fccb8ff989fbf3ce53f023eb7f8e41d619303e56061f63f002aace866d190",
+      "main_sha256": "30af1607c9aecca43b963a7e9c042ded9baa6caa7c57dfa111187cf61aad1698",
+      "same_source_bytes": false
+    },
+    {
+      "path": "src/agent/image-processing/index.ts",
+      "v0_3_8_exists": false,
+      "main_exists": true,
+      "v0_3_8_sha256": null,
+      "main_sha256": "9368d8150892f4b4e21170f8c36ad50c7f4da59118768413df4286fd72e5f9fd",
+      "same_source_bytes": false
+    },
+    {
+      "path": "src/agent/subagents/headless.ts",
+      "v0_3_8_exists": true,
+      "main_exists": true,
+      "v0_3_8_sha256": "795c0c4b9feeb895335b704c64ee1dc330910d28410b8ce3c6514d596c9bd794",
+      "main_sha256": "4353c03ab69a299abec9d59a23ca199fc97e3f7265150b0270095ccdd11f9e51",
+      "same_source_bytes": false
+    },
+    {
+      "path": "src/server/compaction.ts",
+      "v0_3_8_exists": true,
+      "main_exists": true,
+      "v0_3_8_sha256": "4fd93660879251c9017c9dd1370f9b8ee635059cdcf12bbddfcd042136c9051c",
+      "main_sha256": "4c750511dffd5c7e839f26fcc62d9e29695765f88a14ac94b54c63fba66daac8",
+      "same_source_bytes": false
+    },
+    {
+      "path": "components/ai-elements/message.tsx",
+      "v0_3_8_exists": true,
+      "main_exists": true,
+      "v0_3_8_sha256": "b3bc21de8a3dafebedeee85ceeec90271954943e685da6819ee51444863f7ed3",
+      "main_sha256": "6028be2655de2e7a69fd06a9212356400a97ad5f8bc8a39b286e55b52ee37cd0",
+      "same_source_bytes": false
+    },
+    {
+      "path": "components/setup-dialog.tsx",
+      "v0_3_8_exists": true,
+      "main_exists": true,
+      "v0_3_8_sha256": "296eda479d9f6d1302e15ce2411e59bdadd75b06d3b0beb7fd9d5011db346eb1",
+      "main_sha256": "7fb4ad6c116efe430652c1d48ccdfb3f6fc77fab352c2e198acd5a36d1f64f96",
+      "same_source_bytes": false
+    },
+    {
+      "path": "components/model-catalog.ts",
+      "v0_3_8_exists": false,
+      "main_exists": true,
+      "v0_3_8_sha256": null,
+      "main_sha256": "eb33ad635769a6096d7fce1bf6e7c357a39e4e324a0d37b0c265550a7c72e92d",
+      "same_source_bytes": false
+    }
+  ],
+  "limits": [
+    "Only selected extracted shell files and package.json were compared to the installed artifact.",
+    "A tag/source match does not prove compiled server/UI equality or execution.",
+    "Source diffs do not prove an installed runtime has or lacks behavior.",
+    "No model calls, authentication operations, app interactions or test execution performed."
+  ]
+}

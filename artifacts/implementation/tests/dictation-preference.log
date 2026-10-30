@@ -1,0 +1,52 @@
+TAP version 13
+# Subtest: all readers immediately receive the confirmed write without another GET
+ok 1 - all readers immediately receive the confirmed write without another GET
+  ---
+  duration_ms: 7.929916
+  type: 'test'
+  ...
+# Subtest: ordinary loads and repeated recordings reuse the initial confirmed value
+ok 2 - ordinary loads and repeated recordings reuse the initial confirmed value
+  ---
+  duration_ms: 0.471792
+  type: 'test'
+  ...
+# Subtest: a failed external refresh invalidates the cache until a successful retry
+ok 3 - a failed external refresh invalidates the cache until a successful retry
+  ---
+  duration_ms: 0.611375
+  type: 'test'
+  ...
+# Subtest: stale reads cannot overwrite a newer write and subscribers see busy before transport runs
+ok 4 - stale reads cannot overwrite a newer write and subscribers see busy before transport runs
+  ---
+  duration_ms: 0.380042
+  type: 'test'
+  ...
+# Subtest: overlapping reads keep the newest value, newest resolves first: false
+ok 5 - overlapping reads keep the newest value, newest resolves first: false
+  ---
+  duration_ms: 0.285458
+  type: 'test'
+  ...
+# Subtest: overlapping reads keep the newest value, newest resolves first: true
+ok 6 - overlapping reads keep the newest value, newest resolves first: true
+  ---
+  duration_ms: 0.267708
+  type: 'test'
+  ...
+# Subtest: capture also waits for a write initiated as a pending read publishes its result
+ok 7 - capture also waits for a write initiated as a pending read publishes its result
+  ---
+  duration_ms: 0.254375
+  type: 'test'
+  ...
+1..7
+# tests 7
+# suites 0
+# pass 7
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 76.974875

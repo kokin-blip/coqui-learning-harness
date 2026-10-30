@@ -1,0 +1,82 @@
+TAP version 13
+# Subtest: a later assistant question supersedes an unanswered question in the same projected group
+ok 1 - a later assistant question supersedes an unanswered question in the same projected group
+  ---
+  duration_ms: 0.910666
+  type: 'test'
+  ...
+# Subtest: the newest assistant's parallel questions retain call order and never revive older questions
+ok 2 - the newest assistant's parallel questions retain call order and never revive older questions
+  ---
+  duration_ms: 0.1745
+  type: 'test'
+  ...
+# Subtest: the authoritative question still waits for projected input validation
+ok 3 - the authoritative question still waits for projected input validation
+  ---
+  duration_ms: 0.069625
+  type: 'test'
+  ...
+# Subtest: reused ids select the newest native question's input, not an older available part
+ok 4 - reused ids select the newest native question's input, not an older available part
+  ---
+  duration_ms: 0.508667
+  type: 'test'
+  ...
+# Subtest: an older available duplicate never bypasses the authoritative part's input-streaming state
+ok 5 - an older available duplicate never bypasses the authoritative part's input-streaming state
+  ---
+  duration_ms: 0.11025
+  type: 'test'
+  ...
+# Subtest: an older available duplicate never bypasses the authoritative part's output-error state
+ok 6 - an older available duplicate never bypasses the authoritative part's output-error state
+  ---
+  duration_ms: 0.050542
+  type: 'test'
+  ...
+# Subtest: an older available duplicate never bypasses the authoritative part's output-available state
+ok 7 - an older available duplicate never bypasses the authoritative part's output-available state
+  ---
+  duration_ms: 0.04425
+  type: 'test'
+  ...
+# Subtest: a missing authoritative part cannot fall back to another occurrence
+ok 8 - a missing authoritative part cannot fall back to another occurrence
+  ---
+  duration_ms: 0.053875
+  type: 'test'
+  ...
+# Subtest: older questions never revive across display groups or after a text-only newest assistant
+ok 9 - older questions never revive across display groups or after a text-only newest assistant
+  ---
+  duration_ms: 0.141583
+  type: 'test'
+  ...
+# Subtest: unique question keys survive live-to-persisted message stamps without resetting drafts
+ok 10 - unique question keys survive live-to-persisted message stamps without resetting drafts
+  ---
+  duration_ms: 0.102417
+  type: 'test'
+  ...
+# Subtest: only temporary successful question placeholders are excluded from client pending authority
+ok 11 - only temporary successful question placeholders are excluded from client pending authority
+  ---
+  duration_ms: 0.0855
+  type: 'test'
+  ...
+# Subtest: native occurrence checks preserve every question tool and its own live validation gate
+ok 12 - native occurrence checks preserve every question tool and its own live validation gate
+  ---
+  duration_ms: 0.099959
+  type: 'test'
+  ...
+1..12
+# tests 12
+# suites 0
+# pass 12
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 123.933459

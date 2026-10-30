@@ -1,0 +1,7 @@
+{
+  "name": "@coquilearn/contracts",
+  "version": "0.2.1",
+  "private": true,
+  "type": "module",
+  "license": "AGPL-3.0-only"
+}

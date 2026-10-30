@@ -1,0 +1,214 @@
+TAP version 13
+# Subtest: DOM projection is lossless across whitespace, Unicode and all rooted path forms
+ok 1 - DOM projection is lossless across whitespace, Unicode and all rooted path forms
+  ---
+  duration_ms: 2.455083
+  type: 'test'
+  ...
+# Subtest: logical offsets round-trip across text, adjacent chips, line breaks and reversed selections
+ok 2 - logical offsets round-trip across text, adjacent chips, line breaks and reversed selections
+  ---
+  duration_ms: 1.485875
+  type: 'test'
+  ...
+# Subtest: BR/block fallback never reads visual labels or normalizes ordinary spaces
+ok 3 - BR/block fallback never reads visual labels or normalizes ordinary spaces
+  ---
+  duration_ms: 0.276292
+  type: 'test'
+  ...
+# Subtest: trailing newline caret placeholder is presentation-only and logical end maps before it
+ok 4 - trailing newline caret placeholder is presentation-only and logical end maps before it
+  ---
+  duration_ms: 0.338666
+  type: 'test'
+  ...
+# Subtest: range replacement/deletion is atomic and leaves neighboring whitespace untouched
+ok 5 - range replacement/deletion is atomic and leaves neighboring whitespace untouched
+  ---
+  duration_ms: 0.45525
+  type: 'test'
+  ...
+# Subtest: file insertion uses full quoted sources at saved ranges with separating spaces
+ok 6 - file insertion uses full quoted sources at saved ranges with separating spaces
+  ---
+  duration_ms: 0.280166
+  type: 'test'
+  ...
+# Subtest: owned history restores values and directional selections; a new edit discards redo
+ok 7 - owned history restores values and directional selections; a new edit discards redo
+  ---
+  duration_ms: 0.090959
+  type: 'test'
+  ...
+# Subtest: textbox exposes accessibility, placeholder, global-drop markers and requested sizing
+ok 8 - textbox exposes accessibility, placeholder, global-drop markers and requested sizing
+  ---
+  duration_ms: 2.911334
+  type: 'test'
+  ...
+# Subtest: SSR preserves the full escaped initial draft without waiting for client effects
+ok 9 - SSR preserves the full escaped initial draft without waiting for client effects
+  ---
+  duration_ms: 1.013917
+  type: 'test'
+  ...
+# Subtest: textbox accessible name falls back to placeholder and preserves explicit aria-label
+ok 10 - textbox accessible name falls back to placeholder and preserves explicit aria-label
+  ---
+  duration_ms: 0.33775
+  type: 'test'
+  ...
+# Subtest: native typing, token insertion/deletion and undo/redo share one history
+ok 11 - native typing, token insertion/deletion and undo/redo share one history
+  ---
+  duration_ms: 37.22625
+  type: 'test'
+  ...
+# Subtest: Cmd+Backspace delegates line extent to beforeinput instead of deleting just the final chip
+ok 12 - Cmd+Backspace delegates line extent to beforeinput instead of deleting just the final chip
+  ---
+  duration_ms: 2.23525
+  type: 'test'
+  ...
+# Subtest: native word and soft/hard line deletion ranges retain mixed text/chip extents in both directions
+ok 13 - native word and soft/hard line deletion ranges retain mixed text/chip extents in both directions
+  ---
+  duration_ms: 6.262583
+  type: 'test'
+  ...
+# Subtest: deleteEntireSoftLine honors the browser extent and never substitutes a chip when ranges are absent
+ok 14 - deleteEntireSoftLine honors the browser extent and never substitutes a chip when ranges are absent
+  ---
+  duration_ms: 1.538417
+  type: 'test'
+  ...
+# Subtest: browser target ranges that intersect a visual chip interior expand the complete source atomically
+ok 15 - browser target ranges that intersect a visual chip interior expand the complete source atomically
+  ---
+  duration_ms: 1.464917
+  type: 'test'
+  ...
+# Subtest: missing or invalid word/line target ranges defer to native editing and preserve owned undo
+ok 16 - missing or invalid word/line target ranges defer to native editing and preserve owned undo
+  ---
+  duration_ms: 2.762459
+  type: 'test'
+  ...
+# Subtest: ordinary backward/forward chip deletion and selected ranges retain their existing behavior
+ok 17 - ordinary backward/forward chip deletion and selected ranges retain their existing behavior
+  ---
+  duration_ms: 2.384125
+  type: 'test'
+  ...
+# Subtest: immutable SSR fallback never stomps native edits, controlled updates, chips or reset
+ok 18 - immutable SSR fallback never stomps native edits, controlled updates, chips or reset
+  ---
+  duration_ms: 2.062375
+  type: 'test'
+  ...
+# Subtest: external dictation append/reset and drop at an unfocused saved selection
+ok 19 - external dictation append/reset and drop at an unfocused saved selection
+  ---
+  duration_ms: 2.746
+  type: 'test'
+  ...
+# Subtest: plaintext paste ignores HTML and copy/cut use full token source in either direction
+ok 20 - plaintext paste ignores HTML and copy/cut use full token source in either direction
+  ---
+  duration_ms: 1.25775
+  type: 'test'
+  ...
+# Subtest: image/file-only paste prevents native insertion without deleting selected text or chips
+ok 21 - image/file-only paste prevents native insertion without deleting selected text or chips
+  ---
+  duration_ms: 1.045458
+  type: 'test'
+  ...
+# Subtest: empty clipboard text stays a no-op before, during and after IME with a chip selected
+ok 22 - empty clipboard text stays a no-op before, during and after IME with a chip selected
+  ---
+  duration_ms: 1.292
+  type: 'test'
+  ...
+# Subtest: Shift+Delete delegates to cut, preserving full-source clipboard and deleting only once
+ok 23 - Shift+Delete delegates to cut, preserving full-source clipboard and deleting only once
+  ---
+  duration_ms: 2.762125
+  type: 'test'
+  ...
+# Subtest: copying even a partial visual chip label copies its complete source
+ok 24 - copying even a partial visual chip label copies its complete source
+  ---
+  duration_ms: 0.905542
+  type: 'test'
+  ...
+# Subtest: composition keeps native DOM untouched, emits once, and suppresses consumer Enter
+ok 25 - composition keeps native DOM untouched, emits once, and suppresses consumer Enter
+  ---
+  duration_ms: 1.044583
+  type: 'test'
+  ...
+# Subtest: Enter inserts a literal newline and range deletion spans text and complete chips
+ok 26 - Enter inserts a literal newline and range deletion spans text and complete chips
+  ---
+  duration_ms: 1.486916
+  type: 'test'
+  ...
+# Subtest: multiple trailing newlines preserve selection and survive native Backspace plus undo/redo
+ok 27 - multiple trailing newlines preserve selection and survive native Backspace plus undo/redo
+  ---
+  duration_ms: 1.1555
+  type: 'test'
+  ...
+# Subtest: single-line mode never adds a trailing newline caret placeholder
+ok 28 - single-line mode never adds a trailing newline caret placeholder
+  ---
+  duration_ms: 0.450458
+  type: 'test'
+  ...
+# Subtest: paste during IME stays plaintext and is deferred until composition finishes
+ok 29 - paste during IME stays plaintext and is deferred until composition finishes
+  ---
+  duration_ms: 0.677875
+  type: 'test'
+  ...
+# Subtest: single-line normalization strips only CR/LF and remaps directional UTF-16 selections
+ok 30 - single-line normalization strips only CR/LF and remaps directional UTF-16 selections
+  ---
+  duration_ms: 0.093541
+  type: 'test'
+  ...
+# Subtest: single-line mode exposes native input accessibility and horizontal, nonwrapping layout
+ok 31 - single-line mode exposes native input accessibility and horizontal, nonwrapping layout
+  ---
+  duration_ms: 0.242291
+  type: 'test'
+  ...
+# Subtest: single-line initial/external assignment sanitizes silently; native edits and paste emit sanitized values
+ok 32 - single-line initial/external assignment sanitizes silently; native edits and paste emit sanitized values
+  ---
+  duration_ms: 0.986959
+  type: 'test'
+  ...
+# Subtest: single-line Enter reaches its consumer but cannot insert a newline
+ok 33 - single-line Enter reaches its consumer but cannot insert a newline
+  ---
+  duration_ms: 0.939125
+  type: 'test'
+  ...
+# Subtest: single-line IME sanitizes after completion, and queued external assignments do not synthesize changes
+ok 34 - single-line IME sanitizes after completion, and queued external assignments do not synthesize changes
+  ---
+  duration_ms: 0.939792
+  type: 'test'
+  ...
+1..34
+# tests 34
+# suites 0
+# pass 34
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 439.89

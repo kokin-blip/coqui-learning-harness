@@ -1,0 +1,112 @@
+TAP version 13
+# Subtest: missing installation does not execute a command
+ok 1 - missing installation does not execute a command
+  ---
+  duration_ms: 0.540458
+  type: 'test'
+  ...
+# Subtest: installation version output "2.1.258 (Claude Code)\\n" gives update-required
+ok 2 - installation version output "2.1.258 (Claude Code)\\n" gives update-required
+  ---
+  duration_ms: 0.088167
+  type: 'test'
+  ...
+# Subtest: installation version output "2.1.259 (Claude Code)" gives meets-minimum
+ok 3 - installation version output "2.1.259 (Claude Code)" gives meets-minimum
+  ---
+  duration_ms: 0.059541
+  type: 'test'
+  ...
+# Subtest: installation version output "2.1.310 (Claude Code)" gives meets-minimum
+ok 4 - installation version output "2.1.310 (Claude Code)" gives meets-minimum
+  ---
+  duration_ms: 0.038166
+  type: 'test'
+  ...
+# Subtest: installation version output "2.2.0" gives meets-minimum
+ok 5 - installation version output "2.2.0" gives meets-minimum
+  ---
+  duration_ms: 0.039291
+  type: 'test'
+  ...
+# Subtest: installation version output "2.0.999" gives update-required
+ok 6 - installation version output "2.0.999" gives update-required
+  ---
+  duration_ms: 0.052292
+  type: 'test'
+  ...
+# Subtest: installation version output "3.0.0" gives meets-minimum
+ok 7 - installation version output "3.0.0" gives meets-minimum
+  ---
+  duration_ms: 0.046458
+  type: 'test'
+  ...
+# Subtest: installation version output "unexpected output containing private details" gives version-unchecked
+ok 8 - installation version output "unexpected output containing private details" gives version-unchecked
+  ---
+  duration_ms: 0.029959
+  type: 'test'
+  ...
+# Subtest: installation version output "2.1.310-preview" gives version-unchecked
+ok 9 - installation version output "2.1.310-preview" gives version-unchecked
+  ---
+  duration_ms: 0.041708
+  type: 'test'
+  ...
+# Subtest: installation version output "99999999999999999999999999.1.1" gives version-unchecked
+ok 10 - installation version output "99999999999999999999999999.1.1" gives version-unchecked
+  ---
+  duration_ms: 0.0785
+  type: 'test'
+  ...
+# Subtest: probe failures expose neither raw errors nor binary paths
+ok 11 - probe failures expose neither raw errors nor binary paths
+  ---
+  duration_ms: 0.09125
+  type: 'test'
+  ...
+# Subtest: launcher refuses 2.1.258 version check before model work
+ok 12 - launcher refuses 2.1.258 version check before model work
+  ---
+  duration_ms: 0.370125
+  type: 'test'
+  ...
+# Subtest: launcher refuses garbage version check before model work
+ok 13 - launcher refuses garbage version check before model work
+  ---
+  duration_ms: 0.053167
+  type: 'test'
+  ...
+# Subtest: launcher refuses failed version check before model work
+ok 14 - launcher refuses failed version check before model work
+  ---
+  duration_ms: 0.070375
+  type: 'test'
+  ...
+# Subtest: launcher uses the verified executable directly and preserves model args and native env
+ok 15 - launcher uses the verified executable directly and preserves model args and native env
+  ---
+  duration_ms: 0.091458
+  type: 'test'
+  ...
+# Subtest: aborting during a version check prevents model process creation
+ok 16 - aborting during a version check prevents model process creation
+  ---
+  duration_ms: 0.54275
+  type: 'test'
+  ...
+# Subtest: missing executable is not mistaken for an unchecked version
+ok 17 - missing executable is not mistaken for an unchecked version
+  ---
+  duration_ms: 0.050792
+  type: 'test'
+  ...
+1..17
+# tests 17
+# suites 0
+# pass 17
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 55.258791

@@ -1,0 +1,214 @@
+TAP version 13
+# Subtest: the merger (mergeFindings)
+    # Subtest: creates nodes from the verdicts with chat-level provenance
+    ok 1 - creates nodes from the verdicts with chat-level provenance
+      ---
+      duration_ms: 1.535792
+      type: 'test'
+      ...
+    # Subtest: messageId anchors (2026-10-13): creates AND link-appends stamp the passage id; chains stay chat-level
+    ok 2 - messageId anchors (2026-10-13): creates AND link-appends stamp the passage id; chains stay chat-level
+      ---
+      duration_ms: 1.003584
+      type: 'test'
+      ...
+    # Subtest: merges INDEPENDENTLY per call — no cross-run identity (owner, 2026-09-29)
+    ok 3 - merges INDEPENDENTLY per call — no cross-run identity (owner, 2026-09-29)
+      ---
+      duration_ms: 1.811583
+      type: 'test'
+      ...
+    # Subtest: is idempotent WITHIN one submit — a repeated proposition id resolves once
+    ok 4 - is idempotent WITHIN one submit — a repeated proposition id resolves once
+      ---
+      duration_ms: 0.875459
+      type: 'test'
+      ...
+    # Subtest: applies a linkTo verdict: phrasings join aliases, provenance unions, no duplicate node
+    ok 5 - applies a linkTo verdict: phrasings join aliases, provenance unions, no duplicate node
+      ---
+      duration_ms: 0.970584
+      type: 'test'
+      ...
+    # Subtest: resolves imported-notes ids to their file paths in the snapshot (static provenance)
+    ok 6 - resolves imported-notes ids to their file paths in the snapshot (static provenance)
+      ---
+      duration_ms: 0.88475
+      type: 'test'
+      ...
+    # Subtest: derives BIRTH-SESSION clusters in graphSnapshot, labeled with the session's name
+    ok 7 - derives BIRTH-SESSION clusters in graphSnapshot, labeled with the session's name
+      ---
+      duration_ms: 0.968292
+      type: 'test'
+      ...
+    # Subtest: derives the sessions index in graphSnapshot
+    ok 8 - derives the sessions index in graphSnapshot
+      ---
+      duration_ms: 0.324792
+      type: 'test'
+      ...
+    # Subtest: never string-matches without a verdict — an identical statement without linkTo is a NEW node
+    ok 9 - never string-matches without a verdict — an identical statement without linkTo is a NEW node
+      ---
+      duration_ms: 0.781542
+      type: 'test'
+      ...
+    # Subtest: merges the notes front door: source id as chatId, checkpoint at import time
+    ok 10 - merges the notes front door: source id as chatId, checkpoint at import time
+      ---
+      duration_ms: 0.568041
+      type: 'test'
+      ...
+    1..10
+ok 1 - the merger (mergeFindings)
+  ---
+  duration_ms: 10.292333
+  type: 'suite'
+  ...
+# Subtest: graph ledger store
+    # Subtest: round-trips lines and skips corrupt / foreign-shaped lines (strict reads)
+    ok 1 - round-trips lines and skips corrupt / foreign-shaped lines (strict reads)
+      ---
+      duration_ms: 0.610208
+      type: 'test'
+      ...
+    # Subtest: returns RAW node lines — repeated ids (link-appends) are each their own line; getGraph merges
+    ok 2 - returns RAW node lines — repeated ids (link-appends) are each their own line; getGraph merges
+      ---
+      duration_ms: 0.519
+      type: 'test'
+      ...
+    1..2
+ok 2 - graph ledger store
+  ---
+  duration_ms: 1.202959
+  type: 'suite'
+  ...
+# Subtest: session deletion (deleteChatTraces + deleteChatSession, wave 6)
+    # Subtest: delete-nodes: the shared node survives with the other session's content; the orphan dies; the creator's aliases are stripped (owner ruling 2026-09-23)
+    ok 1 - delete-nodes: the shared node survives with the other session's content; the orphan dies; the creator's aliases are stripped (owner ruling 2026-09-23)
+      ---
+      duration_ms: 5.204666
+      type: 'test'
+      ...
+    # Subtest: preserve-graph: only the extraction bookkeeping dies — the graph ledgers are byte-identical
+    ok 2 - preserve-graph: only the extraction bookkeeping dies — the graph ledgers are byte-identical
+      ---
+      duration_ms: 3.991833
+      type: 'test'
+      ...
+    # Subtest: deleteChatSession: the orchestration's gates and the sync block
+    ok 3 - deleteChatSession: the orchestration's gates and the sync block
+      ---
+      duration_ms: 8.897166
+      type: 'test'
+      ...
+    1..3
+ok 3 - session deletion (deleteChatTraces + deleteChatSession, wave 6)
+  ---
+  duration_ms: 18.16125
+  type: 'suite'
+  ...
+# Subtest: single-node deletion (deleteNodeTraces + deleteGraphNode, node interlude)
+    # Subtest: deleteNodeTraces: FULL DEATH — the node, its edges, its evidence, its anchors, its position
+    ok 1 - deleteNodeTraces: FULL DEATH — the node, its edges, its evidence, its anchors, its position
+      ---
+      duration_ms: 2.588833
+      type: 'test'
+      ...
+    # Subtest: deleteNodeTraces: a node nothing references still dies, and only its file moves
+    ok 2 - deleteNodeTraces: a node nothing references still dies, and only its file moves
+      ---
+      duration_ms: 0.473958
+      type: 'test'
+      ...
+    # Subtest: deleteGraphNode: the orchestration — extraction gate, 404, success
+    ok 3 - deleteGraphNode: the orchestration — extraction gate, 404, success
+      ---
+      duration_ms: 1.754167
+      type: 'test'
+      ...
+    1..3
+ok 4 - single-node deletion (deleteNodeTraces + deleteGraphNode, node interlude)
+  ---
+  duration_ms: 4.88975
+  type: 'suite'
+  ...
+# Subtest: session coverage read (extraction-UX redesign, 2026-09-24)
+    # Subtest: one session's block: derived uncovered, the newest fold, honest nulls
+    ok 1 - one session's block: derived uncovered, the newest fold, honest nulls
+      ---
+      duration_ms: 1.088791
+      type: 'test'
+      ...
+    # Subtest: running: true only for THIS session's chat-kind run (the registry pin)
+    ok 2 - running: true only for THIS session's chat-kind run (the registry pin)
+      ---
+      duration_ms: 0.764042
+      type: 'test'
+      ...
+    # Subtest: unknown chat → null (the caller owns the 404)
+    ok 3 - unknown chat → null (the caller owns the 404)
+      ---
+      duration_ms: 0.043
+      type: 'test'
+      ...
+    1..3
+ok 5 - session coverage read (extraction-UX redesign, 2026-09-24)
+  ---
+  duration_ms: 1.963542
+  type: 'suite'
+  ...
+# Subtest: deriveView (the argument's geometry)
+    # Subtest: a SINGLE-premise chain collapses to ONE direct arrow — no imp node
+    ok 1 - a SINGLE-premise chain collapses to ONE direct arrow — no imp node
+      ---
+      duration_ms: 0.121916
+      type: 'test'
+      ...
+    # Subtest: a MULTI-premise chain keeps the imp node + fan (premises in, conclusion out)
+    ok 2 - a MULTI-premise chain keeps the imp node + fan (premises in, conclusion out)
+      ---
+      duration_ms: 0.117708
+      type: 'test'
+      ...
+    # Subtest: two chains SHARING a conclusion stay distinct — two geometry points, never a unioned fan
+    ok 3 - two chains SHARING a conclusion stay distinct — two geometry points, never a unioned fan
+      ---
+      duration_ms: 0.060791
+      type: 'test'
+      ...
+    # Subtest: dangling chains drop (missing member — the honest belt)
+    ok 4 - dangling chains drop (missing member — the honest belt)
+      ---
+      duration_ms: 0.03375
+      type: 'test'
+      ...
+    # Subtest: LOGICAL edges: every chain contracts to direct premise→conclusion arrows (all chains, deduped)
+    ok 5 - LOGICAL edges: every chain contracts to direct premise→conclusion arrows (all chains, deduped)
+      ---
+      duration_ms: 0.057
+      type: 'test'
+      ...
+    # Subtest: impLinks: one linkage per MULTI-premise chain — the depth pass's midpoint input
+    ok 6 - impLinks: one linkage per MULTI-premise chain — the depth pass's midpoint input
+      ---
+      duration_ms: 0.046292
+      type: 'test'
+      ...
+    1..6
+ok 6 - deriveView (the argument's geometry)
+  ---
+  duration_ms: 0.503666
+  type: 'suite'
+  ...
+1..6
+# tests 27
+# suites 6
+# pass 27
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 524.827791

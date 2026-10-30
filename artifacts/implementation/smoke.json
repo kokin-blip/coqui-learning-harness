@@ -1,0 +1,223 @@
+[
+  {
+    "environment": {
+      "version": "0.1.0",
+      "reduceMotion": false,
+      "reduceTransparency": false,
+      "dark": true,
+      "fixture": true
+    }
+  },
+  {
+    "sessions": {
+      "status": 200,
+      "body": {
+        "chats": []
+      },
+      "headers": {
+        "content-type": "application/json"
+      }
+    }
+  },
+  {
+    "body": "Learning / Why gradients work\nclaude-sonnet-4.5\nWhy gradients work\n\nExplore → predict → explain → understanding check\n\nWhy gradients work\n\nA gradient collects the slope in every direction. Imagine standing on a hillside: moving east changes your height, and moving north changes it too. The gradient combines those changes into one direction.\n\nPredict\nChoose one answer\nIf you move a small step opposite the gradient, what happens to the function?\nIt stays at the same value\nIt increases as quickly as possible\nIt decreases most rapidly locally\nYour thinking\nThinking while reading\nHow sure are you?\n50%\nCheck understanding\nI don’t know yet\nYour path to understanding\n\nA route through the ideas, one step at a time.\n\nLocal slopes\nUp next\nThe gradient\nLearning now\nDescent steps\nUp next\nWorking alongside you\n\nResearch and visual explanations appear here when they’re useful.\n\nThis lesson carries forward\n\nClaims and reasoning become connected knowledge, linked back to this session.\n\nOpen related knowledge\nExtract this session now\nSession model\nDefault teaching model\noff\nlow\nmedium\nhigh\n\nUsage follows your selected connection."
+  },
+  {
+    "pending": {
+      "status": 200,
+      "body": {
+        "id": "chat_4c25d8deae1b486a8b848e4fb3356dcc",
+        "title": "Why gradients work",
+        "createdAt": "2026-10-30T01:29:49.214Z",
+        "updatedAt": "2026-10-30T01:29:49.227Z",
+        "messages": [
+          {
+            "id": "msg_mvuaojok_964f95ee",
+            "role": "user",
+            "content": "Why gradients work",
+            "timestamp": 1793323789220
+          },
+          {
+            "role": "assistant",
+            "content": [
+              {
+                "type": "text",
+                "text": "A gradient collects the slope in every direction. Imagine standing on a hillside: moving east changes your height, and moving north changes it too. The gradient combines those changes into one direction."
+              },
+              {
+                "type": "toolCall",
+                "id": "question-8fcb76c4-84c4-4610-a980-16c2e1806b5e",
+                "name": "quiz",
+                "arguments": {
+                  "type": "predict",
+                  "nodeId": "gradients",
+                  "question": "If you move a small step opposite the gradient, what happens to the function?",
+                  "options": [
+                    {
+                      "label": "It increases as quickly as possible"
+                    },
+                    {
+                      "label": "It decreases most rapidly locally"
+                    },
+                    {
+                      "label": "It stays at the same value"
+                    }
+                  ],
+                  "correctAnswer": "It decreases most rapidly locally",
+                  "explanation": "The negative gradient points toward the steepest local decrease."
+                }
+              }
+            ],
+            "api": "faux:1793323789218:py3l6k6f2rd",
+            "provider": "faux",
+            "model": "faux-1",
+            "usage": {
+              "input": 10545,
+              "output": 155,
+              "cacheRead": 0,
+              "cacheWrite": 0,
+              "totalTokens": 10700,
+              "cost": {
+                "input": 0,
+                "output": 0,
+                "cacheRead": 0,
+                "cacheWrite": 0,
+                "total": 0
+              }
+            },
+            "stopReason": "toolUse",
+            "timestamp": 1793323789219,
+            "thinkingLevel": "off",
+            "id": "msg_mvuaojor_723fb5b5"
+          }
+        ],
+        "version": 1,
+        "tree": {
+          "version": 1,
+          "nodes": [
+            {
+              "id": "slopes",
+              "title": "Local slopes",
+              "summary": "How a function changes nearby."
+            },
+            {
+              "id": "gradients",
+              "title": "The gradient",
+              "summary": "Slopes collected into a direction."
+            },
+            {
+              "id": "descent",
+              "title": "Descent steps",
+              "summary": "Move against the direction of increase."
+            }
+          ],
+          "edges": [
+            {
+              "from": "slopes",
+              "to": "gradients"
+            },
+            {
+              "from": "gradients",
+              "to": "descent"
+            }
+          ]
+        },
+        "pricing": {
+          "cost": 0,
+          "unpriced": 0,
+          "turnCosts": {}
+        },
+        "turnInFlight": false,
+        "compacting": false,
+        "coverage": {
+          "totalMessages": 2,
+          "coveredCount": 0,
+          "uncoveredCount": 1,
+          "coveredTokens": 0,
+          "uncoveredTokens": 59,
+          "running": false,
+          "lastFoldedAt": null
+        },
+        "view": [
+          {
+            "id": "msg_mvuaojok_964f95ee",
+            "role": "user",
+            "parts": [
+              {
+                "type": "text",
+                "text": "Why gradients work",
+                "state": "done"
+              }
+            ]
+          },
+          {
+            "id": "msg_mvuaojor_723fb5b5",
+            "role": "assistant",
+            "parts": [
+              {
+                "type": "step-start"
+              },
+              {
+                "type": "text",
+                "id": "msg_mvuaojor_723fb5b5-t0",
+                "text": "A gradient collects the slope in every direction. Imagine standing on a hillside: moving east changes your height, and moving north changes it too. The gradient combines those changes into one direction.",
+                "state": "done"
+              },
+              {
+                "type": "tool-quiz",
+                "toolCallId": "question-8fcb76c4-84c4-4610-a980-16c2e1806b5e",
+                "input": {
+                  "type": "predict",
+                  "nodeId": "gradients",
+                  "question": "If you move a small step opposite the gradient, what happens to the function?",
+                  "options": [
+                    {
+                      "label": "It increases as quickly as possible"
+                    },
+                    {
+                      "label": "It decreases most rapidly locally"
+                    },
+                    {
+                      "label": "It stays at the same value"
+                    }
+                  ],
+                  "correctAnswer": "It decreases most rapidly locally",
+                  "explanation": "The negative gradient points toward the steepest local decrease."
+                },
+                "state": "input-available",
+                "sourceMessageId": "msg_mvuaojor_723fb5b5",
+                "sourceContentIndex": 1
+              }
+            ]
+          }
+        ],
+        "pending": {
+          "toolCallId": "question-8fcb76c4-84c4-4610-a980-16c2e1806b5e",
+          "tool": "quiz",
+          "input": {
+            "type": "predict",
+            "nodeId": "gradients",
+            "question": "If you move a small step opposite the gradient, what happens to the function?",
+            "options": [
+              {
+                "label": "It increases as quickly as possible"
+              },
+              {
+                "label": "It decreases most rapidly locally"
+              },
+              {
+                "label": "It stays at the same value"
+              }
+            ],
+            "correctAnswer": "It decreases most rapidly locally",
+            "explanation": "The negative gradient points toward the steepest local decrease."
+          }
+        },
+        "problem": null
+      },
+      "headers": {
+        "content-type": "application/json"
+      }
+    }
+  }
+]

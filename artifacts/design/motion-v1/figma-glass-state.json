@@ -1,0 +1,3074 @@
+{
+  "fileKey": "sch5j9lMwSeR9voAHt3LMt",
+  "sessionId": "554ee621-cba1-4e55-ac4b-55801456bab4",
+  "pageId": "0:1",
+  "pageName": "CoquiLearn · Refractive glass",
+  "phase": "complete-glass-typography-graphics-motion-verified",
+  "updated": "2026-10-29",
+  "appName": "CoquiLearn",
+  "releasePlatform": "macOS first",
+  "fileDisplayName": "Coqui — Learning Studio",
+  "requestedFileDisplayName": "CoquiLearn — Learning Studio",
+  "font": "Inter in Figma; macOS system font planned for implementation",
+  "themes": {
+    "Light": "Dew",
+    "Dark": "Moonforest"
+  },
+  "frames": {
+    "Home · Knowledge map · Moonforest": "3:2",
+    "Learn · Adaptive lesson · Moonforest": "3:137",
+    "Practice · Retrieval and review · Moonforest": "3:305",
+    "Future iPhone companion · Review · Moonforest": "3:420",
+    "Learn · Adaptive lesson · Dew": "15:235",
+    "CoquiLearn / Glass & palette": "16:11",
+    "CoquiLearn / Motion · selection to focus": "16:85"
+  },
+  "collections": {
+    "palette": "VariableCollectionId:2:2",
+    "theme": "VariableCollectionId:2:3",
+    "geometry": "VariableCollectionId:2:28"
+  },
+  "modes": {
+    "palette": {
+      "Light": "2:0",
+      "Dark": "2:1"
+    },
+    "theme": {
+      "Light": "2:2",
+      "Dark": "2:3"
+    }
+  },
+  "variables": {
+    "canvas": "VariableID:2:5",
+    "surface": "VariableID:2:7",
+    "surface-soft": "VariableID:2:9",
+    "ink": "VariableID:2:11",
+    "muted": "VariableID:2:13",
+    "accent": "VariableID:2:15",
+    "accent-soft": "VariableID:2:17",
+    "on-accent": "VariableID:2:19",
+    "line": "VariableID:2:21",
+    "warning": "VariableID:2:23",
+    "warning-soft": "VariableID:2:25",
+    "lilac": "VariableID:2:27",
+    "teal": "VariableID:14:10",
+    "peach": "VariableID:14:12",
+    "rose": "VariableID:14:14",
+    "sky": "VariableID:14:16",
+    "crust": "VariableID:14:18",
+    "glass-chrome": "VariableID:14:20",
+    "glass-lens": "VariableID:14:22",
+    "glass-edge": "VariableID:14:24",
+    "material/chrome": "VariableID:19:12",
+    "material/kit-chrome": "VariableID:19:14",
+    "material/lens": "VariableID:19:16",
+    "material/kit-control": "VariableID:19:18",
+    "material/kit-content": "VariableID:19:20",
+    "material/mist": "VariableID:19:22",
+    "material/reading": "VariableID:19:24",
+    "material/primary": "VariableID:19:26",
+    "material/selected": "VariableID:19:28",
+    "material/tint": "VariableID:19:30",
+    "material/edge": "VariableID:19:32",
+    "material/edge-strong": "VariableID:19:34"
+  },
+  "palette": {
+    "canvas": [
+      "#EBF0EB",
+      "#172127"
+    ],
+    "surface": [
+      "#FAFCF7",
+      "#202D34"
+    ],
+    "surface-soft": [
+      "#E0E9E2",
+      "#293940"
+    ],
+    "ink": [
+      "#253C35",
+      "#DDEDE5"
+    ],
+    "muted": [
+      "#526D63",
+      "#ACC4BB"
+    ],
+    "accent": [
+      "#316A49",
+      "#A9D9A0"
+    ],
+    "accent-soft": [
+      "#CFE3D3",
+      "#304B42"
+    ],
+    "on-accent": [
+      "#F5FAF1",
+      "#17291D"
+    ],
+    "line": [
+      "#B9CEC0",
+      "#4A655E"
+    ],
+    "warning": [
+      "#855B29",
+      "#EDC99C"
+    ],
+    "warning-soft": [
+      "#F4E7D4",
+      "#4A3E30"
+    ],
+    "lilac": [
+      "#80709B",
+      "#C9BFE8"
+    ],
+    "teal": [
+      "#327A72",
+      "#96D5C5"
+    ],
+    "peach": [
+      "#A36042",
+      "#EBBEA0"
+    ],
+    "rose": [
+      "#9B586B",
+      "#E5B4C4"
+    ],
+    "sky": [
+      "#4A708B",
+      "#ABCDDF"
+    ],
+    "crust": [
+      "#D7E2D9",
+      "#10181E"
+    ],
+    "glass-chrome": [
+      "#D4E0DA",
+      "#30424A"
+    ],
+    "glass-lens": [
+      "#EAF3ED",
+      "#41564F"
+    ],
+    "glass-edge": [
+      "#FFFFFF",
+      "#D2EBDA"
+    ]
+  },
+  "effectStyles": {
+    "Kit chrome": "S:efc4a8f3e628fb775f5bb13b17f790eb1fe51d56,",
+    "Kit control": "S:859800dc1e2c1c1a0655bca14398f66d4d5e876b,",
+    "Kit content": "S:fc2ce48d717474f6e08f33c44ec5ab1d4e1683e9,",
+    "Canopy": "S:1a24ef2dbc477fb47825d53fcd51f2cdccf89810,",
+    "Lens": "S:3f13f13e5e5cda7080e5970d64de9eee415d9d03,",
+    "Mist": "S:c5998d1787ca11c2fd84c0e385eff5417bd4304b,",
+    "Reading": "S:1928d9653e0eed4ffb48eadbf9030b0d6b06298b,"
+  },
+  "typography": {
+    "Display": [
+      32,
+      40,
+      "Semi Bold",
+      -0.6
+    ],
+    "Title": [
+      24,
+      30,
+      "Semi Bold",
+      -0.35
+    ],
+    "Section": [
+      18,
+      25,
+      "Semi Bold",
+      -0.15
+    ],
+    "Body": [
+      17,
+      26,
+      "Regular",
+      0
+    ],
+    "UI": [
+      13.5,
+      20,
+      "Medium",
+      0
+    ],
+    "Caption": [
+      12,
+      17,
+      "Regular",
+      0
+    ]
+  },
+  "components": {
+    "button": "2:55",
+    "primary": "2:47",
+    "disabled": "2:49",
+    "secondary": "2:51",
+    "hover": "2:53",
+    "pressed": "15:213"
+  },
+  "counts": {
+    "primitiveColors": 32,
+    "semanticColors": 32,
+    "geometryVariables": 11,
+    "textStyles": 6,
+    "effectStyles": 7,
+    "buttonVariants": 5,
+    "reviewFrames": 7
+  },
+  "sourceKit": {
+    "fileKey": "Gz7WEiN8Y3Vvivvae0ZPlP",
+    "pageId": "115:2",
+    "nodes": {
+      "chrome": "116:165",
+      "control": "116:167",
+      "content": "116:169"
+    },
+    "method": "Observed numeric GLASS recipes recreated locally; cross-file import keys not found. Source file unchanged."
+  },
+  "motion": {
+    "frameId": "16:85",
+    "durationSeconds": 2,
+    "nodes": [
+      {
+        "id": "16:95",
+        "name": "Animated selection lens",
+        "tracks": {
+          "TRANSLATION_Y": {
+            "id": "KeyframeTrackId:16:132",
+            "baseValue": {
+              "type": "FLOAT",
+              "value": 0
+            },
+            "keyframes": [
+              {
+                "id": "16:133",
+                "easing": {
+                  "type": "CUSTOM_CUBIC_BEZIER",
+                  "easingFunctionCubicBezier": {
+                    "x1": 0.1599999964237213,
+                    "y1": 1,
+                    "x2": 0.30000001192092896,
+                    "y2": 1
+                  }
+                },
+                "value": {
+                  "type": "FLOAT",
+                  "value": -64
+                },
+                "timelinePosition": 0
+              },
+              {
+                "id": "16:134",
+                "easing": {
+                  "type": "CUSTOM_CUBIC_BEZIER",
+                  "easingFunctionCubicBezier": {
+                    "x1": 0.1599999964237213,
+                    "y1": 1,
+                    "x2": 0.30000001192092896,
+                    "y2": 1
+                  }
+                },
+                "value": {
+                  "type": "FLOAT",
+                  "value": -64
+                },
+                "timelinePosition": 0.16
+              },
+              {
+                "id": "16:135",
+                "easing": {
+                  "type": "CUSTOM_CUBIC_BEZIER",
+                  "easingFunctionCubicBezier": {
+                    "x1": 0.1599999964237213,
+                    "y1": 1,
+                    "x2": 0.30000001192092896,
+                    "y2": 1
+                  }
+                },
+                "value": {
+                  "type": "FLOAT",
+                  "value": 0
+                },
+                "timelinePosition": 0.44
+              },
+              {
+                "id": "16:136",
+                "easing": {
+                  "type": "CUSTOM_CUBIC_BEZIER",
+                  "easingFunctionCubicBezier": {
+                    "x1": 0.1599999964237213,
+                    "y1": 1,
+                    "x2": 0.30000001192092896,
+                    "y2": 1
+                  }
+                },
+                "value": {
+                  "type": "FLOAT",
+                  "value": 0
+                },
+                "timelinePosition": 2
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "16:112",
+        "name": "Animated context tray",
+        "tracks": {
+          "OPACITY": {
+            "id": "KeyframeTrackId:16:146",
+            "baseValue": {
+              "type": "FLOAT",
+              "value": 1
+            },
+            "keyframes": [
+              {
+                "id": "16:147",
+                "easing": {
+                  "type": "CUSTOM_CUBIC_BEZIER",
+                  "easingFunctionCubicBezier": {
+                    "x1": 0.1599999964237213,
+                    "y1": 1,
+                    "x2": 0.30000001192092896,
+                    "y2": 1
+                  }
+                },
+                "value": {
+                  "type": "FLOAT",
+                  "value": 0.45
+                },
+                "timelinePosition": 0
+              },
+              {
+                "id": "16:148",
+                "easing": {
+                  "type": "CUSTOM_CUBIC_BEZIER",
+                  "easingFunctionCubicBezier": {
+                    "x1": 0.1599999964237213,
+                    "y1": 1,
+                    "x2": 0.30000001192092896,
+                    "y2": 1
+                  }
+                },
+                "value": {
+                  "type": "FLOAT",
+                  "value": 0.45
+                },
+                "timelinePosition": 0.4
+              },
+              {
+                "id": "16:149",
+                "easing": {
+                  "type": "CUSTOM_CUBIC_BEZIER",
+                  "easingFunctionCubicBezier": {
+                    "x1": 0.1599999964237213,
+                    "y1": 1,
+                    "x2": 0.30000001192092896,
+                    "y2": 1
+                  }
+                },
+                "value": {
+                  "type": "FLOAT",
+                  "value": 1
+                },
+                "timelinePosition": 0.72
+              },
+              {
+                "id": "16:150",
+                "easing": {
+                  "type": "CUSTOM_CUBIC_BEZIER",
+                  "easingFunctionCubicBezier": {
+                    "x1": 0.1599999964237213,
+                    "y1": 1,
+                    "x2": 0.30000001192092896,
+                    "y2": 1
+                  }
+                },
+                "value": {
+                  "type": "FLOAT",
+                  "value": 1
+                },
+                "timelinePosition": 2
+              }
+            ]
+          },
+          "TRANSLATION_X": {
+            "id": "KeyframeTrackId:16:141",
+            "baseValue": {
+              "type": "FLOAT",
+              "value": 0
+            },
+            "keyframes": [
+              {
+                "id": "16:142",
+                "easing": {
+                  "type": "CUSTOM_CUBIC_BEZIER",
+                  "easingFunctionCubicBezier": {
+                    "x1": 0.1599999964237213,
+                    "y1": 1,
+                    "x2": 0.30000001192092896,
+                    "y2": 1
+                  }
+                },
+                "value": {
+                  "type": "FLOAT",
+                  "value": 24
+                },
+                "timelinePosition": 0
+              },
+              {
+                "id": "16:143",
+                "easing": {
+                  "type": "CUSTOM_CUBIC_BEZIER",
+                  "easingFunctionCubicBezier": {
+                    "x1": 0.1599999964237213,
+                    "y1": 1,
+                    "x2": 0.30000001192092896,
+                    "y2": 1
+                  }
+                },
+                "value": {
+                  "type": "FLOAT",
+                  "value": 24
+                },
+                "timelinePosition": 0.4
+              },
+              {
+                "id": "16:144",
+                "easing": {
+                  "type": "CUSTOM_CUBIC_BEZIER",
+                  "easingFunctionCubicBezier": {
+                    "x1": 0.1599999964237213,
+                    "y1": 1,
+                    "x2": 0.30000001192092896,
+                    "y2": 1
+                  }
+                },
+                "value": {
+                  "type": "FLOAT",
+                  "value": 0
+                },
+                "timelinePosition": 0.72
+              },
+              {
+                "id": "16:145",
+                "easing": {
+                  "type": "CUSTOM_CUBIC_BEZIER",
+                  "easingFunctionCubicBezier": {
+                    "x1": 0.1599999964237213,
+                    "y1": 1,
+                    "x2": 0.30000001192092896,
+                    "y2": 1
+                  }
+                },
+                "value": {
+                  "type": "FLOAT",
+                  "value": 0
+                },
+                "timelinePosition": 2
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "16:117",
+        "name": "Animated action",
+        "tracks": {
+          "SCALE_XY": {
+            "id": "KeyframeTrackId:16:151",
+            "baseValue": {
+              "type": "VECTOR",
+              "value": {
+                "x": 1,
+                "y": 1
+              }
+            },
+            "keyframes": [
+              {
+                "id": "16:152",
+                "easing": {
+                  "type": "CUSTOM_CUBIC_BEZIER",
+                  "easingFunctionCubicBezier": {
+                    "x1": 0.1599999964237213,
+                    "y1": 1,
+                    "x2": 0.30000001192092896,
+                    "y2": 1
+                  }
+                },
+                "value": {
+                  "type": "VECTOR",
+                  "value": {
+                    "x": 1,
+                    "y": 1
+                  }
+                },
+                "timelinePosition": 0
+              },
+              {
+                "id": "16:153",
+                "easing": {
+                  "type": "CUSTOM_CUBIC_BEZIER",
+                  "easingFunctionCubicBezier": {
+                    "x1": 0.1599999964237213,
+                    "y1": 1,
+                    "x2": 0.30000001192092896,
+                    "y2": 1
+                  }
+                },
+                "value": {
+                  "type": "VECTOR",
+                  "value": {
+                    "x": 1,
+                    "y": 1
+                  }
+                },
+                "timelinePosition": 1.2
+              },
+              {
+                "id": "16:154",
+                "easing": {
+                  "type": "CUSTOM_CUBIC_BEZIER",
+                  "easingFunctionCubicBezier": {
+                    "x1": 0.1599999964237213,
+                    "y1": 1,
+                    "x2": 0.30000001192092896,
+                    "y2": 1
+                  }
+                },
+                "value": {
+                  "type": "VECTOR",
+                  "value": {
+                    "x": 0.9700000286102295,
+                    "y": 0.9700000286102295
+                  }
+                },
+                "timelinePosition": 1.32
+              },
+              {
+                "id": "16:155",
+                "easing": {
+                  "type": "CUSTOM_CUBIC_BEZIER",
+                  "easingFunctionCubicBezier": {
+                    "x1": 0.1599999964237213,
+                    "y1": 1,
+                    "x2": 0.30000001192092896,
+                    "y2": 1
+                  }
+                },
+                "value": {
+                  "type": "VECTOR",
+                  "value": {
+                    "x": 1,
+                    "y": 1
+                  }
+                },
+                "timelinePosition": 1.5
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "timelines": [
+      {
+        "id": "16:85",
+        "duration": 2
+      }
+    ],
+    "export": "glass-motion.mp4",
+    "implementationPlayback": "one-shot, event-triggered, interruptible",
+    "effectAnimation": "Not retained by Figma service; static GLASS styles with transform/opacity motion."
+  },
+  "verification": {
+    "audit": [
+      {
+        "id": "3:2",
+        "name": "Home · Knowledge map · Moonforest",
+        "textCount": 49,
+        "fontFamilies": [
+          "Inter"
+        ],
+        "zeroWidthText": 0,
+        "imageFillCount": 0,
+        "glassNodes": 17,
+        "prototypeLinks": 3,
+        "textOverflow": []
+      },
+      {
+        "id": "3:137",
+        "name": "Learn · Adaptive lesson · Moonforest",
+        "textCount": 55,
+        "fontFamilies": [
+          "Inter"
+        ],
+        "zeroWidthText": 0,
+        "imageFillCount": 0,
+        "glassNodes": 12,
+        "prototypeLinks": 5,
+        "textOverflow": []
+      },
+      {
+        "id": "3:305",
+        "name": "Practice · Retrieval and review · Moonforest",
+        "textCount": 49,
+        "fontFamilies": [
+          "Inter"
+        ],
+        "zeroWidthText": 0,
+        "imageFillCount": 0,
+        "glassNodes": 9,
+        "prototypeLinks": 3,
+        "textOverflow": []
+      },
+      {
+        "id": "3:420",
+        "name": "Future iPhone companion · Review · Moonforest",
+        "textCount": 19,
+        "fontFamilies": [
+          "Inter"
+        ],
+        "zeroWidthText": 0,
+        "imageFillCount": 0,
+        "glassNodes": 1,
+        "prototypeLinks": 1,
+        "textOverflow": []
+      },
+      {
+        "id": "15:235",
+        "name": "Learn · Adaptive lesson · Dew",
+        "textCount": 55,
+        "fontFamilies": [
+          "Inter"
+        ],
+        "zeroWidthText": 0,
+        "imageFillCount": 0,
+        "glassNodes": 12,
+        "prototypeLinks": 6,
+        "textOverflow": []
+      },
+      {
+        "id": "16:11",
+        "name": "CoquiLearn / Glass & palette",
+        "textCount": 37,
+        "fontFamilies": [
+          "Inter"
+        ],
+        "zeroWidthText": 0,
+        "imageFillCount": 0,
+        "glassNodes": 6,
+        "prototypeLinks": 0,
+        "textOverflow": []
+      },
+      {
+        "id": "16:85",
+        "name": "CoquiLearn / Motion · selection to focus",
+        "textCount": 23,
+        "fontFamilies": [
+          "Inter"
+        ],
+        "zeroWidthText": 0,
+        "imageFillCount": 0,
+        "glassNodes": 3,
+        "prototypeLinks": 0,
+        "textOverflow": []
+      }
+    ],
+    "visualPreviews": [
+      "home.png",
+      "lesson.png",
+      "practice.png",
+      "mobile.png",
+      "lesson-light.png",
+      "materials.png",
+      "motion-rest.png"
+    ],
+    "videoPhaseSeconds": [
+      0,
+      0.3,
+      0.7,
+      1.4
+    ],
+    "scope": "Design bounds, glyph metrics, editability and visual QA; runtime accessibility/performance not tested."
+  },
+  "limitations": [
+    "Figma document rename unsupported by connector.",
+    "Linked navigation and control states plus motion study; learning actions are conceptual.",
+    "No CoquiLearn app implementation."
+  ],
+  "executionEvidence": {
+    "foundation": {
+      "createdNodeIds": [],
+      "mutatedNodeIds": [],
+      "createdVariableIds": [
+        "VariableID:14:9",
+        "VariableID:14:10",
+        "VariableID:14:11",
+        "VariableID:14:12",
+        "VariableID:14:13",
+        "VariableID:14:14",
+        "VariableID:14:15",
+        "VariableID:14:16",
+        "VariableID:14:17",
+        "VariableID:14:18",
+        "VariableID:14:19",
+        "VariableID:14:20",
+        "VariableID:14:21",
+        "VariableID:14:22",
+        "VariableID:14:23",
+        "VariableID:14:24"
+      ],
+      "mutatedVariableIds": [
+        "VariableID:2:4",
+        "VariableID:2:5",
+        "VariableID:2:6",
+        "VariableID:2:7",
+        "VariableID:2:8",
+        "VariableID:2:9",
+        "VariableID:2:10",
+        "VariableID:2:11",
+        "VariableID:2:12",
+        "VariableID:2:13",
+        "VariableID:2:14",
+        "VariableID:2:15",
+        "VariableID:2:16",
+        "VariableID:2:17",
+        "VariableID:2:18",
+        "VariableID:2:19",
+        "VariableID:2:20",
+        "VariableID:2:21",
+        "VariableID:2:22",
+        "VariableID:2:23",
+        "VariableID:2:24",
+        "VariableID:2:25",
+        "VariableID:2:26",
+        "VariableID:2:27",
+        "VariableID:14:9",
+        "VariableID:14:10",
+        "VariableID:14:11",
+        "VariableID:14:12",
+        "VariableID:14:13",
+        "VariableID:14:14",
+        "VariableID:14:15",
+        "VariableID:14:16",
+        "VariableID:14:17",
+        "VariableID:14:18",
+        "VariableID:14:19",
+        "VariableID:14:20",
+        "VariableID:14:21",
+        "VariableID:14:22",
+        "VariableID:14:23",
+        "VariableID:14:24"
+      ],
+      "createdStyleIds": [
+        "S:859800dc1e2c1c1a0655bca14398f66d4d5e876b,",
+        "S:fc2ce48d717474f6e08f33c44ec5ab1d4e1683e9,",
+        "S:1a24ef2dbc477fb47825d53fcd51f2cdccf89810,",
+        "S:3f13f13e5e5cda7080e5970d64de9eee415d9d03,",
+        "S:c5998d1787ca11c2fd84c0e385eff5417bd4304b,",
+        "S:1928d9653e0eed4ffb48eadbf9030b0d6b06298b,"
+      ],
+      "mutatedStyleIds": [
+        "S:efc4a8f3e628fb775f5bb13b17f790eb1fe51d56,",
+        "S:859800dc1e2c1c1a0655bca14398f66d4d5e876b,",
+        "S:fc2ce48d717474f6e08f33c44ec5ab1d4e1683e9,",
+        "S:1a24ef2dbc477fb47825d53fcd51f2cdccf89810,",
+        "S:3f13f13e5e5cda7080e5970d64de9eee415d9d03,",
+        "S:c5998d1787ca11c2fd84c0e385eff5417bd4304b,",
+        "S:1928d9653e0eed4ffb48eadbf9030b0d6b06298b,"
+      ],
+      "variables": {
+        "canvas": "VariableID:2:5",
+        "surface": "VariableID:2:7",
+        "surface-soft": "VariableID:2:9",
+        "ink": "VariableID:2:11",
+        "muted": "VariableID:2:13",
+        "accent": "VariableID:2:15",
+        "accent-soft": "VariableID:2:17",
+        "on-accent": "VariableID:2:19",
+        "line": "VariableID:2:21",
+        "warning": "VariableID:2:23",
+        "warning-soft": "VariableID:2:25",
+        "lilac": "VariableID:2:27",
+        "teal": "VariableID:14:10",
+        "peach": "VariableID:14:12",
+        "rose": "VariableID:14:14",
+        "sky": "VariableID:14:16",
+        "crust": "VariableID:14:18",
+        "glass-chrome": "VariableID:14:20",
+        "glass-lens": "VariableID:14:22",
+        "glass-edge": "VariableID:14:24"
+      },
+      "styles": {
+        "Kit chrome": "S:efc4a8f3e628fb775f5bb13b17f790eb1fe51d56,",
+        "Kit control": "S:859800dc1e2c1c1a0655bca14398f66d4d5e876b,",
+        "Kit content": "S:fc2ce48d717474f6e08f33c44ec5ab1d4e1683e9,",
+        "Canopy": "S:1a24ef2dbc477fb47825d53fcd51f2cdccf89810,",
+        "Lens": "S:3f13f13e5e5cda7080e5970d64de9eee415d9d03,",
+        "Mist": "S:c5998d1787ca11c2fd84c0e385eff5417bd4304b,",
+        "Reading": "S:1928d9653e0eed4ffb48eadbf9030b0d6b06298b,"
+      },
+      "palette": {
+        "canvas": [
+          "#EBF0EB",
+          "#172127"
+        ],
+        "surface": [
+          "#FAFCF7",
+          "#202D34"
+        ],
+        "surface-soft": [
+          "#E0E9E2",
+          "#293940"
+        ],
+        "ink": [
+          "#253C35",
+          "#DDEDE5"
+        ],
+        "muted": [
+          "#526D63",
+          "#ACC4BB"
+        ],
+        "accent": [
+          "#316A49",
+          "#A9D9A0"
+        ],
+        "accent-soft": [
+          "#CFE3D3",
+          "#304B42"
+        ],
+        "on-accent": [
+          "#F5FAF1",
+          "#17291D"
+        ],
+        "line": [
+          "#B9CEC0",
+          "#4A655E"
+        ],
+        "warning": [
+          "#855B29",
+          "#EDC99C"
+        ],
+        "warning-soft": [
+          "#F4E7D4",
+          "#4A3E30"
+        ],
+        "lilac": [
+          "#80709B",
+          "#C9BFE8"
+        ],
+        "teal": [
+          "#327A72",
+          "#96D5C5"
+        ],
+        "peach": [
+          "#A36042",
+          "#EBBEA0"
+        ],
+        "rose": [
+          "#9B586B",
+          "#E5B4C4"
+        ],
+        "sky": [
+          "#4A708B",
+          "#ABCDDF"
+        ],
+        "crust": [
+          "#D7E2D9",
+          "#10181E"
+        ],
+        "glass-chrome": [
+          "#D4E0DA",
+          "#30424A"
+        ],
+        "glass-lens": [
+          "#EAF3ED",
+          "#41564F"
+        ],
+        "glass-edge": [
+          "#FFFFFF",
+          "#D2EBDA"
+        ]
+      },
+      "collections": {
+        "palette": "VariableCollectionId:2:2",
+        "theme": "VariableCollectionId:2:3"
+      },
+      "modes": {
+        "palette": {
+          "Light": "2:0",
+          "Dark": "2:1"
+        },
+        "theme": {
+          "Light": "2:2",
+          "Dark": "2:3"
+        }
+      },
+      "fonts": [
+        {
+          "family": "Manrope",
+          "style": "SemiBold",
+          "variationSettings": {
+            "wght": 600
+          }
+        },
+        {
+          "family": "Manrope",
+          "style": "Bold",
+          "variationSettings": {
+            "wght": 700
+          }
+        },
+        {
+          "family": "Manrope",
+          "style": "Medium",
+          "variationSettings": {
+            "wght": 500
+          }
+        },
+        {
+          "family": "Manrope",
+          "style": "Regular",
+          "variationSettings": {
+            "wght": 400
+          }
+        }
+      ]
+    },
+    "screens": {
+      "createdNodeIds": [
+        "15:213",
+        "15:214",
+        "15:219",
+        "15:220",
+        "15:221",
+        "15:222",
+        "15:223",
+        "15:224",
+        "15:225",
+        "15:226",
+        "15:227",
+        "15:228",
+        "15:229",
+        "15:230",
+        "15:231",
+        "15:232",
+        "15:233",
+        "15:234",
+        "15:235",
+        "15:236",
+        "15:237",
+        "15:238",
+        "15:239",
+        "15:240",
+        "15:241",
+        "15:242",
+        "15:243",
+        "15:244",
+        "15:245",
+        "15:246",
+        "15:247",
+        "15:248",
+        "15:249",
+        "15:250",
+        "15:251",
+        "15:252",
+        "15:253",
+        "15:254",
+        "15:255",
+        "15:256",
+        "15:257",
+        "15:258",
+        "15:259",
+        "15:260",
+        "15:261",
+        "15:262",
+        "15:263",
+        "15:264",
+        "15:265",
+        "15:266",
+        "15:267",
+        "15:268",
+        "15:269",
+        "15:270",
+        "15:271",
+        "15:272",
+        "15:273",
+        "15:274",
+        "15:275",
+        "15:276",
+        "15:277",
+        "15:278",
+        "15:279",
+        "15:280",
+        "15:281",
+        "15:282",
+        "15:283",
+        "15:284",
+        "15:285",
+        "15:286",
+        "15:287",
+        "15:288",
+        "15:289",
+        "15:290",
+        "15:291",
+        "15:292",
+        "15:293",
+        "15:294",
+        "15:295",
+        "15:296",
+        "15:297",
+        "15:298",
+        "15:299",
+        "15:300",
+        "15:301",
+        "15:302",
+        "15:303",
+        "15:304",
+        "15:305",
+        "15:306",
+        "15:307",
+        "15:308",
+        "15:309",
+        "15:310",
+        "15:311",
+        "15:312",
+        "15:313",
+        "15:314",
+        "15:315",
+        "15:316",
+        "15:317",
+        "15:318",
+        "15:319",
+        "15:320",
+        "15:321",
+        "15:322",
+        "15:323",
+        "15:324",
+        "15:325",
+        "15:326",
+        "15:327",
+        "15:328",
+        "15:329",
+        "15:330",
+        "15:331",
+        "15:332",
+        "15:333",
+        "15:334",
+        "15:335",
+        "15:336",
+        "15:337",
+        "15:338",
+        "15:339",
+        "15:340",
+        "15:341",
+        "15:342",
+        "15:343",
+        "15:344",
+        "15:345",
+        "15:346",
+        "15:347",
+        "15:348",
+        "15:349",
+        "15:350",
+        "15:351",
+        "15:352",
+        "15:353",
+        "15:354",
+        "15:355",
+        "15:356",
+        "15:357",
+        "15:358",
+        "15:359",
+        "15:360",
+        "15:361",
+        "15:362",
+        "15:363",
+        "15:364",
+        "15:365",
+        "15:366",
+        "15:367",
+        "15:368",
+        "15:369",
+        "15:370",
+        "15:371",
+        "15:372",
+        "15:373",
+        "15:374",
+        "15:375",
+        "15:376",
+        "15:377",
+        "15:378",
+        "15:379",
+        "15:380",
+        "15:381",
+        "15:382",
+        "15:383",
+        "15:384",
+        "15:385",
+        "15:386",
+        "15:387",
+        "15:388",
+        "15:389",
+        "15:390",
+        "15:391",
+        "15:392",
+        "15:393",
+        "15:394",
+        "15:395",
+        "15:396",
+        "15:397",
+        "15:398",
+        "15:399",
+        "15:400",
+        "15:401",
+        "15:402",
+        "15:403",
+        "15:404",
+        "15:405",
+        "15:420",
+        "15:421",
+        "15:422",
+        "15:423",
+        "15:425",
+        "15:426",
+        "15:427",
+        "15:428"
+      ],
+      "mutatedNodeIds": [
+        "2:47",
+        "2:48",
+        "2:49",
+        "2:50",
+        "2:51",
+        "2:52",
+        "2:53",
+        "2:54",
+        "15:213",
+        "2:55",
+        "3:2",
+        "3:3",
+        "3:7",
+        "3:8",
+        "3:12",
+        "3:17",
+        "3:18",
+        "3:19",
+        "3:20",
+        "3:24",
+        "3:28",
+        "3:33",
+        "3:34",
+        "3:52",
+        "3:53",
+        "3:58",
+        "3:66",
+        "3:67",
+        "3:70",
+        "3:71",
+        "3:72",
+        "3:84",
+        "3:112",
+        "3:115",
+        "3:129",
+        "3:132",
+        "3:133",
+        "3:4",
+        "3:60",
+        "3:62",
+        "3:64",
+        "3:68",
+        "3:10",
+        "3:15",
+        "3:76",
+        "3:85",
+        "3:88",
+        "3:91",
+        "3:94",
+        "3:97",
+        "3:100",
+        "3:103",
+        "3:110",
+        "3:116",
+        "3:86",
+        "3:89",
+        "3:95",
+        "3:98",
+        "3:104",
+        "3:137",
+        "3:138",
+        "3:142",
+        "3:143",
+        "3:147",
+        "3:152",
+        "3:153",
+        "3:154",
+        "3:155",
+        "3:159",
+        "3:163",
+        "3:168",
+        "3:169",
+        "3:187",
+        "3:188",
+        "3:193",
+        "3:201",
+        "3:202",
+        "3:205",
+        "3:206",
+        "3:207",
+        "3:228",
+        "3:250",
+        "3:251",
+        "3:261",
+        "3:268",
+        "3:288",
+        "3:289",
+        "3:300",
+        "3:301",
+        "3:302",
+        "3:303",
+        "3:139",
+        "3:195",
+        "3:197",
+        "3:199",
+        "3:203",
+        "3:145",
+        "3:157",
+        "3:208",
+        "3:225",
+        "3:255",
+        "3:284",
+        "3:295",
+        "3:305",
+        "3:306",
+        "3:310",
+        "3:311",
+        "3:315",
+        "3:320",
+        "3:321",
+        "3:322",
+        "3:323",
+        "3:327",
+        "3:331",
+        "3:336",
+        "3:337",
+        "3:355",
+        "3:356",
+        "3:361",
+        "3:369",
+        "3:370",
+        "3:373",
+        "3:374",
+        "3:375",
+        "3:404",
+        "3:307",
+        "3:363",
+        "3:365",
+        "3:367",
+        "3:371",
+        "3:313",
+        "3:329",
+        "3:379",
+        "3:399",
+        "3:406",
+        "3:420",
+        "3:427",
+        "3:441",
+        "3:442",
+        "3:457",
+        "3:458",
+        "3:459",
+        "3:460",
+        "3:464",
+        "3:468",
+        "3:472",
+        "3:473",
+        "3:454",
+        "15:235",
+        "3:22",
+        "3:26",
+        "3:125",
+        "3:150",
+        "3:161",
+        "3:304",
+        "3:318",
+        "3:325",
+        "15:253",
+        "15:260",
+        "15:264",
+        "15:405",
+        "15:420",
+        "15:425",
+        "3:476",
+        "3:477",
+        "3:478",
+        "0:1"
+      ],
+      "frames": {
+        "Home · Knowledge map · Moonforest": "3:2",
+        "Learn · Adaptive lesson · Moonforest": "3:137",
+        "Practice · Retrieval and review · Moonforest": "3:305",
+        "Future iPhone companion · Review · Moonforest": "3:420",
+        "Learn · Adaptive lesson · Dew": "15:235"
+      },
+      "buttonVariants": 5,
+      "pressedId": "15:213",
+      "lightFrameId": "15:235",
+      "screenBounds": [
+        {
+          "id": "3:2",
+          "name": "Home · Knowledge map · Moonforest",
+          "x": 160,
+          "y": 160,
+          "width": 1440,
+          "height": 960
+        },
+        {
+          "id": "3:137",
+          "name": "Learn · Adaptive lesson · Moonforest",
+          "x": 1664,
+          "y": 160,
+          "width": 1440,
+          "height": 960
+        },
+        {
+          "id": "3:305",
+          "name": "Practice · Retrieval and review · Moonforest",
+          "x": 160,
+          "y": 1200,
+          "width": 1440,
+          "height": 960
+        },
+        {
+          "id": "15:235",
+          "name": "Learn · Adaptive lesson · Dew",
+          "x": 1664,
+          "y": 1200,
+          "width": 1440,
+          "height": 960
+        },
+        {
+          "id": "3:420",
+          "name": "Future iPhone companion · Review · Moonforest",
+          "x": 3168,
+          "y": 160,
+          "width": 390,
+          "height": 844
+        }
+      ],
+      "zeroWidthText": []
+    },
+    "motion": {
+      "createdNodeIds": [
+        "16:11",
+        "16:12",
+        "16:13",
+        "16:14",
+        "16:15",
+        "16:16",
+        "16:17",
+        "16:18",
+        "16:19",
+        "16:20",
+        "16:21",
+        "16:22",
+        "16:23",
+        "16:24",
+        "16:25",
+        "16:26",
+        "16:27",
+        "16:28",
+        "16:29",
+        "16:30",
+        "16:31",
+        "16:32",
+        "16:33",
+        "16:34",
+        "16:35",
+        "16:36",
+        "16:37",
+        "16:38",
+        "16:39",
+        "16:40",
+        "16:41",
+        "16:42",
+        "16:43",
+        "16:44",
+        "16:45",
+        "16:46",
+        "16:47",
+        "16:48",
+        "16:49",
+        "16:50",
+        "16:51",
+        "16:52",
+        "16:53",
+        "16:54",
+        "16:55",
+        "16:56",
+        "16:57",
+        "16:58",
+        "16:59",
+        "16:60",
+        "16:61",
+        "16:62",
+        "16:63",
+        "16:64",
+        "16:65",
+        "16:66",
+        "16:67",
+        "16:68",
+        "16:69",
+        "16:70",
+        "16:71",
+        "16:72",
+        "16:73",
+        "16:74",
+        "16:75",
+        "16:76",
+        "16:77",
+        "16:78",
+        "16:79",
+        "16:80",
+        "16:81",
+        "16:82",
+        "16:83",
+        "16:84",
+        "16:85",
+        "16:86",
+        "16:87",
+        "16:88",
+        "16:89",
+        "16:90",
+        "16:91",
+        "16:92",
+        "16:93",
+        "16:94",
+        "16:95",
+        "16:96",
+        "16:97",
+        "16:98",
+        "16:99",
+        "16:100",
+        "16:101",
+        "16:102",
+        "16:103",
+        "16:104",
+        "16:105",
+        "16:106",
+        "16:107",
+        "16:108",
+        "16:109",
+        "16:110",
+        "16:111",
+        "16:112",
+        "16:113",
+        "16:114",
+        "16:115",
+        "16:116",
+        "16:117",
+        "16:118",
+        "16:119",
+        "16:120",
+        "16:121",
+        "16:122",
+        "16:123",
+        "16:124",
+        "16:125",
+        "16:126",
+        "16:127",
+        "16:128",
+        "16:129",
+        "16:130",
+        "16:131"
+      ],
+      "mutatedNodeIds": [
+        "16:95",
+        "16:112",
+        "16:117"
+      ],
+      "materialBoardId": "16:11",
+      "motionFrameId": "16:85",
+      "motionNodes": [
+        {
+          "id": "16:95",
+          "name": "Animated selection lens",
+          "tracks": {
+            "TRANSLATION_Y": {
+              "id": "KeyframeTrackId:16:132",
+              "baseValue": {
+                "type": "FLOAT",
+                "value": 0
+              },
+              "keyframes": [
+                {
+                  "id": "16:133",
+                  "easing": {
+                    "type": "CUSTOM_CUBIC_BEZIER",
+                    "easingFunctionCubicBezier": {
+                      "x1": 0.1599999964237213,
+                      "y1": 1,
+                      "x2": 0.30000001192092896,
+                      "y2": 1
+                    }
+                  },
+                  "value": {
+                    "type": "FLOAT",
+                    "value": -64
+                  },
+                  "timelinePosition": 0
+                },
+                {
+                  "id": "16:134",
+                  "easing": {
+                    "type": "CUSTOM_CUBIC_BEZIER",
+                    "easingFunctionCubicBezier": {
+                      "x1": 0.1599999964237213,
+                      "y1": 1,
+                      "x2": 0.30000001192092896,
+                      "y2": 1
+                    }
+                  },
+                  "value": {
+                    "type": "FLOAT",
+                    "value": -64
+                  },
+                  "timelinePosition": 0.16
+                },
+                {
+                  "id": "16:135",
+                  "easing": {
+                    "type": "CUSTOM_CUBIC_BEZIER",
+                    "easingFunctionCubicBezier": {
+                      "x1": 0.1599999964237213,
+                      "y1": 1,
+                      "x2": 0.30000001192092896,
+                      "y2": 1
+                    }
+                  },
+                  "value": {
+                    "type": "FLOAT",
+                    "value": 0
+                  },
+                  "timelinePosition": 0.44
+                },
+                {
+                  "id": "16:136",
+                  "easing": {
+                    "type": "CUSTOM_CUBIC_BEZIER",
+                    "easingFunctionCubicBezier": {
+                      "x1": 0.1599999964237213,
+                      "y1": 1,
+                      "x2": 0.30000001192092896,
+                      "y2": 1
+                    }
+                  },
+                  "value": {
+                    "type": "FLOAT",
+                    "value": 0
+                  },
+                  "timelinePosition": 2
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": "16:112",
+          "name": "Animated context tray",
+          "tracks": {
+            "OPACITY": {
+              "id": "KeyframeTrackId:16:146",
+              "baseValue": {
+                "type": "FLOAT",
+                "value": 1
+              },
+              "keyframes": [
+                {
+                  "id": "16:147",
+                  "easing": {
+                    "type": "CUSTOM_CUBIC_BEZIER",
+                    "easingFunctionCubicBezier": {
+                      "x1": 0.1599999964237213,
+                      "y1": 1,
+                      "x2": 0.30000001192092896,
+                      "y2": 1
+                    }
+                  },
+                  "value": {
+                    "type": "FLOAT",
+                    "value": 0.45
+                  },
+                  "timelinePosition": 0
+                },
+                {
+                  "id": "16:148",
+                  "easing": {
+                    "type": "CUSTOM_CUBIC_BEZIER",
+                    "easingFunctionCubicBezier": {
+                      "x1": 0.1599999964237213,
+                      "y1": 1,
+                      "x2": 0.30000001192092896,
+                      "y2": 1
+                    }
+                  },
+                  "value": {
+                    "type": "FLOAT",
+                    "value": 0.45
+                  },
+                  "timelinePosition": 0.4
+                },
+                {
+                  "id": "16:149",
+                  "easing": {
+                    "type": "CUSTOM_CUBIC_BEZIER",
+                    "easingFunctionCubicBezier": {
+                      "x1": 0.1599999964237213,
+                      "y1": 1,
+                      "x2": 0.30000001192092896,
+                      "y2": 1
+                    }
+                  },
+                  "value": {
+                    "type": "FLOAT",
+                    "value": 1
+                  },
+                  "timelinePosition": 0.72
+                },
+                {
+                  "id": "16:150",
+                  "easing": {
+                    "type": "CUSTOM_CUBIC_BEZIER",
+                    "easingFunctionCubicBezier": {
+                      "x1": 0.1599999964237213,
+                      "y1": 1,
+                      "x2": 0.30000001192092896,
+                      "y2": 1
+                    }
+                  },
+                  "value": {
+                    "type": "FLOAT",
+                    "value": 1
+                  },
+                  "timelinePosition": 2
+                }
+              ]
+            },
+            "TRANSLATION_X": {
+              "id": "KeyframeTrackId:16:141",
+              "baseValue": {
+                "type": "FLOAT",
+                "value": 0
+              },
+              "keyframes": [
+                {
+                  "id": "16:142",
+                  "easing": {
+                    "type": "CUSTOM_CUBIC_BEZIER",
+                    "easingFunctionCubicBezier": {
+                      "x1": 0.1599999964237213,
+                      "y1": 1,
+                      "x2": 0.30000001192092896,
+                      "y2": 1
+                    }
+                  },
+                  "value": {
+                    "type": "FLOAT",
+                    "value": 24
+                  },
+                  "timelinePosition": 0
+                },
+                {
+                  "id": "16:143",
+                  "easing": {
+                    "type": "CUSTOM_CUBIC_BEZIER",
+                    "easingFunctionCubicBezier": {
+                      "x1": 0.1599999964237213,
+                      "y1": 1,
+                      "x2": 0.30000001192092896,
+                      "y2": 1
+                    }
+                  },
+                  "value": {
+                    "type": "FLOAT",
+                    "value": 24
+                  },
+                  "timelinePosition": 0.4
+                },
+                {
+                  "id": "16:144",
+                  "easing": {
+                    "type": "CUSTOM_CUBIC_BEZIER",
+                    "easingFunctionCubicBezier": {
+                      "x1": 0.1599999964237213,
+                      "y1": 1,
+                      "x2": 0.30000001192092896,
+                      "y2": 1
+                    }
+                  },
+                  "value": {
+                    "type": "FLOAT",
+                    "value": 0
+                  },
+                  "timelinePosition": 0.72
+                },
+                {
+                  "id": "16:145",
+                  "easing": {
+                    "type": "CUSTOM_CUBIC_BEZIER",
+                    "easingFunctionCubicBezier": {
+                      "x1": 0.1599999964237213,
+                      "y1": 1,
+                      "x2": 0.30000001192092896,
+                      "y2": 1
+                    }
+                  },
+                  "value": {
+                    "type": "FLOAT",
+                    "value": 0
+                  },
+                  "timelinePosition": 2
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": "16:117",
+          "name": "Animated action",
+          "tracks": {
+            "SCALE_XY": {
+              "id": "KeyframeTrackId:16:151",
+              "baseValue": {
+                "type": "VECTOR",
+                "value": {
+                  "x": 1,
+                  "y": 1
+                }
+              },
+              "keyframes": [
+                {
+                  "id": "16:152",
+                  "easing": {
+                    "type": "CUSTOM_CUBIC_BEZIER",
+                    "easingFunctionCubicBezier": {
+                      "x1": 0.1599999964237213,
+                      "y1": 1,
+                      "x2": 0.30000001192092896,
+                      "y2": 1
+                    }
+                  },
+                  "value": {
+                    "type": "VECTOR",
+                    "value": {
+                      "x": 1,
+                      "y": 1
+                    }
+                  },
+                  "timelinePosition": 0
+                },
+                {
+                  "id": "16:153",
+                  "easing": {
+                    "type": "CUSTOM_CUBIC_BEZIER",
+                    "easingFunctionCubicBezier": {
+                      "x1": 0.1599999964237213,
+                      "y1": 1,
+                      "x2": 0.30000001192092896,
+                      "y2": 1
+                    }
+                  },
+                  "value": {
+                    "type": "VECTOR",
+                    "value": {
+                      "x": 1,
+                      "y": 1
+                    }
+                  },
+                  "timelinePosition": 1.2
+                },
+                {
+                  "id": "16:154",
+                  "easing": {
+                    "type": "CUSTOM_CUBIC_BEZIER",
+                    "easingFunctionCubicBezier": {
+                      "x1": 0.1599999964237213,
+                      "y1": 1,
+                      "x2": 0.30000001192092896,
+                      "y2": 1
+                    }
+                  },
+                  "value": {
+                    "type": "VECTOR",
+                    "value": {
+                      "x": 0.9700000286102295,
+                      "y": 0.9700000286102295
+                    }
+                  },
+                  "timelinePosition": 1.32
+                },
+                {
+                  "id": "16:155",
+                  "easing": {
+                    "type": "CUSTOM_CUBIC_BEZIER",
+                    "easingFunctionCubicBezier": {
+                      "x1": 0.1599999964237213,
+                      "y1": 1,
+                      "x2": 0.30000001192092896,
+                      "y2": 1
+                    }
+                  },
+                  "value": {
+                    "type": "VECTOR",
+                    "value": {
+                      "x": 1,
+                      "y": 1
+                    }
+                  },
+                  "timelinePosition": 1.5
+                }
+              ]
+            }
+          }
+        }
+      ],
+      "timelines": [
+        {
+          "id": "16:85",
+          "duration": 2
+        }
+      ],
+      "fontFamilies": [
+        "Manrope"
+      ],
+      "specimens": 6,
+      "colors": 8
+    },
+    "materials": {
+      "createdNodeIds": [],
+      "mutatedNodeIds": [
+        "3:2",
+        "3:3",
+        "3:4",
+        "3:7",
+        "3:8",
+        "3:9",
+        "3:10",
+        "3:12",
+        "3:13",
+        "3:15",
+        "3:17",
+        "3:18",
+        "3:19",
+        "3:20",
+        "3:21",
+        "3:24",
+        "3:25",
+        "3:28",
+        "3:29",
+        "3:30",
+        "3:33",
+        "3:34",
+        "3:35",
+        "3:36",
+        "3:38",
+        "3:40",
+        "3:41",
+        "3:43",
+        "3:44",
+        "3:46",
+        "3:47",
+        "3:52",
+        "3:53",
+        "3:54",
+        "3:55",
+        "3:58",
+        "3:59",
+        "3:60",
+        "3:61",
+        "3:62",
+        "3:63",
+        "3:64",
+        "3:66",
+        "3:67",
+        "3:68",
+        "3:70",
+        "3:71",
+        "3:72",
+        "3:74",
+        "3:75",
+        "3:76",
+        "3:78",
+        "3:79",
+        "3:80",
+        "3:81",
+        "3:82",
+        "3:84",
+        "3:85",
+        "3:86",
+        "3:87",
+        "3:88",
+        "3:89",
+        "3:90",
+        "3:91",
+        "3:92",
+        "3:93",
+        "3:94",
+        "3:95",
+        "3:96",
+        "3:97",
+        "3:98",
+        "3:99",
+        "3:100",
+        "3:101",
+        "3:102",
+        "3:103",
+        "3:104",
+        "3:106",
+        "3:107",
+        "3:108",
+        "3:109",
+        "3:110",
+        "3:112",
+        "3:113",
+        "3:115",
+        "3:116",
+        "3:118",
+        "3:119",
+        "3:120",
+        "3:121",
+        "3:122",
+        "3:124",
+        "3:125",
+        "I3:125;2:48",
+        "3:129",
+        "3:130",
+        "3:132",
+        "3:133",
+        "3:134",
+        "3:135",
+        "3:136",
+        "3:137",
+        "3:138",
+        "3:139",
+        "3:142",
+        "3:143",
+        "3:144",
+        "3:145",
+        "3:147",
+        "3:148",
+        "3:152",
+        "3:153",
+        "3:154",
+        "3:155",
+        "3:156",
+        "3:157",
+        "3:159",
+        "3:160",
+        "3:163",
+        "3:164",
+        "3:165",
+        "3:168",
+        "3:169",
+        "3:170",
+        "3:171",
+        "3:173",
+        "3:175",
+        "3:176",
+        "3:178",
+        "3:179",
+        "3:181",
+        "3:182",
+        "3:187",
+        "3:188",
+        "3:189",
+        "3:190",
+        "3:193",
+        "3:194",
+        "3:195",
+        "3:196",
+        "3:197",
+        "3:198",
+        "3:199",
+        "3:201",
+        "3:202",
+        "3:203",
+        "3:205",
+        "3:206",
+        "3:207",
+        "15:420",
+        "3:208",
+        "3:210",
+        "3:211",
+        "3:213",
+        "3:214",
+        "3:215",
+        "3:218",
+        "3:219",
+        "3:220",
+        "3:221",
+        "3:222",
+        "3:223",
+        "3:224",
+        "3:225",
+        "3:226",
+        "3:228",
+        "3:229",
+        "3:230",
+        "3:231",
+        "3:232",
+        "3:233",
+        "3:234",
+        "3:235",
+        "3:238",
+        "3:240",
+        "3:241",
+        "3:242",
+        "3:243",
+        "3:244",
+        "3:245",
+        "3:246",
+        "I3:246;2:48",
+        "3:250",
+        "3:251",
+        "3:252",
+        "3:253",
+        "3:255",
+        "3:256",
+        "3:257",
+        "3:259",
+        "3:261",
+        "3:263",
+        "3:264",
+        "3:266",
+        "3:268",
+        "3:270",
+        "3:271",
+        "3:273",
+        "3:274",
+        "3:276",
+        "3:277",
+        "3:279",
+        "3:280",
+        "3:282",
+        "3:283",
+        "3:284",
+        "3:285",
+        "3:288",
+        "3:289",
+        "3:291",
+        "3:292",
+        "3:293",
+        "I3:293;2:52",
+        "3:295",
+        "3:296",
+        "3:297",
+        "3:300",
+        "3:301",
+        "3:302",
+        "3:303",
+        "3:304",
+        "3:305",
+        "3:306",
+        "3:307",
+        "3:310",
+        "3:311",
+        "3:312",
+        "3:313",
+        "3:315",
+        "3:316",
+        "3:320",
+        "3:321",
+        "3:322",
+        "3:323",
+        "3:324",
+        "3:327",
+        "3:328",
+        "3:329",
+        "3:331",
+        "3:332",
+        "3:333",
+        "3:336",
+        "3:337",
+        "3:338",
+        "3:339",
+        "3:341",
+        "3:343",
+        "3:344",
+        "3:346",
+        "3:347",
+        "3:349",
+        "3:350",
+        "3:355",
+        "3:356",
+        "3:357",
+        "3:358",
+        "3:361",
+        "3:362",
+        "3:363",
+        "3:364",
+        "3:365",
+        "3:366",
+        "3:367",
+        "3:369",
+        "3:370",
+        "3:371",
+        "3:373",
+        "3:374",
+        "3:375",
+        "3:377",
+        "3:378",
+        "3:379",
+        "3:381",
+        "3:382",
+        "3:383",
+        "3:384",
+        "3:385",
+        "3:386",
+        "3:387",
+        "3:388",
+        "3:389",
+        "3:390",
+        "3:391",
+        "3:393",
+        "I3:393;2:48",
+        "3:395",
+        "I3:395;2:52",
+        "3:397",
+        "3:399",
+        "3:400",
+        "3:401",
+        "3:404",
+        "3:405",
+        "3:406",
+        "3:408",
+        "3:409",
+        "3:410",
+        "3:411",
+        "3:413",
+        "3:414",
+        "3:415",
+        "I3:415;2:52",
+        "3:418",
+        "3:419",
+        "3:420",
+        "3:422",
+        "3:423",
+        "3:425",
+        "3:427",
+        "3:428",
+        "3:429",
+        "3:430",
+        "3:431",
+        "3:432",
+        "3:433",
+        "3:434",
+        "3:435",
+        "3:436",
+        "3:437",
+        "3:438",
+        "3:441",
+        "3:442",
+        "3:443",
+        "3:444",
+        "3:446",
+        "3:447",
+        "3:448",
+        "3:449",
+        "3:450",
+        "3:451",
+        "3:452",
+        "I3:452;2:48",
+        "3:454",
+        "3:457",
+        "3:458",
+        "3:459",
+        "3:460",
+        "3:461",
+        "3:464",
+        "3:465",
+        "3:468",
+        "3:469",
+        "3:472",
+        "3:473",
+        "3:474",
+        "3:475",
+        "15:235",
+        "15:237",
+        "15:238",
+        "15:245",
+        "15:246",
+        "15:247",
+        "15:248",
+        "15:250",
+        "15:251",
+        "15:255",
+        "15:256",
+        "15:257",
+        "15:258",
+        "15:259",
+        "15:260",
+        "15:262",
+        "15:263",
+        "15:266",
+        "15:267",
+        "15:268",
+        "15:271",
+        "15:272",
+        "15:273",
+        "15:274",
+        "15:276",
+        "15:278",
+        "15:279",
+        "15:281",
+        "15:282",
+        "15:284",
+        "15:285",
+        "15:290",
+        "15:291",
+        "15:292",
+        "15:293",
+        "15:296",
+        "15:297",
+        "15:298",
+        "15:299",
+        "15:300",
+        "15:301",
+        "15:302",
+        "15:304",
+        "15:305",
+        "15:306",
+        "15:308",
+        "15:309",
+        "15:310",
+        "15:425",
+        "15:311",
+        "15:313",
+        "15:314",
+        "15:316",
+        "15:317",
+        "15:318",
+        "15:321",
+        "15:322",
+        "15:323",
+        "15:324",
+        "15:325",
+        "15:326",
+        "15:327",
+        "15:328",
+        "15:329",
+        "15:331",
+        "15:332",
+        "15:333",
+        "15:334",
+        "15:335",
+        "15:336",
+        "15:337",
+        "15:338",
+        "15:341",
+        "15:343",
+        "15:344",
+        "15:345",
+        "15:346",
+        "15:347",
+        "15:348",
+        "15:349",
+        "I15:349;2:48",
+        "15:352",
+        "15:353",
+        "15:354",
+        "15:355",
+        "15:357",
+        "15:358",
+        "15:359",
+        "15:361",
+        "15:363",
+        "15:365",
+        "15:366",
+        "15:368",
+        "15:370",
+        "15:372",
+        "15:373",
+        "15:375",
+        "15:376",
+        "15:378",
+        "15:379",
+        "15:381",
+        "15:382",
+        "15:384",
+        "15:385",
+        "15:386",
+        "15:387",
+        "15:390",
+        "15:391",
+        "15:393",
+        "15:394",
+        "15:395",
+        "I15:395;2:52",
+        "15:396",
+        "15:397",
+        "15:398",
+        "15:401",
+        "15:402",
+        "15:403",
+        "15:404",
+        "15:405",
+        "16:11",
+        "16:13",
+        "16:14",
+        "16:15",
+        "16:17",
+        "16:18",
+        "16:19",
+        "16:20",
+        "16:21",
+        "16:23",
+        "16:24",
+        "16:25",
+        "16:26",
+        "16:27",
+        "16:29",
+        "16:30",
+        "16:31",
+        "16:32",
+        "16:33",
+        "16:35",
+        "16:36",
+        "16:37",
+        "16:38",
+        "16:39",
+        "16:41",
+        "16:42",
+        "16:43",
+        "16:44",
+        "16:45",
+        "16:47",
+        "16:48",
+        "16:49",
+        "16:50",
+        "16:53",
+        "16:54",
+        "16:55",
+        "16:57",
+        "16:58",
+        "16:59",
+        "16:61",
+        "16:62",
+        "16:63",
+        "16:65",
+        "16:66",
+        "16:67",
+        "16:69",
+        "16:70",
+        "16:71",
+        "16:73",
+        "16:74",
+        "16:75",
+        "16:77",
+        "16:78",
+        "16:79",
+        "16:82",
+        "16:83",
+        "16:84",
+        "16:85",
+        "16:87",
+        "16:88",
+        "16:89",
+        "16:90",
+        "16:91",
+        "16:92",
+        "16:93",
+        "16:95",
+        "16:98",
+        "16:100",
+        "16:101",
+        "16:103",
+        "16:105",
+        "16:106",
+        "16:108",
+        "16:110",
+        "16:111",
+        "16:112",
+        "16:113",
+        "16:114",
+        "16:115",
+        "16:116",
+        "16:117",
+        "16:118",
+        "16:121",
+        "16:122",
+        "16:124",
+        "16:125",
+        "16:127",
+        "16:128",
+        "16:130",
+        "16:131",
+        "2:47",
+        "2:48",
+        "2:49",
+        "2:50",
+        "2:51",
+        "2:52",
+        "2:53",
+        "2:54",
+        "15:213",
+        "15:214",
+        "3:476",
+        "3:477",
+        "3:478",
+        "3:398",
+        "3:417"
+      ],
+      "createdVariableIds": [
+        "VariableID:19:11",
+        "VariableID:19:12",
+        "VariableID:19:13",
+        "VariableID:19:14",
+        "VariableID:19:15",
+        "VariableID:19:16",
+        "VariableID:19:17",
+        "VariableID:19:18",
+        "VariableID:19:19",
+        "VariableID:19:20",
+        "VariableID:19:21",
+        "VariableID:19:22",
+        "VariableID:19:23",
+        "VariableID:19:24",
+        "VariableID:19:25",
+        "VariableID:19:26",
+        "VariableID:19:27",
+        "VariableID:19:28",
+        "VariableID:19:29",
+        "VariableID:19:30",
+        "VariableID:19:31",
+        "VariableID:19:32",
+        "VariableID:19:33",
+        "VariableID:19:34"
+      ],
+      "mutatedVariableIds": [
+        "VariableID:19:11",
+        "VariableID:19:12",
+        "VariableID:19:13",
+        "VariableID:19:14",
+        "VariableID:19:15",
+        "VariableID:19:16",
+        "VariableID:19:17",
+        "VariableID:19:18",
+        "VariableID:19:19",
+        "VariableID:19:20",
+        "VariableID:19:21",
+        "VariableID:19:22",
+        "VariableID:19:23",
+        "VariableID:19:24",
+        "VariableID:19:25",
+        "VariableID:19:26",
+        "VariableID:19:27",
+        "VariableID:19:28",
+        "VariableID:19:29",
+        "VariableID:19:30",
+        "VariableID:19:31",
+        "VariableID:19:32",
+        "VariableID:19:33",
+        "VariableID:19:34"
+      ],
+      "materialVariableIds": {
+        "chrome": "VariableID:19:12",
+        "kit-chrome": "VariableID:19:14",
+        "lens": "VariableID:19:16",
+        "kit-control": "VariableID:19:18",
+        "kit-content": "VariableID:19:20",
+        "mist": "VariableID:19:22",
+        "reading": "VariableID:19:24",
+        "primary": "VariableID:19:26",
+        "selected": "VariableID:19:28",
+        "tint": "VariableID:19:30",
+        "edge": "VariableID:19:32",
+        "edge-strong": "VariableID:19:34"
+      },
+      "practiceRail": {
+        "height": 654,
+        "children": [
+          {
+            "id": "3:399",
+            "name": "Practice focus",
+            "y": 0,
+            "height": 207
+          },
+          {
+            "id": "3:406",
+            "name": "Proposed spaced review",
+            "y": 227,
+            "height": 312
+          },
+          {
+            "id": "3:417",
+            "name": "Grading explanation",
+            "y": 559,
+            "height": 92
+          }
+        ]
+      },
+      "note": "Glass effect animation setters did not retain tracks in this service; authored motion uses selection translation, tray translation/opacity, and press scale."
+    },
+    "typography": {
+      "createdNodeIds": [
+        "21:11",
+        "21:12",
+        "21:13",
+        "21:14",
+        "21:15",
+        "21:16",
+        "21:17",
+        "21:18",
+        "21:19",
+        "21:20",
+        "21:21",
+        "21:22",
+        "21:23",
+        "21:24",
+        "21:25",
+        "21:26",
+        "21:27",
+        "21:28",
+        "21:29",
+        "21:30",
+        "21:31",
+        "21:32",
+        "21:33",
+        "21:34",
+        "21:35",
+        "21:36",
+        "21:37",
+        "21:38",
+        "21:39",
+        "21:40",
+        "21:41",
+        "21:42",
+        "21:43",
+        "21:44",
+        "21:45",
+        "21:46",
+        "21:47",
+        "21:48",
+        "21:49",
+        "21:50",
+        "21:51",
+        "21:52",
+        "21:53",
+        "21:54",
+        "21:55",
+        "21:56",
+        "21:57",
+        "21:58",
+        "21:59",
+        "21:60",
+        "21:61",
+        "21:62",
+        "21:63",
+        "21:64",
+        "21:65",
+        "21:66",
+        "21:67",
+        "21:68",
+        "21:69",
+        "21:70",
+        "21:71",
+        "21:72",
+        "21:73",
+        "21:74",
+        "21:75",
+        "21:76",
+        "21:77",
+        "21:78",
+        "21:79"
+      ],
+      "mutatedNodeIds": [
+        "2:48",
+        "2:50",
+        "2:52",
+        "2:54",
+        "15:214",
+        "3:9",
+        "3:13",
+        "3:21",
+        "3:25",
+        "3:29",
+        "3:30",
+        "3:35",
+        "3:38",
+        "3:40",
+        "3:41",
+        "3:43",
+        "3:44",
+        "3:46",
+        "3:47",
+        "3:54",
+        "3:55",
+        "3:59",
+        "3:61",
+        "3:63",
+        "3:74",
+        "3:75",
+        "3:79",
+        "3:81",
+        "3:82",
+        "3:86",
+        "3:87",
+        "3:89",
+        "3:90",
+        "3:92",
+        "3:93",
+        "3:95",
+        "3:96",
+        "3:98",
+        "3:99",
+        "3:101",
+        "3:102",
+        "3:104",
+        "3:107",
+        "3:109",
+        "3:113",
+        "3:119",
+        "3:121",
+        "3:122",
+        "3:124",
+        "I3:125;2:48",
+        "3:130",
+        "3:134",
+        "3:135",
+        "3:136",
+        "3:144",
+        "3:148",
+        "3:156",
+        "3:160",
+        "3:164",
+        "3:165",
+        "3:170",
+        "3:173",
+        "3:175",
+        "3:176",
+        "3:178",
+        "3:179",
+        "3:181",
+        "3:182",
+        "3:189",
+        "3:190",
+        "3:194",
+        "3:196",
+        "3:198",
+        "3:210",
+        "3:211",
+        "3:213",
+        "3:214",
+        "3:219",
+        "3:220",
+        "3:221",
+        "3:224",
+        "3:229",
+        "3:232",
+        "3:234",
+        "3:235",
+        "3:238",
+        "3:241",
+        "3:243",
+        "3:245",
+        "I3:246;2:48",
+        "3:252",
+        "3:253",
+        "3:256",
+        "3:257",
+        "3:263",
+        "3:264",
+        "3:270",
+        "3:271",
+        "3:276",
+        "3:277",
+        "3:282",
+        "3:283",
+        "3:285",
+        "3:291",
+        "3:292",
+        "I3:293;2:52",
+        "3:296",
+        "3:297",
+        "3:304",
+        "3:312",
+        "3:316",
+        "3:324",
+        "3:328",
+        "3:332",
+        "3:333",
+        "3:338",
+        "3:341",
+        "3:343",
+        "3:344",
+        "3:346",
+        "3:347",
+        "3:349",
+        "3:350",
+        "3:357",
+        "3:358",
+        "3:362",
+        "3:364",
+        "3:366",
+        "3:377",
+        "3:378",
+        "3:382",
+        "3:384",
+        "3:385",
+        "3:386",
+        "3:387",
+        "3:388",
+        "3:390",
+        "3:391",
+        "I3:393;2:48",
+        "I3:395;2:52",
+        "3:397",
+        "3:400",
+        "3:401",
+        "3:405",
+        "3:408",
+        "3:410",
+        "3:411",
+        "3:413",
+        "3:414",
+        "I3:415;2:52",
+        "3:418",
+        "3:419",
+        "3:422",
+        "3:423",
+        "3:428",
+        "3:430",
+        "3:433",
+        "3:434",
+        "3:435",
+        "3:437",
+        "3:438",
+        "3:443",
+        "3:444",
+        "3:447",
+        "3:449",
+        "3:451",
+        "I3:452;2:48",
+        "3:461",
+        "3:465",
+        "3:469",
+        "3:474",
+        "3:477",
+        "3:478",
+        "15:247",
+        "15:251",
+        "15:259",
+        "15:263",
+        "15:267",
+        "15:268",
+        "15:273",
+        "15:276",
+        "15:278",
+        "15:279",
+        "15:281",
+        "15:282",
+        "15:284",
+        "15:285",
+        "15:292",
+        "15:293",
+        "15:297",
+        "15:299",
+        "15:301",
+        "15:313",
+        "15:314",
+        "15:316",
+        "15:317",
+        "15:322",
+        "15:323",
+        "15:324",
+        "15:327",
+        "15:332",
+        "15:335",
+        "15:337",
+        "15:338",
+        "15:341",
+        "15:344",
+        "15:346",
+        "15:348",
+        "I15:349;2:48",
+        "15:354",
+        "15:355",
+        "15:358",
+        "15:359",
+        "15:365",
+        "15:366",
+        "15:372",
+        "15:373",
+        "15:378",
+        "15:379",
+        "15:384",
+        "15:385",
+        "15:387",
+        "15:393",
+        "15:394",
+        "I15:395;2:52",
+        "15:397",
+        "15:398",
+        "15:405",
+        "16:13",
+        "16:14",
+        "16:18",
+        "16:19",
+        "16:20",
+        "16:24",
+        "16:25",
+        "16:26",
+        "16:30",
+        "16:31",
+        "16:32",
+        "16:36",
+        "16:37",
+        "16:38",
+        "16:42",
+        "16:43",
+        "16:44",
+        "16:48",
+        "16:49",
+        "16:50",
+        "16:54",
+        "16:55",
+        "16:58",
+        "16:59",
+        "16:62",
+        "16:63",
+        "16:66",
+        "16:67",
+        "16:70",
+        "16:71",
+        "16:74",
+        "16:75",
+        "16:78",
+        "16:79",
+        "16:82",
+        "16:83",
+        "16:84",
+        "16:87",
+        "16:88",
+        "16:92",
+        "16:93",
+        "16:100",
+        "16:101",
+        "16:105",
+        "16:106",
+        "16:110",
+        "16:111",
+        "16:113",
+        "16:114",
+        "16:115",
+        "16:116",
+        "16:118",
+        "16:121",
+        "16:122",
+        "16:124",
+        "16:125",
+        "16:127",
+        "16:128",
+        "16:130",
+        "16:131",
+        "15:422",
+        "15:423",
+        "3:259",
+        "3:266",
+        "3:273",
+        "3:279",
+        "3:223",
+        "3:231",
+        "15:427",
+        "15:428",
+        "15:361",
+        "15:368",
+        "15:375",
+        "15:381",
+        "15:326",
+        "15:334",
+        "3:85",
+        "3:88",
+        "3:91",
+        "3:94",
+        "3:97",
+        "3:100",
+        "3:103",
+        "3:379",
+        "3:398",
+        "3:389"
+      ],
+      "removedNodeIds": [
+        "3:6",
+        "3:7",
+        "3:8",
+        "3:141",
+        "3:142",
+        "3:143",
+        "3:227",
+        "3:228",
+        "3:309",
+        "3:310",
+        "3:311",
+        "15:244",
+        "15:245",
+        "15:246",
+        "15:330",
+        "15:331",
+        "3:83",
+        "3:84"
+      ],
+      "fontFamily": "Inter",
+      "ramp": {
+        "Display": [
+          32,
+          40,
+          "Semi Bold",
+          -0.6
+        ],
+        "Title": [
+          24,
+          30,
+          "Semi Bold",
+          -0.35
+        ],
+        "Section": [
+          18,
+          25,
+          "Semi Bold",
+          -0.15
+        ],
+        "Body": [
+          17,
+          26,
+          "Regular",
+          0
+        ],
+        "UI": [
+          13.5,
+          20,
+          "Medium",
+          0
+        ],
+        "Caption": [
+          12,
+          17,
+          "Regular",
+          0
+        ]
+      },
+      "graphNodes": [
+        {
+          "id": "3:85",
+          "name": "Proposition / Derivatives",
+          "x": 40,
+          "y": 157,
+          "width": 160,
+          "height": 72
+        },
+        {
+          "id": "3:88",
+          "name": "Proposition / Linear algebra",
+          "x": 40,
+          "y": 317,
+          "width": 160,
+          "height": 72
+        },
+        {
+          "id": "3:91",
+          "name": "Proposition / Gradients",
+          "x": 280,
+          "y": 237,
+          "width": 170,
+          "height": 72
+        },
+        {
+          "id": "3:94",
+          "name": "Proposition / Loss functions",
+          "x": 570,
+          "y": 107,
+          "width": 170,
+          "height": 72
+        },
+        {
+          "id": "3:97",
+          "name": "Proposition / Optimization",
+          "x": 570,
+          "y": 277,
+          "width": 170,
+          "height": 72
+        },
+        {
+          "id": "3:100",
+          "name": "Proposition / Gradient descent",
+          "x": 900,
+          "y": 207,
+          "width": 184,
+          "height": 72
+        },
+        {
+          "id": "3:103",
+          "name": "Proposition / Chain rule",
+          "x": 275,
+          "y": 85,
+          "width": 150,
+          "height": 58
+        }
+      ],
+      "practice": {
+        "y": 230,
+        "height": 698,
+        "children": [
+          {
+            "id": "3:380",
+            "name": "Problem position",
+            "y": 32,
+            "height": 28
+          },
+          {
+            "id": "3:386",
+            "name": "A positive test is not the whole story.",
+            "y": 80,
+            "height": 30
+          },
+          {
+            "id": "3:387",
+            "name": "A condition affects 1% of a population. A test detects it 99% of the t",
+            "y": 130,
+            "height": 52
+          },
+          {
+            "id": "21:70",
+            "name": "Problem givens",
+            "y": 202,
+            "height": 56
+          },
+          {
+            "id": "3:388",
+            "name": "Someone tests positive. Explain why their chance of having the conditi",
+            "y": 278,
+            "height": 50
+          },
+          {
+            "id": "3:389",
+            "name": "Free-response answer",
+            "y": 348,
+            "height": 140
+          },
+          {
+            "id": "3:392",
+            "name": "Practice actions",
+            "y": 508,
+            "height": 44
+          }
+        ],
+        "contentBottom": 584
+      },
+      "zeroWidthText": []
+    }
+  }
+}

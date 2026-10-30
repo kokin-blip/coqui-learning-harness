@@ -1,0 +1,209 @@
+TAP version 13
+# Subtest: parseGeneralSettingsBody
+    # Subtest: parses {} and {autoUpdate} replace-whole
+    ok 1 - parses {} and {autoUpdate} replace-whole
+      ---
+      duration_ms: 0.475542
+      type: 'test'
+      ...
+    # Subtest: rejects non-objects and non-boolean autoUpdate
+    ok 2 - rejects non-objects and non-boolean autoUpdate
+      ---
+      duration_ms: 0.054583
+      type: 'test'
+      ...
+    1..2
+ok 1 - parseGeneralSettingsBody
+  ---
+  duration_ms: 0.847459
+  type: 'suite'
+  ...
+# Subtest: parseAgentSettingsBody
+    # Subtest: models: valid roles with model pair and/or thinkingLevel; unknown role is a 400 with the list
+    ok 1 - models: valid roles with model pair and/or thinkingLevel; unknown role is a 400 with the list
+      ---
+      duration_ms: 0.234667
+      type: 'test'
+      ...
+    # Subtest: tools and prompts: boolean maps; non-boolean values are 400s
+    ok 2 - tools and prompts: boolean maps; non-boolean values are 400s
+      ---
+      duration_ms: 0.066041
+      type: 'test'
+      ...
+    # Subtest: search: engine pin is tavily|brave; anything else is a 400 (search wave, 2026-09-20)
+    ok 3 - search: engine pin is tavily|brave; anything else is a 400 (search wave, 2026-09-20)
+      ---
+      duration_ms: 0.063875
+      type: 'test'
+      ...
+    # Subtest: graphTools: strict object subsection, enabled boolean when present — wave 7, 2026-09-23
+    ok 4 - graphTools: strict object subsection, enabled boolean when present — wave 7, 2026-09-23
+      ---
+      duration_ms: 0.055875
+      type: 'test'
+      ...
+    # Subtest: an empty {} agent section parses to {} (replace-whole clear)
+    ok 5 - an empty {} agent section parses to {} (replace-whole clear)
+      ---
+      duration_ms: 0.047041
+      type: 'test'
+      ...
+    1..5
+ok 2 - parseAgentSettingsBody
+  ---
+  duration_ms: 0.576208
+  type: 'suite'
+  ...
+# Subtest: parseAppearanceSettingsBody
+    # Subtest: parses every field; hex-or-null colors; clamps happen at sanitize, rejects here
+    ok 1 - parses every field; hex-or-null colors; clamps happen at sanitize, rejects here
+      ---
+      duration_ms: 0.186666
+      type: 'test'
+      ...
+    # Subtest: rejects bad enums, ranges, and colors — with specific messages, never clamps
+    ok 2 - rejects bad enums, ranges, and colors — with specific messages, never clamps
+      ---
+      duration_ms: 0.102084
+      type: 'test'
+      ...
+    # Subtest: rejects non-object bodies and non-object mdRendering
+    ok 3 - rejects non-object bodies and non-object mdRendering
+      ---
+      duration_ms: 0.054708
+      type: 'test'
+      ...
+    1..3
+ok 3 - parseAppearanceSettingsBody
+  ---
+  duration_ms: 0.415416
+  type: 'suite'
+  ...
+# Subtest: parseGraphSettingsBody
+    # Subtest: parses the collapsed section replace-whole (wave 7: the master switch ONLY)
+    ok 1 - parses the collapsed section replace-whole (wave 7: the master switch ONLY)
+      ---
+      duration_ms: 0.079167
+      type: 'test'
+      ...
+    # Subtest: rejects non-boolean switches and unknown bodies
+    ok 2 - rejects non-boolean switches and unknown bodies
+      ---
+      duration_ms: 0.028917
+      type: 'test'
+      ...
+    # Subtest: rendering (2026-10-06): boolean display switch — replace-whole like every sibling
+    ok 3 - rendering (2026-10-06): boolean display switch — replace-whole like every sibling
+      ---
+      duration_ms: 0.043125
+      type: 'test'
+      ...
+    # Subtest: extractionChunkTokens: whole tokens ≥ the 500 floor (extraction-UX redesign, 2026-09-24)
+    ok 4 - extractionChunkTokens: whole tokens ≥ the 500 floor (extraction-UX redesign, 2026-09-24)
+      ---
+      duration_ms: 0.049291
+      type: 'test'
+      ...
+    # Subtest: the dead wave-6 rungs in a body are ignored — the section collapses on write
+    ok 5 - the dead wave-6 rungs in a body are ignored — the section collapses on write
+      ---
+      duration_ms: 0.020416
+      type: 'test'
+      ...
+    1..5
+ok 4 - parseGraphSettingsBody
+  ---
+  duration_ms: 0.267333
+  type: 'suite'
+  ...
+# Subtest: parseCompactionSettingsBody (owner round 14)
+    # Subtest: parses a threshold; absent = the empty section (factory default at resolution)
+    ok 1 - parses a threshold; absent = the empty section (factory default at resolution)
+      ---
+      duration_ms: 0.045667
+      type: 'test'
+      ...
+    # Subtest: floors to integers
+    ok 2 - floors to integers
+      ---
+      duration_ms: 0.020292
+      type: 'test'
+      ...
+    # Subtest: rejects below the 32k floor with the anti-churn rationale
+    ok 3 - rejects below the 32k floor with the anti-churn rationale
+      ---
+      duration_ms: 0.026916
+      type: 'test'
+      ...
+    # Subtest: rejects non-numbers
+    ok 4 - rejects non-numbers
+      ---
+      duration_ms: 0.019875
+      type: 'test'
+      ...
+    1..4
+ok 5 - parseCompactionSettingsBody (owner round 14)
+  ---
+  duration_ms: 0.144583
+  type: 'suite'
+  ...
+# Subtest: SETTINGS_SECTIONS (the route's section map)
+    # Subtest: maps exactly the eight record sections
+    ok 1 - maps exactly the eight record sections
+      ---
+      duration_ms: 0.031166
+      type: 'test'
+      ...
+    1..1
+ok 6 - SETTINGS_SECTIONS (the route's section map)
+  ---
+  duration_ms: 0.047458
+  type: 'suite'
+  ...
+# Subtest: parseModelsSettingsBody (model slots wave, 2026-09-20)
+    # Subtest: parses the three slot tiers — model required, level rides (BYOK, owner 2026-09-22)
+    ok 1 - parses the three slot tiers — model required, level rides (BYOK, owner 2026-09-22)
+      ---
+      duration_ms: 0.073042
+      type: 'test'
+      ...
+    # Subtest: {} is the legal clear-slots write
+    ok 2 - {} is the legal clear-slots write
+      ---
+      duration_ms: 0.028083
+      type: 'test'
+      ...
+    # Subtest: unknown slots are 400s with the supported list
+    ok 3 - unknown slots are 400s with the supported list
+      ---
+      duration_ms: 0.028875
+      type: 'test'
+      ...
+    # Subtest: a present-but-empty slot object is rejected (absent slot = unset)
+    ok 4 - a present-but-empty slot object is rejected (absent slot = unset)
+      ---
+      duration_ms: 0.021167
+      type: 'test'
+      ...
+    # Subtest: malformed slot shapes are 400s
+    ok 5 - malformed slot shapes are 400s
+      ---
+      duration_ms: 0.028833
+      type: 'test'
+      ...
+    1..5
+ok 7 - parseModelsSettingsBody (model slots wave, 2026-09-20)
+  ---
+  duration_ms: 0.218166
+  type: 'suite'
+  ...
+1..7
+# tests 25
+# suites 7
+# pass 25
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 215.863583

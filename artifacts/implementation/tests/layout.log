@@ -1,0 +1,191 @@
+TAP version 13
+# Subtest: incrementalLayout
+    # Subtest: bootstraps deterministically from an empty ledger
+    ok 1 - bootstraps deterministically from an empty ledger
+      ---
+      duration_ms: 4.863834
+      type: 'test'
+      ...
+    # Subtest: rest state is stable: a re-settle with nothing new barely moves nodes
+    ok 2 - rest state is stable: a re-settle with nothing new barely moves nodes
+      ---
+      duration_ms: 1.86525
+      type: 'test'
+      ...
+    # Subtest: evolves: an anchored node stays near its anchor while a new neighbor joins it
+    ok 3 - evolves: an anchored node stays near its anchor while a new neighbor joins it
+      ---
+      duration_ms: 1.418375
+      type: 'test'
+      ...
+    # Subtest: rim: an orphan ends up outside the anchored core
+    ok 4 - rim: an orphan ends up outside the anchored core
+      ---
+      duration_ms: 1.440708
+      type: 'test'
+      ...
+    1..4
+ok 1 - incrementalLayout
+  ---
+  duration_ms: 10.002667
+  type: 'suite'
+  ...
+# Subtest: settleGraphLayout
+    # Subtest: dedupes repeated node lines, runs, and writes the whole ledger
+    ok 1 - dedupes repeated node lines, runs, and writes the whole ledger
+      ---
+      duration_ms: 0.925084
+      type: 'test'
+      ...
+    # Subtest: does nothing on an empty graph
+    ok 2 - does nothing on an empty graph
+      ---
+      duration_ms: 0.053458
+      type: 'test'
+      ...
+    1..2
+ok 2 - settleGraphLayout
+  ---
+  duration_ms: 1.037166
+  type: 'suite'
+  ...
+# Subtest: imp-link half distance (rendering arc, owner 2026-09-30)
+    # Subtest: a plain proposition link settles at the full rest length (tuned or default)
+    ok 1 - a plain proposition link settles at the full rest length (tuned or default)
+      ---
+      duration_ms: 0.31375
+      type: 'test'
+      ...
+    # Subtest: a link TOUCHING an implication node gets HALF the rest length
+    ok 2 - a link TOUCHING an implication node gets HALF the rest length
+      ---
+      duration_ms: 0.34925
+      type: 'test'
+      ...
+    1..2
+ok 3 - imp-link half distance (rendering arc, owner 2026-09-30)
+  ---
+  duration_ms: 0.737292
+  type: 'suite'
+  ...
+# Subtest: clusterPull (the centroid force)
+    # Subtest: compacts each cluster toward its OWN centroid; strength 0 = off
+    ok 1 - compacts each cluster toward its OWN centroid; strength 0 = off
+      ---
+      duration_ms: 3.064042
+      type: 'test'
+      ...
+    1..1
+ok 4 - clusterPull (the centroid force)
+  ---
+  duration_ms: 3.109166
+  type: 'suite'
+  ...
+# Subtest: depths over the LOGICAL graph (physics arc, owner 2026-09-30)
+    # Subtest: a multi-premise conclusion sits at premises'+1 — NOT +2 — over logical edges
+    ok 1 - a multi-premise conclusion sits at premises'+1 — NOT +2 — over logical edges
+      ---
+      duration_ms: 0.271
+      type: 'test'
+      ...
+    # Subtest: the imp node is ABSENT from the rank map (depth is a property of propositions)
+    ok 2 - the imp node is ABSENT from the rank map (depth is a property of propositions)
+      ---
+      duration_ms: 0.066417
+      type: 'test'
+      ...
+    # Subtest: VERTICAL mode: the central pole is horizontal-ONLY for everyone — orphans included (owner, 2026-09-30)
+    ok 3 - VERTICAL mode: the central pole is horizontal-ONLY for everyone — orphans included (owner, 2026-09-30)
+      ---
+      duration_ms: 0.554333
+      type: 'test'
+      ...
+    # Subtest: the IMP MIDPOINT ANCHOR: the junction pins halfway between premises and conclusion (owner, 2026-09-30)
+    ok 4 - the IMP MIDPOINT ANCHOR: the junction pins halfway between premises and conclusion (owner, 2026-09-30)
+      ---
+      duration_ms: 0.560417
+      type: 'test'
+      ...
+    # Subtest: mixed-depth premises: the HIGHEST premise row is the premises side of the average
+    ok 5 - mixed-depth premises: the HIGHEST premise row is the premises side of the average
+      ---
+      duration_ms: 0.806667
+      type: 'test'
+      ...
+    # Subtest: WITHOUT impLinks the imp node keeps the legacy exemption (never depth-anchored)
+    ok 6 - WITHOUT impLinks the imp node keeps the legacy exemption (never depth-anchored)
+      ---
+      duration_ms: 0.732041
+      type: 'test'
+      ...
+    1..6
+ok 5 - depths over the LOGICAL graph (physics arc, owner 2026-09-30)
+  ---
+  duration_ms: 3.074166
+  type: 'suite'
+  ...
+# Subtest: inferenceDepths (SCC-safe ranking)
+    # Subtest: ranks a chain, a diamond takes the longest path, orphans are depth 0
+    ok 1 - ranks a chain, a diamond takes the longest path, orphans are depth 0
+      ---
+      duration_ms: 0.074083
+      type: 'test'
+      ...
+    # Subtest: cycles share a depth (mutual support = equal footing)
+    ok 2 - cycles share a depth (mutual support = equal footing)
+      ---
+      duration_ms: 0.087125
+      type: 'test'
+      ...
+    1..2
+ok 6 - inferenceDepths (SCC-safe ranking)
+  ---
+  duration_ms: 0.213791
+  type: 'suite'
+  ...
+# Subtest: depthAnchor force
+    # Subtest: vertical: the premise lands below its conclusion
+    ok 1 - vertical: the premise lands below its conclusion
+      ---
+      duration_ms: 0.579334
+      type: 'test'
+      ...
+    # Subtest: radial: inference depth becomes radius
+    ok 2 - radial: inference depth becomes radius
+      ---
+      duration_ms: 0.820667
+      type: 'test'
+      ...
+    # Subtest: settle with depthAnchor: old nodes keep x memory but snap to their level
+    ok 3 - settle with depthAnchor: old nodes keep x memory but snap to their level
+      ---
+      duration_ms: 0.668042
+      type: 'test'
+      ...
+    # Subtest: orphans are exempt from depth anchoring — y is FREE, the pole is horizontal (ORPHAN RULE, amended 2026-09-30)
+    ok 4 - orphans are exempt from depth anchoring — y is FREE, the pole is horizontal (ORPHAN RULE, amended 2026-09-30)
+      ---
+      duration_ms: 0.474333
+      type: 'test'
+      ...
+    # Subtest: radial: orphans are exempt — they gather at the center, not on the base ring
+    ok 5 - radial: orphans are exempt — they gather at the center, not on the base ring
+      ---
+      duration_ms: 0.776583
+      type: 'test'
+      ...
+    1..5
+ok 7 - depthAnchor force
+  ---
+  duration_ms: 3.379417
+  type: 'suite'
+  ...
+1..7
+# tests 22
+# suites 7
+# pass 22
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 146.075792

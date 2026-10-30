@@ -1,0 +1,1845 @@
+TAP version 13
+# [extraction chat_475e110f473241179d8b43e8d86c26ef] pipeline start — 34 uncovered tok, 2 messages, 1 batch(es) of ≤4096 tok
+# [extraction chat_475e110f473241179d8b43e8d86c26ef] extractor starting (5 markdown lines)
+# [extraction] extractor step 1: toolUse, tools: submit_findings
+# [extraction chat_475e110f473241179d8b43e8d86c26ef] extractor done in 4ms
+# [extraction chat_475e110f473241179d8b43e8d86c26ef] auditor starting (2 propositions, 0 graph nodes)
+# [extraction] auditor step 1: toolUse, tools: submit_review
+# [extraction chat_475e110f473241179d8b43e8d86c26ef] audit: 2 propositions through, 0 linked to existing nodes
+# [extraction chat_475e110f473241179d8b43e8d86c26ef] auditor done in 1ms
+# [extraction chat_475e110f473241179d8b43e8d86c26ef] merged: 2 nodes, 1 chains
+# [extraction chat_475e110f473241179d8b43e8d86c26ef] merged: 2 nodes, 1 chains (9ms total, 1 batch job(s))
+# [extraction chat_c91dcc40ec5a44169dc0fa9ac8c758fe] pipeline start — 34 uncovered tok, 2 messages, 1 batch(es) of ≤4096 tok
+# [extraction chat_c91dcc40ec5a44169dc0fa9ac8c758fe] extractor starting (5 markdown lines)
+# [extraction] extractor step 1: toolUse, tools: submit_findings
+# [extraction chat_c91dcc40ec5a44169dc0fa9ac8c758fe] extractor done in 1ms
+# [extraction chat_c91dcc40ec5a44169dc0fa9ac8c758fe] auditor starting (2 propositions, 0 graph nodes)
+# [extraction] auditor step 1: toolUse, tools: submit_review
+# [extraction chat_c91dcc40ec5a44169dc0fa9ac8c758fe] audit: 2 propositions through, 0 linked to existing nodes
+# [extraction chat_c91dcc40ec5a44169dc0fa9ac8c758fe] auditor done in 0ms
+# [extraction chat_c91dcc40ec5a44169dc0fa9ac8c758fe] merged: 2 nodes, 1 chains
+# [extraction chat_c91dcc40ec5a44169dc0fa9ac8c758fe] merged: 2 nodes, 1 chains (3ms total, 1 batch job(s))
+# [extraction chat_d75c45802b3b4961b068dc89325d5af4] pipeline start — 34 uncovered tok, 2 messages, 1 batch(es) of ≤4096 tok
+# [extraction chat_d75c45802b3b4961b068dc89325d5af4] extractor starting (5 markdown lines)
+# [extraction] extractor step 1: toolUse, tools: submit_findings
+# [extraction chat_d75c45802b3b4961b068dc89325d5af4] extractor done in 1ms
+# [extraction chat_d75c45802b3b4961b068dc89325d5af4] auditor starting (2 propositions, 0 graph nodes)
+# [extraction] auditor step 1: toolUse, tools: submit_review
+# [extraction chat_d75c45802b3b4961b068dc89325d5af4] audit: 2 propositions through, 0 linked to existing nodes
+# [extraction chat_d75c45802b3b4961b068dc89325d5af4] auditor done in 0ms
+# [extraction chat_d75c45802b3b4961b068dc89325d5af4] merged: 2 nodes, 1 chains
+# [extraction chat_d75c45802b3b4961b068dc89325d5af4] merged: 2 nodes, 1 chains (2ms total, 1 batch job(s))
+# [extraction chat_2b72a58cab564a05b36d70777fbb762d] pipeline start — 34 uncovered tok, 2 messages, 1 batch(es) of ≤4096 tok
+# [extraction chat_2b72a58cab564a05b36d70777fbb762d] extractor starting (5 markdown lines)
+# [extraction] extractor step 1: toolUse, tools: submit_findings
+# [extraction chat_2b72a58cab564a05b36d70777fbb762d] extractor done in 1ms
+# [extraction chat_2b72a58cab564a05b36d70777fbb762d] auditor starting (2 propositions, 1 graph nodes)
+# [extraction] auditor step 1: toolUse, tools: submit_review
+# [extraction chat_2b72a58cab564a05b36d70777fbb762d] audit: 2 propositions through, 1 linked to existing nodes
+# [extraction chat_2b72a58cab564a05b36d70777fbb762d] auditor done in 0ms
+# [extraction chat_2b72a58cab564a05b36d70777fbb762d] merged: 1 nodes, 1 chains
+# [extraction chat_2b72a58cab564a05b36d70777fbb762d] merged: 1 nodes, 1 chains (4ms total, 1 batch job(s))
+# [extraction] refused — no model configured for: cheap
+# [extraction chat_fb4aae49aeb34bcbaffd00954e740b21] pipeline failed (0ms): ModelsNotConfiguredError: No model configured — set up your models first
+#     at refuseIfStagesUnready (/Users/kokinmartinez/Documents/ChatGPT/coqui-learning harness/packages/engine/src/agent/subagents/extraction.ts:815:10)
+#     at Object.runExtraction (/Users/kokinmartinez/Documents/ChatGPT/coqui-learning harness/packages/engine/src/agent/subagents/extraction.ts:1121:4)
+#     at TestContext.<anonymous> (/Users/kokinmartinez/Documents/ChatGPT/coqui-learning harness/packages/engine/tests/extraction.test.ts:537:33)
+#     at Test.runInAsyncScope (node:async_hooks:227:14)
+#     at Test.run (node:internal/test_runner/test:1201:25)
+#     at Suite.processPendingSubtests (node:internal/test_runner/test:831:18)
+#     at Test.postRun (node:internal/test_runner/test:1330:19)
+#     at Test.run (node:internal/test_runner/test:1258:12)
+#     at async Suite.processPendingSubtests (node:internal/test_runner/test:831:7) {
+#   envelope: {
+#     error: 'No model configured — set up your models first',
+#     code: 'models_not_configured',
+#     missing: [ 'cheap' ]
+#   }
+# }
+# [extraction] refused — {"error":"No faux key is set — add one in Settings → Keys","code":"provider_key_missing","provider":"faux","slots":["cheap"]}
+# [extraction chat_a6027155a5444ef5840e5609675e082f] pipeline failed (0ms): ProviderKeyMissingError: No faux key is set — add one in Settings → Keys
+#     at refuseIfStagesUnready (/Users/kokinmartinez/Documents/ChatGPT/coqui-learning harness/packages/engine/src/agent/subagents/extraction.ts:824:11)
+#     at Object.runExtraction (/Users/kokinmartinez/Documents/ChatGPT/coqui-learning harness/packages/engine/src/agent/subagents/extraction.ts:1121:4)
+#     at TestContext.<anonymous> (/Users/kokinmartinez/Documents/ChatGPT/coqui-learning harness/packages/engine/tests/extraction.test.ts:563:33)
+#     at Test.runInAsyncScope (node:async_hooks:227:14)
+#     at Test.run (node:internal/test_runner/test:1201:25)
+#     at Suite.processPendingSubtests (node:internal/test_runner/test:831:18)
+#     at Test.postRun (node:internal/test_runner/test:1330:19)
+#     at Test.run (node:internal/test_runner/test:1258:12)
+#     at async Suite.processPendingSubtests (node:internal/test_runner/test:831:7) {
+#   envelope: {
+#     error: 'No faux key is set — add one in Settings → Keys',
+#     code: 'provider_key_missing',
+#     provider: 'faux',
+#     slots: [ 'cheap' ]
+#   }
+# }
+# [extraction] refused — {"error":"No faux key is set — add one in Settings → Keys","code":"provider_key_missing","provider":"faux","slots":["cheap"]}
+# [extraction chat_db9d154edaaf4029ae99c440eb1e17f0] pipeline failed (0ms): ProviderKeyMissingError: No faux key is set — add one in Settings → Keys
+#     at refuseIfStagesUnready (/Users/kokinmartinez/Documents/ChatGPT/coqui-learning harness/packages/engine/src/agent/subagents/extraction.ts:824:11)
+#     at Object.runExtraction (/Users/kokinmartinez/Documents/ChatGPT/coqui-learning harness/packages/engine/src/agent/subagents/extraction.ts:1121:4)
+#     at TestContext.<anonymous> (/Users/kokinmartinez/Documents/ChatGPT/coqui-learning harness/packages/engine/tests/extraction.test.ts:587:33)
+#     at Test.runInAsyncScope (node:async_hooks:227:14)
+#     at Test.run (node:internal/test_runner/test:1201:25)
+#     at Suite.processPendingSubtests (node:internal/test_runner/test:831:18)
+#     at Test.postRun (node:internal/test_runner/test:1330:19)
+#     at Test.run (node:internal/test_runner/test:1258:12)
+#     at async Suite.processPendingSubtests (node:internal/test_runner/test:831:7) {
+#   envelope: {
+#     error: 'No faux key is set — add one in Settings → Keys',
+#     code: 'provider_key_missing',
+#     provider: 'faux',
+#     slots: [ 'cheap' ]
+#   }
+# }
+# [extraction chat_c307da15bf674401a52bc065f4055bf1] pipeline start — 34 uncovered tok, 2 messages, 1 batch(es) of ≤4096 tok
+# [extraction chat_c307da15bf674401a52bc065f4055bf1] extractor starting (5 markdown lines)
+# [extraction] extractor step 1: toolUse, tools: submit_findings
+# [extraction chat_c307da15bf674401a52bc065f4055bf1] extractor done in 1ms
+# [extraction chat_c307da15bf674401a52bc065f4055bf1] auditor starting (2 propositions, 0 graph nodes)
+# [extraction] auditor step 1: toolUse, tools: submit_review
+# [extraction chat_c307da15bf674401a52bc065f4055bf1] audit: 2 propositions through, 0 linked to existing nodes
+# [extraction chat_c307da15bf674401a52bc065f4055bf1] auditor done in 0ms
+# [extraction chat_c307da15bf674401a52bc065f4055bf1] merged: 2 nodes, 1 chains
+# [extraction chat_c307da15bf674401a52bc065f4055bf1] merged: 2 nodes, 1 chains (2ms total, 1 batch job(s))
+# [extraction chat_871654cc16ce4c14bf57c2d3e1e3696d] pipeline start — 34 uncovered tok, 2 messages, 1 batch(es) of ≤4096 tok
+# [extraction chat_871654cc16ce4c14bf57c2d3e1e3696d] extractor starting (5 markdown lines)
+# [extraction] extractor step 1: toolUse, tools: submit_findings
+# [extraction chat_871654cc16ce4c14bf57c2d3e1e3696d] extractor done in 0ms
+# [extraction chat_871654cc16ce4c14bf57c2d3e1e3696d] auditor starting (2 propositions, 0 graph nodes)
+# [extraction] auditor step 1: toolUse, tools: submit_review
+# [extraction chat_871654cc16ce4c14bf57c2d3e1e3696d] audit: 2 propositions through, 0 linked to existing nodes
+# [extraction chat_871654cc16ce4c14bf57c2d3e1e3696d] auditor done in 0ms
+# [extraction chat_871654cc16ce4c14bf57c2d3e1e3696d] merged: 2 nodes, 1 chains
+# [extraction chat_871654cc16ce4c14bf57c2d3e1e3696d] merged: 2 nodes, 1 chains (1ms total, 1 batch job(s))
+# [extraction chat_6e718559586f4d57bcf2ad48e6a1de84] pipeline start — 34 uncovered tok, 2 messages, 1 batch(es) of ≤4096 tok
+# [extraction chat_6e718559586f4d57bcf2ad48e6a1de84] extractor starting (5 markdown lines)
+# [extraction] extractor step 1: toolUse, tools: submit_findings
+# [extraction chat_6e718559586f4d57bcf2ad48e6a1de84] extractor done in 0ms
+# [extraction chat_6e718559586f4d57bcf2ad48e6a1de84] auditor starting (2 propositions, 0 graph nodes)
+# [extraction] auditor step 1: toolUse, tools: submit_review
+# [extraction chat_6e718559586f4d57bcf2ad48e6a1de84] audit: 2 propositions through, 0 linked to existing nodes
+# [extraction chat_6e718559586f4d57bcf2ad48e6a1de84] auditor done in 0ms
+# [extraction chat_6e718559586f4d57bcf2ad48e6a1de84] merged: 2 nodes, 1 chains
+# [extraction chat_6e718559586f4d57bcf2ad48e6a1de84] merged: 2 nodes, 1 chains (2ms total, 1 batch job(s))
+# [extraction chat_6a3ee192d686442183240083ce5fe358] pipeline start — 34 uncovered tok, 2 messages, 1 batch(es) of ≤4096 tok
+# [extraction chat_6a3ee192d686442183240083ce5fe358] extractor starting (5 markdown lines)
+# [extraction] extractor step 1: toolUse, tools: submit_findings
+# [extraction chat_6a3ee192d686442183240083ce5fe358] extractor done in 0ms
+# [extraction chat_6a3ee192d686442183240083ce5fe358] auditor starting (2 propositions, 0 graph nodes)
+# [extraction] auditor step 1: stop, tools: (none)
+# [extraction chat_6a3ee192d686442183240083ce5fe358] job failed (isolated): Error: the auditor never submitted a review
+#     at runSubmitAgent (/Users/kokinmartinez/Documents/ChatGPT/coqui-learning harness/packages/engine/src/agent/subagents/submit-agent.ts:132:24)
+#     at async audit (/Users/kokinmartinez/Documents/ChatGPT/coqui-learning harness/packages/engine/src/agent/subagents/extraction.ts:970:23)
+#     at async <anonymous> (/Users/kokinmartinez/Documents/ChatGPT/coqui-learning harness/packages/engine/src/agent/subagents/extraction.ts:1179:29)
+#     at async withAuditLock (/Users/kokinmartinez/Documents/ChatGPT/coqui-learning harness/packages/engine/src/agent/subagents/extraction.ts:908:11)
+#     at async runJob (/Users/kokinmartinez/Documents/ChatGPT/coqui-learning harness/packages/engine/src/agent/subagents/extraction.ts:1056:18)
+#     at async Object.runExtraction (/Users/kokinmartinez/Documents/ChatGPT/coqui-learning harness/packages/engine/src/agent/subagents/extraction.ts:1152:14)
+#     at async TestContext.<anonymous> (/Users/kokinmartinez/Documents/ChatGPT/coqui-learning harness/packages/engine/tests/extraction.test.ts:671:20)
+#     at async Test.run (node:internal/test_runner/test:1208:7)
+#     at async Suite.processPendingSubtests (node:internal/test_runner/test:831:7)
+# [extraction chat_6a3ee192d686442183240083ce5fe358] 1 job(s) failed; successful jobs still merged
+# [extraction chat_6a3ee192d686442183240083ce5fe358] merged: 0 nodes, 0 chains (1ms total, 1 batch job(s))
+# [extraction chat_6a3ee192d686442183240083ce5fe358] pipeline start — 34 uncovered tok, 2 messages, 1 batch(es) of ≤4096 tok
+# [extraction chat_6a3ee192d686442183240083ce5fe358] extractor starting (5 markdown lines)
+# [extraction] extractor step 1: stop, tools: (none)
+# [extraction chat_6a3ee192d686442183240083ce5fe358] job failed (isolated): Error: the extractor never submitted findings
+#     at runSubmitAgent (/Users/kokinmartinez/Documents/ChatGPT/coqui-learning harness/packages/engine/src/agent/subagents/submit-agent.ts:132:24)
+#     at async extract (/Users/kokinmartinez/Documents/ChatGPT/coqui-learning harness/packages/engine/src/agent/subagents/extraction.ts:938:20)
+#     at async withBgLlmSlot (/Users/kokinmartinez/Documents/ChatGPT/coqui-learning harness/packages/engine/src/agent/subagents/bg-llm-semaphore.ts:76:10)
+#     at async <anonymous> (/Users/kokinmartinez/Documents/ChatGPT/coqui-learning harness/packages/engine/src/agent/subagents/extraction.ts:1169:25)
+#     at async runJob (/Users/kokinmartinez/Documents/ChatGPT/coqui-learning harness/packages/engine/src/agent/subagents/extraction.ts:1056:18)
+#     at async Object.runExtraction (/Users/kokinmartinez/Documents/ChatGPT/coqui-learning harness/packages/engine/src/agent/subagents/extraction.ts:1152:14)
+#     at async TestContext.<anonymous> (/Users/kokinmartinez/Documents/ChatGPT/coqui-learning harness/packages/engine/tests/extraction.test.ts:682:20)
+#     at async Test.run (node:internal/test_runner/test:1208:7)
+#     at async Suite.processPendingSubtests (node:internal/test_runner/test:831:7)
+# [extraction chat_6a3ee192d686442183240083ce5fe358] 1 job(s) failed; successful jobs still merged
+# [extraction chat_6a3ee192d686442183240083ce5fe358] merged: 0 nodes, 0 chains (1ms total, 1 batch job(s))
+# [extraction chat_beda667a6c3e46bd9f713fc666e892c7] pipeline start — 6155 uncovered tok, 5 messages, 2 batch(es) of ≤4096 tok
+# [extraction chat_beda667a6c3e46bd9f713fc666e892c7\#1] extractor starting (7 markdown lines)
+# [extraction] extractor step 1: toolUse, tools: submit_findings
+# [extraction chat_beda667a6c3e46bd9f713fc666e892c7\#1] extractor done in 1ms
+# [extraction chat_beda667a6c3e46bd9f713fc666e892c7\#1] auditor starting (2 propositions, 0 graph nodes)
+# [extraction] auditor step 1: toolUse, tools: submit_review
+# [extraction chat_beda667a6c3e46bd9f713fc666e892c7\#1] audit: 2 propositions through, 0 linked to existing nodes
+# [extraction chat_beda667a6c3e46bd9f713fc666e892c7\#1] auditor done in 0ms
+# [extraction chat_beda667a6c3e46bd9f713fc666e892c7\#1] merged: 2 nodes, 1 chains
+# [extraction chat_beda667a6c3e46bd9f713fc666e892c7\#2] extractor starting (5 markdown lines, digest 5 lines)
+# [extraction] extractor step 1: stop, tools: (none)
+# [extraction chat_beda667a6c3e46bd9f713fc666e892c7] job failed (isolated): Error: the extractor never submitted findings
+#     at runSubmitAgent (/Users/kokinmartinez/Documents/ChatGPT/coqui-learning harness/packages/engine/src/agent/subagents/submit-agent.ts:132:24)
+#     at async extract (/Users/kokinmartinez/Documents/ChatGPT/coqui-learning harness/packages/engine/src/agent/subagents/extraction.ts:938:20)
+#     at async withBgLlmSlot (/Users/kokinmartinez/Documents/ChatGPT/coqui-learning harness/packages/engine/src/agent/subagents/bg-llm-semaphore.ts:76:10)
+#     at async <anonymous> (/Users/kokinmartinez/Documents/ChatGPT/coqui-learning harness/packages/engine/src/agent/subagents/extraction.ts:1169:25)
+#     at async runJob (/Users/kokinmartinez/Documents/ChatGPT/coqui-learning harness/packages/engine/src/agent/subagents/extraction.ts:1056:18)
+#     at async Object.runExtraction (/Users/kokinmartinez/Documents/ChatGPT/coqui-learning harness/packages/engine/src/agent/subagents/extraction.ts:1152:14)
+#     at async TestContext.<anonymous> (/Users/kokinmartinez/Documents/ChatGPT/coqui-learning harness/packages/engine/tests/extraction.test.ts:710:20)
+#     at async Test.run (node:internal/test_runner/test:1208:7)
+#     at async Suite.processPendingSubtests (node:internal/test_runner/test:831:7)
+# [extraction chat_beda667a6c3e46bd9f713fc666e892c7] 1 job(s) failed; successful jobs still merged
+# [extraction chat_beda667a6c3e46bd9f713fc666e892c7] merged: 2 nodes, 1 chains (3ms total, 2 batch job(s))
+# [extraction chat_dc9999d640be4dbc8391f9ad71e4f234] pipeline start — 34 uncovered tok, 2 messages, 1 batch(es) of ≤4096 tok
+# [extraction chat_dc9999d640be4dbc8391f9ad71e4f234] extractor starting (5 markdown lines)
+# [extraction] extractor step 1: toolUse, tools: submit_findings
+# [extraction chat_dc9999d640be4dbc8391f9ad71e4f234] extractor done in 0ms
+# [extraction chat_dc9999d640be4dbc8391f9ad71e4f234] auditor starting (2 propositions, 1 graph nodes)
+# [extraction] auditor step 1: toolUse, tools: submit_review
+# [extraction chat_dc9999d640be4dbc8391f9ad71e4f234] audit: 2 propositions through, 1 linked to existing nodes
+# [extraction chat_dc9999d640be4dbc8391f9ad71e4f234] auditor done in 0ms
+# [extraction chat_dc9999d640be4dbc8391f9ad71e4f234] merged: 1 nodes, 1 chains
+# [extraction chat_dc9999d640be4dbc8391f9ad71e4f234] merged: 1 nodes, 1 chains (2ms total, 1 batch job(s))
+# [extraction chat_205c2f36e7934a58acacf52c68a5db1a] pipeline start — 34 uncovered tok, 2 messages, 1 batch(es) of ≤4096 tok
+# [extraction chat_205c2f36e7934a58acacf52c68a5db1a] extractor starting (5 markdown lines)
+# [extraction] extractor step 1: toolUse, tools: submit_findings
+# [extraction chat_205c2f36e7934a58acacf52c68a5db1a] extractor done in 0ms
+# [extraction chat_205c2f36e7934a58acacf52c68a5db1a] auditor starting (1 propositions, 0 graph nodes)
+# Subtest: transcriptView (pure — teacher prose only, owner 2026-09-28)
+    # Subtest: renders ONLY the teacher's prose — no learner, no checks, no tool notes
+    ok 1 - renders ONLY the teacher's prose — no learner, no checks, no tool notes
+      ---
+      duration_ms: 3.950458
+      type: 'test'
+      ...
+    # Subtest: job tool results and empty text vanish — only prose paragraphs remain
+    ok 2 - job tool results and empty text vanish — only prose paragraphs remain
+      ---
+      duration_ms: 0.423
+      type: 'test'
+      ...
+    1..2
+ok 1 - transcriptView (pure — teacher prose only, owner 2026-09-28)
+  ---
+  duration_ms: 4.725209
+  type: 'suite'
+  ...
+# Subtest: the extraction pipeline (extractor → auditor → merger)
+    # Subtest: push S5: every registry mutation announces activity-changed; reads stay silent
+    ok 1 - push S5: every registry mutation announces activity-changed; reads stay silent
+      ---
+      duration_ms: 10.067167
+      type: 'test'
+      ...
+    # Subtest: stringified-payload heal (owner, 2026-09-28): propositions arriving as ONE JSON string still validate and merge
+    ok 2 - stringified-payload heal (owner, 2026-09-28): propositions arriving as ONE JSON string still validate and merge
+      ---
+      duration_ms: 3.861292
+      type: 'test'
+      ...
+    # Subtest: stringified-payload heal: the CHAINS array arriving as ONE JSON string still validates (redesign, 2026-09-30)
+    ok 3 - stringified-payload heal: the CHAINS array arriving as ONE JSON string still validates (redesign, 2026-09-30)
+      ---
+      duration_ms: 2.492208
+      type: 'test'
+      ...
+    # Subtest: runs end to end: findings → audit verdict (identity) → deterministic merge + checkpoint
+    ok 4 - runs end to end: findings → audit verdict (identity) → deterministic merge + checkpoint
+      ---
+      duration_ms: 4.372167
+      type: 'test'
+      ...
+    # Subtest: BYOK refusal: no stage engines anywhere → the run throws honestly before any stage (owner, 2026-09-22)
+    ok 5 - BYOK refusal: no stage engines anywhere → the run throws honestly before any stage (owner, 2026-09-22)
+      ---
+      duration_ms: 3.992792
+      type: 'test'
+      ...
+    # Subtest: key-presence refusal: a stage engine whose provider key is gone throws before any batch (provider-key interlude, 2026-09-25)
+    ok 6 - key-presence refusal: a stage engine whose provider key is gone throws before any batch (provider-key interlude, 2026-09-25)
+      ---
+      duration_ms: 0.993416
+      type: 'test'
+      ...
+    # Subtest: key-presence pass-through: null from the check lets a stage through — the NEXT keyless stage surfaces (first-offender discipline)
+    ok 7 - key-presence pass-through: null from the check lets a stage through — the NEXT keyless stage surfaces (first-offender discipline)
+      ---
+      duration_ms: 0.692708
+      type: 'test'
+      ...
+    # Subtest: the LLM cluster-namer is DEAD (wave 7): a merge mints no naming runs — labels are session names now
+    ok 8 - the LLM cluster-namer is DEAD (wave 7): a merge mints no naming runs — labels are session names now
+      ---
+      duration_ms: 2.532958
+      type: 'test'
+      ...
+    # Subtest: engineFor fills the stages (model slots wave): the chain replaces config pins
+    ok 9 - engineFor fills the stages (model slots wave): the chain replaces config pins
+      ---
+      duration_ms: 1.839125
+      type: 'test'
+      ...
+    # Subtest: direct test values still WIN over engineFor (the priority pin)
+    ok 10 - direct test values still WIN over engineFor (the priority pin)
+      ---
+      duration_ms: 2.149041
+      type: 'test'
+      ...
+    # Subtest: a failing stage is ISOLATED (per-chunk jobs, owner 2026-09-28): the job fails, nothing merges — and a sibling batch still merges
+    ok 11 - a failing stage is ISOLATED (per-chunk jobs, owner 2026-09-28): the job fails, nothing merges — and a sibling batch still merges
+      ---
+      duration_ms: 7.134084
+      type: 'test'
+      ...
+    # Subtest: reports its phase through the status registry while running, and clears it when done
+    ok 12 - reports its phase through the status registry while running, and clears it when done
+      ---
+      duration_ms: 2.286417
+      type: 'test'
+      ...
+# [extraction chat_5f2edc68ac634e4195d8b6226f1ae8a4] pipeline start — 34 uncovered tok, 2 messages, 1 batch(es) of ≤4096 tok
+# [extraction chat_5f2edc68ac634e4195d8b6226f1ae8a4] extractor starting (5 markdown lines)
+# [extraction] extractor step 1: toolUse, tools: submit_findings
+# [extraction chat_5f2edc68ac634e4195d8b6226f1ae8a4] extractor done in 0ms
+# [extraction] auditor step 1: toolUse, tools: submit_review
+# [extraction chat_205c2f36e7934a58acacf52c68a5db1a] audit: 1 propositions through, 0 linked to existing nodes
+# [extraction chat_205c2f36e7934a58acacf52c68a5db1a] auditor done in 5ms
+# [extraction chat_205c2f36e7934a58acacf52c68a5db1a] merged: 1 nodes, 0 chains
+# [extraction chat_5f2edc68ac634e4195d8b6226f1ae8a4] auditor starting (1 propositions, 1 graph nodes)
+# [extraction chat_205c2f36e7934a58acacf52c68a5db1a] merged: 1 nodes, 0 chains (6ms total, 1 batch job(s))
+# [extraction] auditor step 1: toolUse, tools: submit_review
+# [extraction chat_5f2edc68ac634e4195d8b6226f1ae8a4] audit: 1 propositions through, 0 linked to existing nodes
+# [extraction chat_5f2edc68ac634e4195d8b6226f1ae8a4] auditor done in 1ms
+# [extraction chat_5f2edc68ac634e4195d8b6226f1ae8a4] merged: 1 nodes, 0 chains
+# [extraction chat_5f2edc68ac634e4195d8b6226f1ae8a4] merged: 1 nodes, 0 chains (5ms total, 1 batch job(s))
+# [extraction chat_0ad5b44588f14bc3bcd06a52f07ce047] pipeline start — 34 uncovered tok, 2 messages, 1 batch(es) of ≤4096 tok
+# [extraction chat_0ad5b44588f14bc3bcd06a52f07ce047] extractor starting (5 markdown lines)
+# [extraction] extractor step 1: toolUse, tools: submit_findings
+# [extraction chat_0ad5b44588f14bc3bcd06a52f07ce047] extractor done in 4ms
+# [extraction chat_0ad5b44588f14bc3bcd06a52f07ce047] auditor starting (1 propositions, 0 graph nodes)
+    # Subtest: serialized audit (owner 2026-09-28): a second run QUEUES at the gate; its auditor explores the graph only AFTER the first run's merge
+    ok 13 - serialized audit (owner 2026-09-28): a second run QUEUES at the gate; its auditor explores the graph only AFTER the first run's merge
+      ---
+      duration_ms: 9.112208
+      type: 'test'
+      ...
+# [extraction chat_7a886f46959848098dbad487657a14c2] pipeline start — 34 uncovered tok, 2 messages, 1 batch(es) of ≤4096 tok
+# [extraction chat_7a886f46959848098dbad487657a14c2] extractor starting (5 markdown lines)
+# [extraction] extractor step 1: toolUse, tools: submit_findings
+# [extraction chat_7a886f46959848098dbad487657a14c2] extractor done in 0ms
+# [extraction chat_7a886f46959848098dbad487657a14c2] aborted — merged chunks keep their coverage, the rest stay uncovered for the next run
+# [extraction chat_7a886f46959848098dbad487657a14c2] merged: 0 nodes, 0 chains (4ms total, 1 batch job(s))
+# [extraction] auditor step 1: toolUse, tools: submit_review
+# [extraction chat_0ad5b44588f14bc3bcd06a52f07ce047] audit: 1 propositions through, 0 linked to existing nodes
+# [extraction chat_0ad5b44588f14bc3bcd06a52f07ce047] auditor done in 6ms
+# [extraction chat_0ad5b44588f14bc3bcd06a52f07ce047] merged: 1 nodes, 0 chains
+# [extraction chat_0ad5b44588f14bc3bcd06a52f07ce047] merged: 1 nodes, 0 chains (10ms total, 1 batch job(s))
+# [extraction chat_11a330973e074fe8992f51af8f078f80] pipeline start — 34 uncovered tok, 2 messages, 1 batch(es) of ≤4096 tok
+# [extraction chat_11a330973e074fe8992f51af8f078f80] extractor starting (5 markdown lines)
+# [extraction] extractor step 1: toolUse, tools: submit_findings
+# [extraction chat_11a330973e074fe8992f51af8f078f80] extractor done in 0ms
+# [extraction chat_11a330973e074fe8992f51af8f078f80] auditor starting (1 propositions, 1 graph nodes)
+# [extraction] auditor step 1: toolUse, tools: submit_review
+# [extraction chat_11a330973e074fe8992f51af8f078f80] audit: 1 propositions through, 0 linked to existing nodes
+# [extraction chat_11a330973e074fe8992f51af8f078f80] auditor done in 0ms
+# [extraction chat_11a330973e074fe8992f51af8f078f80] merged: 1 nodes, 0 chains
+# [extraction chat_11a330973e074fe8992f51af8f078f80] merged: 1 nodes, 0 chains (1ms total, 1 batch job(s))
+# [extraction chat_0fc5903eb4454d60b51424f0ade7d142] pipeline start — 34 uncovered tok, 2 messages, 1 batch(es) of ≤4096 tok
+# [extraction chat_0fc5903eb4454d60b51424f0ade7d142] extractor starting (5 markdown lines)
+# [extraction] extractor step 1: toolUse, tools: submit_findings
+# [extraction chat_0fc5903eb4454d60b51424f0ade7d142] extractor done in 0ms
+# [extraction chat_0fc5903eb4454d60b51424f0ade7d142] auditor starting (2 propositions, 1 graph nodes)
+# [extraction] auditor step 1: toolUse, tools: submit_review
+# [extraction chat_0fc5903eb4454d60b51424f0ade7d142] audit: 2 propositions through, 1 linked to existing nodes
+# [extraction chat_0fc5903eb4454d60b51424f0ade7d142] auditor done in 0ms
+# [extraction chat_0fc5903eb4454d60b51424f0ade7d142] merged: 1 nodes, 1 chains
+# [extraction chat_0fc5903eb4454d60b51424f0ade7d142] merged: 1 nodes, 1 chains (1ms total, 1 batch job(s))
+# [extraction chat_fdcdf9deb38f4c1fa5c360da4259f11d] pipeline start — 34 uncovered tok, 2 messages, 1 batch(es) of ≤4096 tok
+# [extraction chat_fdcdf9deb38f4c1fa5c360da4259f11d] extractor starting (5 markdown lines)
+# [extraction chat_fdcdf9deb38f4c1fa5c360da4259f11d] aborted — merged chunks keep their coverage, the rest stay uncovered for the next run
+# [extraction chat_fdcdf9deb38f4c1fa5c360da4259f11d] merged: 0 nodes, 0 chains (1ms total, 1 batch job(s))
+# [extraction chat_75bea05a0d9444568e07912f1968f718] pipeline start — 34 uncovered tok, 2 messages, 1 batch(es) of ≤4096 tok
+# [extraction chat_75bea05a0d9444568e07912f1968f718] extractor starting (5 markdown lines)
+# [extraction] extractor step 1: stop, tools: (none)
+# [extraction chat_75bea05a0d9444568e07912f1968f718] job failed (isolated): Error: the extractor never submitted findings
+#     at runSubmitAgent (/Users/kokinmartinez/Documents/ChatGPT/coqui-learning harness/packages/engine/src/agent/subagents/submit-agent.ts:132:24)
+#     at async extract (/Users/kokinmartinez/Documents/ChatGPT/coqui-learning harness/packages/engine/src/agent/subagents/extraction.ts:938:20)
+#     at async withBgLlmSlot (/Users/kokinmartinez/Documents/ChatGPT/coqui-learning harness/packages/engine/src/agent/subagents/bg-llm-semaphore.ts:76:10)
+#     at async <anonymous> (/Users/kokinmartinez/Documents/ChatGPT/coqui-learning harness/packages/engine/src/agent/subagents/extraction.ts:1169:25)
+#     at async runJob (/Users/kokinmartinez/Documents/ChatGPT/coqui-learning harness/packages/engine/src/agent/subagents/extraction.ts:1056:18)
+#     at async Object.runExtraction (/Users/kokinmartinez/Documents/ChatGPT/coqui-learning harness/packages/engine/src/agent/subagents/extraction.ts:1152:14)
+#     at async TestContext.<anonymous> (/Users/kokinmartinez/Documents/ChatGPT/coqui-learning harness/packages/engine/tests/extraction.test.ts:998:20)
+#     at async Test.run (node:internal/test_runner/test:1208:7)
+#     at async Suite.processPendingSubtests (node:internal/test_runner/test:831:7)
+# [extraction chat_75bea05a0d9444568e07912f1968f718] 1 job(s) failed; successful jobs still merged
+# [extraction chat_75bea05a0d9444568e07912f1968f718] merged: 0 nodes, 0 chains (1ms total, 1 batch job(s))
+# [extraction chat_c5472861955f4875bcb8f05d9b3de3de] pipeline start — 34 uncovered tok, 2 messages, 1 batch(es) of ≤4096 tok
+# [extraction chat_c5472861955f4875bcb8f05d9b3de3de] extractor starting (5 markdown lines)
+# [extraction] extractor step 1: stop, tools: (none)
+# [extraction chat_c5472861955f4875bcb8f05d9b3de3de] job failed (isolated): Error: the extractor never submitted findings
+#     at runSubmitAgent (/Users/kokinmartinez/Documents/ChatGPT/coqui-learning harness/packages/engine/src/agent/subagents/submit-agent.ts:132:24)
+#     at async extract (/Users/kokinmartinez/Documents/ChatGPT/coqui-learning harness/packages/engine/src/agent/subagents/extraction.ts:938:20)
+#     at async withBgLlmSlot (/Users/kokinmartinez/Documents/ChatGPT/coqui-learning harness/packages/engine/src/agent/subagents/bg-llm-semaphore.ts:76:10)
+#     at async <anonymous> (/Users/kokinmartinez/Documents/ChatGPT/coqui-learning harness/packages/engine/src/agent/subagents/extraction.ts:1169:25)
+#     at async runJob (/Users/kokinmartinez/Documents/ChatGPT/coqui-learning harness/packages/engine/src/agent/subagents/extraction.ts:1056:18)
+#     at async Object.runExtraction (/Users/kokinmartinez/Documents/ChatGPT/coqui-learning harness/packages/engine/src/agent/subagents/extraction.ts:1152:14)
+#     at async TestContext.<anonymous> (/Users/kokinmartinez/Documents/ChatGPT/coqui-learning harness/packages/engine/tests/extraction.test.ts:1047:20)
+#     at async Test.run (node:internal/test_runner/test:1208:7)
+#     at async Suite.processPendingSubtests (node:internal/test_runner/test:831:7)
+# [extraction chat_c5472861955f4875bcb8f05d9b3de3de] 1 job(s) failed; successful jobs still merged
+# [extraction chat_does_not_exist] pipeline failed (0ms): Error: Chat not found: chat_does_not_exist
+#     at Object.runExtraction (/Users/kokinmartinez/Documents/ChatGPT/coqui-learning harness/packages/engine/src/agent/subagents/extraction.ts:1115:23)
+#     at TestContext.<anonymous> (/Users/kokinmartinez/Documents/ChatGPT/coqui-learning harness/packages/engine/tests/extraction.test.ts:1060:33)
+#     at Test.runInAsyncScope (node:async_hooks:227:14)
+#     at Test.run (node:internal/test_runner/test:1201:25)
+#     at Suite.processPendingSubtests (node:internal/test_runner/test:831:18)
+#     at Test.postRun (node:internal/test_runner/test:1330:19)
+#     at Test.run (node:internal/test_runner/test:1258:12)
+#     at async Suite.processPendingSubtests (node:internal/test_runner/test:831:7)
+# [extraction chat_c5472861955f4875bcb8f05d9b3de3de] merged: 0 nodes, 0 chains (1ms total, 1 batch job(s))
+# [extraction chat_cc7826b60370452c81547cc4858c5a5c] pipeline start — 34 uncovered tok, 2 messages, 1 batch(es) of ≤4096 tok
+# [extraction chat_cc7826b60370452c81547cc4858c5a5c] extractor starting (5 markdown lines)
+# [extraction] extractor step 1: toolUse, tools: submit_findings
+# [extraction] extractor step 2: toolUse, tools: submit_findings
+# [extraction] extractor step 3: toolUse, tools: submit_findings
+# [extraction] extractor step 4: toolUse, tools: submit_findings
+# [extraction chat_cc7826b60370452c81547cc4858c5a5c] job failed (isolated): Error: the extractor never submitted findings
+#     at runSubmitAgent (/Users/kokinmartinez/Documents/ChatGPT/coqui-learning harness/packages/engine/src/agent/subagents/submit-agent.ts:132:24)
+#     at async extract (/Users/kokinmartinez/Documents/ChatGPT/coqui-learning harness/packages/engine/src/agent/subagents/extraction.ts:938:20)
+#     at async withBgLlmSlot (/Users/kokinmartinez/Documents/ChatGPT/coqui-learning harness/packages/engine/src/agent/subagents/bg-llm-semaphore.ts:76:10)
+#     at async <anonymous> (/Users/kokinmartinez/Documents/ChatGPT/coqui-learning harness/packages/engine/src/agent/subagents/extraction.ts:1169:25)
+#     at async runJob (/Users/kokinmartinez/Documents/ChatGPT/coqui-learning harness/packages/engine/src/agent/subagents/extraction.ts:1056:18)
+#     at async Object.runExtraction (/Users/kokinmartinez/Documents/ChatGPT/coqui-learning harness/packages/engine/src/agent/subagents/extraction.ts:1152:14)
+#     at async TestContext.<anonymous> (/Users/kokinmartinez/Documents/ChatGPT/coqui-learning harness/packages/engine/tests/extraction.test.ts:1103:20)
+#     at async Test.run (node:internal/test_runner/test:1208:7)
+#     at async Promise.all (index 0)
+#     at async Suite.run (node:internal/test_runner/test:1619:7)
+# [extraction chat_cc7826b60370452c81547cc4858c5a5c] 1 job(s) failed; successful jobs still merged
+# [extraction chat_cc7826b60370452c81547cc4858c5a5c] merged: 0 nodes, 0 chains (2ms total, 1 batch job(s))
+# [extraction chat_de1708f12f1649b8b7d1abbf0957a4d5] pipeline start — 34 uncovered tok, 2 messages, 1 batch(es) of ≤4096 tok
+# [extraction chat_de1708f12f1649b8b7d1abbf0957a4d5] extractor starting (5 markdown lines)
+# [extraction] extractor step 1: toolUse, tools: submit_findings
+# [extraction] extractor step 2: toolUse, tools: submit_findings
+# [extraction] extractor step 3: toolUse, tools: submit_findings
+# [extraction] extractor step 4: toolUse, tools: submit_findings
+# [extraction chat_de1708f12f1649b8b7d1abbf0957a4d5] extractor done in 1ms
+# [extraction chat_de1708f12f1649b8b7d1abbf0957a4d5] auditor starting (1 propositions, 0 graph nodes)
+# [extraction] auditor step 1: toolUse, tools: submit_review
+# [extraction chat_de1708f12f1649b8b7d1abbf0957a4d5] audit: 1 propositions through, 0 linked to existing nodes
+# [extraction chat_de1708f12f1649b8b7d1abbf0957a4d5] auditor done in 0ms
+# [extraction chat_de1708f12f1649b8b7d1abbf0957a4d5] merged: 1 nodes, 0 chains
+# [extraction chat_de1708f12f1649b8b7d1abbf0957a4d5] merged: 1 nodes, 0 chains (2ms total, 1 batch job(s))
+# [extraction chat_c93518437a5040819cbd4ff7e2da3001] pipeline start — 6155 uncovered tok, 5 messages, 2 batch(es) of ≤4096 tok
+# [extraction chat_c93518437a5040819cbd4ff7e2da3001\#1] extractor starting (7 markdown lines)
+# [extraction] extractor step 1: toolUse, tools: submit_findings
+# [extraction] extractor step 2: toolUse, tools: submit_findings
+# [extraction chat_c93518437a5040819cbd4ff7e2da3001\#1] extractor done in 0ms
+# [extraction chat_c93518437a5040819cbd4ff7e2da3001\#1] auditor starting (1 propositions, 0 graph nodes)
+# [extraction] auditor step 1: toolUse, tools: submit_review
+# [extraction chat_c93518437a5040819cbd4ff7e2da3001\#1] audit: 1 propositions through, 0 linked to existing nodes
+# [extraction chat_c93518437a5040819cbd4ff7e2da3001\#1] auditor done in 0ms
+# [extraction chat_c93518437a5040819cbd4ff7e2da3001\#1] merged: 1 nodes, 0 chains
+# [extraction chat_c93518437a5040819cbd4ff7e2da3001\#2] extractor starting (5 markdown lines, digest 2 lines)
+# [extraction] extractor step 1: toolUse, tools: submit_findings
+# [extraction chat_c93518437a5040819cbd4ff7e2da3001\#2] extractor done in 0ms
+# [extraction chat_c93518437a5040819cbd4ff7e2da3001\#2] auditor starting (1 propositions, 1 graph nodes)
+# [extraction] auditor step 1: toolUse, tools: submit_review
+# [extraction chat_c93518437a5040819cbd4ff7e2da3001\#2] audit: 1 propositions through, 0 linked to existing nodes
+# [extraction chat_c93518437a5040819cbd4ff7e2da3001\#2] auditor done in 0ms
+# [extraction chat_c93518437a5040819cbd4ff7e2da3001\#2] merged: 1 nodes, 0 chains
+# [extraction chat_c93518437a5040819cbd4ff7e2da3001] merged: 2 nodes, 0 chains (3ms total, 2 batch job(s))
+# [extraction chat_f2010530a7fe49708b2615089123765e] pipeline start — 34 uncovered tok, 2 messages, 1 batch(es) of ≤4096 tok
+# [extraction chat_f2010530a7fe49708b2615089123765e] extractor starting (5 markdown lines)
+# [extraction] extractor step 1: toolUse, tools: submit_findings
+# [extraction chat_f2010530a7fe49708b2615089123765e] extractor done in 0ms
+# [extraction chat_f2010530a7fe49708b2615089123765e] auditor starting (1 propositions, 1 graph nodes)
+# [extraction] auditor step 1: toolUse, tools: submit_review
+# [extraction chat_f2010530a7fe49708b2615089123765e] audit: 1 propositions through, 1 linked to existing nodes
+# [extraction chat_f2010530a7fe49708b2615089123765e] auditor done in 0ms
+# [extraction chat_f2010530a7fe49708b2615089123765e] merged: 0 nodes, 0 chains
+# [extraction chat_f2010530a7fe49708b2615089123765e] merged: 0 nodes, 0 chains (1ms total, 1 batch job(s))
+# [extraction src_83c242a1f39e] notes pipeline start (/vault/anchor-free.md) — 1 chunk(s) of ≤4096 tok
+# [extraction src_83c242a1f39e] notes extractor starting (7 source lines)
+# [extraction] extractor step 1: toolUse, tools: submit_findings
+# [extraction src_83c242a1f39e] notes extractor done in 0ms
+# [extraction src_83c242a1f39e] auditor starting (1 propositions, 0 graph nodes)
+# [extraction] auditor step 1: toolUse, tools: submit_review
+# [extraction src_83c242a1f39e] audit: 1 propositions through, 0 linked to existing nodes
+# [extraction src_83c242a1f39e] auditor done in 0ms
+# [extraction src_83c242a1f39e] merged: 1 nodes, 0 chains
+# [extraction src_83c242a1f39e] merged: 1 nodes, 0 chains (1ms total, 1 chunk job(s))
+# [extraction src_22063c9994e2] notes pipeline start (/vault/stray-anchor.md) — 1 chunk(s) of ≤4096 tok
+# [extraction src_22063c9994e2] notes extractor starting (7 source lines)
+# [extraction] extractor step 1: toolUse, tools: submit_findings
+# [extraction src_22063c9994e2] notes extractor done in 0ms
+# [extraction src_22063c9994e2] auditor starting (1 propositions, 1 graph nodes)
+# [extraction] auditor step 1: toolUse, tools: submit_review
+# [extraction src_22063c9994e2] audit: 1 propositions through, 0 linked to existing nodes
+# [extraction src_22063c9994e2] auditor done in 0ms
+# [extraction src_22063c9994e2] merged: 1 nodes, 0 chains
+# [extraction src_22063c9994e2] merged: 1 nodes, 0 chains (1ms total, 1 chunk job(s))
+# [extraction chat_0f1118ec49ae4eaabfdc8fd15dd67baa] pipeline start — 6155 uncovered tok, 5 messages, 2 batch(es) of ≤4096 tok
+# [extraction chat_0f1118ec49ae4eaabfdc8fd15dd67baa\#1] extractor starting (7 markdown lines)
+# [extraction] extractor step 1: toolUse, tools: submit_findings
+# [extraction chat_0f1118ec49ae4eaabfdc8fd15dd67baa\#1] extractor done in 0ms
+# [extraction chat_0f1118ec49ae4eaabfdc8fd15dd67baa\#1] auditor starting (2 propositions, 0 graph nodes)
+# [extraction] auditor step 1: toolUse, tools: submit_review
+# [extraction chat_0f1118ec49ae4eaabfdc8fd15dd67baa\#1] audit: 2 propositions through, 0 linked to existing nodes
+# [extraction chat_0f1118ec49ae4eaabfdc8fd15dd67baa\#1] auditor done in 0ms
+# [extraction chat_0f1118ec49ae4eaabfdc8fd15dd67baa\#1] merged: 2 nodes, 1 chains
+# [extraction chat_0f1118ec49ae4eaabfdc8fd15dd67baa\#2] extractor starting (5 markdown lines, digest 5 lines)
+# [extraction] extractor step 1: toolUse, tools: submit_findings
+# [extraction chat_0f1118ec49ae4eaabfdc8fd15dd67baa\#2] extractor done in 0ms
+# [extraction chat_0f1118ec49ae4eaabfdc8fd15dd67baa\#2] auditor starting (2 propositions, 2 graph nodes)
+# [extraction] auditor step 1: toolUse, tools: submit_review
+# [extraction chat_0f1118ec49ae4eaabfdc8fd15dd67baa\#2] audit: 2 propositions through, 0 linked to existing nodes
+# [extraction chat_0f1118ec49ae4eaabfdc8fd15dd67baa\#2] auditor done in 0ms
+# [extraction chat_0f1118ec49ae4eaabfdc8fd15dd67baa\#2] merged: 2 nodes, 1 chains
+# [extraction chat_0f1118ec49ae4eaabfdc8fd15dd67baa] merged: 4 nodes, 2 chains (3ms total, 2 batch job(s))
+# [extraction chat_85e2a6a2b5cc405cabec74922c43c856] pipeline start — 34 uncovered tok, 2 messages, 1 batch(es) of ≤4096 tok
+# [extraction chat_85e2a6a2b5cc405cabec74922c43c856] extractor starting (5 markdown lines)
+# [extraction] extractor step 1: toolUse, tools: submit_findings
+# [extraction chat_85e2a6a2b5cc405cabec74922c43c856] extractor done in 1ms
+# [extraction chat_85e2a6a2b5cc405cabec74922c43c856] auditor starting (3 propositions, 0 graph nodes)
+# [extraction] auditor step 1: toolUse, tools: submit_review
+# [extraction chat_85e2a6a2b5cc405cabec74922c43c856] audit: 3 propositions through, 0 linked to existing nodes
+# [extraction chat_85e2a6a2b5cc405cabec74922c43c856] auditor done in 0ms
+# [extraction chat_85e2a6a2b5cc405cabec74922c43c856] merged: 3 nodes, 1 chains
+# [extraction chat_85e2a6a2b5cc405cabec74922c43c856] merged: 3 nodes, 1 chains (2ms total, 1 batch job(s))
+# [extraction chat_7f0cf7a11f6b4d4892c6e583c5a4b4af] pipeline start — 34 uncovered tok, 2 messages, 1 batch(es) of ≤4096 tok
+# [extraction chat_7f0cf7a11f6b4d4892c6e583c5a4b4af] extractor starting (5 markdown lines)
+# [extraction] extractor step 1: toolUse, tools: submit_findings
+# [extraction chat_7f0cf7a11f6b4d4892c6e583c5a4b4af] extractor done in 0ms
+# [extraction chat_7f0cf7a11f6b4d4892c6e583c5a4b4af] auditor starting (4 propositions, 0 graph nodes)
+# [extraction] auditor step 1: toolUse, tools: submit_review
+# [extraction chat_7f0cf7a11f6b4d4892c6e583c5a4b4af] audit: 4 propositions through, 0 linked to existing nodes
+# [extraction chat_7f0cf7a11f6b4d4892c6e583c5a4b4af] auditor done in 0ms
+# [extraction chat_7f0cf7a11f6b4d4892c6e583c5a4b4af] merged: 4 nodes, 2 chains
+# [extraction chat_7f0cf7a11f6b4d4892c6e583c5a4b4af] merged: 4 nodes, 2 chains (2ms total, 1 batch job(s))
+# [extraction chat_858929edfc6d4965af2f8c00c8fae613] pipeline start — 34 uncovered tok, 2 messages, 1 batch(es) of ≤4096 tok
+# [extraction chat_858929edfc6d4965af2f8c00c8fae613] extractor starting (5 markdown lines)
+# [extraction] extractor step 1: toolUse, tools: submit_findings
+# [extraction chat_858929edfc6d4965af2f8c00c8fae613] extractor done in 0ms
+# [extraction chat_858929edfc6d4965af2f8c00c8fae613] auditor starting (2 propositions, 0 graph nodes)
+# [extraction] auditor step 1: toolUse, tools: submit_review
+# [extraction chat_858929edfc6d4965af2f8c00c8fae613] audit: 2 propositions through, 0 linked to existing nodes
+# [extraction chat_858929edfc6d4965af2f8c00c8fae613] auditor done in 0ms
+# [extraction chat_858929edfc6d4965af2f8c00c8fae613] merged: 2 nodes, 1 chains
+# [extraction chat_858929edfc6d4965af2f8c00c8fae613] merged: 2 nodes, 1 chains (1ms total, 1 batch job(s))
+# [extraction chat_fb1b6643add94c13a042cfa1671bc417] pipeline start — 34 uncovered tok, 2 messages, 1 batch(es) of ≤4096 tok
+# [extraction chat_fb1b6643add94c13a042cfa1671bc417] extractor starting (5 markdown lines)
+# [extraction] extractor step 1: toolUse, tools: submit_findings
+# [extraction] extractor step 2: toolUse, tools: submit_findings
+# [extraction] extractor step 3: toolUse, tools: submit_findings
+# [extraction] extractor step 4: toolUse, tools: submit_findings
+# [extraction chat_fb1b6643add94c13a042cfa1671bc417] job failed (isolated): Error: the extractor never submitted findings
+#     at runSubmitAgent (/Users/kokinmartinez/Documents/ChatGPT/coqui-learning harness/packages/engine/src/agent/subagents/submit-agent.ts:132:24)
+#     at async extract (/Users/kokinmartinez/Documents/ChatGPT/coqui-learning harness/packages/engine/src/agent/subagents/extraction.ts:938:20)
+#     at async withBgLlmSlot (/Users/kokinmartinez/Documents/ChatGPT/coqui-learning harness/packages/engine/src/agent/subagents/bg-llm-semaphore.ts:76:10)
+#     at async <anonymous> (/Users/kokinmartinez/Documents/ChatGPT/coqui-learning harness/packages/engine/src/agent/subagents/extraction.ts:1169:25)
+#     at async runJob (/Users/kokinmartinez/Documents/ChatGPT/coqui-learning harness/packages/engine/src/agent/subagents/extraction.ts:1056:18)
+#     at async Object.runExtraction (/Users/kokinmartinez/Documents/ChatGPT/coqui-learning harness/packages/engine/src/agent/subagents/extraction.ts:1152:14)
+#     at async TestContext.<anonymous> (/Users/kokinmartinez/Documents/ChatGPT/coqui-learning harness/packages/engine/tests/extraction.test.ts:1391:20)
+#     at async Test.run (node:internal/test_runner/test:1208:7)
+#     at async Suite.processPendingSubtests (node:internal/test_runner/test:831:7)
+# [extraction chat_fb1b6643add94c13a042cfa1671bc417] 1 job(s) failed; successful jobs still merged
+# [extraction chat_fb1b6643add94c13a042cfa1671bc417] merged: 0 nodes, 0 chains (2ms total, 1 batch job(s))
+# [extraction chat_25c55029d44f458daf0b912f804c7395] pipeline start — 34 uncovered tok, 2 messages, 1 batch(es) of ≤4096 tok
+# [extraction chat_25c55029d44f458daf0b912f804c7395] extractor starting (5 markdown lines)
+# [extraction] extractor step 1: toolUse, tools: submit_findings
+# [extraction] extractor step 2: toolUse, tools: submit_findings
+# [extraction chat_25c55029d44f458daf0b912f804c7395] extractor done in 1ms
+# [extraction chat_25c55029d44f458daf0b912f804c7395] auditor starting (2 propositions, 0 graph nodes)
+# [extraction] auditor step 1: toolUse, tools: submit_review
+# [extraction chat_25c55029d44f458daf0b912f804c7395] audit: 2 propositions through, 0 linked to existing nodes
+# [extraction chat_25c55029d44f458daf0b912f804c7395] auditor done in 2ms
+# [extraction chat_25c55029d44f458daf0b912f804c7395] merged: 2 nodes, 1 chains
+# [extraction chat_25c55029d44f458daf0b912f804c7395] merged: 2 nodes, 1 chains (3ms total, 1 batch job(s))
+# [extraction chat_b420f4c3084e40af830beffe2d0edfc4] pipeline start — 34 uncovered tok, 2 messages, 1 batch(es) of ≤4096 tok
+# [extraction chat_b420f4c3084e40af830beffe2d0edfc4] extractor starting (5 markdown lines)
+# [extraction] extractor step 1: toolUse, tools: submit_findings
+# [extraction] extractor step 2: toolUse, tools: submit_findings
+# [extraction chat_b420f4c3084e40af830beffe2d0edfc4] extractor done in 1ms
+# [extraction chat_b420f4c3084e40af830beffe2d0edfc4] auditor starting (2 propositions, 0 graph nodes)
+# [extraction] auditor step 1: toolUse, tools: submit_review
+# [extraction chat_b420f4c3084e40af830beffe2d0edfc4] audit: 2 propositions through, 0 linked to existing nodes
+# [extraction chat_b420f4c3084e40af830beffe2d0edfc4] auditor done in 0ms
+# [extraction chat_b420f4c3084e40af830beffe2d0edfc4] merged: 2 nodes, 1 chains
+# [extraction chat_b420f4c3084e40af830beffe2d0edfc4] merged: 2 nodes, 1 chains (1ms total, 1 batch job(s))
+# [extraction chat_c0c719c47a2d4a8db35f6bd9821e7c10] pipeline start — 34 uncovered tok, 2 messages, 1 batch(es) of ≤4096 tok
+# [extraction chat_c0c719c47a2d4a8db35f6bd9821e7c10] extractor starting (5 markdown lines)
+# [extraction] extractor step 1: toolUse, tools: submit_findings
+# [extraction] extractor step 2: toolUse, tools: submit_findings
+# [extraction chat_c0c719c47a2d4a8db35f6bd9821e7c10] extractor done in 1ms
+# [extraction chat_c0c719c47a2d4a8db35f6bd9821e7c10] auditor starting (2 propositions, 0 graph nodes)
+# [extraction] auditor step 1: toolUse, tools: submit_review
+# [extraction chat_c0c719c47a2d4a8db35f6bd9821e7c10] audit: 2 propositions through, 0 linked to existing nodes
+# [extraction chat_c0c719c47a2d4a8db35f6bd9821e7c10] auditor done in 0ms
+# [extraction chat_c0c719c47a2d4a8db35f6bd9821e7c10] merged: 2 nodes, 1 chains
+# [extraction chat_c0c719c47a2d4a8db35f6bd9821e7c10] merged: 2 nodes, 1 chains (1ms total, 1 batch job(s))
+# [extraction src_345af79315a5] notes pipeline start (/vault/learn vim.md) — 1 chunk(s) of ≤4096 tok
+# [extraction src_345af79315a5] notes extractor starting (7 source lines)
+# [extraction] extractor step 1: toolUse, tools: submit_findings
+# [extraction src_345af79315a5] notes extractor done in 0ms
+# [extraction src_345af79315a5] auditor starting (1 propositions, 0 graph nodes)
+# [extraction] auditor step 1: toolUse, tools: submit_review
+# [extraction src_345af79315a5] audit: 1 propositions through, 0 linked to existing nodes
+# [extraction src_345af79315a5] auditor done in 0ms
+# [extraction src_345af79315a5] merged: 1 nodes, 0 chains
+# [extraction src_345af79315a5] merged: 1 nodes, 0 chains (1ms total, 1 chunk job(s))
+# [extraction src_1f8e531b3178] notes pipeline start (/vault/big.md) — 8 chunk(s) of ≤20 tok
+# [extraction src_1f8e531b3178\#1] notes extractor starting (3 source lines)
+# [extraction] extractor step 1: toolUse, tools: submit_findings
+# [extraction src_1f8e531b3178\#1] notes extractor done in 0ms
+# [extraction src_1f8e531b3178\#1] auditor starting (1 propositions, 0 graph nodes)
+# [extraction] auditor step 1: toolUse, tools: submit_review
+# [extraction src_1f8e531b3178\#1] audit: 1 propositions through, 0 linked to existing nodes
+# [extraction src_1f8e531b3178\#1] auditor done in 0ms
+# [extraction src_1f8e531b3178\#1] merged: 1 nodes, 0 chains
+# [extraction src_1f8e531b3178\#2] notes extractor starting (3 source lines, digest 2 lines)
+# [extraction] extractor step 1: toolUse, tools: submit_findings
+# [extraction src_1f8e531b3178\#2] notes extractor done in 0ms
+# [extraction src_1f8e531b3178\#2] auditor starting (1 propositions, 1 graph nodes)
+# [extraction] auditor step 1: toolUse, tools: submit_review
+# [extraction src_1f8e531b3178\#2] audit: 1 propositions through, 0 linked to existing nodes
+# [extraction src_1f8e531b3178\#2] auditor done in 0ms
+# [extraction src_1f8e531b3178\#2] merged: 1 nodes, 0 chains
+# [extraction src_1f8e531b3178\#3] notes extractor starting (3 source lines, digest 3 lines)
+# [extraction] extractor step 1: toolUse, tools: submit_findings
+# [extraction src_1f8e531b3178\#3] notes extractor done in 0ms
+# [extraction src_1f8e531b3178\#3] auditor starting (1 propositions, 2 graph nodes)
+# [extraction] auditor step 1: toolUse, tools: submit_review
+# [extraction src_1f8e531b3178\#3] audit: 1 propositions through, 0 linked to existing nodes
+# [extraction src_1f8e531b3178\#3] auditor done in 0ms
+# [extraction src_1f8e531b3178\#3] merged: 1 nodes, 0 chains
+# [extraction src_1f8e531b3178\#4] notes extractor starting (3 source lines, digest 4 lines)
+# [extraction] extractor step 1: toolUse, tools: submit_findings
+# [extraction src_1f8e531b3178\#4] notes extractor done in 0ms
+# [extraction src_1f8e531b3178\#4] auditor starting (1 propositions, 3 graph nodes)
+# [extraction] auditor step 1: toolUse, tools: submit_review
+# [extraction src_1f8e531b3178\#4] audit: 1 propositions through, 0 linked to existing nodes
+# [extraction src_1f8e531b3178\#4] auditor done in 0ms
+# [extraction src_1f8e531b3178\#4] merged: 1 nodes, 0 chains
+# [extraction src_1f8e531b3178\#5] notes extractor starting (3 source lines, digest 5 lines)
+# [extraction] extractor step 1: toolUse, tools: submit_findings
+# [extraction src_1f8e531b3178\#5] notes extractor done in 0ms
+# [extraction src_1f8e531b3178\#5] auditor starting (1 propositions, 4 graph nodes)
+# [extraction] auditor step 1: toolUse, tools: submit_review
+# [extraction src_1f8e531b3178\#5] audit: 1 propositions through, 0 linked to existing nodes
+# [extraction src_1f8e531b3178\#5] auditor done in 0ms
+# [extraction src_1f8e531b3178\#5] merged: 1 nodes, 0 chains
+# [extraction src_1f8e531b3178\#6] notes extractor starting (3 source lines, digest 6 lines)
+# [extraction] extractor step 1: toolUse, tools: submit_findings
+# [extraction src_1f8e531b3178\#6] notes extractor done in 0ms
+# [extraction src_1f8e531b3178\#6] auditor starting (1 propositions, 5 graph nodes)
+# [extraction] auditor step 1: toolUse, tools: submit_review
+# [extraction src_1f8e531b3178\#6] audit: 1 propositions through, 0 linked to existing nodes
+# [extraction src_1f8e531b3178\#6] auditor done in 0ms
+# [extraction src_1f8e531b3178\#6] merged: 1 nodes, 0 chains
+# [extraction src_1f8e531b3178\#7] notes extractor starting (3 source lines, digest 7 lines)
+# [extraction] extractor step 1: toolUse, tools: submit_findings
+# [extraction src_1f8e531b3178\#7] notes extractor done in 0ms
+# [extraction src_1f8e531b3178\#7] auditor starting (1 propositions, 6 graph nodes)
+# [extraction] auditor step 1: toolUse, tools: submit_review
+# [extraction src_1f8e531b3178\#7] audit: 1 propositions through, 0 linked to existing nodes
+# [extraction src_1f8e531b3178\#7] auditor done in 0ms
+# [extraction src_1f8e531b3178\#7] merged: 1 nodes, 0 chains
+# [extraction src_1f8e531b3178\#8] notes extractor starting (3 source lines, digest 8 lines)
+# [extraction] extractor step 1: toolUse, tools: submit_findings
+# [extraction src_1f8e531b3178\#8] notes extractor done in 0ms
+# [extraction src_1f8e531b3178\#8] auditor starting (1 propositions, 7 graph nodes)
+# [extraction] auditor step 1: toolUse, tools: submit_review
+# [extraction src_1f8e531b3178\#8] audit: 1 propositions through, 0 linked to existing nodes
+# [extraction src_1f8e531b3178\#8] auditor done in 0ms
+# [extraction src_1f8e531b3178\#8] merged: 1 nodes, 0 chains
+# [extraction src_1f8e531b3178] merged: 8 nodes, 0 chains (11ms total, 8 chunk job(s))
+# [extraction chat_e24435688cf342e3b50676d728625726] pipeline start — 34 uncovered tok, 2 messages, 1 batch(es) of ≤4096 tok
+# [extraction chat_e24435688cf342e3b50676d728625726] extractor starting (5 markdown lines)
+# [extraction] extractor step 1: toolUse, tools: submit_findings
+# [extraction] extractor step 2: toolUse, tools: submit_findings
+# [extraction] extractor step 3: toolUse, tools: submit_findings
+# [extraction] extractor step 4: toolUse, tools: submit_findings
+# [extraction chat_e24435688cf342e3b50676d728625726] job failed (isolated): Error: the extractor never submitted findings
+#     at runSubmitAgent (/Users/kokinmartinez/Documents/ChatGPT/coqui-learning harness/packages/engine/src/agent/subagents/submit-agent.ts:132:24)
+#     at async extract (/Users/kokinmartinez/Documents/ChatGPT/coqui-learning harness/packages/engine/src/agent/subagents/extraction.ts:938:20)
+#     at async withBgLlmSlot (/Users/kokinmartinez/Documents/ChatGPT/coqui-learning harness/packages/engine/src/agent/subagents/bg-llm-semaphore.ts:76:10)
+#     at async <anonymous> (/Users/kokinmartinez/Documents/ChatGPT/coqui-learning harness/packages/engine/src/agent/subagents/extraction.ts:1169:25)
+#     at async runJob (/Users/kokinmartinez/Documents/ChatGPT/coqui-learning harness/packages/engine/src/agent/subagents/extraction.ts:1056:18)
+#     at async Object.runExtraction (/Users/kokinmartinez/Documents/ChatGPT/coqui-learning harness/packages/engine/src/agent/subagents/extraction.ts:1152:14)
+#     at async TestContext.<anonymous> (/Users/kokinmartinez/Documents/ChatGPT/coqui-learning harness/packages/engine/tests/extraction.test.ts:1601:20)
+#     at async Test.run (node:internal/test_runner/test:1208:7)
+#     at async Suite.processPendingSubtests (node:internal/test_runner/test:831:7)
+# [extraction chat_e24435688cf342e3b50676d728625726] 1 job(s) failed; successful jobs still merged
+# [extraction chat_e24435688cf342e3b50676d728625726] merged: 0 nodes, 0 chains (2ms total, 1 batch job(s))
+# [extraction src_345af79315a5] notes pipeline start (/vault/learn vim.md) — 1 chunk(s) of ≤4096 tok
+# [extraction src_345af79315a5] notes extractor starting (7 source lines)
+# [extraction] extractor step 1: toolUse, tools: submit_findings
+# [extraction src_345af79315a5] notes extractor done in 0ms
+# [extraction src_345af79315a5] auditor starting (1 propositions, 0 graph nodes)
+# [extraction] auditor step 1: toolUse, tools: submit_review
+# [extraction src_345af79315a5] audit: 1 propositions through, 0 linked to existing nodes
+# [extraction src_345af79315a5] auditor done in 0ms
+# [extraction src_345af79315a5] merged: 1 nodes, 0 chains
+# [extraction src_345af79315a5] merged: 1 nodes, 0 chains (1ms total, 1 chunk job(s))
+# [extraction src_345af79315a5] notes pipeline start (/vault/learn vim.md) — 1 chunk(s) of ≤4096 tok
+# [extraction src_345af79315a5] notes extractor starting (7 source lines, digest 2 lines)
+# [extraction] extractor step 1: toolUse, tools: submit_findings
+# [extraction src_345af79315a5] notes extractor done in 0ms
+# [extraction src_345af79315a5] auditor starting (1 propositions, 1 graph nodes)
+# [extraction] auditor step 1: toolUse, tools: submit_review
+# [extraction src_345af79315a5] audit: 1 propositions through, 0 linked to existing nodes
+# [extraction src_345af79315a5] auditor done in 0ms
+# [extraction src_345af79315a5] merged: 1 nodes, 0 chains
+# [extraction src_345af79315a5] merged: 1 nodes, 0 chains (1ms total, 1 chunk job(s))
+# [extraction src_345af79315a5] notes pipeline start (/vault/learn vim.md) — 1 chunk(s) of ≤4096 tok
+# [extraction src_345af79315a5] notes extractor starting (8 source lines, digest 3 lines)
+# [extraction] extractor step 1: toolUse, tools: submit_findings
+# [extraction src_345af79315a5] notes extractor done in 0ms
+# [extraction src_345af79315a5] auditor starting (1 propositions, 2 graph nodes)
+# [extraction] auditor step 1: toolUse, tools: submit_review
+# [extraction src_345af79315a5] audit: 1 propositions through, 0 linked to existing nodes
+# [extraction src_345af79315a5] auditor done in 0ms
+# [extraction src_345af79315a5] merged: 1 nodes, 0 chains
+# [extraction src_345af79315a5] merged: 1 nodes, 0 chains (1ms total, 1 chunk job(s))
+# [extraction src_345af79315a5] notes pipeline start (/vault/learn vim.md) — 1 chunk(s) of ≤4096 tok
+# [extraction src_345af79315a5] notes extractor starting (7 source lines)
+# [extraction src_345af79315a5] aborted — merged chunks keep their coverage, the rest stay uncovered for the next run
+# [extraction src_345af79315a5] notes pipeline failed (0ms): NotesImportError: aborted
+#     at runNotesExtraction (/Users/kokinmartinez/Documents/ChatGPT/coqui-learning harness/packages/engine/src/agent/subagents/extraction.ts:1405:11)
+#     at async Object.importNotes (/Users/kokinmartinez/Documents/ChatGPT/coqui-learning harness/packages/engine/src/agent/subagents/extraction.ts:1432:11)
+#     at async waitForActual (node:assert:646:5)
+#     at async strict.rejects (node:assert:769:25)
+#     at async TestContext.<anonymous> (/Users/kokinmartinez/Documents/ChatGPT/coqui-learning harness/packages/engine/tests/extraction.test.ts:1647:3)
+#     at async Test.run (node:internal/test_runner/test:1208:7)
+#     at async Suite.processPendingSubtests (node:internal/test_runner/test:831:7) {
+#   outcome: 'aborted',
+#   partialStats: { nodes: 0, chains: 0 }
+# }
+# [extraction chat_3ada86a0f2da487794c28dac4f12330f] pipeline start — 6155 uncovered tok, 5 messages, 2 batch(es) of ≤4096 tok
+# [extraction chat_3ada86a0f2da487794c28dac4f12330f\#1] extractor starting (7 markdown lines)
+# [extraction] extractor step 1: toolUse, tools: submit_findings
+# [extraction chat_3ada86a0f2da487794c28dac4f12330f\#1] extractor done in 0ms
+# [extraction chat_3ada86a0f2da487794c28dac4f12330f\#1] auditor starting (2 propositions, 0 graph nodes)
+# [extraction] auditor step 1: toolUse, tools: submit_review
+# [extraction chat_3ada86a0f2da487794c28dac4f12330f\#1] audit: 2 propositions through, 0 linked to existing nodes
+# [extraction chat_3ada86a0f2da487794c28dac4f12330f\#1] auditor done in 0ms
+# [extraction chat_3ada86a0f2da487794c28dac4f12330f\#1] merged: 2 nodes, 1 chains
+# [extraction chat_3ada86a0f2da487794c28dac4f12330f\#2] extractor starting (5 markdown lines, digest 5 lines)
+# [extraction] extractor step 1: toolUse, tools: submit_findings
+# [extraction chat_3ada86a0f2da487794c28dac4f12330f\#2] extractor done in 0ms
+# [extraction chat_3ada86a0f2da487794c28dac4f12330f\#2] auditor starting (2 propositions, 2 graph nodes)
+# [extraction] auditor step 1: toolUse, tools: submit_review
+# [extraction chat_3ada86a0f2da487794c28dac4f12330f\#2] audit: 2 propositions through, 0 linked to existing nodes
+# [extraction chat_3ada86a0f2da487794c28dac4f12330f\#2] auditor done in 0ms
+# [extraction chat_3ada86a0f2da487794c28dac4f12330f\#2] merged: 2 nodes, 1 chains
+# [extraction chat_3ada86a0f2da487794c28dac4f12330f] merged: 4 nodes, 2 chains (3ms total, 2 batch job(s))
+# [extraction chat_3ada86a0f2da487794c28dac4f12330f] nothing uncovered — no-op
+# [extraction chat_75429cbbee38462a90da6f080cf466c5] pipeline start — 6155 uncovered tok, 5 messages, 2 batch(es) of ≤4096 tok
+# [extraction chat_75429cbbee38462a90da6f080cf466c5\#1] extractor starting (7 markdown lines)
+# [extraction] extractor step 1: toolUse, tools: submit_findings
+# [extraction chat_75429cbbee38462a90da6f080cf466c5\#1] extractor done in 0ms
+# [extraction chat_75429cbbee38462a90da6f080cf466c5\#1] auditor starting (2 propositions, 0 graph nodes)
+# [extraction] auditor step 1: toolUse, tools: submit_review
+# [extraction chat_75429cbbee38462a90da6f080cf466c5\#1] audit: 2 propositions through, 0 linked to existing nodes
+# [extraction chat_75429cbbee38462a90da6f080cf466c5\#1] auditor done in 0ms
+# [extraction chat_75429cbbee38462a90da6f080cf466c5\#1] merged: 2 nodes, 1 chains
+# [extraction chat_75429cbbee38462a90da6f080cf466c5\#2] extractor starting (5 markdown lines, digest 5 lines)
+    # Subtest: serialized audit: a run ABORTED while waiting never audits — and the queue chain stays healthy for successors
+    ok 14 - serialized audit: a run ABORTED while waiting never audits — and the queue chain stays healthy for successors
+      ---
+      duration_ms: 13.411292
+      type: 'test'
+      ...
+    # Subtest: captures per-stage usage live, persists the run's usage into the chat record
+    ok 15 - captures per-stage usage live, persists the run's usage into the chat record
+      ---
+      duration_ms: 2.105542
+      type: 'test'
+      ...
+    # Subtest: aborts mid-run: cancels the model call, persists partial usage, checkpoints nothing
+    ok 16 - aborts mid-run: cancels the model call, persists partial usage, checkpoints nothing
+      ---
+      duration_ms: 1.902791
+      type: 'test'
+      ...
+    # Subtest: is single-flight per chat — a concurrent second run is a no-op
+    ok 17 - is single-flight per chat — a concurrent second run is a no-op
+      ---
+      duration_ms: 1.385
+      type: 'test'
+      ...
+    # Subtest: registers runs on the process-wide registry (route-instance safety): a second pipeline instance sees the same single-flight state
+    ok 18 - registers runs on the process-wide registry (route-instance safety): a second pipeline instance sees the same single-flight state
+      ---
+      duration_ms: 1.472958
+      type: 'test'
+      ...
+    # Subtest: throws for unknown chats
+    ok 19 - throws for unknown chats
+      ---
+      duration_ms: 0.183875
+      type: 'test'
+      ...
+    1..19
+ok 2 - the extraction pipeline (extractor → auditor → merger)
+  ---
+  duration_ms: 72.408208
+  type: 'suite'
+  ...
+# Subtest: message anchors (session propositions carry their passage's id)
+    # Subtest: a submit MISSING messageId never passes: the schema rejects every turn — nothing merges, nothing checkpoints
+    ok 1 - a submit MISSING messageId never passes: the schema rejects every turn — nothing merges, nothing checkpoints
+      ---
+      duration_ms: 3.033167
+      type: 'test'
+      ...
+    # Subtest: an EMPTY or UNKNOWN anchor rides the error-back channel: refused, the model re-anchors clean, then merges
+    ok 2 - an EMPTY or UNKNOWN anchor rides the error-back channel: refused, the model re-anchors clean, then merges
+      ---
+      duration_ms: 2.455583
+      type: 'test'
+      ...
+    # Subtest: the boundary is the CURRENT BATCH: a real teacher message id from another batch is refused, the in-batch retry merges
+    ok 3 - the boundary is the CURRENT BATCH: a real teacher message id from another batch is refused, the in-batch retry merges
+      ---
+      duration_ms: 5.051667
+      type: 'test'
+      ...
+    # Subtest: a LINK-APPEND carries its proposition's anchor into the existing node's provenance
+    ok 4 - a LINK-APPEND carries its proposition's anchor into the existing node's provenance
+      ---
+      duration_ms: 1.256584
+      type: 'test'
+      ...
+    # Subtest: the notes door stays anchor-free: no messageId required — and a stray one never reaches provenance
+    ok 5 - the notes door stays anchor-free: no messageId required — and a stray one never reaches provenance
+      ---
+      duration_ms: 2.424083
+      type: 'test'
+      ...
+    # Subtest: coverage fingerprints are UNCHANGED by the anchors: the stored fps equal the plain coverage-slot hashes
+    ok 6 - coverage fingerprints are UNCHANGED by the anchors: the stored fps equal the plain coverage-slot hashes
+      ---
+      duration_ms: 4.146625
+      type: 'test'
+      ...
+    1..6
+ok 3 - message anchors (session propositions carry their passage's id)
+  ---
+  duration_ms: 18.47675
+  type: 'suite'
+  ...
+# Subtest: the extractor redesign (owner, 2026-09-30): chains are the deliverable
+    # Subtest: co-premises ride as ONE stored argument — the fan-out to arrows is the derived view, not the store
+    ok 1 - co-premises ride as ONE stored argument — the fan-out to arrows is the derived view, not the store
+      ---
+      duration_ms: 2.43325
+      type: 'test'
+      ...
+    # Subtest: two chains sharing a conclusion union their premises; a bare proposition stays an edge-less node
+    ok 2 - two chains sharing a conclusion union their premises; a bare proposition stays an edge-less node
+      ---
+      duration_ms: 2.242792
+      type: 'test'
+      ...
+    # Subtest: identical chains dedupe SILENTLY at the expansion — restating an argument is a no-op, not an error
+    ok 3 - identical chains dedupe SILENTLY at the expansion — restating an argument is a no-op, not an error
+      ---
+      duration_ms: 1.88775
+      type: 'test'
+      ...
+    # Subtest: the OLD wire shape (an edges array, no chains) is dead: validation fails every turn — nothing merges
+    ok 4 - the OLD wire shape (an edges array, no chains) is dead: validation fails every turn — nothing merges
+      ---
+      duration_ms: 2.470625
+      type: 'test'
+      ...
+    # Subtest: validate error-back: a chain referencing an UNKNOWN id is rejected, the model re-submits clean
+    ok 5 - validate error-back: a chain referencing an UNKNOWN id is rejected, the model re-submits clean
+      ---
+      duration_ms: 3.7915
+      type: 'test'
+      ...
+    # Subtest: validate error-back: a conclusion in its OWN premises is rejected, the model re-submits clean
+    ok 6 - validate error-back: a conclusion in its OWN premises is rejected, the model re-submits clean
+      ---
+      duration_ms: 1.847
+      type: 'test'
+      ...
+    # Subtest: empty premises never pass: the schema's minItems rejects, the model re-submits clean
+    ok 7 - empty premises never pass: the schema's minItems rejects, the model re-submits clean
+      ---
+      duration_ms: 1.8335
+      type: 'test'
+      ...
+    # Subtest: the system prompt is goal-first: ONE shared core, both preambles assembled onto it
+    ok 8 - the system prompt is goal-first: ONE shared core, both preambles assembled onto it
+      ---
+      duration_ms: 0.28475
+      type: 'test'
+      ...
+    1..8
+ok 4 - the extractor redesign (owner, 2026-09-30): chains are the deliverable
+  ---
+  duration_ms: 16.948416
+  type: 'suite'
+  ...
+# Subtest: the notes front door (importNotes — format-agnostic)
+    # Subtest: imports raw notes end to end: source record, file-scoped provenance
+    ok 1 - imports raw notes end to end: source record, file-scoped provenance
+      ---
+      duration_ms: 0.895917
+      type: 'test'
+      ...
+    # Subtest: chunks a large file: one extract→audit→merge per chunk, part headers in each view (owner, 2026-09-28)
+    ok 2 - chunks a large file: one extract→audit→merge per chunk, part headers in each view (owner, 2026-09-28)
+      ---
+      duration_ms: 11.420959
+      type: 'test'
+      ...
+    # Subtest: required top-level fields (owner, 2026-09-28; chains since 2026-09-30): a findings submit MISSING chains fails validation — no silent structure-less merge
+    ok 3 - required top-level fields (owner, 2026-09-28; chains since 2026-09-30): a findings submit MISSING chains fails validation — no silent structure-less merge
+      ---
+      duration_ms: 2.30775
+      type: 'test'
+      ...
+    # Subtest: every explicit import runs the whole file, even identical text and legacy fingerprints
+    ok 4 - every explicit import runs the whole file, even identical text and legacy fingerprints
+      ---
+      duration_ms: 2.08575
+      type: 'test'
+      ...
+    # Subtest: aborts like a chat run: true cancellation, nothing merged, partial usage in the source record
+    ok 5 - aborts like a chat run: true cancellation, nothing merged, partial usage in the source record
+      ---
+      duration_ms: 0.489292
+      type: 'test'
+      ...
+    1..5
+ok 5 - the notes front door (importNotes — format-agnostic)
+  ---
+  duration_ms: 17.283833
+  type: 'suite'
+  ...
+# Subtest: the chunked pipeline (extraction coverage)
+    # Subtest: extracts uncovered messages in token-budgeted batches, checkpoints coverage per batch, and no-ops once covered
+    ok 1 - extracts uncovered messages in token-budgeted batches, checkpoints coverage per batch, and no-ops once covered
+      ---
+      duration_ms: 3.584833
+      type: 'test'
+      ...
+# [extraction chat_75429cbbee38462a90da6f080cf466c5] aborted — merged chunks keep their coverage, the rest stay uncovered for the next run
+# [extraction chat_75429cbbee38462a90da6f080cf466c5] merged: 2 nodes, 1 chains (7ms total, 2 batch job(s))
+# [extraction chat_75429cbbee38462a90da6f080cf466c5] pipeline start — 2462 uncovered tok, 2 messages, 1 batch(es) of ≤4096 tok
+# [extraction chat_75429cbbee38462a90da6f080cf466c5] extractor starting (5 markdown lines, digest 5 lines)
+# [extraction] extractor step 1: toolUse, tools: submit_findings
+# [extraction chat_75429cbbee38462a90da6f080cf466c5] extractor done in 0ms
+# [extraction chat_75429cbbee38462a90da6f080cf466c5] auditor starting (2 propositions, 2 graph nodes)
+# [extraction] auditor step 1: toolUse, tools: submit_review
+# [extraction chat_75429cbbee38462a90da6f080cf466c5] audit: 2 propositions through, 0 linked to existing nodes
+# [extraction chat_75429cbbee38462a90da6f080cf466c5] auditor done in 0ms
+# [extraction chat_75429cbbee38462a90da6f080cf466c5] merged: 2 nodes, 1 chains
+# [extraction chat_75429cbbee38462a90da6f080cf466c5] merged: 2 nodes, 1 chains (2ms total, 1 batch job(s))
+# [extraction chat_08fe832dd7d34cb7b1d7076dfe56085a] pipeline start — 14 uncovered tok, 2 messages, 1 batch(es) of ≤4096 tok
+# [extraction chat_08fe832dd7d34cb7b1d7076dfe56085a] extractor starting (5 markdown lines)
+# [extraction] extractor step 1: toolUse, tools: submit_findings
+# [extraction chat_08fe832dd7d34cb7b1d7076dfe56085a] extractor done in 1ms
+# [extraction chat_08fe832dd7d34cb7b1d7076dfe56085a] auditor starting (2 propositions, 0 graph nodes)
+# [extraction] auditor step 1: toolUse, tools: submit_review
+# [extraction chat_08fe832dd7d34cb7b1d7076dfe56085a] audit: 2 propositions through, 0 linked to existing nodes
+# [extraction chat_08fe832dd7d34cb7b1d7076dfe56085a] auditor done in 0ms
+# [extraction chat_08fe832dd7d34cb7b1d7076dfe56085a] merged: 2 nodes, 1 chains
+# [extraction chat_08fe832dd7d34cb7b1d7076dfe56085a] merged: 2 nodes, 1 chains (1ms total, 1 batch job(s))
+# [extraction chat_08fe832dd7d34cb7b1d7076dfe56085a] pipeline start — 17 uncovered tok, 1 messages, 1 batch(es) of ≤4096 tok
+# [extraction chat_08fe832dd7d34cb7b1d7076dfe56085a] extractor starting (5 markdown lines, digest 5 lines)
+# [extraction] extractor step 1: toolUse, tools: submit_findings
+# [extraction chat_08fe832dd7d34cb7b1d7076dfe56085a] extractor done in 0ms
+# [extraction chat_08fe832dd7d34cb7b1d7076dfe56085a] auditor starting (2 propositions, 2 graph nodes)
+# [extraction] auditor step 1: toolUse, tools: submit_review
+# [extraction chat_08fe832dd7d34cb7b1d7076dfe56085a] audit: 2 propositions through, 0 linked to existing nodes
+# [extraction chat_08fe832dd7d34cb7b1d7076dfe56085a] auditor done in 0ms
+# [extraction chat_08fe832dd7d34cb7b1d7076dfe56085a] merged: 2 nodes, 1 chains
+# [extraction chat_08fe832dd7d34cb7b1d7076dfe56085a] merged: 2 nodes, 1 chains (1ms total, 1 batch job(s))
+# [extraction src_bc587a6c305e] notes pipeline start (/vault/parallel.md) — 8 chunk(s) of ≤20 tok
+# [extraction src_bc587a6c305e\#1] notes extractor starting (3 source lines)
+# [extraction] extractor step 1: error, tools: (none)
+# [extraction src_bc587a6c305e] aborted — merged chunks keep their coverage, the rest stay uncovered for the next run
+# [extraction src_bc587a6c305e] notes pipeline failed (0ms): NotesImportError: aborted
+#     at runNotesExtraction (/Users/kokinmartinez/Documents/ChatGPT/coqui-learning harness/packages/engine/src/agent/subagents/extraction.ts:1405:11)
+#     at async Object.importNotes (/Users/kokinmartinez/Documents/ChatGPT/coqui-learning harness/packages/engine/src/agent/subagents/extraction.ts:1432:11)
+#     at async waitForActual (node:assert:646:5)
+#     at async strict.rejects (node:assert:769:25)
+#     at async TestContext.<anonymous> (/Users/kokinmartinez/Documents/ChatGPT/coqui-learning harness/packages/engine/tests/extraction.test.ts:1955:3)
+#     at async Test.run (node:internal/test_runner/test:1208:7)
+#     at async Promise.all (index 0)
+#     at async Suite.run (node:internal/test_runner/test:1619:7)
+#     at async Test.processPendingSubtests (node:internal/test_runner/test:831:7) {
+#   outcome: 'aborted',
+#   partialStats: { nodes: 0, chains: 0 }
+# }
+# [extraction src_64d6b616d04b] notes pipeline start (/vault/parallel-2.md) — 8 chunk(s) of ≤20 tok
+# [extraction src_64d6b616d04b\#1] notes extractor starting (3 source lines)
+    # Subtest: aborting after a merged batch keeps it covered; the re-run extracts only the remainder
+    ok 2 - aborting after a merged batch keeps it covered; the re-run extracts only the remainder
+      ---
+      duration_ms: 9.246333
+      type: 'test'
+      ...
+    # Subtest: a re-opened message re-extracts alone; a data-part attach never re-opens it
+    ok 3 - a re-opened message re-extracts alone; a data-part attach never re-opens it
+      ---
+      duration_ms: 3.517667
+      type: 'test'
+      ...
+    1..3
+ok 6 - the chunked pipeline (extraction coverage)
+  ---
+  duration_ms: 16.424375
+  type: 'suite'
+  ...
+# Subtest: per-chunk parallel jobs (owner, 2026-09-28)
+    # Subtest: one job per chunk, SERIALIZED per source: the registry shows one live row at a time, and a source-wide abort ends the run
+    ok 1 - one job per chunk, SERIALIZED per source: the registry shows one live row at a time, and a source-wide abort ends the run
+      ---
+      duration_ms: 0.653416
+      type: 'test'
+      ...
+# [extraction] extractor step 1: toolUse, tools: submit_findings
+# [extraction src_64d6b616d04b\#1] notes extractor done in 6ms
+# [extraction src_64d6b616d04b\#1] auditor starting (2 propositions, 0 graph nodes)
+# [extraction] auditor step 1: toolUse, tools: submit_review
+# [extraction src_64d6b616d04b\#1] audit: 2 propositions through, 0 linked to existing nodes
+# [extraction src_64d6b616d04b\#1] auditor done in 5ms
+# [extraction src_64d6b616d04b\#1] merged: 2 nodes, 1 chains
+# [extraction src_64d6b616d04b\#2] notes extractor starting (3 source lines, digest 5 lines)
+# [extraction] extractor step 1: toolUse, tools: submit_findings
+# [extraction src_64d6b616d04b\#2] notes extractor done in 5ms
+# [extraction src_64d6b616d04b\#2] auditor starting (2 propositions, 2 graph nodes)
+# [extraction] auditor step 1: toolUse, tools: submit_review
+# [extraction src_64d6b616d04b\#2] audit: 2 propositions through, 0 linked to existing nodes
+# [extraction src_64d6b616d04b\#2] auditor done in 7ms
+# [extraction src_64d6b616d04b\#2] merged: 2 nodes, 1 chains
+# [extraction src_64d6b616d04b\#3] notes extractor starting (3 source lines, digest 8 lines)
+# [extraction] extractor step 1: toolUse, tools: submit_findings
+# [extraction src_64d6b616d04b\#3] notes extractor done in 7ms
+# [extraction src_64d6b616d04b\#3] auditor starting (2 propositions, 4 graph nodes)
+# [extraction] auditor step 1: toolUse, tools: submit_review
+# [extraction src_64d6b616d04b\#3] audit: 2 propositions through, 0 linked to existing nodes
+# [extraction src_64d6b616d04b\#3] auditor done in 6ms
+# [extraction src_64d6b616d04b\#3] merged: 2 nodes, 1 chains
+# [extraction src_64d6b616d04b\#4] notes extractor starting (3 source lines, digest 11 lines)
+# [extraction] extractor step 1: toolUse, tools: submit_findings
+# [extraction src_64d6b616d04b\#4] notes extractor done in 7ms
+# [extraction src_64d6b616d04b\#4] auditor starting (2 propositions, 6 graph nodes)
+# [extraction] auditor step 1: toolUse, tools: submit_review
+# [extraction src_64d6b616d04b\#4] audit: 2 propositions through, 0 linked to existing nodes
+# [extraction src_64d6b616d04b\#4] auditor done in 7ms
+# [extraction src_64d6b616d04b\#4] merged: 2 nodes, 1 chains
+# [extraction src_64d6b616d04b\#5] notes extractor starting (3 source lines, digest 14 lines)
+# [extraction] extractor step 1: toolUse, tools: submit_findings
+# [extraction src_64d6b616d04b\#5] notes extractor done in 7ms
+# [extraction src_64d6b616d04b\#5] auditor starting (2 propositions, 8 graph nodes)
+# [extraction] auditor step 1: toolUse, tools: submit_review
+# [extraction src_64d6b616d04b\#5] audit: 2 propositions through, 0 linked to existing nodes
+# [extraction src_64d6b616d04b\#5] auditor done in 7ms
+# [extraction src_64d6b616d04b\#5] merged: 2 nodes, 1 chains
+# [extraction src_64d6b616d04b\#6] notes extractor starting (3 source lines, digest 17 lines)
+# [extraction] extractor step 1: toolUse, tools: submit_findings
+# [extraction src_64d6b616d04b\#6] notes extractor done in 7ms
+# [extraction src_64d6b616d04b\#6] auditor starting (2 propositions, 10 graph nodes)
+# [extraction] auditor step 1: toolUse, tools: submit_review
+# [extraction src_64d6b616d04b\#6] audit: 2 propositions through, 0 linked to existing nodes
+# [extraction src_64d6b616d04b\#6] auditor done in 6ms
+# [extraction src_64d6b616d04b\#6] merged: 2 nodes, 1 chains
+# [extraction src_64d6b616d04b\#7] notes extractor starting (3 source lines, digest 20 lines)
+# [extraction] extractor step 1: toolUse, tools: submit_findings
+# [extraction src_64d6b616d04b\#7] notes extractor done in 7ms
+# [extraction src_64d6b616d04b\#7] auditor starting (2 propositions, 12 graph nodes)
+# [extraction] auditor step 1: toolUse, tools: submit_review
+# [extraction src_64d6b616d04b\#7] audit: 2 propositions through, 0 linked to existing nodes
+# [extraction src_64d6b616d04b\#7] auditor done in 7ms
+# [extraction src_64d6b616d04b\#7] merged: 2 nodes, 1 chains
+# [extraction src_64d6b616d04b\#8] notes extractor starting (3 source lines, digest 23 lines)
+# [extraction] extractor step 1: toolUse, tools: submit_findings
+# [extraction src_64d6b616d04b\#8] notes extractor done in 7ms
+# [extraction src_64d6b616d04b\#8] auditor starting (2 propositions, 14 graph nodes)
+# [extraction] auditor step 1: toolUse, tools: submit_review
+# [extraction src_64d6b616d04b\#8] audit: 2 propositions through, 0 linked to existing nodes
+# [extraction src_64d6b616d04b\#8] auditor done in 7ms
+# [extraction src_64d6b616d04b\#8] merged: 2 nodes, 1 chains
+# [extraction src_64d6b616d04b] merged: 16 nodes, 8 chains (116ms total, 8 chunk job(s))
+# [extraction chat_ce6087a32c9c4a36bb91935cf4108132] pipeline start — 34 uncovered tok, 2 messages, 1 batch(es) of ≤4096 tok
+# [extraction chat_ce6087a32c9c4a36bb91935cf4108132] extractor starting (5 markdown lines)
+# [extraction] extractor step 1: toolUse, tools: submit_findings
+# [extraction chat_ce6087a32c9c4a36bb91935cf4108132] extractor done in 0ms
+# [extraction chat_ce6087a32c9c4a36bb91935cf4108132] auditor starting (2 propositions, 0 graph nodes)
+# [extraction] auditor step 1: toolUse, tools: submit_review
+# [extraction chat_ce6087a32c9c4a36bb91935cf4108132] audit: 2 propositions through, 0 linked to existing nodes
+# [extraction chat_ce6087a32c9c4a36bb91935cf4108132] auditor done in 1ms
+# [extraction chat_ce6087a32c9c4a36bb91935cf4108132] aborted — merged chunks keep their coverage, the rest stay uncovered for the next run
+# [extraction chat_ce6087a32c9c4a36bb91935cf4108132] merged: 0 nodes, 0 chains (1ms total, 1 batch job(s))
+# [extraction chat_7dc1f53836924d239bea961a0372a54a] pipeline start — 34 uncovered tok, 2 messages, 1 batch(es) of ≤4096 tok
+# [extraction chat_7dc1f53836924d239bea961a0372a54a] extractor starting (5 markdown lines, digest 2 lines)
+# [extraction] extractor step 1: toolUse, tools: submit_findings
+# [extraction chat_7dc1f53836924d239bea961a0372a54a] extractor done in 0ms
+# [extraction chat_7dc1f53836924d239bea961a0372a54a] auditor starting (2 propositions, 1 graph nodes)
+# [extraction] auditor step 1: toolUse, tools: submit_review
+# [extraction chat_7dc1f53836924d239bea961a0372a54a] audit: 2 propositions through, 0 linked to existing nodes
+# [extraction chat_7dc1f53836924d239bea961a0372a54a] auditor done in 0ms
+# [extraction chat_7dc1f53836924d239bea961a0372a54a] merged: 2 nodes, 1 chains
+# [extraction chat_7dc1f53836924d239bea961a0372a54a] merged: 2 nodes, 1 chains (2ms total, 1 batch job(s))
+# [extraction chat_3b57b436d98f4176a86b861cbbdd3172] pipeline start — 34 uncovered tok, 2 messages, 1 batch(es) of ≤4096 tok
+# [extraction chat_3b57b436d98f4176a86b861cbbdd3172] extractor starting (5 markdown lines)
+# [extraction] extractor step 1: toolUse, tools: submit_findings
+# [extraction] extractor step 2: toolUse, tools: submit_findings
+# [extraction chat_3b57b436d98f4176a86b861cbbdd3172] extractor done in 0ms
+# [extraction chat_3b57b436d98f4176a86b861cbbdd3172] auditor starting (1 propositions, 0 graph nodes)
+# [extraction] auditor step 1: toolUse, tools: submit_review
+# [extraction chat_3b57b436d98f4176a86b861cbbdd3172] audit: 1 propositions through, 0 linked to existing nodes
+# [extraction chat_3b57b436d98f4176a86b861cbbdd3172] auditor done in 0ms
+# [extraction chat_3b57b436d98f4176a86b861cbbdd3172] merged: 1 nodes, 0 chains
+# [extraction chat_3b57b436d98f4176a86b861cbbdd3172] merged: 1 nodes, 0 chains (1ms total, 1 batch job(s))
+# [extraction chat_1b9f143db24643be8e8dfe38b9b592ad] pipeline start — 6155 uncovered tok, 5 messages, 2 batch(es) of ≤4096 tok
+# [extraction chat_1b9f143db24643be8e8dfe38b9b592ad\#1] extractor starting (7 markdown lines)
+# [extraction] extractor step 1: toolUse, tools: submit_findings
+# [extraction chat_1b9f143db24643be8e8dfe38b9b592ad\#1] extractor done in 0ms
+# [extraction chat_1b9f143db24643be8e8dfe38b9b592ad\#1] auditor starting (2 propositions, 0 graph nodes)
+# [extraction] auditor step 1: toolUse, tools: submit_review
+# [extraction chat_1b9f143db24643be8e8dfe38b9b592ad\#1] audit: 2 propositions through, 0 linked to existing nodes
+# [extraction chat_1b9f143db24643be8e8dfe38b9b592ad\#1] auditor done in 0ms
+# [extraction chat_1b9f143db24643be8e8dfe38b9b592ad\#1] merged: 2 nodes, 1 chains
+# [extraction chat_1b9f143db24643be8e8dfe38b9b592ad\#2] extractor starting (5 markdown lines, digest 5 lines)
+# [extraction] extractor step 1: toolUse, tools: submit_findings
+# [extraction chat_1b9f143db24643be8e8dfe38b9b592ad\#2] extractor done in 0ms
+# [extraction chat_1b9f143db24643be8e8dfe38b9b592ad\#2] auditor starting (2 propositions, 2 graph nodes)
+# [extraction] auditor step 1: toolUse, tools: submit_review
+# [extraction chat_1b9f143db24643be8e8dfe38b9b592ad\#2] audit: 2 propositions through, 0 linked to existing nodes
+# [extraction chat_1b9f143db24643be8e8dfe38b9b592ad\#2] auditor done in 0ms
+# [extraction chat_1b9f143db24643be8e8dfe38b9b592ad\#2] merged: 2 nodes, 1 chains
+# [extraction chat_1b9f143db24643be8e8dfe38b9b592ad] merged: 4 nodes, 2 chains (3ms total, 2 batch job(s))
+# [extraction chat_48f0a79d3eb34bfba4c0a0dbc062903b] pipeline start — 34 uncovered tok, 2 messages, 1 batch(es) of ≤4096 tok
+# [extraction chat_48f0a79d3eb34bfba4c0a0dbc062903b] extractor starting (5 markdown lines, digest 6 lines)
+# [extraction] extractor step 1: toolUse, tools: submit_findings
+# [extraction chat_48f0a79d3eb34bfba4c0a0dbc062903b] extractor done in 0ms
+# [extraction chat_48f0a79d3eb34bfba4c0a0dbc062903b] auditor starting (0 propositions, 5 graph nodes)
+# [extraction] auditor step 1: toolUse, tools: submit_review
+# [extraction chat_48f0a79d3eb34bfba4c0a0dbc062903b] audit: 0 propositions through, 0 linked to existing nodes
+# [extraction chat_48f0a79d3eb34bfba4c0a0dbc062903b] auditor done in 0ms
+# [extraction chat_48f0a79d3eb34bfba4c0a0dbc062903b] merged: 0 nodes, 1 chains
+# [extraction chat_48f0a79d3eb34bfba4c0a0dbc062903b] merged: 0 nodes, 1 chains (3ms total, 1 batch job(s))
+# [extraction src_584d2ec4fc7c] notes pipeline start (reliability.md) — 1 chunk(s) of ≤4096 tok
+# [extraction src_584d2ec4fc7c] notes extractor starting (7 source lines)
+# [extraction] extractor step 1: stop, tools: (none)
+# [extraction src_584d2ec4fc7c] job failed (isolated): Error: the extractor never submitted findings
+#     at runSubmitAgent (/Users/kokinmartinez/Documents/ChatGPT/coqui-learning harness/packages/engine/src/agent/subagents/submit-agent.ts:132:24)
+#     at async notesExtract (/Users/kokinmartinez/Documents/ChatGPT/coqui-learning harness/packages/engine/src/agent/subagents/extraction.ts:1291:20)
+#     at async withBgLlmSlot (/Users/kokinmartinez/Documents/ChatGPT/coqui-learning harness/packages/engine/src/agent/subagents/bg-llm-semaphore.ts:76:10)
+#     at async <anonymous> (/Users/kokinmartinez/Documents/ChatGPT/coqui-learning harness/packages/engine/src/agent/subagents/extraction.ts:1349:25)
+#     at async runJob (/Users/kokinmartinez/Documents/ChatGPT/coqui-learning harness/packages/engine/src/agent/subagents/extraction.ts:1056:18)
+#     at async runNotesExtraction (/Users/kokinmartinez/Documents/ChatGPT/coqui-learning harness/packages/engine/src/agent/subagents/extraction.ts:1346:14)
+#     at async Object.importNotes (/Users/kokinmartinez/Documents/ChatGPT/coqui-learning harness/packages/engine/src/agent/subagents/extraction.ts:1432:11)
+#     at async waitForActual (node:assert:646:5)
+#     at async strict.rejects (node:assert:769:25)
+#     at async TestContext.<anonymous> (/Users/kokinmartinez/Documents/ChatGPT/coqui-learning harness/packages/engine/tests/extraction.test.ts:2353:3)
+# [extraction src_584d2ec4fc7c] 1 job(s) failed; successful jobs still merged
+# [extraction src_584d2ec4fc7c] notes pipeline failed (0ms): NotesImportError: the extractor never submitted findings
+#     at runNotesExtraction (/Users/kokinmartinez/Documents/ChatGPT/coqui-learning harness/packages/engine/src/agent/subagents/extraction.ts:1405:11)
+#     at async Object.importNotes (/Users/kokinmartinez/Documents/ChatGPT/coqui-learning harness/packages/engine/src/agent/subagents/extraction.ts:1432:11)
+#     at async waitForActual (node:assert:646:5)
+#     at async strict.rejects (node:assert:769:25)
+#     at async TestContext.<anonymous> (/Users/kokinmartinez/Documents/ChatGPT/coqui-learning harness/packages/engine/tests/extraction.test.ts:2353:3)
+#     at async Test.run (node:internal/test_runner/test:1208:7)
+#     at async Promise.all (index 0)
+#     at async Suite.run (node:internal/test_runner/test:1619:7)
+#     at async Test.processPendingSubtests (node:internal/test_runner/test:831:7) {
+#   outcome: 'failed',
+#   partialStats: { nodes: 0, chains: 0 }
+# }
+# [extraction src_584d2ec4fc7c] notes pipeline start (reliability.md) — 1 chunk(s) of ≤4096 tok
+# [extraction src_584d2ec4fc7c] notes extractor starting (7 source lines)
+# [extraction] extractor step 1: toolUse, tools: submit_findings
+# [extraction src_584d2ec4fc7c] notes extractor done in 0ms
+# [extraction src_584d2ec4fc7c] auditor starting (1 propositions, 0 graph nodes)
+# [extraction] auditor step 1: toolUse, tools: submit_review
+# [extraction src_584d2ec4fc7c] audit: 1 propositions through, 0 linked to existing nodes
+# [extraction src_584d2ec4fc7c] auditor done in 0ms
+# [extraction src_584d2ec4fc7c] merged: 1 nodes, 0 chains
+# [extraction src_584d2ec4fc7c] merged: 1 nodes, 0 chains (1ms total, 1 chunk job(s))
+# [extraction src_584d2ec4fc7c] notes pipeline start (reliability.md) — 1 chunk(s) of ≤4096 tok
+# [extraction src_584d2ec4fc7c] notes extractor starting (7 source lines)
+# [extraction] extractor step 1: toolUse, tools: submit_findings
+# [extraction src_584d2ec4fc7c] notes extractor done in 0ms
+# [extraction src_584d2ec4fc7c] auditor starting (0 propositions, 0 graph nodes)
+# [extraction] auditor step 1: toolUse, tools: submit_review
+# [extraction src_584d2ec4fc7c] audit: 0 propositions through, 0 linked to existing nodes
+# [extraction src_584d2ec4fc7c] auditor done in 0ms
+# [extraction src_584d2ec4fc7c] merged: 0 nodes, 0 chains
+# [extraction src_584d2ec4fc7c] merged: 0 nodes, 0 chains (0ms total, 1 chunk job(s))
+# [extraction src_584d2ec4fc7c] notes pipeline start (reliability.md) — 0 chunk(s) of ≤4096 tok
+# [extraction src_584d2ec4fc7c] merged: 0 nodes, 0 chains (0ms total, 0 chunk job(s))
+# [extraction] refused — no model configured for: cheap
+# [extraction src_584d2ec4fc7c] notes pipeline failed (0ms): ModelsNotConfiguredError: No model configured — set up your models first
+#     at refuseIfStagesUnready (/Users/kokinmartinez/Documents/ChatGPT/coqui-learning harness/packages/engine/src/agent/subagents/extraction.ts:815:10)
+#     at runNotesExtraction (/Users/kokinmartinez/Documents/ChatGPT/coqui-learning harness/packages/engine/src/agent/subagents/extraction.ts:1319:4)
+#     at Object.importNotes (/Users/kokinmartinez/Documents/ChatGPT/coqui-learning harness/packages/engine/src/agent/subagents/extraction.ts:1432:17)
+#     at TestContext.<anonymous> (/Users/kokinmartinez/Documents/ChatGPT/coqui-learning harness/packages/engine/tests/extraction.test.ts:2362:85)
+#     at async Test.run (node:internal/test_runner/test:1208:7)
+#     at async Suite.processPendingSubtests (node:internal/test_runner/test:831:7) {
+#   envelope: {
+#     error: 'No model configured — set up your models first',
+#     code: 'models_not_configured',
+#     missing: [ 'cheap' ]
+#   }
+# }
+# [extraction src_584d2ec4fc7c] notes pipeline failed (0ms): ProviderKeyMissingError: No OpenAI key is set — add one in Settings → Keys
+#     at refuseIfStagesUnready (/Users/kokinmartinez/Documents/ChatGPT/coqui-learning harness/packages/engine/src/agent/subagents/extraction.ts:824:11)
+#     at runNotesExtraction (/Users/kokinmartinez/Documents/ChatGPT/coqui-learning harness/packages/engine/src/agent/subagents/extraction.ts:1319:4)
+#     at Object.importNotes (/Users/kokinmartinez/Documents/ChatGPT/coqui-learning harness/packages/engine/src/agent/subagents/extraction.ts:1432:17)
+#     at TestContext.<anonymous> (/Users/kokinmartinez/Documents/ChatGPT/coqui-learning harness/packages/engine/tests/extraction.test.ts:2363:265)
+#     at async Test.run (node:internal/test_runner/test:1208:7)
+#     at async Suite.processPendingSubtests (node:internal/test_runner/test:831:7) {
+#   envelope: {
+#     error: 'No OpenAI key is set — add one in Settings → Keys',
+#     code: 'provider_key_missing',
+#     provider: 'openai',
+#     slots: [ 'cheap' ]
+#   }
+# }
+# [extraction] refused — {"error":"No OpenAI key is set — add one in Settings → Keys","code":"provider_key_missing","provider":"openai","slots":["cheap"]}
+# [extraction src_584d2ec4fc7c] notes pipeline start (reliability.md) — 3 chunk(s) of ≤1 tok
+# [extraction src_584d2ec4fc7c\#1] notes extractor starting (3 source lines)
+# [extraction] extractor step 1: toolUse, tools: submit_findings
+# [extraction src_584d2ec4fc7c\#1] notes extractor done in 0ms
+# [extraction src_584d2ec4fc7c\#1] auditor starting (1 propositions, 0 graph nodes)
+# [extraction] auditor step 1: toolUse, tools: submit_review
+# [extraction src_584d2ec4fc7c\#1] audit: 1 propositions through, 0 linked to existing nodes
+# [extraction src_584d2ec4fc7c\#1] auditor done in 0ms
+# [extraction src_584d2ec4fc7c\#1] merged: 1 nodes, 0 chains
+# [extraction src_584d2ec4fc7c\#2] notes extractor starting (3 source lines, digest 2 lines)
+# [extraction] extractor step 1: error, tools: (none)
+# [extraction src_584d2ec4fc7c\#3] notes extractor starting (3 source lines, digest 2 lines)
+# [extraction] extractor step 1: toolUse, tools: submit_findings
+# [extraction src_584d2ec4fc7c\#3] notes extractor done in 0ms
+# [extraction src_584d2ec4fc7c\#3] auditor starting (1 propositions, 1 graph nodes)
+# [extraction] auditor step 1: toolUse, tools: submit_review
+# [extraction src_584d2ec4fc7c\#3] audit: 1 propositions through, 0 linked to existing nodes
+# [extraction src_584d2ec4fc7c\#3] auditor done in 0ms
+# [extraction src_584d2ec4fc7c\#3] merged: 1 nodes, 0 chains
+# [extraction src_584d2ec4fc7c] job failed (isolated): Error: synthetic failed chunk
+#     at runSubagent (/Users/kokinmartinez/Documents/ChatGPT/coqui-learning harness/packages/engine/src/agent/subagents/pi-run.ts:138:40)
+#     at async runSubmitAgent (/Users/kokinmartinez/Documents/ChatGPT/coqui-learning harness/packages/engine/src/agent/subagents/submit-agent.ts:81:17)
+#     at async notesExtract (/Users/kokinmartinez/Documents/ChatGPT/coqui-learning harness/packages/engine/src/agent/subagents/extraction.ts:1291:20)
+#     at async withBgLlmSlot (/Users/kokinmartinez/Documents/ChatGPT/coqui-learning harness/packages/engine/src/agent/subagents/bg-llm-semaphore.ts:76:10)
+#     at async <anonymous> (/Users/kokinmartinez/Documents/ChatGPT/coqui-learning harness/packages/engine/src/agent/subagents/extraction.ts:1349:25)
+#     at async runJob (/Users/kokinmartinez/Documents/ChatGPT/coqui-learning harness/packages/engine/src/agent/subagents/extraction.ts:1056:18)
+#     at async runNotesExtraction (/Users/kokinmartinez/Documents/ChatGPT/coqui-learning harness/packages/engine/src/agent/subagents/extraction.ts:1346:14)
+#     at async Object.importNotes (/Users/kokinmartinez/Documents/ChatGPT/coqui-learning harness/packages/engine/src/agent/subagents/extraction.ts:1432:11)
+#     at async waitForActual (node:assert:646:5)
+#     at async strict.rejects (node:assert:769:25)
+# [extraction src_584d2ec4fc7c] 1 job(s) failed; successful jobs still merged
+# [extraction src_584d2ec4fc7c] notes pipeline failed (2ms): NotesImportError: synthetic failed chunk
+#     at runNotesExtraction (/Users/kokinmartinez/Documents/ChatGPT/coqui-learning harness/packages/engine/src/agent/subagents/extraction.ts:1405:11)
+#     at async Object.importNotes (/Users/kokinmartinez/Documents/ChatGPT/coqui-learning harness/packages/engine/src/agent/subagents/extraction.ts:1432:11)
+#     at async waitForActual (node:assert:646:5)
+#     at async strict.rejects (node:assert:769:25)
+#     at async TestContext.<anonymous> (/Users/kokinmartinez/Documents/ChatGPT/coqui-learning harness/packages/engine/tests/extraction.test.ts:2377:3)
+#     at async Test.run (node:internal/test_runner/test:1208:7)
+#     at async Suite.processPendingSubtests (node:internal/test_runner/test:831:7) {
+#   outcome: 'partial',
+#   partialStats: { nodes: 2, chains: 0 }
+# }
+# [extraction src_584d2ec4fc7c] notes pipeline start (reliability.md) — 3 chunk(s) of ≤1 tok
+# [extraction src_584d2ec4fc7c\#1] notes extractor starting (3 source lines)
+# [extraction] extractor step 1: toolUse, tools: submit_findings
+# [extraction src_584d2ec4fc7c\#1] notes extractor done in 0ms
+# [extraction src_584d2ec4fc7c\#1] auditor starting (1 propositions, 0 graph nodes)
+# [extraction] auditor step 1: toolUse, tools: submit_review
+# [extraction src_584d2ec4fc7c\#1] audit: 1 propositions through, 0 linked to existing nodes
+# [extraction src_584d2ec4fc7c\#1] auditor done in 0ms
+# [extraction src_584d2ec4fc7c\#1] merged: 1 nodes, 0 chains
+# [extraction src_584d2ec4fc7c\#2] notes extractor starting (3 source lines, digest 2 lines)
+# [extraction src_584d2ec4fc7c] aborted — merged chunks keep their coverage, the rest stay uncovered for the next run
+# [extraction src_584d2ec4fc7c] notes pipeline failed (1ms): NotesImportError: aborted
+#     at runNotesExtraction (/Users/kokinmartinez/Documents/ChatGPT/coqui-learning harness/packages/engine/src/agent/subagents/extraction.ts:1405:11)
+#     at async Object.importNotes (/Users/kokinmartinez/Documents/ChatGPT/coqui-learning harness/packages/engine/src/agent/subagents/extraction.ts:1432:11)
+#     at async waitForActual (node:assert:646:5)
+#     at async strict.rejects (node:assert:769:25)
+#     at async TestContext.<anonymous> (/Users/kokinmartinez/Documents/ChatGPT/coqui-learning harness/packages/engine/tests/extraction.test.ts:2393:3)
+#     at async Test.run (node:internal/test_runner/test:1208:7)
+#     at async Suite.processPendingSubtests (node:internal/test_runner/test:831:7) {
+#   outcome: 'aborted',
+#   partialStats: { nodes: 1, chains: 0 }
+# }
+# [extraction src_584d2ec4fc7c] notes pipeline start (reliability.md) — 3 chunk(s) of ≤1 tok
+# [extraction src_584d2ec4fc7c\#1] notes extractor starting (3 source lines)
+# [extraction src_584d2ec4fc7c] aborted — merged chunks keep their coverage, the rest stay uncovered for the next run
+# [extraction src_584d2ec4fc7c] notes pipeline failed (0ms): NotesImportError: Notes import aborted; job cleanup failed: synthetic usage persistence failure during abort
+#     at runNotesExtraction (/Users/kokinmartinez/Documents/ChatGPT/coqui-learning harness/packages/engine/src/agent/subagents/extraction.ts:1405:11)
+#     at async Object.importNotes (/Users/kokinmartinez/Documents/ChatGPT/coqui-learning harness/packages/engine/src/agent/subagents/extraction.ts:1432:11)
+#     at async waitForActual (node:assert:646:5)
+#     at async strict.rejects (node:assert:769:25)
+#     at async TestContext.<anonymous> (/Users/kokinmartinez/Documents/ChatGPT/coqui-learning harness/packages/engine/tests/extraction.test.ts:2419:3)
+#     at async Test.run (node:internal/test_runner/test:1208:7)
+#     at async Suite.processPendingSubtests (node:internal/test_runner/test:831:7) {
+#   outcome: 'aborted',
+#   partialStats: { nodes: 0, chains: 0 }
+# }
+# [extraction src_584d2ec4fc7c] notes pipeline start (reliability.md) — 1 chunk(s) of ≤4096 tok
+# [extraction src_584d2ec4fc7c] notes extractor starting (5 source lines)
+# [extraction] extractor step 1: toolUse, tools: submit_findings
+# [extraction src_584d2ec4fc7c] notes extractor done in 0ms
+# [extraction src_584d2ec4fc7c] auditor starting (1 propositions, 0 graph nodes)
+# [extraction] auditor step 1: toolUse, tools: submit_review
+# [extraction src_584d2ec4fc7c] audit: 1 propositions through, 0 linked to existing nodes
+# [extraction src_584d2ec4fc7c] auditor done in 0ms
+# [extraction src_584d2ec4fc7c] merged: 1 nodes, 0 chains
+# [extraction src_584d2ec4fc7c] merged: 1 nodes, 0 chains (1ms total, 1 chunk job(s))
+# [extraction src_584d2ec4fc7c] notes pipeline start (reliability.md) — 3 chunk(s) of ≤1 tok
+# [extraction src_584d2ec4fc7c\#1] notes extractor starting (3 source lines)
+# [extraction] extractor step 1: toolUse, tools: submit_findings
+# [extraction src_584d2ec4fc7c\#1] notes extractor done in 0ms
+# [extraction src_584d2ec4fc7c\#1] auditor starting (1 propositions, 0 graph nodes)
+# [extraction] auditor step 1: toolUse, tools: submit_review
+# [extraction src_584d2ec4fc7c\#1] audit: 1 propositions through, 0 linked to existing nodes
+# [extraction src_584d2ec4fc7c\#1] auditor done in 0ms
+# [extraction src_584d2ec4fc7c\#1] merged: 1 nodes, 0 chains
+# [extraction src_584d2ec4fc7c\#2] notes extractor starting (3 source lines, digest 2 lines)
+# [extraction src_584d2ec4fc7c] aborted — merged chunks keep their coverage, the rest stay uncovered for the next run
+# [extraction src_584d2ec4fc7c] notes pipeline start (reliability.md) — 1 chunk(s) of ≤4096 tok
+# [extraction src_584d2ec4fc7c] notes extractor starting (5 source lines, digest 2 lines)
+# [extraction src_584d2ec4fc7c] notes pipeline failed (1ms): NotesImportError: Notes import aborted; job cleanup failed: synthetic usage persistence failure during abort
+#     at runNotesExtraction (/Users/kokinmartinez/Documents/ChatGPT/coqui-learning harness/packages/engine/src/agent/subagents/extraction.ts:1405:11)
+#     at async Object.importNotes (/Users/kokinmartinez/Documents/ChatGPT/coqui-learning harness/packages/engine/src/agent/subagents/extraction.ts:1432:11)
+#     at async waitForActual (node:assert:646:5)
+#     at async strict.rejects (node:assert:769:25)
+#     at async TestContext.<anonymous> (/Users/kokinmartinez/Documents/ChatGPT/coqui-learning harness/packages/engine/tests/extraction.test.ts:2419:3)
+#     at async Test.run (node:internal/test_runner/test:1208:7)
+#     at async Suite.processPendingSubtests (node:internal/test_runner/test:831:7) {
+#   outcome: 'aborted',
+#   partialStats: { nodes: 1, chains: 0 }
+# }
+# [extraction] extractor step 1: toolUse, tools: submit_findings
+# [extraction src_584d2ec4fc7c] notes extractor done in 0ms
+# [extraction src_584d2ec4fc7c] auditor starting (1 propositions, 1 graph nodes)
+# [extraction] auditor step 1: toolUse, tools: submit_review
+# [extraction src_584d2ec4fc7c] audit: 1 propositions through, 0 linked to existing nodes
+# [extraction src_584d2ec4fc7c] auditor done in 0ms
+# [extraction src_584d2ec4fc7c] merged: 1 nodes, 0 chains
+# [extraction src_584d2ec4fc7c] merged: 1 nodes, 0 chains (1ms total, 1 chunk job(s))
+# [extraction src_584d2ec4fc7c] notes pipeline start (reliability.md) — 3 chunk(s) of ≤1 tok
+# [extraction src_584d2ec4fc7c\#1] notes extractor starting (3 source lines)
+# [extraction] extractor step 1: toolUse, tools: submit_findings
+# [extraction src_584d2ec4fc7c\#1] notes extractor done in 0ms
+# [extraction src_584d2ec4fc7c\#1] auditor starting (1 propositions, 0 graph nodes)
+# [extraction] auditor step 1: toolUse, tools: submit_review
+# [extraction src_584d2ec4fc7c\#1] audit: 1 propositions through, 0 linked to existing nodes
+# [extraction src_584d2ec4fc7c\#1] auditor done in 0ms
+# [extraction src_584d2ec4fc7c\#1] merged: 1 nodes, 0 chains
+# [extraction src_584d2ec4fc7c\#2] notes extractor starting (3 source lines, digest 2 lines)
+# [extraction] extractor step 1: toolUse, tools: submit_findings
+# [extraction src_584d2ec4fc7c\#2] notes extractor done in 0ms
+# [extraction src_584d2ec4fc7c\#2] auditor starting (1 propositions, 1 graph nodes)
+# [extraction] auditor step 1: toolUse, tools: submit_review
+# [extraction src_584d2ec4fc7c\#2] audit: 1 propositions through, 0 linked to existing nodes
+# [extraction src_584d2ec4fc7c\#2] auditor done in 0ms
+# [extraction src_584d2ec4fc7c\#2] merged: 1 nodes, 0 chains
+# [extraction src_584d2ec4fc7c\#3] notes extractor starting (3 source lines, digest 3 lines)
+# [extraction] extractor step 1: toolUse, tools: submit_findings
+# [extraction src_584d2ec4fc7c\#3] notes extractor done in 0ms
+# [extraction src_584d2ec4fc7c\#3] auditor starting (1 propositions, 2 graph nodes)
+# [extraction] auditor step 1: toolUse, tools: submit_review
+# [extraction src_584d2ec4fc7c\#3] audit: 1 propositions through, 0 linked to existing nodes
+# [extraction src_584d2ec4fc7c\#3] auditor done in 0ms
+# [extraction src_584d2ec4fc7c\#3] merged: 1 nodes, 0 chains
+# [extraction src_584d2ec4fc7c] job failed (isolated): Error: synthetic isolated usage failure
+#     at Object.appendSourceUsage (/Users/kokinmartinez/Documents/ChatGPT/coqui-learning harness/packages/engine/tests/extraction.test.ts:2437:27)
+#     at persistRunUsage (/Users/kokinmartinez/Documents/ChatGPT/coqui-learning harness/packages/engine/src/agent/subagents/extraction.ts:1039:40)
+#     at runJob (/Users/kokinmartinez/Documents/ChatGPT/coqui-learning harness/packages/engine/src/agent/subagents/extraction.ts:1060:4)
+#     at async runNotesExtraction (/Users/kokinmartinez/Documents/ChatGPT/coqui-learning harness/packages/engine/src/agent/subagents/extraction.ts:1346:14)
+#     at async Object.importNotes (/Users/kokinmartinez/Documents/ChatGPT/coqui-learning harness/packages/engine/src/agent/subagents/extraction.ts:1432:11)
+#     at async waitForActual (node:assert:646:5)
+#     at async strict.rejects (node:assert:769:25)
+#     at async TestContext.<anonymous> (/Users/kokinmartinez/Documents/ChatGPT/coqui-learning harness/packages/engine/tests/extraction.test.ts:2444:3)
+#     at async Test.run (node:internal/test_runner/test:1208:7)
+#     at async Suite.processPendingSubtests (node:internal/test_runner/test:831:7)
+# [extraction src_584d2ec4fc7c] 1 job(s) failed; successful jobs still merged
+# [extraction src_584d2ec4fc7c] notes pipeline failed (3ms): NotesImportError: synthetic isolated usage failure
+#     at runNotesExtraction (/Users/kokinmartinez/Documents/ChatGPT/coqui-learning harness/packages/engine/src/agent/subagents/extraction.ts:1405:11)
+#     at async Object.importNotes (/Users/kokinmartinez/Documents/ChatGPT/coqui-learning harness/packages/engine/src/agent/subagents/extraction.ts:1432:11)
+#     at async waitForActual (node:assert:646:5)
+#     at async strict.rejects (node:assert:769:25)
+#     at async TestContext.<anonymous> (/Users/kokinmartinez/Documents/ChatGPT/coqui-learning harness/packages/engine/tests/extraction.test.ts:2444:3)
+#     at async Test.run (node:internal/test_runner/test:1208:7)
+#     at async Suite.processPendingSubtests (node:internal/test_runner/test:831:7) {
+#   outcome: 'partial',
+#   partialStats: { nodes: 3, chains: 0 }
+# }
+# [extraction src_584d2ec4fc7c] notes pipeline start (reliability.md) — 1 chunk(s) of ≤4096 tok
+# [extraction src_584d2ec4fc7c] notes extractor starting (7 source lines)
+# [extraction] extractor step 1: toolUse, tools: submit_findings
+# [extraction src_584d2ec4fc7c] notes extractor done in 0ms
+# [extraction src_584d2ec4fc7c] auditor starting (1 propositions, 0 graph nodes)
+# [extraction] auditor step 1: toolUse, tools: submit_review
+# [extraction src_584d2ec4fc7c] audit: 1 propositions through, 0 linked to existing nodes
+# [extraction src_584d2ec4fc7c] auditor done in 0ms
+# [extraction src_584d2ec4fc7c] merged: 1 nodes, 0 chains
+# [extraction src_584d2ec4fc7c] merged: 1 nodes, 0 chains (1ms total, 1 chunk job(s))
+# [extraction src_584d2ec4fc7c] notes pipeline start (reliability.md) — 1 chunk(s) of ≤4096 tok
+# [extraction src_584d2ec4fc7c] notes extractor starting (7 source lines, digest 2 lines)
+# [extraction] extractor step 1: toolUse, tools: submit_findings
+# [extraction src_584d2ec4fc7c] notes extractor done in 0ms
+# [extraction src_584d2ec4fc7c] auditor starting (1 propositions, 1 graph nodes)
+# [extraction] auditor step 1: toolUse, tools: submit_review
+# [extraction src_584d2ec4fc7c] audit: 1 propositions through, 0 linked to existing nodes
+# [extraction src_584d2ec4fc7c] auditor done in 0ms
+# [extraction src_584d2ec4fc7c] merged: 1 nodes, 0 chains
+# [extraction src_584d2ec4fc7c] merged: 1 nodes, 0 chains (1ms total, 1 chunk job(s))
+# [extraction src_584d2ec4fc7c] notes pipeline start (reliability.md) — 2 chunk(s) of ≤1 tok
+# [extraction src_584d2ec4fc7c\#1] notes extractor starting (3 source lines)
+# [extraction] extractor step 1: toolUse, tools: submit_findings
+# [extraction src_584d2ec4fc7c\#1] notes extractor done in 0ms
+# [extraction src_584d2ec4fc7c\#1] auditor starting (0 propositions, 0 graph nodes)
+# [extraction] auditor step 1: toolUse, tools: submit_review
+# [extraction src_584d2ec4fc7c\#1] audit: 0 propositions through, 0 linked to existing nodes
+# [extraction src_584d2ec4fc7c\#1] auditor done in 0ms
+# [extraction src_584d2ec4fc7c\#1] merged: 0 nodes, 0 chains
+# [extraction src_584d2ec4fc7c\#2] notes extractor starting (3 source lines)
+# [extraction] extractor step 1: error, tools: (none)
+# [extraction src_584d2ec4fc7c] job failed (isolated): Error: synthetic failed chunk
+#     at runSubagent (/Users/kokinmartinez/Documents/ChatGPT/coqui-learning harness/packages/engine/src/agent/subagents/pi-run.ts:138:40)
+#     at async runSubmitAgent (/Users/kokinmartinez/Documents/ChatGPT/coqui-learning harness/packages/engine/src/agent/subagents/submit-agent.ts:81:17)
+#     at async notesExtract (/Users/kokinmartinez/Documents/ChatGPT/coqui-learning harness/packages/engine/src/agent/subagents/extraction.ts:1291:20)
+#     at async withBgLlmSlot (/Users/kokinmartinez/Documents/ChatGPT/coqui-learning harness/packages/engine/src/agent/subagents/bg-llm-semaphore.ts:76:10)
+#     at async <anonymous> (/Users/kokinmartinez/Documents/ChatGPT/coqui-learning harness/packages/engine/src/agent/subagents/extraction.ts:1349:25)
+#     at async runJob (/Users/kokinmartinez/Documents/ChatGPT/coqui-learning harness/packages/engine/src/agent/subagents/extraction.ts:1056:18)
+#     at async runNotesExtraction (/Users/kokinmartinez/Documents/ChatGPT/coqui-learning harness/packages/engine/src/agent/subagents/extraction.ts:1346:14)
+#     at async Object.importNotes (/Users/kokinmartinez/Documents/ChatGPT/coqui-learning harness/packages/engine/src/agent/subagents/extraction.ts:1432:11)
+#     at async waitForActual (node:assert:646:5)
+#     at async strict.rejects (node:assert:769:25)
+# [extraction src_584d2ec4fc7c] 1 job(s) failed; successful jobs still merged
+# [extraction src_584d2ec4fc7c] notes pipeline failed (1ms): NotesImportError: synthetic failed chunk
+#     at runNotesExtraction (/Users/kokinmartinez/Documents/ChatGPT/coqui-learning harness/packages/engine/src/agent/subagents/extraction.ts:1405:11)
+#     at async Object.importNotes (/Users/kokinmartinez/Documents/ChatGPT/coqui-learning harness/packages/engine/src/agent/subagents/extraction.ts:1432:11)
+#     at async waitForActual (node:assert:646:5)
+#     at async strict.rejects (node:assert:769:25)
+#     at async TestContext.<anonymous> (/Users/kokinmartinez/Documents/ChatGPT/coqui-learning harness/packages/engine/tests/extraction.test.ts:2483:3)
+#     at async Test.run (node:internal/test_runner/test:1208:7)
+#     at async Suite.processPendingSubtests (node:internal/test_runner/test:831:7) {
+#   outcome: 'partial',
+#   partialStats: { nodes: 0, chains: 0 }
+# }
+# [extraction src_584d2ec4fc7c] notes pipeline start (reliability.md) — 1 chunk(s) of ≤4096 tok
+# [extraction src_584d2ec4fc7c] notes extractor starting (7 source lines)
+# [extraction] extractor step 1: toolUse, tools: submit_findings
+# [extraction src_584d2ec4fc7c] notes extractor done in 0ms
+# [extraction src_584d2ec4fc7c] auditor starting (1 propositions, 0 graph nodes)
+# [extraction] auditor step 1: toolUse, tools: submit_review
+# [extraction src_584d2ec4fc7c] audit: 1 propositions through, 0 linked to existing nodes
+# [extraction src_584d2ec4fc7c] auditor done in 0ms
+# [extraction src_584d2ec4fc7c] job failed (isolated): Error: synthetic checkpoint failure after node append
+#     at Object.appendCheckpoint (/Users/kokinmartinez/Documents/ChatGPT/coqui-learning harness/packages/engine/tests/extraction.test.ts:2489:64)
+#     at mergeFindingsImpl (/Users/kokinmartinez/Documents/ChatGPT/coqui-learning harness/packages/engine/src/core/graph.ts:287:11)
+#     at <anonymous> (/Users/kokinmartinez/Documents/ChatGPT/coqui-learning harness/packages/engine/src/core/graph.ts:694:152)
+#     at CoquiDatabase.transaction (/Users/kokinmartinez/Documents/ChatGPT/coqui-learning harness/packages/storage/index.ts:122:21)
+#     at mergeFindings (/Users/kokinmartinez/Documents/ChatGPT/coqui-learning harness/packages/engine/src/core/graph.ts:694:136)
+#     at <anonymous> (/Users/kokinmartinez/Documents/ChatGPT/coqui-learning harness/packages/engine/src/agent/subagents/extraction.ts:1361:24)
+#     at async withAuditLock (/Users/kokinmartinez/Documents/ChatGPT/coqui-learning harness/packages/engine/src/agent/subagents/extraction.ts:908:11)
+#     at async runJob (/Users/kokinmartinez/Documents/ChatGPT/coqui-learning harness/packages/engine/src/agent/subagents/extraction.ts:1056:18)
+#     at async runNotesExtraction (/Users/kokinmartinez/Documents/ChatGPT/coqui-learning harness/packages/engine/src/agent/subagents/extraction.ts:1346:14)
+#     at async Object.importNotes (/Users/kokinmartinez/Documents/ChatGPT/coqui-learning harness/packages/engine/src/agent/subagents/extraction.ts:1432:11)
+# [extraction src_584d2ec4fc7c] 1 job(s) failed; successful jobs still merged
+# [extraction src_584d2ec4fc7c] notes pipeline failed (1ms): NotesImportError: synthetic checkpoint failure after node append
+#     at runNotesExtraction (/Users/kokinmartinez/Documents/ChatGPT/coqui-learning harness/packages/engine/src/agent/subagents/extraction.ts:1405:11)
+#     at async Object.importNotes (/Users/kokinmartinez/Documents/ChatGPT/coqui-learning harness/packages/engine/src/agent/subagents/extraction.ts:1432:11)
+#     at async waitForActual (node:assert:646:5)
+#     at async strict.rejects (node:assert:769:25)
+#     at async TestContext.<anonymous> (/Users/kokinmartinez/Documents/ChatGPT/coqui-learning harness/packages/engine/tests/extraction.test.ts:2490:3)
+#     at async Test.run (node:internal/test_runner/test:1208:7)
+#     at async Suite.processPendingSubtests (node:internal/test_runner/test:831:7) {
+#   outcome: 'failed',
+#   partialStats: { nodes: 0, chains: 0 }
+# }
+# [extraction src_584d2ec4fc7c] notes pipeline start (reliability.md) — 1 chunk(s) of ≤4096 tok
+# [extraction src_584d2ec4fc7c] notes extractor starting (7 source lines)
+# [extraction] extractor step 1: toolUse, tools: submit_findings
+# [extraction src_584d2ec4fc7c] notes extractor done in 0ms
+# [extraction src_584d2ec4fc7c] auditor starting (1 propositions, 0 graph nodes)
+# [extraction] auditor step 1: toolUse, tools: submit_review
+# [extraction src_584d2ec4fc7c] audit: 1 propositions through, 0 linked to existing nodes
+# [extraction src_584d2ec4fc7c] auditor done in 0ms
+# [extraction src_584d2ec4fc7c] job failed (isolated): Error: synthetic layout failure
+#     at Object.writePositions (/Users/kokinmartinez/Documents/ChatGPT/coqui-learning harness/packages/engine/tests/extraction.test.ts:2500:60)
+#     at settleGraphLayout (/Users/kokinmartinez/Documents/ChatGPT/coqui-learning harness/packages/engine/src/core/layout-settle.ts:53:13)
+#     at <anonymous> (/Users/kokinmartinez/Documents/ChatGPT/coqui-learning harness/packages/engine/src/agent/subagents/extraction.ts:1375:9)
+#     at async withAuditLock (/Users/kokinmartinez/Documents/ChatGPT/coqui-learning harness/packages/engine/src/agent/subagents/extraction.ts:908:11)
+#     at async runJob (/Users/kokinmartinez/Documents/ChatGPT/coqui-learning harness/packages/engine/src/agent/subagents/extraction.ts:1056:18)
+#     at async runNotesExtraction (/Users/kokinmartinez/Documents/ChatGPT/coqui-learning harness/packages/engine/src/agent/subagents/extraction.ts:1346:14)
+#     at async Object.importNotes (/Users/kokinmartinez/Documents/ChatGPT/coqui-learning harness/packages/engine/src/agent/subagents/extraction.ts:1432:11)
+#     at async waitForActual (node:assert:646:5)
+#     at async strict.rejects (node:assert:769:25)
+#     at async TestContext.<anonymous> (/Users/kokinmartinez/Documents/ChatGPT/coqui-learning harness/packages/engine/tests/extraction.test.ts:2504:3)
+# [extraction src_584d2ec4fc7c] 1 job(s) failed; successful jobs still merged
+# [extraction src_584d2ec4fc7c] notes pipeline failed (1ms): NotesImportError: synthetic layout failure
+#     at runNotesExtraction (/Users/kokinmartinez/Documents/ChatGPT/coqui-learning harness/packages/engine/src/agent/subagents/extraction.ts:1405:11)
+#     at async Object.importNotes (/Users/kokinmartinez/Documents/ChatGPT/coqui-learning harness/packages/engine/src/agent/subagents/extraction.ts:1432:11)
+#     at async waitForActual (node:assert:646:5)
+#     at async strict.rejects (node:assert:769:25)
+#     at async TestContext.<anonymous> (/Users/kokinmartinez/Documents/ChatGPT/coqui-learning harness/packages/engine/tests/extraction.test.ts:2504:3)
+#     at async Test.run (node:internal/test_runner/test:1208:7)
+#     at async Suite.processPendingSubtests (node:internal/test_runner/test:831:7) {
+#   outcome: 'failed',
+#   partialStats: { nodes: 1, chains: 0 }
+# }
+# [extraction src_584d2ec4fc7c] notes pipeline start (reliability.md) — 1 chunk(s) of ≤4096 tok
+# [extraction src_584d2ec4fc7c] notes extractor starting (7 source lines, digest 2 lines)
+# [extraction] extractor step 1: toolUse, tools: submit_findings
+# [extraction src_584d2ec4fc7c] notes extractor done in 0ms
+# [extraction src_584d2ec4fc7c] auditor starting (1 propositions, 1 graph nodes)
+# [extraction] auditor step 1: toolUse, tools: submit_review
+# [extraction src_584d2ec4fc7c] audit: 1 propositions through, 0 linked to existing nodes
+# [extraction src_584d2ec4fc7c] auditor done in 0ms
+# [extraction src_584d2ec4fc7c] merged: 1 nodes, 0 chains
+# [extraction src_584d2ec4fc7c] merged: 1 nodes, 0 chains (1ms total, 1 chunk job(s))
+# [extraction src_584d2ec4fc7c] notes pipeline start (reliability.md) — 1 chunk(s) of ≤4096 tok
+# [extraction src_584d2ec4fc7c] notes extractor starting (7 source lines)
+# [extraction] extractor step 1: toolUse, tools: submit_findings
+# [extraction src_584d2ec4fc7c] notes extractor done in 0ms
+# [extraction src_584d2ec4fc7c] auditor starting (1 propositions, 0 graph nodes)
+# [extraction] auditor step 1: toolUse, tools: submit_review
+# [extraction src_584d2ec4fc7c] audit: 1 propositions through, 0 linked to existing nodes
+# [extraction src_584d2ec4fc7c] auditor done in 0ms
+# [extraction src_584d2ec4fc7c] merged: 1 nodes, 0 chains
+# [extraction src_584d2ec4fc7c] job failed (isolated): Error: synthetic usage failure
+#     at Object.appendSourceUsage (/Users/kokinmartinez/Documents/ChatGPT/coqui-learning harness/packages/engine/tests/extraction.test.ts:2501:77)
+#     at persistRunUsage (/Users/kokinmartinez/Documents/ChatGPT/coqui-learning harness/packages/engine/src/agent/subagents/extraction.ts:1039:40)
+#     at runJob (/Users/kokinmartinez/Documents/ChatGPT/coqui-learning harness/packages/engine/src/agent/subagents/extraction.ts:1057:4)
+#     at async runNotesExtraction (/Users/kokinmartinez/Documents/ChatGPT/coqui-learning harness/packages/engine/src/agent/subagents/extraction.ts:1346:14)
+#     at async Object.importNotes (/Users/kokinmartinez/Documents/ChatGPT/coqui-learning harness/packages/engine/src/agent/subagents/extraction.ts:1432:11)
+#     at async waitForActual (node:assert:646:5)
+#     at async strict.rejects (node:assert:769:25)
+#     at async TestContext.<anonymous> (/Users/kokinmartinez/Documents/ChatGPT/coqui-learning harness/packages/engine/tests/extraction.test.ts:2504:3)
+#     at async Test.run (node:internal/test_runner/test:1208:7)
+#     at async Suite.processPendingSubtests (node:internal/test_runner/test:831:7)
+# [extraction src_584d2ec4fc7c] 1 job(s) failed; successful jobs still merged
+# [extraction src_584d2ec4fc7c] notes pipeline failed (1ms): NotesImportError: synthetic usage failure
+#     at runNotesExtraction (/Users/kokinmartinez/Documents/ChatGPT/coqui-learning harness/packages/engine/src/agent/subagents/extraction.ts:1405:11)
+#     at async Object.importNotes (/Users/kokinmartinez/Documents/ChatGPT/coqui-learning harness/packages/engine/src/agent/subagents/extraction.ts:1432:11)
+#     at async waitForActual (node:assert:646:5)
+#     at async strict.rejects (node:assert:769:25)
+#     at async TestContext.<anonymous> (/Users/kokinmartinez/Documents/ChatGPT/coqui-learning harness/packages/engine/tests/extraction.test.ts:2504:3)
+#     at async Test.run (node:internal/test_runner/test:1208:7)
+#     at async Suite.processPendingSubtests (node:internal/test_runner/test:831:7) {
+#   outcome: 'failed',
+#   partialStats: { nodes: 1, chains: 0 }
+# }
+# [extraction src_584d2ec4fc7c] notes pipeline start (reliability.md) — 1 chunk(s) of ≤4096 tok
+# [extraction src_584d2ec4fc7c] notes extractor starting (7 source lines, digest 2 lines)
+# [extraction] extractor step 1: toolUse, tools: submit_findings
+# [extraction src_584d2ec4fc7c] notes extractor done in 0ms
+# [extraction src_584d2ec4fc7c] auditor starting (1 propositions, 1 graph nodes)
+# [extraction] auditor step 1: toolUse, tools: submit_review
+# [extraction src_584d2ec4fc7c] audit: 1 propositions through, 0 linked to existing nodes
+# [extraction src_584d2ec4fc7c] auditor done in 0ms
+# [extraction src_584d2ec4fc7c] merged: 1 nodes, 0 chains
+# [extraction src_584d2ec4fc7c] merged: 1 nodes, 0 chains (1ms total, 1 chunk job(s))
+# [extraction src_584d2ec4fc7c] notes pipeline start (reliability.md) — 1 chunk(s) of ≤4096 tok
+# [extraction src_584d2ec4fc7c] notes extractor starting (7 source lines)
+# [extraction] extractor step 1: toolUse, tools: submit_findings
+# [extraction src_584d2ec4fc7c] notes extractor done in 0ms
+# [extraction src_584d2ec4fc7c] auditor starting (1 propositions, 0 graph nodes)
+# [extraction] auditor step 1: toolUse, tools: submit_review
+# [extraction src_584d2ec4fc7c] audit: 1 propositions through, 0 linked to existing nodes
+# [extraction src_584d2ec4fc7c] auditor done in 0ms
+# [extraction src_584d2ec4fc7c] merged: 1 nodes, 0 chains
+# [extraction src_584d2ec4fc7c] merged: 1 nodes, 0 chains (1ms total, 1 chunk job(s))
+# [extraction src_2a880f3b1313] notes pipeline start (1.md) — 1 chunk(s) of ≤4096 tok
+# [extraction src_2a880f3b1313] notes extractor starting (7 source lines)
+# [extraction] extractor step 1: toolUse, tools: submit_findings
+# [extraction src_2a880f3b1313] notes extractor done in 0ms
+# [extraction src_2a880f3b1313] auditor starting (1 propositions, 0 graph nodes)
+# [extraction] auditor step 1: toolUse, tools: submit_review
+# [extraction src_2a880f3b1313] audit: 1 propositions through, 0 linked to existing nodes
+# [extraction src_2a880f3b1313] auditor done in 0ms
+# [extraction src_2a880f3b1313] merged: 1 nodes, 0 chains
+# [extraction src_2a880f3b1313] merged: 1 nodes, 0 chains (1ms total, 1 chunk job(s))
+# [extraction src_2a880f3b1313] notes pipeline start (1.md) — 1 chunk(s) of ≤4096 tok
+# [extraction src_2a880f3b1313] notes extractor starting (7 source lines, digest 2 lines)
+# [extraction] extractor step 1: toolUse, tools: submit_findings
+# [extraction src_2a880f3b1313] notes extractor done in 0ms
+# [extraction src_2a880f3b1313] auditor starting (1 propositions, 1 graph nodes)
+# [extraction] auditor step 1: toolUse, tools: submit_review
+# [extraction src_2a880f3b1313] audit: 1 propositions through, 0 linked to existing nodes
+# [extraction src_2a880f3b1313] auditor done in 0ms
+# [extraction src_2a880f3b1313] merged: 1 nodes, 0 chains
+# [extraction src_2a880f3b1313] merged: 1 nodes, 0 chains (1ms total, 1 chunk job(s))
+# [extraction src_587a4aba6609] notes pipeline start (1.1.md) — 1 chunk(s) of ≤4096 tok
+# [extraction src_587a4aba6609] notes extractor starting (7 source lines)
+# [extraction] extractor step 1: toolUse, tools: submit_findings
+# [extraction src_587a4aba6609] notes extractor done in 0ms
+# [extraction src_587a4aba6609] auditor starting (1 propositions, 0 graph nodes)
+# [extraction] auditor step 1: toolUse, tools: submit_review
+# [extraction src_587a4aba6609] audit: 1 propositions through, 0 linked to existing nodes
+# [extraction src_587a4aba6609] auditor done in 0ms
+# [extraction src_587a4aba6609] merged: 1 nodes, 0 chains
+# [extraction src_587a4aba6609] merged: 1 nodes, 0 chains (1ms total, 1 chunk job(s))
+# [extraction src_587a4aba6609] notes pipeline start (1.1.md) — 1 chunk(s) of ≤4096 tok
+# [extraction src_587a4aba6609] notes extractor starting (7 source lines, digest 2 lines)
+# [extraction] extractor step 1: toolUse, tools: submit_findings
+# [extraction src_587a4aba6609] notes extractor done in 0ms
+# [extraction src_587a4aba6609] auditor starting (1 propositions, 1 graph nodes)
+# [extraction] auditor step 1: toolUse, tools: submit_review
+# [extraction src_587a4aba6609] audit: 1 propositions through, 0 linked to existing nodes
+# [extraction src_587a4aba6609] auditor done in 0ms
+# [extraction src_587a4aba6609] merged: 1 nodes, 0 chains
+# [extraction src_587a4aba6609] merged: 1 nodes, 0 chains (1ms total, 1 chunk job(s))
+# [extraction src_1fc86889c4cb] notes pipeline start (1 notes.md) — 1 chunk(s) of ≤4096 tok
+# [extraction src_1fc86889c4cb] notes extractor starting (7 source lines)
+# [extraction] extractor step 1: toolUse, tools: submit_findings
+# [extraction src_1fc86889c4cb] notes extractor done in 0ms
+# [extraction src_1fc86889c4cb] auditor starting (1 propositions, 0 graph nodes)
+# [extraction] auditor step 1: toolUse, tools: submit_review
+# [extraction src_1fc86889c4cb] audit: 1 propositions through, 0 linked to existing nodes
+# [extraction src_1fc86889c4cb] auditor done in 0ms
+# [extraction src_1fc86889c4cb] merged: 1 nodes, 0 chains
+# [extraction src_1fc86889c4cb] merged: 1 nodes, 0 chains (1ms total, 1 chunk job(s))
+# [extraction src_1fc86889c4cb] notes pipeline start (1 notes.md) — 1 chunk(s) of ≤4096 tok
+# [extraction src_1fc86889c4cb] notes extractor starting (7 source lines, digest 2 lines)
+# [extraction] extractor step 1: toolUse, tools: submit_findings
+# [extraction src_1fc86889c4cb] notes extractor done in 1ms
+# [extraction src_1fc86889c4cb] auditor starting (1 propositions, 1 graph nodes)
+# [extraction] auditor step 1: toolUse, tools: submit_review
+# [extraction src_1fc86889c4cb] audit: 1 propositions through, 0 linked to existing nodes
+# [extraction src_1fc86889c4cb] auditor done in 0ms
+# [extraction src_1fc86889c4cb] merged: 1 nodes, 0 chains
+# [extraction src_1fc86889c4cb] merged: 1 nodes, 0 chains (1ms total, 1 chunk job(s))
+# [extraction src_8cddd648c000] notes pipeline start (1.1 notes.md) — 1 chunk(s) of ≤4096 tok
+# [extraction src_8cddd648c000] notes extractor starting (7 source lines)
+# [extraction] extractor step 1: toolUse, tools: submit_findings
+# [extraction src_8cddd648c000] notes extractor done in 0ms
+# [extraction src_8cddd648c000] auditor starting (1 propositions, 0 graph nodes)
+# [extraction] auditor step 1: toolUse, tools: submit_review
+# [extraction src_8cddd648c000] audit: 1 propositions through, 0 linked to existing nodes
+# [extraction src_8cddd648c000] auditor done in 0ms
+# [extraction src_8cddd648c000] merged: 1 nodes, 0 chains
+# [extraction src_8cddd648c000] merged: 1 nodes, 0 chains (1ms total, 1 chunk job(s))
+# [extraction src_8cddd648c000] notes pipeline start (1.1 notes.md) — 1 chunk(s) of ≤4096 tok
+# [extraction src_8cddd648c000] notes extractor starting (7 source lines, digest 2 lines)
+# [extraction] extractor step 1: toolUse, tools: submit_findings
+# [extraction src_8cddd648c000] notes extractor done in 0ms
+# [extraction src_8cddd648c000] auditor starting (1 propositions, 1 graph nodes)
+# [extraction] auditor step 1: toolUse, tools: submit_review
+# [extraction src_8cddd648c000] audit: 1 propositions through, 0 linked to existing nodes
+# [extraction src_8cddd648c000] auditor done in 0ms
+# [extraction src_8cddd648c000] merged: 1 nodes, 0 chains
+# [extraction src_8cddd648c000] merged: 1 nodes, 0 chains (1ms total, 1 chunk job(s))
+    # Subtest: parallel extracts, serialized audits: extractor concurrency peaks at the cap, the auditor NEVER overlaps
+    ok 2 - parallel extracts, serialized audits: extractor concurrency peaks at the cap, the auditor NEVER overlaps
+      ---
+      duration_ms: 116.349292
+      type: 'test'
+      ...
+    1..2
+ok 7 - per-chunk parallel jobs (owner, 2026-09-28)
+  ---
+  duration_ms: 117.105833
+  type: 'suite'
+  ...
+# Subtest: the session-deletion guard (chat deleted mid-run)
+    # Subtest: a run whose chat dies mid-extraction aborts at the merge with nothing merged, checkpointed, or billed
+    ok 1 - a run whose chat dies mid-extraction aborts at the merge with nothing merged, checkpointed, or billed
+      ---
+      duration_ms: 2.165416
+      type: 'test'
+      ...
+    1..1
+ok 8 - the session-deletion guard (chat deleted mid-run)
+  ---
+  duration_ms: 2.208541
+  type: 'suite'
+  ...
+# Subtest: digest-aware serialized extraction (the extractor is the assembler)
+    # Subtest: the system prompt is goal-first: core ideas, foundations direction, build-on-the-digest doctrine
+    ok 1 - the system prompt is goal-first: core ideas, foundations direction, build-on-the-digest doctrine
+      ---
+      duration_ms: 0.205625
+      type: 'test'
+      ...
+    # Subtest: sourceDigest renders the same-source truth (ids verbatim) and stays empty for a barren source
+    ok 2 - sourceDigest renders the same-source truth (ids verbatim) and stays empty for a barren source
+      ---
+      duration_ms: 0.117917
+      type: 'test'
+      ...
+    # Subtest: a seeded digest rides the extractor's view: mixed-namespace chains reference existing ids VERBATIM
+    ok 3 - a seeded digest rides the extractor's view: mixed-namespace chains reference existing ids VERBATIM
+      ---
+      duration_ms: 2.477292
+      type: 'test'
+      ...
+    # Subtest: a chain endpoint that resolves NOWHERE is refused with the problem and the retry merges (error-back)
+    ok 4 - a chain endpoint that resolves NOWHERE is refused with the problem and the retry merges (error-back)
+      ---
+      duration_ms: 1.899541
+      type: 'test'
+      ...
+    # Subtest: batches serialize: chunk 2's extractor starts only after chunk 1's audit ran (digest order, owner 2026-09-30 evening)
+    ok 5 - batches serialize: chunk 2's extractor starts only after chunk 1's audit ran (digest order, owner 2026-09-30 evening)
+      ---
+      duration_ms: 3.8655
+      type: 'test'
+      ...
+    1..5
+ok 9 - digest-aware serialized extraction (the extractor is the assembler)
+  ---
+  duration_ms: 8.658375
+  type: 'suite'
+  ...
+# Subtest: chain simplification (the merger's maintenance pass, owner 2026-09-30 evening)
+    # Subtest: the owner example: [A,B]⇒X + [X,C]⇒Y make [A,B,C]⇒Y redundant (ancestry-cover)
+    ok 1 - the owner example: [A,B]⇒X + [X,C]⇒Y make [A,B,C]⇒Y redundant (ancestry-cover)
+      ---
+      duration_ms: 0.131125
+      type: 'test'
+      ...
+    # Subtest: prefer-fewest-premises: a strict premise-superset of a kept chain drops
+    ok 2 - prefer-fewest-premises: a strict premise-superset of a kept chain drops
+      ---
+      duration_ms: 0.050791
+      type: 'test'
+      ...
+    # Subtest: genuinely different routes to one conclusion stand; a superset route yields to the lean one
+    ok 3 - genuinely different routes to one conclusion stand; a superset route yields to the lean one
+      ---
+      duration_ms: 0.057541
+      type: 'test'
+      ...
+    # Subtest: ancestry reaches transitively: [W]⇒A chains through [A,B]⇒X
+    ok 4 - ancestry reaches transitively: [W]⇒A chains through [A,B]⇒X
+      ---
+      duration_ms: 0.061625
+      type: 'test'
+      ...
+    # Subtest: same-key provenance lines drop TOGETHER (a key is kept or dropped as a whole)
+    ok 5 - same-key provenance lines drop TOGETHER (a key is kept or dropped as a whole)
+      ---
+      duration_ms: 0.042125
+      type: 'test'
+      ...
+    # Subtest: the merge applies it live: a redundant arrival is skipped silently, stats count appends and drops
+    ok 6 - the merge applies it live: a redundant arrival is skipped silently, stats count appends and drops
+      ---
+      duration_ms: 3.719875
+      type: 'test'
+      ...
+    1..6
+ok 10 - chain simplification (the merger's maintenance pass, owner 2026-09-30 evening)
+  ---
+  duration_ms: 4.135792
+  type: 'suite'
+  ...
+# Subtest: notes import completion and retry reliability
+    # Subtest: failure followed by an unchanged retry really extracts and preserves both usage records
+    ok 1 - failure followed by an unchanged retry really extracts and preserves both usage records
+      ---
+      duration_ms: 1.232208
+      type: 'test'
+      ...
+    # Subtest: zero new nodes and an empty file are successful, but the readiness gate still applies
+    ok 2 - zero new nodes and an empty file are successful, but the readiness gate still applies
+      ---
+      duration_ms: 0.788042
+      type: 'test'
+      ...
+    # Subtest: isolates an ordinary failed chunk, reports partial, and keeps earlier/later merges and usage
+    ok 3 - isolates an ordinary failed chunk, reports partial, and keeps earlier/later merges and usage
+      ---
+      duration_ms: 1.653834
+      type: 'test'
+      ...
+    # Subtest: an abort after an earlier merge stops later chunks without losing graph or billed usage
+    ok 4 - an abort after an earlier merge stops later chunks without losing graph or billed usage
+      ---
+      duration_ms: 0.886833
+      type: 'test'
+      ...
+    # Subtest: abort in chunk 1 survives a usage-persistence error and stops later chunks
+    ok 5 - abort in chunk 1 survives a usage-persistence error and stops later chunks
+      ---
+      duration_ms: 0.954959
+      type: 'test'
+      ...
+    # Subtest: abort in chunk 2 survives a usage-persistence error and stops later chunks
+    ok 6 - abort in chunk 2 survives a usage-persistence error and stops later chunks
+      ---
+      duration_ms: 1.46925
+      type: 'test'
+      ...
+    # Subtest: a usage-persistence error without an aborted signal remains an isolated failure and later chunks run
+    ok 7 - a usage-persistence error without an aborted signal remains an isolated failure and later chunks run
+      ---
+      duration_ms: 3.2255
+      type: 'test'
+      ...
+    # Subtest: overlapping identical or different contents are busy BEFORE source metadata changes, across pipeline instances
+    ok 8 - overlapping identical or different contents are busy BEFORE source metadata changes, across pipeline instances
+      ---
+      duration_ms: 1.645959
+      type: 'test'
+      ...
+    # Subtest: a fulfilled zero-node chunk plus a failed chunk is partial, not failed or completed
+    ok 9 - a fulfilled zero-node chunk plus a failed chunk is partial, not failed or completed
+      ---
+      duration_ms: 1.001208
+      type: 'test'
+      ...
+    # Subtest: a merger failure after a node append is incomplete without rolling back that write
+    ok 10 - a merger failure after a node append is incomplete without rolling back that write
+      ---
+      duration_ms: 1.159208
+      type: 'test'
+      ...
+    # Subtest: a post-merge layout failure is not false success and reports committed stats
+    ok 11 - a post-merge layout failure is not false success and reports committed stats
+      ---
+      duration_ms: 1.80225
+      type: 'test'
+      ...
+    # Subtest: a post-merge usage failure is not false success and reports committed stats
+    ok 12 - a post-merge usage failure is not false success and reports committed stats
+      ---
+      duration_ms: 1.484
+      type: 'test'
+      ...
+    # Subtest: source-upsert failure is typed and releases exclusion for retry
+    ok 13 - source-upsert failure is typed and releases exclusion for retry
+      ---
+      duration_ms: 0.594458
+      type: 'test'
+      ...
+    # Subtest: imports and repeats identical text for 1.md
+    ok 14 - imports and repeats identical text for 1.md
+      ---
+      duration_ms: 1.301042
+      type: 'test'
+      ...
+    # Subtest: imports and repeats identical text for 1.1.md
+    ok 15 - imports and repeats identical text for 1.1.md
+      ---
+      duration_ms: 1.735708
+      type: 'test'
+      ...
+    # Subtest: imports and repeats identical text for 1 notes.md
+    ok 16 - imports and repeats identical text for 1 notes.md
+      ---
+      duration_ms: 1.651083
+      type: 'test'
+      ...
+    # Subtest: imports and repeats identical text for 1.1 notes.md
+    ok 17 - imports and repeats identical text for 1.1 notes.md
+      ---
+      duration_ms: 1.266667
+      type: 'test'
+      ...
+    1..17
+ok 11 - notes import completion and retry reliability
+  ---
+  duration_ms: 24.051375
+  type: 'suite'
+  ...
+1..11
+# tests 74
+# suites 11
+# pass 74
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 710.112083

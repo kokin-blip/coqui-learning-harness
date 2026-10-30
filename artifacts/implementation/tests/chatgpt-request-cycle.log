@@ -1,0 +1,82 @@
+TAP version 13
+# Subtest: real native drain -> lease denial -> same Agent foreground recovery, staged=false
+ok 1 - real native drain -> lease denial -> same Agent foreground recovery, staged=false
+  ---
+  duration_ms: 14.379917
+  type: 'test'
+  ...
+# Subtest: real native drain -> lease denial -> same Agent foreground recovery, staged=true
+ok 2 - real native drain -> lease denial -> same Agent foreground recovery, staged=true
+  ---
+  duration_ms: 2.577875
+  type: 'test'
+  ...
+# Subtest: real native drain -> payload denial -> same Agent foreground recovery, staged=false
+ok 3 - real native drain -> payload denial -> same Agent foreground recovery, staged=false
+  ---
+  duration_ms: 2.383334
+  type: 'test'
+  ...
+# Subtest: real native drain -> payload denial -> same Agent foreground recovery, staged=true
+ok 4 - real native drain -> payload denial -> same Agent foreground recovery, staged=true
+  ---
+  duration_ms: 3.167334
+  type: 'test'
+  ...
+# Subtest: initial automatic denial without learner creates no usage/visible marker/durable prefix
+ok 5 - initial automatic denial without learner creates no usage/visible marker/durable prefix
+  ---
+  duration_ms: 0.613541
+  type: 'test'
+  ...
+# Subtest: full invalidation never internally retries under a new authority
+ok 6 - full invalidation never internally retries under a new authority
+  ---
+  duration_ms: 0.513167
+  type: 'test'
+  ...
+# Subtest: successful staged prefix commits once before native dispatch and is visible exactly once
+ok 7 - successful staged prefix commits once before native dispatch and is visible exactly once
+  ---
+  duration_ms: 1.348583
+  type: 'test'
+  ...
+# Subtest: durable staged input failure prevents dispatch and does not infer foreground replay
+ok 8 - durable staged input failure prevents dispatch and does not infer foreground replay
+  ---
+  duration_ms: 1.348709
+  type: 'test'
+  ...
+# Subtest: invalidation after fetch commitment cannot replay an admitted request
+ok 9 - invalidation after fetch commitment cannot replay an admitted request
+  ---
+  duration_ms: 1.233125
+  type: 'test'
+  ...
+# Subtest: automatic arrival after completed foreground prose cannot manufacture another foreground request
+ok 10 - automatic arrival after completed foreground prose cannot manufacture another foreground request
+  ---
+  duration_ms: 1.352709
+  type: 'test'
+  ...
+# Subtest: unfinished foreground ordinary-tool chain recovers without rerunning the completed tool
+ok 11 - unfinished foreground ordinary-tool chain recovers without rerunning the completed tool
+  ---
+  duration_ms: 4.189666
+  type: 'test'
+  ...
+# Subtest: full native record reconstruction preserves original causes and reports genuine ambiguity
+ok 12 - full native record reconstruction preserves original causes and reports genuine ambiguity
+  ---
+  duration_ms: 0.308334
+  type: 'test'
+  ...
+1..12
+# tests 12
+# suites 0
+# pass 12
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 440.884542

@@ -1,0 +1,195 @@
+TAP version 13
+# Subtest: the practice tool gating law
+    # Subtest: problem acks on a quiet record and ends the turn (terminate)
+    ok 1 - problem acks on a quiet record and ends the turn (terminate)
+      ---
+      duration_ms: 0.370208
+      type: 'test'
+      ...
+    # Subtest: problem is REJECTED while a problem is active (conclude first)
+    ok 2 - problem is REJECTED while a problem is active (conclude first)
+      ---
+      duration_ms: 0.314417
+      type: 'test'
+      ...
+    # Subtest: conclude is REJECTED with nothing active
+    ok 3 - conclude is REJECTED with nothing active
+      ---
+      duration_ms: 0.087541
+      type: 'test'
+      ...
+    # Subtest: conclude acks on the active problem and the turn CONTINUES (no terminate)
+    ok 4 - conclude acks on the active problem and the turn CONTINUES (no terminate)
+      ---
+      duration_ms: 0.071042
+      type: 'test'
+      ...
+    # Subtest: THE BKT INCIDENT — a mid-turn conclude → pose pair works (the gate is turn-scoped, not record-frozen)
+    ok 5 - THE BKT INCIDENT — a mid-turn conclude → pose pair works (the gate is turn-scoped, not record-frozen)
+      ---
+      duration_ms: 0.061291
+      type: 'test'
+      ...
+    1..5
+ok 1 - the practice tool gating law
+  ---
+  duration_ms: 1.237166
+  type: 'suite'
+  ...
+# Subtest: target validation — names normalize to ids, unknowns reject
+    # Subtest: a NAME target silently normalizes to the canonical id (the record carries ids)
+    ok 1 - a NAME target silently normalizes to the canonical id (the record carries ids)
+      ---
+      duration_ms: 0.233208
+      type: 'test'
+      ...
+    # Subtest: an id target passes through untouched (already canonical)
+    ok 2 - an id target passes through untouched (already canonical)
+      ---
+      duration_ms: 0.076959
+      type: 'test'
+      ...
+    # Subtest: an UNKNOWN target rejects with a one-line error and does NOT arm the gate
+    ok 3 - an UNKNOWN target rejects with a one-line error and does NOT arm the gate
+      ---
+      duration_ms: 0.105292
+      type: 'test'
+      ...
+    # Subtest: UNTAGGED PROBLEMS (owner round 12): absent target poses freely; [] heals away to absent
+    ok 4 - UNTAGGED PROBLEMS (owner round 12): absent target poses freely; [] heals away to absent
+      ---
+      duration_ms: 0.111083
+      type: 'test'
+      ...
+    # Subtest: NO node source (the legacy/test wiring) = no validation, free strings ack
+    ok 5 - NO node source (the legacy/test wiring) = no validation, free strings ack
+      ---
+      duration_ms: 0.058875
+      type: 'test'
+      ...
+    1..5
+ok 2 - target validation — names normalize to ids, unknowns reject
+  ---
+  duration_ms: 0.686917
+  type: 'suite'
+  ...
+# Subtest: the practice agent
+    # Subtest: bare registry: the session pair + the learner-filesystem set — no question, plan, or lesson tools
+    ok 1 - bare registry: the session pair + the learner-filesystem set — no question, plan, or lesson tools
+      ---
+      duration_ms: 0.121167
+      type: 'test'
+      ...
+    # Subtest: THE RARELY-NEEDED SET (owner round 10): jobs + map readers compose in when their roots are passed
+    ok 2 - THE RARELY-NEEDED SET (owner round 10): jobs + map readers compose in when their roots are passed
+      ---
+      duration_ms: 0.161292
+      type: 'test'
+      ...
+    # Subtest: constructs with exactly the two practice tools
+    ok 3 - constructs with exactly the two practice tools
+      ---
+      duration_ms: 0.233875
+      type: 'test'
+      ...
+    1..3
+ok 3 - the practice agent
+  ---
+  duration_ms: 0.576584
+  type: 'suite'
+  ...
+# Subtest: persistent practice nudges
+    # Subtest: preserves the approved paragraphs in source and the effective default prompt
+    ok 1 - preserves the approved paragraphs in source and the effective default prompt
+      ---
+      duration_ms: 0.659042
+      type: 'test'
+      ...
+    # Subtest: does not compose the retired attempt cutoff, failed-repair reveal, or automatic-abort instructions
+    ok 2 - does not compose the retired attempt cutoff, failed-repair reveal, or automatic-abort instructions
+      ---
+      duration_ms: 0.768041
+      type: 'test'
+      ...
+    # Subtest: preserves the approved concluded-problem switch and unbounded structural repair in source and the effective default prompt
+    ok 3 - preserves the approved concluded-problem switch and unbounded structural repair in source and the effective default prompt
+      ---
+      duration_ms: 0.591417
+      type: 'test'
+      ...
+    # Subtest: preserves the approved misconception introduction without an affirmative one-line repair cap
+    ok 4 - preserves the approved misconception introduction without an affirmative one-line repair cap
+      ---
+      duration_ms: 0.499458
+      type: 'test'
+      ...
+    # Subtest: keeps the many-claims default, hint ladder, dismissal, and explicit-go-ahead pause
+    ok 5 - keeps the many-claims default, hint ladder, dismissal, and explicit-go-ahead pause
+      ---
+      duration_ms: 0.5585
+      type: 'test'
+      ...
+    # Subtest: aligns the conclude description with the canonical ack without changing outcomes or the runtime pause mechanism
+    ok 6 - aligns the conclude description with the canonical ack without changing outcomes or the runtime pause mechanism
+      ---
+      duration_ms: 0.1365
+      type: 'test'
+      ...
+    1..6
+ok 4 - persistent practice nudges
+  ---
+  duration_ms: 3.278708
+  type: 'suite'
+  ...
+# Subtest: practice prompt composition (own directory + the formatting appendix)
+    # Subtest: composes base + doctrine — never the teaching base or question/confidence mechanics
+    ok 1 - composes base + doctrine — never the teaching base or question/confidence mechanics
+      ---
+      duration_ms: 0.357167
+      type: 'test'
+      ...
+    # Subtest: the SHARED voice + accuracy compose (owner round 13): ONE law across every agent, and the stale line is dead
+    ok 2 - the SHARED voice + accuracy compose (owner round 13): ONE law across every agent, and the stale line is dead
+      ---
+      duration_ms: 0.8305
+      type: 'test'
+      ...
+    # Subtest: the prober doctrine steers difficulty by evidence (owner round, 2026-10-07)
+    ok 3 - the prober doctrine steers difficulty by evidence (owner round, 2026-10-07)
+      ---
+      duration_ms: 0.276875
+      type: 'test'
+      ...
+    # Subtest: the SHARED formatting guide composes (owner, 2026-10-04 late): LaTeX delimiters in every setting
+    ok 4 - the SHARED formatting guide composes (owner, 2026-10-04 late): LaTeX delimiters in every setting
+      ---
+      duration_ms: 1.011833
+      type: 'test'
+      ...
+    # Subtest: base precedes doctrine (00- sorts before 10-)
+    ok 5 - base precedes doctrine (00- sorts before 10-)
+      ---
+      duration_ms: 0.2025
+      type: 'test'
+      ...
+    # Subtest: the segment registry knows practice (override paths resolve)
+    ok 6 - the segment registry knows practice (override paths resolve)
+      ---
+      duration_ms: 0.279959
+      type: 'test'
+      ...
+    1..6
+ok 5 - practice prompt composition (own directory + the formatting appendix)
+  ---
+  duration_ms: 3.024125
+  type: 'suite'
+  ...
+1..5
+# tests 25
+# suites 5
+# pass 25
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 411.902916

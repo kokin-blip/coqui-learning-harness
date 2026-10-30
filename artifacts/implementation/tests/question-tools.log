@@ -1,0 +1,222 @@
+TAP version 13
+# Subtest: teachQuizToolFor: the dynamic plan-nodeId validation (position signal)
+    # Subtest: accepts a nodeId that matches a node of the session's tree
+    ok 1 - accepts a nodeId that matches a node of the session's tree
+      ---
+      duration_ms: 4.340084
+      type: 'test'
+      ...
+    # Subtest: rejects a nodeId that matches no node — with a message listing the slugs
+    ok 2 - rejects a nodeId that matches no node — with a message listing the slugs
+      ---
+      duration_ms: 0.54875
+      type: 'test'
+      ...
+    # Subtest: no tree yet: ANY nodeId is rejected — quizzes wait for plan_init
+    ok 3 - no tree yet: ANY nodeId is rejected — quizzes wait for plan_init
+      ---
+      duration_ms: 0.301417
+      type: 'test'
+      ...
+    # Subtest: missing nodeId is rejected at the boundary (owner ruling 2026-09-26: no untagged quizzes)
+    ok 4 - missing nodeId is rejected at the boundary (owner ruling 2026-09-26: no untagged quizzes)
+      ---
+      duration_ms: 0.894083
+      type: 'test'
+      ...
+    # Subtest: reads the LIVE record — a plan_init mutation mid-turn is honored immediately
+    ok 5 - reads the LIVE record — a plan_init mutation mid-turn is honored immediately
+      ---
+      duration_ms: 0.764
+      type: 'test'
+      ...
+    # Subtest: the shared grading rules still chain FIRST (schema-valid ⇔ gradeable)
+    ok 6 - the shared grading rules still chain FIRST (schema-valid ⇔ gradeable)
+      ---
+      duration_ms: 0.514375
+      type: 'test'
+      ...
+    1..6
+ok 1 - teachQuizToolFor: the dynamic plan-nodeId validation (position signal)
+  ---
+  duration_ms: 7.798667
+  type: 'suite'
+  ...
+# Subtest: the prober's quiz: no nodeId field at all
+    # Subtest: the probe schema accepts a plain quiz; a smuggled nodeId is NOT in the wire schema
+    ok 1 - the probe schema accepts a plain quiz; a smuggled nodeId is NOT in the wire schema
+      ---
+      duration_ms: 0.758584
+      type: 'test'
+      ...
+    # Subtest: the prober's tool registry carries the nodeId-less quiz, probe_done, and the learner-filesystem set
+    ok 2 - the prober's tool registry carries the nodeId-less quiz, probe_done, and the learner-filesystem set
+      ---
+      duration_ms: 0.75775
+      type: 'test'
+      ...
+    1..2
+ok 2 - the prober's quiz: no nodeId field at all
+  ---
+  duration_ms: 1.608375
+  type: 'suite'
+  ...
+# Subtest: quiz tool descriptions carry the complete, phase-correct example
+    # Subtest: the canonical body is schema-valid and authoring-clean (never ship a broken exemplar)
+    ok 1 - the canonical body is schema-valid and authoring-clean (never ship a broken exemplar)
+      ---
+      duration_ms: 0.161125
+      type: 'test'
+      ...
+    # Subtest: probe: the serialized body rides the description with correct JSON escaping, no phase metadata
+    ok 2 - probe: the serialized body rides the description with correct JSON escaping, no phase metadata
+      ---
+      duration_ms: 0.067792
+      type: 'test'
+      ...
+    # Subtest: quiz: the required pair leads the example, with the plan-id caveat
+    ok 3 - quiz: the required pair leads the example, with the plan-id caveat
+      ---
+      duration_ms: 0.263875
+      type: 'test'
+      ...
+    1..3
+ok 3 - quiz tool descriptions carry the complete, phase-correct example
+  ---
+  duration_ms: 0.556583
+  type: 'suite'
+  ...
+# Subtest: tool toggles (core/pending.ts + factories)
+    # Subtest: TOGGLEABLE_TOOLS: the sub-agent dispatch tools; quiz/ask/read stay off the list
+    ok 1 - TOGGLEABLE_TOOLS: the sub-agent dispatch tools; quiz/ask/read stay off the list
+      ---
+      duration_ms: 0.04725
+      type: 'test'
+      ...
+    # Subtest: createProberTools: absent record = full set; explicit false drops exactly that tool; probe_done survives everything
+    ok 2 - createProberTools: absent record = full set; explicit false drops exactly that tool; probe_done survives everything
+      ---
+      duration_ms: 0.372084
+      type: 'test'
+      ...
+    # Subtest: createTeacherTools: {research: false} removes exactly research; unknown keys are no-ops
+    ok 3 - createTeacherTools: {research: false} removes exactly research; unknown keys are no-ops
+      ---
+      duration_ms: 0.408875
+      type: 'test'
+      ...
+    1..3
+ok 4 - tool toggles (core/pending.ts + factories)
+  ---
+  duration_ms: 0.869125
+  type: 'suite'
+  ...
+# Subtest: prepareQuestionArguments (the string-encoded options wobble)
+    # Subtest: coerces string-encoded options on ALL THREE question tools
+    ok 1 - coerces string-encoded options on ALL THREE question tools
+      ---
+      duration_ms: 0.097833
+      type: 'test'
+      ...
+    # Subtest: passes everything else through UNTOUCHED (identity — pi's fast path)
+    ok 2 - passes everything else through UNTOUCHED (identity — pi's fast path)
+      ---
+      duration_ms: 0.041792
+      type: 'test'
+      ...
+    1..2
+ok 5 - prepareQuestionArguments (the string-encoded options wobble)
+  ---
+  duration_ms: 0.169125
+  type: 'suite'
+  ...
+# Subtest: teachExplainToolFor: the explain variant validates nodeId like the quiz
+    # Subtest: accepts a nodeId matching a tree node
+    ok 1 - accepts a nodeId matching a tree node
+      ---
+      duration_ms: 0.4445
+      type: 'test'
+      ...
+    # Subtest: rejects an off-map nodeId with the slugs listed
+    ok 2 - rejects an off-map nodeId with the slugs listed
+      ---
+      duration_ms: 0.345833
+      type: 'test'
+      ...
+    # Subtest: no tree yet: rejected — checks wait for plan_init
+    ok 3 - no tree yet: rejected — checks wait for plan_init
+      ---
+      duration_ms: 0.205083
+      type: 'test'
+      ...
+    # Subtest: an empty commitment is rejected at the boundary
+    ok 4 - an empty commitment is rejected at the boundary
+      ---
+      duration_ms: 0.310958
+      type: 'test'
+      ...
+    1..4
+ok 6 - teachExplainToolFor: the explain variant validates nodeId like the quiz
+  ---
+  duration_ms: 1.344542
+  type: 'suite'
+  ...
+# Subtest: the prober's explain: no nodeId field at all
+    # Subtest: the probe schema carries no nodeId; the commitment contract still binds
+    ok 1 - the probe schema carries no nodeId; the commitment contract still binds
+      ---
+      duration_ms: 0.079042
+      type: 'test'
+      ...
+    1..1
+ok 7 - the prober's explain: no nodeId field at all
+  ---
+  duration_ms: 0.102958
+  type: 'suite'
+  ...
+# Subtest: tool descriptions carry mechanics only, no question-craft
+    # Subtest: teach quiz: no craft doctrine, mechanics intact
+    ok 1 - teach quiz: no craft doctrine, mechanics intact
+      ---
+      duration_ms: 0.065167
+      type: 'test'
+      ...
+    # Subtest: probe quiz: no craft doctrine, mechanics intact
+    ok 2 - probe quiz: no craft doctrine, mechanics intact
+      ---
+      duration_ms: 0.0225
+      type: 'test'
+      ...
+    # Subtest: the teach quiz declares the `type` field and `nodeId`; the probe quiz declares neither
+    ok 3 - the teach quiz declares the `type` field and `nodeId`; the probe quiz declares neither
+      ---
+      duration_ms: 0.024292
+      type: 'test'
+      ...
+    # Subtest: the explain tools keep the COMMITMENT rule (the grading contract) and drop the softer doctrine
+    ok 4 - the explain tools keep the COMMITMENT rule (the grading contract) and drop the softer doctrine
+      ---
+      duration_ms: 0.064916
+      type: 'test'
+      ...
+    # Subtest: the craft now lives in the shared prompt chunk (both agents compose it)
+    ok 5 - the craft now lives in the shared prompt chunk (both agents compose it)
+      ---
+      duration_ms: 4.637083
+      type: 'test'
+      ...
+    1..5
+ok 8 - tool descriptions carry mechanics only, no question-craft
+  ---
+  duration_ms: 4.923792
+  type: 'suite'
+  ...
+1..8
+# tests 26
+# suites 8
+# pass 26
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 202.467042

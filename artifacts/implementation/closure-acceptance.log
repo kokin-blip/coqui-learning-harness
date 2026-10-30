@@ -1,0 +1,19 @@
+PASS Native session metadata/kinds and invalid input refusal
+PASS Persistent deletion history restores a session through Settings after native restart
+PASS Probe assessment, one automatic teacher handoff, native plan and phase survive reload
+PASS Sibling answers stay adjacent and only the last starts a reaction
+PASS Real specialist workers finish behind a question; restart delivers each saved result exactly once
+PASS SVG natural size, CSS isolation, persistent inversion and focus pan/zoom/fit
+PASS Failed, canceled and already-finished background work retain honest delivery states
+PASS Leaving a stream preserves computation; live steering/abort retain one input and partial native output
+PASS Silent practice dismissal synthesizes one durable conclusion on Next and exposes recorded metadata
+PASS Actual compaction retains the full archive and appends a summary marker without losing the pending question
+PASS Transient record-read failure preserves the visible lesson and committed question
+PASS Dedicated context selection has Done, preserves draft, hides deletion and prepends context before input
+PASS Map Find targets proposition search even with a retained lesson
+PASS Graph display/physics controls persist through actual private-IPC route without resetting data
+PASS Native graph keyboard pan, cursor wheel zoom, persisted camera and live node drag commit
+PASS Prompt override write/enable/reset and invalid registered-path refusal cross the process boundary
+PASS Compaction floor rejects invalid input; extraction floor and independent graph switches preserve stored knowledge
+PASS OS-backed File drop resolves its native path into atomic composer chips without upload
+PASS Packaged renderer exposes the preload projection without Node globals

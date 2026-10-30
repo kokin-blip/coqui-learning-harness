@@ -1,0 +1,47 @@
+TAP version 13
+# [chat chat_76cbc34d12fa4f86b841a9dc46504ef9] turn refused — {"error":"Claude Code is unavailable. Enable and set it up in Settings → Providers.","code":"provider_key_missing","provider":"claude-code","slots":["strong"]}
+# Subtest: disabled opt-in refuses a saved CLI chat before write-ahead, liveness, or agent creation
+ok 1 - disabled opt-in refuses a saved CLI chat before write-ahead, liveness, or agent creation
+  ---
+  duration_ms: 8.328208
+  type: 'test'
+  ...
+# Subtest: switching off blocks future requests but does not interrupt an already admitted CLI turn
+ok 2 - switching off blocks future requests but does not interrupt an already admitted CLI turn
+  ---
+  duration_ms: 99.6425
+  type: 'test'
+  ...
+# Subtest: a question answered before the idle timeout continues the waiting CLI process with the answer
+ok 3 - a question answered before the idle timeout continues the waiting CLI process with the answer
+  ---
+  duration_ms: 126.279625
+  type: 'test'
+  ...
+# Subtest: a question pauses later calls from the same CLI response until the learner answers
+ok 4 - a question pauses later calls from the same CLI response until the learner answers
+  ---
+  duration_ms: 115.53025
+  type: 'test'
+  ...
+# Subtest: an individually cancelled MCP question queued behind a learner wait never executes
+ok 5 - an individually cancelled MCP question queued behind a learner wait never executes
+  ---
+  duration_ms: 113.76825
+  type: 'test'
+  ...
+# Subtest: a question answered after the idle timeout starts a fresh CLI process that replays the question and answer
+ok 6 - a question answered after the idle timeout starts a fresh CLI process that replays the question and answer
+  ---
+  duration_ms: 496.058667
+  type: 'test'
+  ...
+1..6
+# tests 6
+# suites 0
+# pass 6
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 1558.259125

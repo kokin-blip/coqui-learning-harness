@@ -1,0 +1,119 @@
+{
+  "at": "2026-10-30T20:22:06.556Z",
+  "packaged": true,
+  "stream": "scripted native engine stream",
+  "targetFrameMs": 16.7,
+  "build": {
+    "version": "0.2.1",
+    "packaged": true,
+    "electron": "44.10.0",
+    "node": "24.22.1",
+    "upstreamCommit": "dc4c398d5167865b84b0ccb3ec809eb88bf8f65f",
+    "appPayloadSha256": "b1bb6f098e7b4f70a9a0ef77ae9c73d9e366ef8b5e273757d2da8aeaaf468453"
+  },
+  "propositions": 1000,
+  "implicationNodes": 333,
+  "streamStillRunning": true,
+  "elapsedMs": 5005.399999964237,
+  "frameIntervals": {
+    "samples": 601,
+    "medianMs": 8.300000000000182,
+    "p95Ms": 9.799999999999727,
+    "maxMs": 10.400000000000091,
+    "over16_7ms": 0,
+    "estimatedMissedDisplayFrames": 0
+  },
+  "inputDelay": {
+    "samples": 80,
+    "medianMs": 0.19999998807907104,
+    "p95Ms": 0.3999999761581421,
+    "maxMs": 0.5,
+    "measurement": "DOM keydown handler minus native event timestamp"
+  },
+  "mainThreadFrameWork": {
+    "samples": 600,
+    "p95Ms": 1.515,
+    "maxMs": 4.872,
+    "measurement": "Union of JS, GC, event, style, layout and paint spans between instrumented RAF markers; compositor/GPU work is separate"
+  },
+  "traceDroppedFrameEvents": null,
+  "longTasks": [],
+  "chromiumMetrics": [
+    {
+      "name": "Documents",
+      "value": 26
+    },
+    {
+      "name": "Nodes",
+      "value": 882
+    },
+    {
+      "name": "LayoutDuration",
+      "value": 0.000919
+    },
+    {
+      "name": "ScriptDuration",
+      "value": 0.115185
+    },
+    {
+      "name": "TaskDuration",
+      "value": 0.514914
+    },
+    {
+      "name": "JSHeapUsedSize",
+      "value": 19860480
+    },
+    {
+      "name": "JSHeapTotalSize",
+      "value": 29016064
+    }
+  ],
+  "memory": [
+    {
+      "type": "Browser",
+      "memory": {
+        "workingSetSize": 231424,
+        "peakWorkingSetSize": 274928
+      }
+    },
+    {
+      "type": "GPU",
+      "memory": {
+        "workingSetSize": 107344,
+        "peakWorkingSetSize": 153264
+      }
+    },
+    {
+      "type": "Utility",
+      "name": "Network Service",
+      "memory": {
+        "workingSetSize": 48448,
+        "peakWorkingSetSize": 48480
+      }
+    },
+    {
+      "type": "Tab",
+      "memory": {
+        "workingSetSize": 353936,
+        "peakWorkingSetSize": 353936
+      }
+    },
+    {
+      "type": "Utility",
+      "name": "CoquiLearn learning service",
+      "memory": {
+        "workingSetSize": 233920,
+        "peakWorkingSetSize": 235024
+      }
+    },
+    {
+      "type": "Utility",
+      "name": "Tracing Service",
+      "memory": {
+        "workingSetSize": 117152,
+        "peakWorkingSetSize": 123312
+      }
+    }
+  ],
+  "errors": []
+}

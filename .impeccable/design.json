@@ -1,0 +1,868 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-30T03:14:19.156803Z",
+  "title": "Design System: CoquiLearn",
+  "extensions": {
+    "colorMeta": {
+      "dew-canvas": {
+        "role": "neutral",
+        "displayName": "Dew Canvas",
+        "canonical": "#ebf0eb",
+        "tonalRamp": [
+          "oklch(15% 0.0085 145.51)",
+          "oklch(26% 0.0085 145.51)",
+          "oklch(38% 0.0085 145.51)",
+          "oklch(49% 0.0085 145.51)",
+          "oklch(61% 0.0085 145.51)",
+          "oklch(72% 0.0085 145.51)",
+          "oklch(84% 0.0085 145.51)",
+          "oklch(95% 0.0085 145.51)"
+        ]
+      },
+      "dew-surface": {
+        "role": "neutral",
+        "displayName": "Dew Surface",
+        "canonical": "#fafcf7",
+        "tonalRamp": [
+          "oklch(15% 0.0069 124.44)",
+          "oklch(26% 0.0069 124.44)",
+          "oklch(38% 0.0069 124.44)",
+          "oklch(49% 0.0069 124.44)",
+          "oklch(61% 0.0069 124.44)",
+          "oklch(72% 0.0069 124.44)",
+          "oklch(84% 0.0069 124.44)",
+          "oklch(95% 0.0069 124.44)"
+        ]
+      },
+      "dew-soft": {
+        "role": "neutral",
+        "displayName": "Dew Soft",
+        "canonical": "#e0e9e2",
+        "tonalRamp": [
+          "oklch(15% 0.0134 152.59)",
+          "oklch(26% 0.0134 152.59)",
+          "oklch(38% 0.0134 152.59)",
+          "oklch(49% 0.0134 152.59)",
+          "oklch(61% 0.0134 152.59)",
+          "oklch(72% 0.0134 152.59)",
+          "oklch(84% 0.0134 152.59)",
+          "oklch(95% 0.0134 152.59)"
+        ]
+      },
+      "dew-ink": {
+        "role": "neutral",
+        "displayName": "Dew Ink",
+        "canonical": "#253c35",
+        "tonalRamp": [
+          "oklch(15% 0.0316 173.22)",
+          "oklch(26% 0.0316 173.22)",
+          "oklch(38% 0.0316 173.22)",
+          "oklch(49% 0.0316 173.22)",
+          "oklch(61% 0.0316 173.22)",
+          "oklch(72% 0.0316 173.22)",
+          "oklch(84% 0.0316 173.22)",
+          "oklch(95% 0.0316 173.22)"
+        ]
+      },
+      "dew-muted": {
+        "role": "neutral",
+        "displayName": "Dew Muted",
+        "canonical": "#526d63",
+        "tonalRamp": [
+          "oklch(15% 0.0355 170.15)",
+          "oklch(26% 0.0355 170.15)",
+          "oklch(38% 0.0355 170.15)",
+          "oklch(49% 0.0355 170.15)",
+          "oklch(61% 0.0355 170.15)",
+          "oklch(72% 0.0355 170.15)",
+          "oklch(84% 0.0355 170.15)",
+          "oklch(95% 0.0355 170.15)"
+        ]
+      },
+      "dew-accent": {
+        "role": "primary",
+        "displayName": "Dew Accent",
+        "canonical": "#316a49",
+        "tonalRamp": [
+          "oklch(15% 0.0811 156.09)",
+          "oklch(26% 0.0811 156.09)",
+          "oklch(38% 0.0811 156.09)",
+          "oklch(49% 0.0811 156.09)",
+          "oklch(61% 0.0811 156.09)",
+          "oklch(72% 0.0811 156.09)",
+          "oklch(84% 0.0811 156.09)",
+          "oklch(95% 0.0811 156.09)"
+        ]
+      },
+      "dew-accent-soft": {
+        "role": "primary",
+        "displayName": "Dew Accent Soft",
+        "canonical": "#cfe3d3",
+        "tonalRamp": [
+          "oklch(15% 0.0303 151.49)",
+          "oklch(26% 0.0303 151.49)",
+          "oklch(38% 0.0303 151.49)",
+          "oklch(49% 0.0303 151.49)",
+          "oklch(61% 0.0303 151.49)",
+          "oklch(72% 0.0303 151.49)",
+          "oklch(84% 0.0303 151.49)",
+          "oklch(95% 0.0303 151.49)"
+        ]
+      },
+      "dew-on-accent": {
+        "role": "primary",
+        "displayName": "Dew On Accent",
+        "canonical": "#f5faf1",
+        "tonalRamp": [
+          "oklch(15% 0.0130 130.78)",
+          "oklch(26% 0.0130 130.78)",
+          "oklch(38% 0.0130 130.78)",
+          "oklch(49% 0.0130 130.78)",
+          "oklch(61% 0.0130 130.78)",
+          "oklch(72% 0.0130 130.78)",
+          "oklch(84% 0.0130 130.78)",
+          "oklch(95% 0.0130 130.78)"
+        ]
+      },
+      "dew-line": {
+        "role": "neutral",
+        "displayName": "Dew Line",
+        "canonical": "#b9cec0",
+        "tonalRamp": [
+          "oklch(15% 0.0298 156.52)",
+          "oklch(26% 0.0298 156.52)",
+          "oklch(38% 0.0298 156.52)",
+          "oklch(49% 0.0298 156.52)",
+          "oklch(61% 0.0298 156.52)",
+          "oklch(72% 0.0298 156.52)",
+          "oklch(84% 0.0298 156.52)",
+          "oklch(95% 0.0298 156.52)"
+        ]
+      },
+      "dew-teal": {
+        "role": "secondary",
+        "displayName": "Dew Teal",
+        "canonical": "#327a72",
+        "tonalRamp": [
+          "oklch(15% 0.0727 185.35)",
+          "oklch(26% 0.0727 185.35)",
+          "oklch(38% 0.0727 185.35)",
+          "oklch(49% 0.0727 185.35)",
+          "oklch(61% 0.0727 185.35)",
+          "oklch(72% 0.0727 185.35)",
+          "oklch(84% 0.0727 185.35)",
+          "oklch(95% 0.0727 185.35)"
+        ]
+      },
+      "dew-lilac": {
+        "role": "secondary",
+        "displayName": "Dew Lilac",
+        "canonical": "#80709b",
+        "tonalRamp": [
+          "oklch(15% 0.0673 301.37)",
+          "oklch(26% 0.0673 301.37)",
+          "oklch(38% 0.0673 301.37)",
+          "oklch(49% 0.0673 301.37)",
+          "oklch(61% 0.0673 301.37)",
+          "oklch(72% 0.0673 301.37)",
+          "oklch(84% 0.0673 301.37)",
+          "oklch(95% 0.0673 301.37)"
+        ]
+      },
+      "dew-rose": {
+        "role": "secondary",
+        "displayName": "Dew Rose",
+        "canonical": "#9b586b",
+        "tonalRamp": [
+          "oklch(15% 0.0909 2.33)",
+          "oklch(26% 0.0909 2.33)",
+          "oklch(38% 0.0909 2.33)",
+          "oklch(49% 0.0909 2.33)",
+          "oklch(61% 0.0909 2.33)",
+          "oklch(72% 0.0909 2.33)",
+          "oklch(84% 0.0909 2.33)",
+          "oklch(95% 0.0909 2.33)"
+        ]
+      },
+      "dew-warning": {
+        "role": "secondary",
+        "displayName": "Dew Warning",
+        "canonical": "#855b29",
+        "tonalRamp": [
+          "oklch(15% 0.0858 68.32)",
+          "oklch(26% 0.0858 68.32)",
+          "oklch(38% 0.0858 68.32)",
+          "oklch(49% 0.0858 68.32)",
+          "oklch(61% 0.0858 68.32)",
+          "oklch(72% 0.0858 68.32)",
+          "oklch(84% 0.0858 68.32)",
+          "oklch(95% 0.0858 68.32)"
+        ]
+      },
+      "dew-chrome": {
+        "role": "neutral",
+        "displayName": "Dew Chrome",
+        "canonical": "rgba(212, 224, 218, 0.52)",
+        "tonalRamp": [
+          "oklch(15% 0.0152 164.69)",
+          "oklch(26% 0.0152 164.69)",
+          "oklch(38% 0.0152 164.69)",
+          "oklch(49% 0.0152 164.69)",
+          "oklch(61% 0.0152 164.69)",
+          "oklch(72% 0.0152 164.69)",
+          "oklch(84% 0.0152 164.69)",
+          "oklch(95% 0.0152 164.69)"
+        ]
+      },
+      "dew-mist": {
+        "role": "neutral",
+        "displayName": "Dew Mist",
+        "canonical": "rgba(250, 252, 247, 0.72)",
+        "tonalRamp": [
+          "oklch(15% 0.0069 124.44)",
+          "oklch(26% 0.0069 124.44)",
+          "oklch(38% 0.0069 124.44)",
+          "oklch(49% 0.0069 124.44)",
+          "oklch(61% 0.0069 124.44)",
+          "oklch(72% 0.0069 124.44)",
+          "oklch(84% 0.0069 124.44)",
+          "oklch(95% 0.0069 124.44)"
+        ]
+      },
+      "dew-lens": {
+        "role": "neutral",
+        "displayName": "Dew Lens",
+        "canonical": "rgba(234, 243, 237, 0.36)",
+        "tonalRamp": [
+          "oklch(15% 0.0124 157.00)",
+          "oklch(26% 0.0124 157.00)",
+          "oklch(38% 0.0124 157.00)",
+          "oklch(49% 0.0124 157.00)",
+          "oklch(61% 0.0124 157.00)",
+          "oklch(72% 0.0124 157.00)",
+          "oklch(84% 0.0124 157.00)",
+          "oklch(95% 0.0124 157.00)"
+        ]
+      },
+      "dew-selected": {
+        "role": "primary",
+        "displayName": "Dew Selected",
+        "canonical": "rgba(207, 227, 211, 0.78)",
+        "tonalRamp": [
+          "oklch(15% 0.0303 151.49)",
+          "oklch(26% 0.0303 151.49)",
+          "oklch(38% 0.0303 151.49)",
+          "oklch(49% 0.0303 151.49)",
+          "oklch(61% 0.0303 151.49)",
+          "oklch(72% 0.0303 151.49)",
+          "oklch(84% 0.0303 151.49)",
+          "oklch(95% 0.0303 151.49)"
+        ]
+      },
+      "dew-edge": {
+        "role": "neutral",
+        "displayName": "Dew Edge",
+        "canonical": "rgba(255, 255, 255, 0.65)",
+        "tonalRamp": [
+          "oklch(15% 0.0000 89.88)",
+          "oklch(26% 0.0000 89.88)",
+          "oklch(38% 0.0000 89.88)",
+          "oklch(49% 0.0000 89.88)",
+          "oklch(61% 0.0000 89.88)",
+          "oklch(72% 0.0000 89.88)",
+          "oklch(84% 0.0000 89.88)",
+          "oklch(95% 0.0000 89.88)"
+        ]
+      },
+      "dew-edge-strong": {
+        "role": "neutral",
+        "displayName": "Dew Edge Strong",
+        "canonical": "rgba(255, 255, 255, 0.88)",
+        "tonalRamp": [
+          "oklch(15% 0.0000 89.88)",
+          "oklch(26% 0.0000 89.88)",
+          "oklch(38% 0.0000 89.88)",
+          "oklch(49% 0.0000 89.88)",
+          "oklch(61% 0.0000 89.88)",
+          "oklch(72% 0.0000 89.88)",
+          "oklch(84% 0.0000 89.88)",
+          "oklch(95% 0.0000 89.88)"
+        ]
+      },
+      "dew-shadow": {
+        "role": "neutral",
+        "displayName": "Dew Shadow",
+        "canonical": "rgba(6, 14, 17, 0.17)",
+        "tonalRamp": [
+          "oklch(15% 0.0145 221.89)",
+          "oklch(26% 0.0145 221.89)",
+          "oklch(38% 0.0145 221.89)",
+          "oklch(49% 0.0145 221.89)",
+          "oklch(61% 0.0145 221.89)",
+          "oklch(72% 0.0145 221.89)",
+          "oklch(84% 0.0145 221.89)",
+          "oklch(95% 0.0145 221.89)"
+        ]
+      },
+      "dew-reading": {
+        "role": "neutral",
+        "displayName": "Dew Reading",
+        "canonical": "rgba(250, 252, 247, 0.97)",
+        "tonalRamp": [
+          "oklch(15% 0.0069 124.44)",
+          "oklch(26% 0.0069 124.44)",
+          "oklch(38% 0.0069 124.44)",
+          "oklch(49% 0.0069 124.44)",
+          "oklch(61% 0.0069 124.44)",
+          "oklch(72% 0.0069 124.44)",
+          "oklch(84% 0.0069 124.44)",
+          "oklch(95% 0.0069 124.44)"
+        ]
+      },
+      "moonforest-canvas": {
+        "role": "neutral",
+        "displayName": "Moonforest Canvas",
+        "canonical": "#172127",
+        "tonalRamp": [
+          "oklch(15% 0.0183 234.87)",
+          "oklch(26% 0.0183 234.87)",
+          "oklch(38% 0.0183 234.87)",
+          "oklch(49% 0.0183 234.87)",
+          "oklch(61% 0.0183 234.87)",
+          "oklch(72% 0.0183 234.87)",
+          "oklch(84% 0.0183 234.87)",
+          "oklch(95% 0.0183 234.87)"
+        ]
+      },
+      "moonforest-surface": {
+        "role": "neutral",
+        "displayName": "Moonforest Surface",
+        "canonical": "#202d34",
+        "tonalRamp": [
+          "oklch(15% 0.0218 231.99)",
+          "oklch(26% 0.0218 231.99)",
+          "oklch(38% 0.0218 231.99)",
+          "oklch(49% 0.0218 231.99)",
+          "oklch(61% 0.0218 231.99)",
+          "oklch(72% 0.0218 231.99)",
+          "oklch(84% 0.0218 231.99)",
+          "oklch(95% 0.0218 231.99)"
+        ]
+      },
+      "moonforest-soft": {
+        "role": "neutral",
+        "displayName": "Moonforest Soft",
+        "canonical": "#293940",
+        "tonalRamp": [
+          "oklch(15% 0.0242 226.65)",
+          "oklch(26% 0.0242 226.65)",
+          "oklch(38% 0.0242 226.65)",
+          "oklch(49% 0.0242 226.65)",
+          "oklch(61% 0.0242 226.65)",
+          "oklch(72% 0.0242 226.65)",
+          "oklch(84% 0.0242 226.65)",
+          "oklch(95% 0.0242 226.65)"
+        ]
+      },
+      "moonforest-ink": {
+        "role": "neutral",
+        "displayName": "Moonforest Ink",
+        "canonical": "#ddede5",
+        "tonalRamp": [
+          "oklch(15% 0.0200 164.57)",
+          "oklch(26% 0.0200 164.57)",
+          "oklch(38% 0.0200 164.57)",
+          "oklch(49% 0.0200 164.57)",
+          "oklch(61% 0.0200 164.57)",
+          "oklch(72% 0.0200 164.57)",
+          "oklch(84% 0.0200 164.57)",
+          "oklch(95% 0.0200 164.57)"
+        ]
+      },
+      "moonforest-muted": {
+        "role": "neutral",
+        "displayName": "Moonforest Muted",
+        "canonical": "#acc4bb",
+        "tonalRamp": [
+          "oklch(15% 0.0289 170.99)",
+          "oklch(26% 0.0289 170.99)",
+          "oklch(38% 0.0289 170.99)",
+          "oklch(49% 0.0289 170.99)",
+          "oklch(61% 0.0289 170.99)",
+          "oklch(72% 0.0289 170.99)",
+          "oklch(84% 0.0289 170.99)",
+          "oklch(95% 0.0289 170.99)"
+        ]
+      },
+      "moonforest-accent": {
+        "role": "primary",
+        "displayName": "Moonforest Accent",
+        "canonical": "#a9d9a0",
+        "tonalRamp": [
+          "oklch(15% 0.0926 140.62)",
+          "oklch(26% 0.0926 140.62)",
+          "oklch(38% 0.0926 140.62)",
+          "oklch(49% 0.0926 140.62)",
+          "oklch(61% 0.0926 140.62)",
+          "oklch(72% 0.0926 140.62)",
+          "oklch(84% 0.0926 140.62)",
+          "oklch(95% 0.0926 140.62)"
+        ]
+      },
+      "moonforest-accent-soft": {
+        "role": "primary",
+        "displayName": "Moonforest Accent Soft",
+        "canonical": "#304b42",
+        "tonalRamp": [
+          "oklch(15% 0.0364 171.45)",
+          "oklch(26% 0.0364 171.45)",
+          "oklch(38% 0.0364 171.45)",
+          "oklch(49% 0.0364 171.45)",
+          "oklch(61% 0.0364 171.45)",
+          "oklch(72% 0.0364 171.45)",
+          "oklch(84% 0.0364 171.45)",
+          "oklch(95% 0.0364 171.45)"
+        ]
+      },
+      "moonforest-on-accent": {
+        "role": "primary",
+        "displayName": "Moonforest On Accent",
+        "canonical": "#17291d",
+        "tonalRamp": [
+          "oklch(15% 0.0329 154.33)",
+          "oklch(26% 0.0329 154.33)",
+          "oklch(38% 0.0329 154.33)",
+          "oklch(49% 0.0329 154.33)",
+          "oklch(61% 0.0329 154.33)",
+          "oklch(72% 0.0329 154.33)",
+          "oklch(84% 0.0329 154.33)",
+          "oklch(95% 0.0329 154.33)"
+        ]
+      },
+      "moonforest-line": {
+        "role": "neutral",
+        "displayName": "Moonforest Line",
+        "canonical": "#4a655e",
+        "tonalRamp": [
+          "oklch(15% 0.0339 177.06)",
+          "oklch(26% 0.0339 177.06)",
+          "oklch(38% 0.0339 177.06)",
+          "oklch(49% 0.0339 177.06)",
+          "oklch(61% 0.0339 177.06)",
+          "oklch(72% 0.0339 177.06)",
+          "oklch(84% 0.0339 177.06)",
+          "oklch(95% 0.0339 177.06)"
+        ]
+      },
+      "moonforest-teal": {
+        "role": "secondary",
+        "displayName": "Moonforest Teal",
+        "canonical": "#96d5c5",
+        "tonalRamp": [
+          "oklch(15% 0.0681 176.97)",
+          "oklch(26% 0.0681 176.97)",
+          "oklch(38% 0.0681 176.97)",
+          "oklch(49% 0.0681 176.97)",
+          "oklch(61% 0.0681 176.97)",
+          "oklch(72% 0.0681 176.97)",
+          "oklch(84% 0.0681 176.97)",
+          "oklch(95% 0.0681 176.97)"
+        ]
+      },
+      "moonforest-lilac": {
+        "role": "secondary",
+        "displayName": "Moonforest Lilac",
+        "canonical": "#c9bfe8",
+        "tonalRamp": [
+          "oklch(15% 0.0578 296.29)",
+          "oklch(26% 0.0578 296.29)",
+          "oklch(38% 0.0578 296.29)",
+          "oklch(49% 0.0578 296.29)",
+          "oklch(61% 0.0578 296.29)",
+          "oklch(72% 0.0578 296.29)",
+          "oklch(84% 0.0578 296.29)",
+          "oklch(95% 0.0578 296.29)"
+        ]
+      },
+      "moonforest-rose": {
+        "role": "secondary",
+        "displayName": "Moonforest Rose",
+        "canonical": "#e5b4c4",
+        "tonalRamp": [
+          "oklch(15% 0.0602 357.04)",
+          "oklch(26% 0.0602 357.04)",
+          "oklch(38% 0.0602 357.04)",
+          "oklch(49% 0.0602 357.04)",
+          "oklch(61% 0.0602 357.04)",
+          "oklch(72% 0.0602 357.04)",
+          "oklch(84% 0.0602 357.04)",
+          "oklch(95% 0.0602 357.04)"
+        ]
+      },
+      "moonforest-warning": {
+        "role": "secondary",
+        "displayName": "Moonforest Warning",
+        "canonical": "#edc99c",
+        "tonalRamp": [
+          "oklch(15% 0.0717 72.84)",
+          "oklch(26% 0.0717 72.84)",
+          "oklch(38% 0.0717 72.84)",
+          "oklch(49% 0.0717 72.84)",
+          "oklch(61% 0.0717 72.84)",
+          "oklch(72% 0.0717 72.84)",
+          "oklch(84% 0.0717 72.84)",
+          "oklch(95% 0.0717 72.84)"
+        ]
+      },
+      "moonforest-chrome": {
+        "role": "neutral",
+        "displayName": "Moonforest Chrome",
+        "canonical": "rgba(48, 66, 74, 0.52)",
+        "tonalRamp": [
+          "oklch(15% 0.0268 227.04)",
+          "oklch(26% 0.0268 227.04)",
+          "oklch(38% 0.0268 227.04)",
+          "oklch(49% 0.0268 227.04)",
+          "oklch(61% 0.0268 227.04)",
+          "oklch(72% 0.0268 227.04)",
+          "oklch(84% 0.0268 227.04)",
+          "oklch(95% 0.0268 227.04)"
+        ]
+      },
+      "moonforest-mist": {
+        "role": "neutral",
+        "displayName": "Moonforest Mist",
+        "canonical": "rgba(32, 45, 52, 0.72)",
+        "tonalRamp": [
+          "oklch(15% 0.0218 231.99)",
+          "oklch(26% 0.0218 231.99)",
+          "oklch(38% 0.0218 231.99)",
+          "oklch(49% 0.0218 231.99)",
+          "oklch(61% 0.0218 231.99)",
+          "oklch(72% 0.0218 231.99)",
+          "oklch(84% 0.0218 231.99)",
+          "oklch(95% 0.0218 231.99)"
+        ]
+      },
+      "moonforest-lens": {
+        "role": "neutral",
+        "displayName": "Moonforest Lens",
+        "canonical": "rgba(65, 86, 79, 0.36)",
+        "tonalRamp": [
+          "oklch(15% 0.0283 172.52)",
+          "oklch(26% 0.0283 172.52)",
+          "oklch(38% 0.0283 172.52)",
+          "oklch(49% 0.0283 172.52)",
+          "oklch(61% 0.0283 172.52)",
+          "oklch(72% 0.0283 172.52)",
+          "oklch(84% 0.0283 172.52)",
+          "oklch(95% 0.0283 172.52)"
+        ]
+      },
+      "moonforest-selected": {
+        "role": "primary",
+        "displayName": "Moonforest Selected",
+        "canonical": "rgba(48, 75, 66, 0.78)",
+        "tonalRamp": [
+          "oklch(15% 0.0364 171.45)",
+          "oklch(26% 0.0364 171.45)",
+          "oklch(38% 0.0364 171.45)",
+          "oklch(49% 0.0364 171.45)",
+          "oklch(61% 0.0364 171.45)",
+          "oklch(72% 0.0364 171.45)",
+          "oklch(84% 0.0364 171.45)",
+          "oklch(95% 0.0364 171.45)"
+        ]
+      },
+      "moonforest-edge": {
+        "role": "neutral",
+        "displayName": "Moonforest Edge",
+        "canonical": "rgba(210, 235, 218, 0.13)",
+        "tonalRamp": [
+          "oklch(15% 0.0349 155.92)",
+          "oklch(26% 0.0349 155.92)",
+          "oklch(38% 0.0349 155.92)",
+          "oklch(49% 0.0349 155.92)",
+          "oklch(61% 0.0349 155.92)",
+          "oklch(72% 0.0349 155.92)",
+          "oklch(84% 0.0349 155.92)",
+          "oklch(95% 0.0349 155.92)"
+        ]
+      },
+      "moonforest-edge-strong": {
+        "role": "neutral",
+        "displayName": "Moonforest Edge Strong",
+        "canonical": "rgba(210, 235, 218, 0.24)",
+        "tonalRamp": [
+          "oklch(15% 0.0349 155.92)",
+          "oklch(26% 0.0349 155.92)",
+          "oklch(38% 0.0349 155.92)",
+          "oklch(49% 0.0349 155.92)",
+          "oklch(61% 0.0349 155.92)",
+          "oklch(72% 0.0349 155.92)",
+          "oklch(84% 0.0349 155.92)",
+          "oklch(95% 0.0349 155.92)"
+        ]
+      },
+      "moonforest-shadow": {
+        "role": "neutral",
+        "displayName": "Moonforest Shadow",
+        "canonical": "rgba(6, 14, 17, 0.24)",
+        "tonalRamp": [
+          "oklch(15% 0.0145 221.89)",
+          "oklch(26% 0.0145 221.89)",
+          "oklch(38% 0.0145 221.89)",
+          "oklch(49% 0.0145 221.89)",
+          "oklch(61% 0.0145 221.89)",
+          "oklch(72% 0.0145 221.89)",
+          "oklch(84% 0.0145 221.89)",
+          "oklch(95% 0.0145 221.89)"
+        ]
+      },
+      "moonforest-reading": {
+        "role": "neutral",
+        "displayName": "Moonforest Reading",
+        "canonical": "rgba(32, 45, 52, 0.97)",
+        "tonalRamp": [
+          "oklch(15% 0.0218 231.99)",
+          "oklch(26% 0.0218 231.99)",
+          "oklch(38% 0.0218 231.99)",
+          "oklch(49% 0.0218 231.99)",
+          "oklch(61% 0.0218 231.99)",
+          "oklch(72% 0.0218 231.99)",
+          "oklch(84% 0.0218 231.99)",
+          "oklch(95% 0.0218 231.99)"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "page-title": {
+        "displayName": "Page Title",
+        "purpose": "Ordinary destination heading."
+      },
+      "lesson-title": {
+        "displayName": "Lesson Title",
+        "purpose": "Active lesson heading."
+      },
+      "question-title": {
+        "displayName": "Question Title",
+        "purpose": "Active question heading."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Default long-form reading; user-customizable."
+      },
+      "control": {
+        "displayName": "Control",
+        "purpose": "Base desktop control text."
+      },
+      "support": {
+        "displayName": "Support",
+        "purpose": "Supporting text."
+      },
+      "model-trigger": {
+        "displayName": "Model Trigger",
+        "purpose": "Corrected contextual model selector."
+      }
+    },
+    "shadows": [
+      {
+        "name": "glass",
+        "value": "0 8px 24px var(--shadow), inset 0 1px 1px rgba(255, 255, 255, 0.1)",
+        "purpose": "General contextual glass, including the model popover."
+      },
+      {
+        "name": "dock",
+        "value": "0 5px 18px color-mix(in srgb, var(--shadow) 55%, transparent), inset 0 1px 0 var(--edge)",
+        "purpose": "Anchored lesson and home composer."
+      },
+      {
+        "name": "rail-selection",
+        "value": "inset 0 1px 0 var(--edge-strong)",
+        "purpose": "Light-facing rim on the active destination."
+      },
+      {
+        "name": "sidebar-overlay",
+        "value": "8px 0 24px var(--shadow)",
+        "purpose": "Narrow sidebar overlay; docked desktop sidebar is flat."
+      },
+      {
+        "name": "inspector",
+        "value": "none",
+        "purpose": "Tonal fill, edge, and local blur give the single inspector its depth."
+      }
+    ],
+    "motion": [
+      {
+        "name": "selection-spring",
+        "value": "spring(stiffness: 180, damping: 28, mass: 1)",
+        "purpose": "Interruptible shared layout selection lens in App.tsx."
+      },
+      {
+        "name": "picker-spring",
+        "value": "spring(stiffness: 240, damping: 30); y: 4px → 0; scale: 0.99 → 1; opacity: 0 → 1",
+        "purpose": "Model picker arrival; reverse opacity/scale on dismissal."
+      },
+      {
+        "name": "shell-settle",
+        "value": "320ms cubic-bezier(0.22, 1, 0.36, 1)",
+        "purpose": "Sidebar movement and shell column transition."
+      },
+      {
+        "name": "dock-disclosure",
+        "value": "max-height 380ms cubic-bezier(0.22, 1, 0.36, 1), opacity 200ms ease-out",
+        "purpose": "Question dock expands within its anchored surface."
+      },
+      {
+        "name": "control-feedback",
+        "value": "background 180ms ease-out, color 180ms ease-out, box-shadow 240ms ease-out; active 100ms",
+        "purpose": "Base button response."
+      },
+      {
+        "name": "reduced-motion",
+        "value": "CSS animation/transition duration: 0.01ms; MotionConfig reducedMotion: always",
+        "purpose": "OS, media-query, or in-app preference removes travel/overshoot where supported by the shared motion layer."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "inspector-overlay",
+        "value": "max-width: 1260px"
+      },
+      {
+        "name": "sidebar-overlay",
+        "value": "max-width: 1100px"
+      },
+      {
+        "name": "short-window",
+        "value": "max-height: 760px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Compact primary action",
+      "kind": "button",
+      "refersTo": "button-primary-compact",
+      "description": "The compact lesson action; the reusable base elsewhere is taller.",
+      "html": "<button class=\"ds-primary\">Continue <svg aria-hidden=\"true\" width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.75\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M5 12h14m-6-6 6 6-6 6\"/></svg></button>",
+      "css": ".ds-primary{font-family:-apple-system,BlinkMacSystemFont,\"Inter\",sans-serif;display:inline-flex;align-items:center;justify-content:center;gap:9px;background:var(--accent, #316a49);color:var(--on-accent,#f5faf1);border:0;border-radius:999px;padding:7px 17px;min-height:34px;font-size:12px;line-height:20px;font-weight:600;box-shadow:inset 0 1px 1px rgba(255,255,255,.16);cursor:pointer;transition:background .18s ease-out,color .18s ease-out,box-shadow .24s ease-out}.ds-primary:hover{background:color-mix(in srgb,var(--accent, #316a49) 92%,white)}.ds-primary:active{transition-duration:.1s}.ds-primary:focus-visible{outline:2px solid var(--accent, #316a49);outline-offset:4px;}.ds-primary:disabled{opacity:.45;cursor:default}"
+    },
+    {
+      "name": "Secondary action",
+      "kind": "button",
+      "refersTo": "button-secondary",
+      "description": "A quiet alternative to a primary pill.",
+      "html": "<button class=\"ds-secondary\">Cancel</button>",
+      "css": ".ds-secondary{font-family:-apple-system,BlinkMacSystemFont,\"Inter\",sans-serif;background:var(--soft, #e0e9e2);color:var(--ink, #253c35);border:0;border-radius:999px;padding:10px 16px;min-height:40px;font-size:13.5px;line-height:20px;cursor:pointer;transition:background .18s ease-out}.ds-secondary:hover{background:color-mix(in srgb,var(--soft, #e0e9e2) 65%,var(--accent-soft,#cfe3d3))}.ds-secondary:active{transition-duration:.1s}.ds-secondary:focus-visible{outline:2px solid var(--accent, #316a49);outline-offset:4px;}"
+    },
+    {
+      "name": "Text action",
+      "kind": "button",
+      "refersTo": "button-text",
+      "description": "A low-emphasis contextual link-style button.",
+      "html": "<button class=\"ds-text\">Open related knowledge</button>",
+      "css": ".ds-text{font-family:-apple-system,BlinkMacSystemFont,\"Inter\",sans-serif;background:transparent;color:var(--muted, #526d63);border:0;border-radius:12px;padding:3px 0;min-height:28px;font-size:13.5px;line-height:20px;cursor:pointer;transition:color .18s ease-out}.ds-text:hover{color:var(--accent, #316a49)}.ds-text:active{transition-duration:.1s}.ds-text:focus-visible{outline:2px solid var(--accent, #316a49);outline-offset:4px;}"
+    },
+    {
+      "name": "Text field",
+      "kind": "input",
+      "refersTo": "input",
+      "description": "Soft fill with a clear native editing affordance.",
+      "html": "<label class=\"ds-label\">Session name<input class=\"ds-input\" placeholder=\"Name this session\" /></label>",
+      "css": ".ds-label{font-family:-apple-system,BlinkMacSystemFont,\"Inter\",sans-serif;display:flex;flex-direction:column;gap:10px;color:var(--ink, #253c35);font-size:13.5px;font-weight:500}.ds-input{font-family:-apple-system,BlinkMacSystemFont,\"Inter\",sans-serif;color:var(--ink, #253c35);background:var(--soft, #e0e9e2);border:1px solid transparent;border-radius:10px;padding:10px 12px;font-size:13.5px;caret-color:var(--accent, #316a49);min-width:0}.ds-input::placeholder{color:var(--muted, #526d63);opacity:1}.ds-input:hover{border-color:transparent}.ds-input:focus-visible{outline:2px solid var(--accent, #316a49);outline-offset:4px;}"
+    },
+    {
+      "name": "Rail destination",
+      "kind": "nav",
+      "refersTo": "destination-selected",
+      "description": "Selected destination lens; shared-position spring is supplied by the application.",
+      "html": "<nav class=\"ds-rail\" aria-label=\"Destinations\"><button class=\"ds-destination\" aria-current=\"page\" aria-label=\"Learn\"><svg aria-hidden=\"true\" width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.75\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M12 7v14m0-14C8 4 4 4 2 5v14c3-1 7 0 10 2m0-14c4-3 8-3 10-2v14c-3-1-7 0-10 2\"/></svg></button></nav>",
+      "css": ".ds-rail{display:flex;align-items:center;justify-content:center;width:52px;padding:12px 0;background:color-mix(in srgb,var(--chrome,rgba(212,224,218,.52)) 75%,transparent)}.ds-destination{display:flex;align-items:center;justify-content:center;width:36px;height:36px;padding:8px;color:var(--accent, #316a49);background:var(--selected, rgba(207, 227, 211, 0.78));border:1px solid var(--edge, rgba(255, 255, 255, 0.65));border-radius:10px;box-shadow:inset 0 1px 0 var(--edge-strong,rgba(255,255,255,.88));cursor:pointer}.ds-destination:hover{background:var(--selected, rgba(207, 227, 211, 0.78))}.ds-destination:active{transition-duration:.1s}.ds-destination:focus-visible{outline:2px solid var(--accent, #316a49);outline-offset:4px;}"
+    },
+    {
+      "name": "Status pill",
+      "kind": "chip",
+      "refersTo": "pill",
+      "description": "Noninteractive semantic state text.",
+      "html": "<span class=\"ds-pill\">Awaiting answer</span>",
+      "css": ".ds-pill{font-family:-apple-system,BlinkMacSystemFont,\"Inter\",sans-serif;display:inline-flex;align-items:center;padding:5px 16px;line-height:18px;border-radius:999px;background:var(--soft, #e0e9e2);color:var(--muted, #526d63);font-size:12px;white-space:nowrap}"
+    },
+    {
+      "name": "Context inspector",
+      "kind": "card",
+      "refersTo": "inspector",
+      "description": "One context surface with restrained section dividers.",
+      "html": "<aside class=\"ds-inspector\"><header class=\"ds-inspector-header\">Session context</header><details class=\"ds-inspector-section\"><summary>Learning path</summary><p>Current step and supporting context.</p></details><div class=\"ds-inspector-section\">No background work running.</div></aside>",
+      "css": ".ds-inspector{font-family:-apple-system,BlinkMacSystemFont,\"Inter\",sans-serif;width:300px;max-width:100%;color:var(--ink, #253c35);background:color-mix(in srgb,var(--soft, #e0e9e2) 74%,var(--mist, rgba(250, 252, 247, 0.72)));border:1px solid color-mix(in srgb,var(--edge, rgba(255, 255, 255, 0.65)) 65%,transparent);border-radius:16px;overflow:auto;backdrop-filter:blur(18px) saturate(1.1);font-size:13px;line-height:21px}.ds-inspector-header{padding:17px 18px 14px;font-size:12px;font-weight:500;color:var(--muted, #526d63)}.ds-inspector-section{padding:13px 18px;border-top:1px solid color-mix(in srgb,var(--line,#b9cec0) 18%,transparent)}.ds-inspector-section summary{min-height:32px;cursor:pointer}.ds-inspector-section summary:hover{color:var(--accent, #316a49)}.ds-inspector-section summary:focus-visible{outline:2px solid var(--accent, #316a49);outline-offset:4px;}.ds-inspector-section p{margin:14px 0 0}"
+    },
+    {
+      "name": "Anchored composer",
+      "kind": "custom",
+      "refersTo": "composer",
+      "description": "Chat dock material; runtime anchors this inside the reading column.",
+      "html": "<section class=\"ds-composer\"><textarea class=\"ds-composer-input\" aria-label=\"Continue learning\" placeholder=\"What would you like to explore next?\"></textarea><footer class=\"ds-composer-footer\"><span>Adaptive learning</span><button class=\"ds-composer-model\">Use default model <svg aria-hidden=\"true\" width=\"14\" height=\"14\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.75\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"m6 9 6 6 6-6\"/></svg></button></footer></section>",
+      "css": ".ds-composer{font-family:-apple-system,BlinkMacSystemFont,\"Inter\",sans-serif;padding:14px 16px 12px;border-radius:16px;color:var(--ink, #253c35);background:color-mix(in srgb,var(--soft, #e0e9e2) 74%,var(--mist, rgba(250, 252, 247, 0.72)));border:1px solid color-mix(in srgb,var(--edge-strong,rgba(255,255,255,.88)) 70%,transparent);box-shadow:0 5px 18px color-mix(in srgb,var(--shadow, rgba(6, 14, 17, 0.17)) 55%,transparent),inset 0 1px 0 var(--edge, rgba(255, 255, 255, 0.65));backdrop-filter:blur(20px) saturate(1.12)}.ds-composer-input{font-family:-apple-system,BlinkMacSystemFont,\"Inter\",sans-serif;display:block;width:100%;min-height:44px;padding:0 0 8px;background:transparent;color:var(--ink, #253c35);border:0;resize:vertical;font-size:14px;line-height:23px}.ds-composer-input::placeholder{color:var(--muted, #526d63);opacity:1}.ds-composer-footer{display:flex;align-items:center;gap:10px;min-height:32px;color:var(--muted, #526d63);font-size:10px}.ds-composer-model{font-family:-apple-system,BlinkMacSystemFont,\"Inter\",sans-serif;margin-left:auto;display:inline-flex;align-items:center;gap:5px;background:transparent;border:0;border-radius:4px;color:var(--muted, #526d63);font-size:12px;line-height:18px;min-height:22px;padding:0;cursor:pointer}.ds-composer-model:hover{color:var(--accent, #316a49)}.ds-composer-model:active{transition-duration:.1s}.ds-composer-model:focus-visible,.ds-composer-input:focus-visible{outline:2px solid var(--accent, #316a49);outline-offset:4px;}"
+    },
+    {
+      "name": "Model picker empty state",
+      "kind": "custom",
+      "refersTo": "model-picker",
+      "description": "Fixture-friendly empty catalog; placement and keyboard selection are runtime behavior.",
+      "html": "<section class=\"ds-picker\"><input class=\"ds-picker-search\" aria-label=\"Search models\" placeholder=\"Search by model or provider…\"/><button class=\"ds-picker-default\">Use default model</button><p class=\"ds-picker-empty\">No available models match. Check your connections or try another term.</p></section>",
+      "css": ".ds-picker{font-family:-apple-system,BlinkMacSystemFont,\"Inter\",sans-serif;display:flex;flex-direction:column;gap:12px;max-width:400px;max-height:min(360px,calc(100vh - 32px));padding:16px;color:var(--ink, #253c35);background:var(--mist, rgba(250, 252, 247, 0.72));border:1px solid var(--edge, rgba(255, 255, 255, 0.65));border-radius:20px;box-shadow:0 8px 24px var(--shadow, rgba(6, 14, 17, 0.17)),inset 0 1px 1px rgba(255,255,255,.1);backdrop-filter:blur(24px) saturate(1.15)}.ds-picker-search{font-family:-apple-system,BlinkMacSystemFont,\"Inter\",sans-serif;min-width:0;background:var(--soft, #e0e9e2);color:var(--ink, #253c35);border:1px solid transparent;border-radius:10px;padding:10px 12px;font-size:14px}.ds-picker-search::placeholder{color:var(--muted, #526d63);opacity:1}.ds-picker-default{font-family:-apple-system,BlinkMacSystemFont,\"Inter\",sans-serif;background:transparent;border:0;color:var(--muted, #526d63);text-align:left;padding:3px 0;min-height:28px;font-size:12px;cursor:pointer}.ds-picker-default:hover{color:var(--accent, #316a49)}.ds-picker-default:active{transition-duration:.1s}.ds-picker-default:focus-visible,.ds-picker-search:focus-visible{outline:2px solid var(--accent, #316a49);outline-offset:4px;}.ds-picker-empty{margin:0;color:var(--muted, #526d63);font-size:12px;line-height:17px}"
+    },
+    {
+      "name": "Answer option",
+      "kind": "custom",
+      "refersTo": "answer-option",
+      "description": "Compact single choice with native radio state and selected fill.",
+      "html": "<label class=\"ds-answer\"><input type=\"radio\" name=\"ds-answer\" checked/> Follow the negative gradient</label>",
+      "css": ".ds-answer{font-family:-apple-system,BlinkMacSystemFont,\"Inter\",sans-serif;display:flex;align-items:center;gap:10px;min-height:36px;padding:8px 10px;border-radius:9px;font-size:13px;font-weight:400;color:var(--ink, #253c35);background:var(--soft, #e0e9e2);border:1px solid transparent;cursor:pointer}.ds-answer:has(input:checked){background:var(--selected, rgba(207, 227, 211, 0.78));color:var(--accent, #316a49);border-color:var(--edge-strong,rgba(255,255,255,.88));box-shadow:inset 0 1px 1px rgba(255,255,255,.1)}.ds-answer input{width:16px;height:16px;margin:0;accent-color:var(--accent, #316a49);flex:none}.ds-answer:hover{border-color:var(--edge-strong,rgba(255,255,255,.88))}.ds-answer input:focus-visible{outline:2px solid var(--accent, #316a49);outline-offset:4px;}"
+    }
+  ],
+  "narrative": {
+    "northStar": "Moonforest / Dew",
+    "overview": "CoquiLearn is a quiet learning instrument with the material polish of a Mac app. Moonforest and Dew share forest-tinted neutrals, a leaf-green action color, the original vector coquí mark, rounded outline graphics, and the macOS system face. The lesson, current question, and learner’s reasoning carry attention; translucent chrome supports them.\n\nThe current composition follows the user’s compact desktop reference: a full-width title bar, slim destination rail, adjacent session sidebar, centered reading column with a bottom-anchored composer, and one right inspector. It replaces the earlier floating shell’s spacing while retaining the approved visual world. Glass is interpreted through CSS blur, highlights, and native window vibrancy; this record makes no claim of matching Figma’s refractive renderer.",
+    "keyCharacteristics": [
+      "Compact persistent navigation; open reading space.",
+      "Stable text with localized glass on chrome and contextual surfaces.",
+      "One active input and one context inspector.",
+      "Interruptible selection continuity with reduced-motion and opaque-material alternatives."
+    ],
+    "rules": [
+      {
+        "name": "The Stable Reading Rule",
+        "body": "Keep long explanations and the active question stable; glass belongs to their supporting surfaces.",
+        "section": "elevation"
+      },
+      {
+        "name": "The Context Attachment Rule",
+        "body": "Keep the model picker attached to its trigger with a measured 8px gap when space permits, and clamp the surface to the viewport.",
+        "section": "components"
+      },
+      {
+        "name": "The Evidence Rule",
+        "body": "Label illustrative sessions and offline fixtures honestly; a screenshot is visual evidence, not proof of live inference or feature parity.",
+        "section": "components"
+      }
+    ],
+    "dos": [
+      "Do preserve the Moonforest/Dew semantic color roles and original coquí vector assets.",
+      "Do use the macOS system font stack and retain separate reading and compact-control hierarchies.",
+      "Do keep the transcript and anchored composer aligned within the same reading column.",
+      "Do consolidate lesson context in one inspector and yield it before reducing reading space.",
+      "Do preserve visible focus, text/icon state cues, reduced motion, and opaque glass fallbacks.",
+      "Do identify demonstration content as fixtures and record provider verification separately."
+    ],
+    "donts": [
+      "Don’t restore the earlier floating shell’s outer gutters or multiple competing lesson panels.",
+      "Don’t tint every paragraph as a card or put moving refraction behind active reading text.",
+      "Don’t reduce the composer model trigger below its corrected 12px size.",
+      "Don’t position contextual popovers using an assumed fixed height.",
+      "Don’t replace authored vector graphics with emoji or mix unrelated icon grammars.",
+      "Don’t copy private reference-screenshot content into the app or include that screenshot in distribution.",
+      "Don’t treat planned Figma screens, synthetic color ramps, or fixture checks as shipped runtime capability."
+    ]
+  }
+}

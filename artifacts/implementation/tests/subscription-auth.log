@@ -1,0 +1,124 @@
+TAP version 13
+# Subtest: main loader resolves Pi's import-only PUBLIC package exports and native OAuth without a CLI or network
+ok 1 - main loader resolves Pi's import-only PUBLIC package exports and native OAuth without a CLI or network
+  ---
+  duration_ms: 4.705292
+  type: 'test'
+  ...
+# Subtest: github-copilot: independent default-ON file, restart, explicit OAuth lease and local disconnect
+ok 2 - github-copilot: independent default-ON file, restart, explicit OAuth lease and local disconnect
+  ---
+  duration_ms: 45.908875
+  type: 'test'
+  ...
+# Subtest: xai: independent default-ON file, restart, explicit OAuth lease and local disconnect
+ok 3 - xai: independent default-ON file, restart, explicit OAuth lease and local disconnect
+  ---
+  duration_ms: 16.992917
+  type: 'test'
+  ...
+# Subtest: parallel expired-token requests refresh once, preserve native extension metadata and durable rotation
+ok 4 - parallel expired-token requests refresh once, preserve native extension metadata and durable rotation
+  ---
+  duration_ms: 17.366208
+  type: 'test'
+  ...
+# Subtest: background changes retain foreground scope; replacement and disconnect invalidate old leases
+ok 5 - background changes retain foreground scope; replacement and disconnect invalidate old leases
+  ---
+  duration_ms: 26.783625
+  type: 'test'
+  ...
+# Subtest: device interaction exposes only public code and opaque browser action; cancellation cannot commit late success
+ok 6 - device interaction exposes only public code and opaque browser action; cancellation cannot commit late success
+  ---
+  duration_ms: 1.061125
+  type: 'test'
+  ...
+# Subtest: cancelled replacement retains old credentials; late old completion cannot overwrite a newer login
+ok 7 - cancelled replacement retains old credentials; late old completion cannot overwrite a newer login
+  ---
+  duration_ms: 17.841334
+  type: 'test'
+  ...
+# Subtest: github-copilot: cancelled sign-in discards draft consent, and failed replacement retains the working connection
+ok 8 - github-copilot: cancelled sign-in discards draft consent, and failed replacement retains the working connection
+  ---
+  duration_ms: 9.179541
+  type: 'test'
+  ...
+# Subtest: xai: cancelled sign-in discards draft consent, and failed replacement retains the working connection
+ok 9 - xai: cancelled sign-in discards draft consent, and failed replacement retains the working connection
+  ---
+  duration_ms: 9.947625
+  type: 'test'
+  ...
+# Subtest: Copilot native enterprise prompt is answered only through the current opaque prompt action
+ok 10 - Copilot native enterprise prompt is answered only through the current opaque prompt action
+  ---
+  duration_ms: 11.895458
+  type: 'test'
+  ...
+# Subtest: account endpoint rotation invalidates older scopes without losing the durable refreshed credential
+ok 11 - account endpoint rotation invalidates older scopes without losing the durable refreshed credential
+  ---
+  duration_ms: 17.906125
+  type: 'test'
+  ...
+# Subtest: a malformed returned rotation fails closed and cannot retry with the pre-rotation credential
+ok 12 - a malformed returned rotation fails closed and cannot retry with the pre-rotation credential
+  ---
+  duration_ms: 9.202708
+  type: 'test'
+  ...
+# Subtest: renderer controls cannot obtain a request lease or internal snapshot
+ok 13 - renderer controls cannot obtain a request lease or internal snapshot
+  ---
+  duration_ms: 0.652625
+  type: 'test'
+  ...
+# Subtest: corrupt files isolate providers and are preserved; malformed Copilot model metadata never grants all models
+ok 14 - corrupt files isolate providers and are preserved; malformed Copilot model metadata never grants all models
+  ---
+  duration_ms: 1.233
+  type: 'test'
+  ...
+# Subtest: failed rotation persistence blocks subsequent requests instead of using old tokens
+ok 15 - failed rotation persistence blocks subsequent requests instead of using old tokens
+  ---
+  duration_ms: 0.914834
+  type: 'test'
+  ...
+# Subtest: disconnect during refresh cannot resurrect credentials or replace disconnect status with a stale error
+ok 16 - disconnect during refresh cannot resurrect credentials or replace disconnect status with a stale error
+  ---
+  duration_ms: 27.816667
+  type: 'test'
+  ...
+# Subtest: pause during refresh saves returned rotation but refuses the request; resume uses durable refreshed state
+ok 17 - pause during refresh saves returned rotation but refuses the request; resume uses durable refreshed state
+  ---
+  duration_ms: 19.069042
+  type: 'test'
+  ...
+# Subtest: enterprise domains are preserved; derived endpoints and control errors are guarded
+ok 18 - enterprise domains are preserved; derived endpoints and control errors are guarded
+  ---
+  duration_ms: 0.244042
+  type: 'test'
+  ...
+# Subtest: atomic store failed rename preserves original and leaves no temporary files
+ok 19 - atomic store failed rename preserves original and leaves no temporary files
+  ---
+  duration_ms: 14.000459
+  type: 'test'
+  ...
+1..19
+# tests 19
+# suites 0
+# pass 19
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 427.409209

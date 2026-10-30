@@ -1,0 +1,64 @@
+TAP version 13
+# Subtest: a successful plan_init turn gains ONE full block (all nodes, statuses from the transcript)
+ok 1 - a successful plan_init turn gains ONE full block (all nodes, statuses from the transcript)
+  ---
+  duration_ms: 1.578125
+  type: 'test'
+  ...
+# Subtest: a FAILED plan_init gains nothing
+ok 2 - a FAILED plan_init gains nothing
+  ---
+  duration_ms: 0.084458
+  type: 'test'
+  ...
+# Subtest: idempotent — a call whose block the record already carries is never re-emitted
+ok 3 - idempotent — a call whose block the record already carries is never re-emitted
+  ---
+  duration_ms: 0.10775
+  type: 'test'
+  ...
+# Subtest: a plan REWRITE (a later turn's successful plan_init) gets its own full block; the old stays frozen
+ok 4 - a plan REWRITE (a later turn's successful plan_init) gets its own full block; the old stays frozen
+  ---
+  duration_ms: 0.102666
+  type: 'test'
+  ...
+# Subtest: the block renders IN FLOW immediately after the plan_init part — not appended under the turn's later parts
+ok 5 - the block renders IN FLOW immediately after the plan_init part — not appended under the turn's later parts
+  ---
+  duration_ms: 0.111584
+  type: 'test'
+  ...
+# Subtest: with multiple plan_inits in one turn (a same-turn rewrite), ONE block follows the LAST one
+ok 6 - with multiple plan_inits in one turn (a same-turn rewrite), ONE block follows the LAST one
+  ---
+  duration_ms: 0.081542
+  type: 'test'
+  ...
+# Subtest: quizzes alone emit nothing (no neighborhood blocks anymore)
+ok 7 - quizzes alone emit nothing (no neighborhood blocks anymore)
+  ---
+  duration_ms: 0.053167
+  type: 'test'
+  ...
+# Subtest: no tree / empty tree / no messages are no-ops
+ok 8 - no tree / empty tree / no messages are no-ops
+  ---
+  duration_ms: 0.045834
+  type: 'test'
+  ...
+# Subtest: mid-lesson rewrite snapshot derives statuses from the whole transcript
+ok 9 - mid-lesson rewrite snapshot derives statuses from the whole transcript
+  ---
+  duration_ms: 0.085916
+  type: 'test'
+  ...
+1..9
+# tests 9
+# suites 0
+# pass 9
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 121.292

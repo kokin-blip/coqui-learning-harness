@@ -1,0 +1,60 @@
+TAP version 13
+# Subtest: newGraphContextMessage
+    # Subtest: frames the context for the model: propositions listed, chains appended
+    ok 1 - frames the context for the model: propositions listed, chains appended
+      ---
+      duration_ms: 0.877375
+      type: 'test'
+      ...
+    # Subtest: no chains: the chains section stays out entirely
+    ok 2 - no chains: the chains section stays out entirely
+      ---
+      duration_ms: 3.310208
+      type: 'test'
+      ...
+    # Subtest: toLlmMessages flattens it to a user message (the model's face)
+    ok 3 - toLlmMessages flattens it to a user message (the model's face)
+      ---
+      duration_ms: 0.370542
+      type: 'test'
+      ...
+    # Subtest: projectView: a user-side data part — never a text bubble
+    ok 4 - projectView: a user-side data part — never a text bubble
+      ---
+      duration_ms: 0.32075
+      type: 'test'
+      ...
+    1..4
+ok 1 - newGraphContextMessage
+  ---
+  duration_ms: 5.419667
+  type: 'suite'
+  ...
+# Subtest: POST /api/chats — graphContext becomes message[0]
+    # Subtest: writes the marker before any user message; chains derive from the live graph
+    ok 1 - writes the marker before any user message; chains derive from the live graph
+      ---
+      duration_ms: 7.410625
+      type: 'test'
+      ...
+    # Subtest: no picks (or malformed) → no marker, an empty record as before
+    ok 2 - no picks (or malformed) → no marker, an empty record as before
+      ---
+      duration_ms: 1.151333
+      type: 'test'
+      ...
+    1..2
+ok 2 - POST /api/chats — graphContext becomes message[0]
+  ---
+  duration_ms: 8.656667
+  type: 'suite'
+  ...
+1..2
+# tests 6
+# suites 2
+# pass 6
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 799.724625

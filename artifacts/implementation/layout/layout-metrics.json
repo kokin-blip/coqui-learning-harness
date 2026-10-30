@@ -1,0 +1,83 @@
+{
+  "viewport": {
+    "width": 1512,
+    "height": 893,
+    "dpr": 2
+  },
+  "regions": {
+    "rail": {
+      "x": 0,
+      "y": 44,
+      "width": 52,
+      "height": 849,
+      "padding": "12px 6px",
+      "fontSize": "13.5px"
+    },
+    "sidebar": {
+      "x": 52,
+      "y": 44,
+      "width": 236,
+      "height": 849,
+      "padding": "14px 10px 12px",
+      "fontSize": "13.5px"
+    },
+    "header": {
+      "x": 0,
+      "y": 0,
+      "width": 1512,
+      "height": 44,
+      "padding": "0px 14px 0px 94px",
+      "fontSize": "13.5px"
+    },
+    "reading": {
+      "x": 330,
+      "y": 60,
+      "width": 800,
+      "height": 817,
+      "padding": "6px 46px 0px",
+      "fontSize": "13.5px"
+    },
+    "transcript": {
+      "x": 376,
+      "y": 145,
+      "width": 708,
+      "height": 620,
+      "padding": "0px 10px 24px 0px",
+      "fontSize": "13.5px"
+    },
+    "composer": {
+      "x": 376,
+      "y": 765,
+      "width": 708,
+      "height": 112,
+      "padding": "14px 16px 12px",
+      "fontSize": "13.5px"
+    },
+    "inspector": {
+      "x": 1196,
+      "y": 60,
+      "width": 300,
+      "height": 655,
+      "padding": "0px",
+      "fontSize": "13.5px"
+    }
+  },
+  "prose": {
+    "fontSize": "15px",
+    "lineHeight": "25px"
+  },
+  "horizontalOverflow": false,
+  "modelPopover": {
+    "gap": 8,
+    "fontSize": "12px",
+    "viewportClamped": true
+  },
+  "narrowComposer": {
+    "width": 900,
+    "modelLeft": 495.625,
+    "modelRight": 677,
+    "footerRight": 825,
+    "horizontalOverflow": false
+  },
+  "errors": []
+}

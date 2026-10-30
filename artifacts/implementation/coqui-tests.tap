@@ -1,0 +1,338 @@
+
+> coquilearn@0.2.1 test
+> node --import tsx --test --test-reporter=tap tests/*.test.ts
+
+TAP version 13
+# Subtest: Artifact bridge rejects forged channels/nonces and bounds untrusted sizes and errors
+ok 1 - Artifact bridge rejects forged channels/nonces and bounds untrusted sizes and errors
+  ---
+  duration_ms: 0.361542
+  type: 'test'
+  ...
+# Subtest: The same CSP and instrumentation precede authored scripts in full and fragment artifacts
+ok 2 - The same CSP and instrumentation precede authored scripts in full and fragment artifacts
+  ---
+  duration_ms: 0.349666
+  type: 'test'
+  ...
+# Subtest: Provider diagnostics distinguish quota, eligibility, capability, permission, expiry and temporary service failures
+ok 3 - Provider diagnostics distinguish quota, eligibility, capability, permission, expiry and temporary service failures
+  ---
+  duration_ms: 0.144542
+  type: 'test'
+  ...
+# Subtest: Diagnostics retain machine identifiers and body shape without accepting credential-like values
+ok 4 - Diagnostics retain machine identifiers and body shape without accepting credential-like values
+  ---
+  duration_ms: 11.763208
+  type: 'test'
+  ...
+# Subtest: Adapted ChatStore keeps native history, numeric confidence and immutable activity order on rename
+ok 5 - Adapted ChatStore keeps native history, numeric confidence and immutable activity order on rename
+  ---
+  duration_ms: 23.153583
+  type: 'test'
+  ...
+# Subtest: Job dispatch is deduplicated by session and call identity
+ok 6 - Job dispatch is deduplicated by session and call identity
+  ---
+  duration_ms: 0.594542
+  type: 'test'
+  ...
+# Subtest: Graph ledger replacement is atomic and does not conflate evidence with propositions
+ok 7 - Graph ledger replacement is atomic and does not conflate evidence with propositions
+  ---
+  duration_ms: 0.989625
+  type: 'test'
+  ...
+# Subtest: Deleted sessions disappear from search and can be restored without overwriting newer records
+ok 8 - Deleted sessions disappear from search and can be restored without overwriting newer records
+  ---
+  duration_ms: 2.621042
+  type: 'test'
+  ...
+# Subtest: Undoing an earlier deletion does not resurrect a later independent deletion
+ok 9 - Undoing an earlier deletion does not resurrect a later independent deletion
+  ---
+  duration_ms: 3.9085
+  type: 'test'
+  ...
+# Subtest: Vault-backed API keys retain file provenance and are removed from the inference environment on disconnect
+ok 10 - Vault-backed API keys retain file provenance and are removed from the inference environment on disconnect
+  ---
+  duration_ms: 842.227292
+  type: 'test'
+  ...
+# Subtest: Failed credential persistence rolls back the inference environment
+ok 11 - Failed credential persistence rolls back the inference environment
+  ---
+  duration_ms: 0.463834
+  type: 'test'
+  ...
+# Subtest: Overlapping node deletion undos restore a chain once all endpoints return, including after restart
+ok 12 - Overlapping node deletion undos restore a chain once all endpoints return, including after restart
+  ---
+  duration_ms: 51.217333
+  type: 'test'
+  ...
+# Subtest: A failed session deletion rolls back graph, jobs, record and Undo together
+ok 13 - A failed session deletion rolls back graph, jobs, record and Undo together
+  ---
+  duration_ms: 21.159791
+  type: 'test'
+  ...
+# Subtest: Saved turn input and recovery intent are atomic even before turn-started notification
+ok 14 - Saved turn input and recovery intent are atomic even before turn-started notification
+  ---
+  duration_ms: 1.313458
+  type: 'test'
+  ...
+# Subtest: Undoing source A while source B remains deleted does not resurrect B provenance or nodes
+ok 15 - Undoing source A while source B remains deleted does not resurrect B provenance or nodes
+  ---
+  duration_ms: 7.84275
+  type: 'test'
+  ...
+# Subtest: A thousand-session library retains newer edits, overlapping Undo and search after restart
+ok 16 - A thousand-session library retains newer edits, overlapping Undo and search after restart
+  ---
+  duration_ms: 444.502708
+  type: 'test'
+  ...
+# Subtest: Graph deletion removes stale concept search entries while shared-source identity stays searchable
+ok 17 - Graph deletion removes stale concept search entries while shared-source identity stays searchable
+  ---
+  duration_ms: 21.077416
+  type: 'test'
+  ...
+# Subtest: The intentional external history reader is read-only and never opens credentials
+ok 18 - The intentional external history reader is read-only and never opens credentials
+  ---
+  duration_ms: 281.70675
+  type: 'test'
+  ...
+# Subtest: The independent reader exposes graph sources, literal/wildcard search, chains, optional fields and schema refusal
+ok 19 - The independent reader exposes graph sources, literal/wildcard search, chains, optional fields and schema refusal
+  ---
+  duration_ms: 1184.642833
+  type: 'test'
+  ...
+# Subtest: On-device image preview retains recognized text and source bounds
+ok 20 - On-device image preview retains recognized text and source bounds
+  ---
+  duration_ms: 8999.026458
+  type: 'test'
+  ...
+# Subtest: Mixed PDFs preserve native text, recognize scanned pages, and retain original page identities
+ok 21 - Mixed PDFs preserve native text, recognize scanned pages, and retain original page identities
+  ---
+  duration_ms: 762.045292
+  type: 'test'
+  ...
+# Subtest: Review scheduling stores FSRS-7 results independently from knowledge
+ok 22 - Review scheduling stores FSRS-7 results independently from knowledge
+  ---
+  duration_ms: 48.036708
+  type: 'test'
+  ...
+# Subtest: Import preview preserves identity, text, and duplicate detection
+ok 23 - Import preview preserves identity, text, and duplicate detection
+  ---
+  duration_ms: 8.400709
+  type: 'test'
+  ...
+# Subtest: Import limits reject oversized files independently and reject oversized batches explicitly
+ok 24 - Import limits reject oversized files independently and reject oversized batches explicitly
+  ---
+  duration_ms: 0.423291
+  type: 'test'
+  ...
+# Subtest: Backups restore the database, assets and review state without secrets
+ok 25 - Backups restore the database, assets and review state without secrets
+  ---
+  duration_ms: 158.690417
+  type: 'test'
+  ...
+# Subtest: FSRS histories replay deterministically with fixed clocks and persist ratings separately from confidence
+ok 26 - FSRS histories replay deterministically with fixed clocks and persist ratings separately from confidence
+  ---
+  duration_ms: 9.117875
+  type: 'test'
+  ...
+# Subtest: Background context includes disjoint caches, excludes double-counted reasoning and preserves unknown accounting
+ok 27 - Background context includes disjoint caches, excludes double-counted reasoning and preserves unknown accounting
+  ---
+  duration_ms: 0.351625
+  type: 'test'
+  ...
+# Subtest: A process death after write-ahead input yields an explicit retry without duplicating the input
+ok 28 - A process death after write-ahead input yields an explicit retry without duplicating the input
+  ---
+  duration_ms: 0.334459
+  type: 'test'
+  ...
+# Subtest: Chain hierarchy uses conclusion birth, retains singletons, ranks aliases, and sorts deterministically
+ok 29 - Chain hierarchy uses conclusion birth, retains singletons, ranks aliases, and sorts deterministically
+  ---
+  duration_ms: 6.031708
+  type: 'test'
+  ...
+# Subtest: Plan geometry keeps prerequisites above dependents and ignores dangling endpoints
+ok 30 - Plan geometry keeps prerequisites above dependents and ignores dangling endpoints
+  ---
+  duration_ms: 6.267875
+  type: 'test'
+  ...
+# Subtest: Transport retry identities survive registry recreation and never persist learner text
+ok 31 - Transport retry identities survive registry recreation and never persist learner text
+  ---
+  duration_ms: 3.064875
+  type: 'test'
+  ...
+# Subtest: Event gaps and service generations resync while duplicate/stale packets are ignored
+ok 32 - Event gaps and service generations resync while duplicate/stale packets are ignored
+  ---
+  duration_ms: 0.11125
+  type: 'test'
+  ...
+# Subtest: Restart reconstructs a missing diagnostic handoff exactly until it is durably delivered
+ok 33 - Restart reconstructs a missing diagnostic handoff exactly until it is durably delivered
+  ---
+  duration_ms: 0.151792
+  type: 'test'
+  ...
+# Subtest: SIGKILL at merge-after-node retains an entirely committed graph or honest uncovered state
+ok 34 - SIGKILL at merge-after-node retains an entirely committed graph or honest uncovered state
+  ---
+  duration_ms: 298.27375
+  type: 'test'
+  ...
+# Subtest: SIGKILL at merge-after-chain retains an entirely committed graph or honest uncovered state
+ok 35 - SIGKILL at merge-after-chain retains an entirely committed graph or honest uncovered state
+  ---
+  duration_ms: 153.002209
+  type: 'test'
+  ...
+# Subtest: SIGKILL at merge-after-coverage retains an entirely committed graph or honest uncovered state
+ok 36 - SIGKILL at merge-after-coverage retains an entirely committed graph or honest uncovered state
+  ---
+  duration_ms: 138.151125
+  type: 'test'
+  ...
+# Subtest: SIGKILL at merge-after-commit retains an entirely committed graph or honest uncovered state
+ok 37 - SIGKILL at merge-after-commit retains an entirely committed graph or honest uncovered state
+  ---
+  duration_ms: 140.514833
+  type: 'test'
+  ...
+# Subtest: SIGKILL immediately after write-ahead save recovers an explicit Retry without duplicating learner input
+ok 38 - SIGKILL immediately after write-ahead save recovers an explicit Retry without duplicating learner input
+  ---
+  duration_ms: 1700.922125
+  type: 'test'
+  ...
+# Subtest: SIGKILL after worker completion before delivery recovers one result across repeated restarts
+ok 39 - SIGKILL after worker completion before delivery recovers one result across repeated restarts
+  ---
+  duration_ms: 2169.729416
+  type: 'test'
+  ...
+# Subtest: Actual SIGKILL during restore prepared recovers database, assets and prompts as one previous library
+ok 40 - Actual SIGKILL during restore prepared recovers database, assets and prompts as one previous library
+  ---
+  duration_ms: 395.98925
+  type: 'test'
+  ...
+# Subtest: Actual SIGKILL during restore old-moved recovers database, assets and prompts as one previous library
+ok 41 - Actual SIGKILL during restore old-moved recovers database, assets and prompts as one previous library
+  ---
+  duration_ms: 398.824042
+  type: 'test'
+  ...
+# Subtest: Actual SIGKILL during restore new-installed recovers database, assets and prompts as one previous library
+ok 42 - Actual SIGKILL during restore new-installed recovers database, assets and prompts as one previous library
+  ---
+  duration_ms: 372.520959
+  type: 'test'
+  ...
+# Subtest: Interrupted restore at prepared restores the entire previous library
+ok 43 - Interrupted restore at prepared restores the entire previous library
+  ---
+  duration_ms: 59.897625
+  type: 'test'
+  ...
+# Subtest: Interrupted restore at old-moved restores the entire previous library
+ok 44 - Interrupted restore at old-moved restores the entire previous library
+  ---
+  duration_ms: 75.677417
+  type: 'test'
+  ...
+# Subtest: Interrupted restore at new-installed restores the entire previous library
+ok 45 - Interrupted restore at new-installed restores the entire previous library
+  ---
+  duration_ms: 153.642083
+  type: 'test'
+  ...
+# Subtest: Verified restore switches database, prompts and assets together and survives startup recovery
+ok 46 - Verified restore switches database, prompts and assets together and survives startup recovery
+  ---
+  duration_ms: 83.163
+  type: 'test'
+  ...
+# Subtest: Restore refuses undeclared, traversal, tampered, missing and future-schema archives before touching the library
+ok 47 - Restore refuses undeclared, traversal, tampered, missing and future-schema archives before touching the library
+  ---
+  duration_ms: 22.863541
+  type: 'test'
+  ...
+# Subtest: A valid archive containing a future native session is refused without switching libraries
+ok 48 - A valid archive containing a future native session is refused without switching libraries
+  ---
+  duration_ms: 29.70525
+  type: 'test'
+  ...
+# Subtest: SQLite transactions roll back nested writes and preserve durable records after reopen
+ok 49 - SQLite transactions roll back nested writes and preserve durable records after reopen
+  ---
+  duration_ms: 13.332459
+  type: 'test'
+  ...
+# Subtest: FTS searches treat punctuation as literal input
+ok 50 - FTS searches treat punctuation as literal input
+  ---
+  duration_ms: 6.715417
+  type: 'test'
+  ...
+# Subtest: Future libraries are refused before changing journal mode or file bytes
+ok 51 - Future libraries are refused before changing journal mode or file bytes
+  ---
+  duration_ms: 1.837667
+  type: 'test'
+  ...
+# Subtest: Unpriced and plan-only usage never implies a zero-dollar estimate; known free and mixed API usage do
+ok 52 - Unpriced and plan-only usage never implies a zero-dollar estimate; known free and mixed API usage do
+  ---
+  duration_ms: 18.885458
+  type: 'test'
+  ...
+# Subtest: Claude context uses the latest matching effective CLI window and never borrows the catalog maximum
+ok 53 - Claude context uses the latest matching effective CLI window and never borrows the catalog maximum
+  ---
+  duration_ms: 1.010084
+  type: 'test'
+  ...
+# Subtest: Practice metadata resolves target identity and preserves unknown historical fields
+ok 54 - Practice metadata resolves target identity and preserves unknown historical fields
+  ---
+  duration_ms: 0.369834
+  type: 'test'
+  ...
+1..54
+# tests 54
+# suites 0
+# pass 54
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 9912.951458

@@ -1,0 +1,557 @@
+TAP version 13
+# Subtest: the schema's argument order (reasoning before the pick)
+    # Subtest: emits explanation immediately before correctAnswer (both agents' schemas)
+    ok 1 - emits explanation immediately before correctAnswer (both agents' schemas)
+      ---
+      duration_ms: 0.46975
+      type: 'test'
+      ...
+    1..1
+ok 1 - the schema's argument order (reasoning before the pick)
+  ---
+  duration_ms: 0.776125
+  type: 'suite'
+  ...
+# Subtest: quizInputSchema / quizInputProblems (the authoring contract)
+    # Subtest: accepts a valid single-select quiz (label as correctAnswer)
+    ok 1 - accepts a valid single-select quiz (label as correctAnswer)
+      ---
+      duration_ms: 1.024459
+      type: 'test'
+      ...
+    # Subtest: accepts explicit values and multi-select arrays (incl. JSON-stringified)
+    ok 2 - accepts explicit values and multi-select arrays (incl. JSON-stringified)
+      ---
+      duration_ms: 0.416125
+      type: 'test'
+      ...
+    # Subtest: rejects the observed failure: a correctAnswer slug matching no option value, listing the valid values
+    ok 3 - rejects the observed failure: a correctAnswer slug matching no option value, listing the valid values
+      ---
+      duration_ms: 0.232834
+      type: 'test'
+      ...
+    # Subtest: rejects multiple correct answers without multiSelect (ungradeable single-select)
+    ok 4 - rejects multiple correct answers without multiSelect (ungradeable single-select)
+      ---
+      duration_ms: 0.141917
+      type: 'test'
+      ...
+    # Subtest: rejects duplicate option values
+    ok 5 - rejects duplicate option values
+      ---
+      duration_ms: 0.120542
+      type: 'test'
+      ...
+    # Subtest: rejects an empty option label
+    ok 6 - rejects an empty option label
+      ---
+      duration_ms: 0.115333
+      type: 'test'
+      ...
+    # Subtest: requires a resolvable correctAnswer
+    ok 7 - requires a resolvable correctAnswer
+      ---
+      duration_ms: 0.180167
+      type: 'test'
+      ...
+    1..7
+ok 2 - quizInputSchema / quizInputProblems (the authoring contract)
+  ---
+  duration_ms: 2.405667
+  type: 'suite'
+  ...
+# Subtest: askInputSchema / askOptionProblems
+    # Subtest: accepts a valid ask
+    ok 1 - accepts a valid ask
+      ---
+      duration_ms: 0.138583
+      type: 'test'
+      ...
+    # Subtest: rejects duplicate option values and empty labels (they break the dock's keying)
+    ok 2 - rejects duplicate option values and empty labels (they break the dock's keying)
+      ---
+      duration_ms: 0.172959
+      type: 'test'
+      ...
+    1..2
+ok 3 - askInputSchema / askOptionProblems
+  ---
+  duration_ms: 0.412167
+  type: 'suite'
+  ...
+# Subtest: normalizeOptions
+    # Subtest: trims labels and defaults value to label
+    ok 1 - trims labels and defaults value to label
+      ---
+      duration_ms: 1.077625
+      type: 'test'
+      ...
+    # Subtest: drops empty labels
+    ok 2 - drops empty labels
+      ---
+      duration_ms: 0.061041
+      type: 'test'
+      ...
+    # Subtest: throws on duplicate option values
+    ok 3 - throws on duplicate option values
+      ---
+      duration_ms: 0.27275
+      type: 'test'
+      ...
+    # Subtest: quiz options carry NO description field; ask keeps it (owner nuke, 2026-09-26)
+    ok 4 - quiz options carry NO description field; ask keeps it (owner nuke, 2026-09-26)
+      ---
+      duration_ms: 0.063458
+      type: 'test'
+      ...
+    # Subtest: handles undefined input
+    ok 5 - handles undefined input
+      ---
+      duration_ms: 0.0665
+      type: 'test'
+      ...
+    1..5
+ok 4 - normalizeOptions
+  ---
+  duration_ms: 1.638375
+  type: 'suite'
+  ...
+# Subtest: shuffleOptions
+    # Subtest: permutes without adding, removing, or mutating options
+    ok 1 - permutes without adding, removing, or mutating options
+      ---
+      duration_ms: 0.123375
+      type: 'test'
+      ...
+    # Subtest: is stable for single/empty inputs
+    ok 2 - is stable for single/empty inputs
+      ---
+      duration_ms: 0.033125
+      type: 'test'
+      ...
+    1..2
+ok 5 - shuffleOptions
+  ---
+  duration_ms: 0.192125
+  type: 'suite'
+  ...
+# Subtest: coerceCorrectAnswer
+    # Subtest: wraps a single string
+    ok 1 - wraps a single string
+      ---
+      duration_ms: 0.032042
+      type: 'test'
+      ...
+    # Subtest: passes arrays through
+    ok 2 - passes arrays through
+      ---
+      duration_ms: 0.018875
+      type: 'test'
+      ...
+    # Subtest: parses a JSON-stringified multi-select array
+    ok 3 - parses a JSON-stringified multi-select array
+      ---
+      duration_ms: 0.023833
+      type: 'test'
+      ...
+    # Subtest: leaves a non-JSON bracketed string alone
+    ok 4 - leaves a non-JSON bracketed string alone
+      ---
+      duration_ms: 0.019792
+      type: 'test'
+      ...
+    # Subtest: preserves an exact key even when it looks like a JSON array
+    ok 5 - preserves an exact key even when it looks like a JSON array
+      ---
+      duration_ms: 0.0225
+      type: 'test'
+      ...
+    1..5
+ok 6 - coerceCorrectAnswer
+  ---
+  duration_ms: 0.151334
+  type: 'suite'
+  ...
+# Subtest: resolveCorrect
+    # Subtest: resolves a single value to its 1-based display index
+    ok 1 - resolves a single value to its 1-based display index
+      ---
+      duration_ms: 0.070458
+      type: 'test'
+      ...
+    # Subtest: resolves multi-select values, deduped and sorted
+    ok 2 - resolves multi-select values, deduped and sorted
+      ---
+      duration_ms: 0.024541
+      type: 'test'
+      ...
+    # Subtest: errors when the value matches no option
+    ok 3 - errors when the value matches no option
+      ---
+      duration_ms: 0.031625
+      type: 'test'
+      ...
+    # Subtest: errors on missing correctAnswer
+    ok 4 - errors on missing correctAnswer
+      ---
+      duration_ms: 0.022375
+      type: 'test'
+      ...
+    # Subtest: resolves against POST-shuffle order (indices track display)
+    ok 5 - resolves against POST-shuffle order (indices track display)
+      ---
+      duration_ms: 0.030584
+      type: 'test'
+      ...
+    1..5
+ok 7 - resolveCorrect
+  ---
+  duration_ms: 0.2115
+  type: 'suite'
+  ...
+# Subtest: exact answer membership precedes debris cleanup
+    # Subtest: the calculus label's final period survives boundary, display, shuffle, and grading
+    ok 1 - the calculus label's final period survives boundary, display, shuffle, and grading
+      ---
+      duration_ms: 1.890667
+      type: 'test'
+      ...
+    # Subtest: retains punctuation, quotes, colons, and backticks in exact labels and explicit keys
+    ok 2 - retains punctuation, quotes, colons, and backticks in exact labels and explicit keys
+      ---
+      duration_ms: 1.840458
+      type: 'test'
+      ...
+    # Subtest: never redirects an exact punctuated key to a different debris-free option
+    ok 3 - never redirects an exact punctuated key to a different debris-free option
+      ---
+      duration_ms: 0.082875
+      type: 'test'
+      ...
+    # Subtest: preserves exact multi-select entries while still healing non-matching copy debris
+    ok 4 - preserves exact multi-select entries while still healing non-matching copy debris
+      ---
+      duration_ms: 0.314542
+      type: 'test'
+      ...
+    # Subtest: retains an exact JSON-looking option key across validation and grading
+    ok 5 - retains an exact JSON-looking option key across validation and grading
+      ---
+      duration_ms: 0.143167
+      type: 'test'
+      ...
+    1..5
+ok 8 - exact answer membership precedes debris cleanup
+  ---
+  duration_ms: 4.340417
+  type: 'suite'
+  ...
+# Subtest: isCorrect
+    # Subtest: matches identical sets regardless of order
+    ok 1 - matches identical sets regardless of order
+      ---
+      duration_ms: 0.03725
+      type: 'test'
+      ...
+    # Subtest: rejects partial matches
+    ok 2 - rejects partial matches
+      ---
+      duration_ms: 0.024333
+      type: 'test'
+      ...
+    # Subtest: rejects wrong selections of the same size
+    ok 3 - rejects wrong selections of the same size
+      ---
+      duration_ms: 0.021042
+      type: 'test'
+      ...
+    # Subtest: rejects empty selection against a non-empty answer
+    ok 4 - rejects empty selection against a non-empty answer
+      ---
+      duration_ms: 0.020375
+      type: 'test'
+      ...
+    1..4
+ok 9 - isCorrect
+  ---
+  duration_ms: 0.142458
+  type: 'suite'
+  ...
+# Subtest: confidence stops
+    # Subtest: the owner-decided grid (2026-10-01): resolution concentrates at the top
+    ok 1 - the owner-decided grid (2026-10-01): resolution concentrates at the top
+      ---
+      duration_ms: 0.033458
+      type: 'test'
+      ...
+    1..1
+ok 10 - confidence stops
+  ---
+  duration_ms: 0.057666
+  type: 'suite'
+  ...
+# Subtest: buildAnswer
+    # Subtest: grades a correct selection
+    ok 1 - grades a correct selection
+      ---
+      duration_ms: 0.08075
+      type: 'test'
+      ...
+    # Subtest: grades a wrong selection
+    ok 2 - grades a wrong selection
+      ---
+      duration_ms: 0.0315
+      type: 'test'
+      ...
+    # Subtest: dontKnow is never correct and records no answers
+    ok 3 - dontKnow is never correct and records no answers
+      ---
+      duration_ms: 0.028958
+      type: 'test'
+      ...
+    # Subtest: keeps the note only when non-empty
+    ok 4 - keeps the note only when non-empty
+      ---
+      duration_ms: 0.032375
+      type: 'test'
+      ...
+    # Subtest: ignores unknown option values
+    ok 5 - ignores unknown option values
+      ---
+      duration_ms: 0.034084
+      type: 'test'
+      ...
+    # Subtest: carries confidence on quiz answers and clamps out-of-range values
+    ok 6 - carries confidence on quiz answers and clamps out-of-range values
+      ---
+      duration_ms: 0.059708
+      type: 'test'
+      ...
+    # Subtest: drops confidence on dontKnow and on non-quiz kinds
+    ok 7 - drops confidence on dontKnow and on non-quiz kinds
+      ---
+      duration_ms: 0.03625
+      type: 'test'
+      ...
+    # Subtest: multi-select grades as exact-set
+    ok 8 - multi-select grades as exact-set
+      ---
+      duration_ms: 0.03525
+      type: 'test'
+      ...
+    # Subtest: ask questions are not graded
+    ok 9 - ask questions are not graded
+      ---
+      duration_ms: 0.019416
+      type: 'test'
+      ...
+    1..9
+ok 11 - buildAnswer
+  ---
+  duration_ms: 0.419375
+  type: 'suite'
+  ...
+# Subtest: compactAnswerForModel
+    # Subtest: quiz: the learner's selection, verdict, confidence, note — NOTHING the model authored
+    ok 1 - quiz: the learner's selection, verdict, confidence, note — NOTHING the model authored
+      ---
+      duration_ms: 0.09725
+      type: 'test'
+      ...
+    # Subtest: dontKnow: the gap flag stands alone — no verdict, no confidence
+    ok 2 - dontKnow: the gap flag stands alone — no verdict, no confidence
+      ---
+      duration_ms: 0.030084
+      type: 'test'
+      ...
+    # Subtest: ask: selection or text; never graded
+    ok 3 - ask: selection or text; never graded
+      ---
+      duration_ms: 0.025917
+      type: 'test'
+      ...
+    # Subtest: dismissed: a one-field record
+    ok 4 - dismissed: a one-field record
+      ---
+      duration_ms: 0.021541
+      type: 'test'
+      ...
+    1..4
+ok 12 - compactAnswerForModel
+  ---
+  duration_ms: 0.202583
+  type: 'suite'
+  ...
+# Subtest: dismissedAnswer (the ESC-abort record)
+    # Subtest: the minimum honest answer: kind, questionText, dismissed — nothing else claimed
+    ok 1 - the minimum honest answer: kind, questionText, dismissed — nothing else claimed
+      ---
+      duration_ms: 0.031875
+      type: 'test'
+      ...
+    # Subtest: compacts to the one-field model diet
+    ok 2 - compacts to the one-field model diet
+      ---
+      duration_ms: 0.016417
+      type: 'test'
+      ...
+    1..2
+ok 13 - dismissedAnswer (the ESC-abort record)
+  ---
+  duration_ms: 0.063542
+  type: 'suite'
+  ...
+# Subtest: toolQuestionKind (tool→kind parity with the dock)
+    # Subtest: the three question tools map; unknown tools fall to ask
+    ok 1 - the three question tools map; unknown tools fall to ask
+      ---
+      duration_ms: 0.032916
+      type: 'test'
+      ...
+    1..1
+ok 14 - toolQuestionKind (tool→kind parity with the dock)
+  ---
+  duration_ms: 0.04375
+  type: 'suite'
+  ...
+# Subtest: toClientQuestion
+    # Subtest: NEVER exposes correctIndices or explanation
+    ok 1 - NEVER exposes correctIndices or explanation
+      ---
+      duration_ms: 0.029209
+      type: 'test'
+      ...
+    1..1
+ok 15 - toClientQuestion
+  ---
+  duration_ms: 0.040834
+  type: 'suite'
+  ...
+# Subtest: dock selection (toggleOption / toggleOther)
+    # Subtest: multi-select: options and Other coexist — neither clears the other
+    ok 1 - multi-select: options and Other coexist — neither clears the other
+      ---
+      duration_ms: 0.062416
+      type: 'test'
+      ...
+    # Subtest: multi-select: any selection clears dont-know
+    ok 2 - multi-select: any selection clears dont-know
+      ---
+      duration_ms: 0.021334
+      type: 'test'
+      ...
+    # Subtest: single-select: displacement semantics are unchanged
+    ok 3 - single-select: displacement semantics are unchanged
+      ---
+      duration_ms: 0.0225
+      type: 'test'
+      ...
+    1..3
+ok 16 - dock selection (toggleOption / toggleOther)
+  ---
+  duration_ms: 0.126958
+  type: 'suite'
+  ...
+# Subtest: explainInputBase / explainInputProblems (the commitment contract)
+    # Subtest: has ONE authoring field — no explanation remnant (owner ruling 2026-09-27)
+    ok 1 - has ONE authoring field — no explanation remnant (owner ruling 2026-09-27)
+      ---
+      duration_ms: 0.02325
+      type: 'test'
+      ...
+    # Subtest: the teach object LEADS with the required pair (type, nodeId) — base fields follow
+    ok 2 - the teach object LEADS with the required pair (type, nodeId) — base fields follow
+      ---
+      duration_ms: 0.018958
+      type: 'test'
+      ...
+    # Subtest: an empty commitment is the one authoring problem
+    ok 3 - an empty commitment is the one authoring problem
+      ---
+      duration_ms: 0.024458
+      type: 'test'
+      ...
+    1..3
+ok 17 - explainInputBase / explainInputProblems (the commitment contract)
+  ---
+  duration_ms: 0.087166
+  type: 'suite'
+  ...
+# Subtest: buildAnswer / formatAnswerMessage: explain
+    # Subtest: snapshots the commitment + explanation; the client NEVER grades free text
+    ok 1 - snapshots the commitment + explanation; the client NEVER grades free text
+      ---
+      duration_ms: 0.040542
+      type: 'test'
+      ...
+    # Subtest: dontKnow records the gap with no attempted text
+    ok 2 - dontKnow records the gap with no attempted text
+      ---
+      duration_ms: 0.01975
+      type: 'test'
+      ...
+    # Subtest: compactAnswerForModel (explain): his words ONLY — never the model's own commitment
+    ok 3 - compactAnswerForModel (explain): his words ONLY — never the model's own commitment
+      ---
+      duration_ms: 0.022875
+      type: 'test'
+      ...
+    1..3
+ok 18 - buildAnswer / formatAnswerMessage: explain
+  ---
+  duration_ms: 0.103667
+  type: 'suite'
+  ...
+# Subtest: the quiz role field (predict | check)
+    # Subtest: the teach schema REQUIRES type; the probe schema has no such field
+    ok 1 - the teach schema REQUIRES type; the probe schema has no such field
+      ---
+      duration_ms: 0.078541
+      type: 'test'
+      ...
+    # Subtest: normalizeQuizType: exact literals only — old records and wobble degrade to check-style
+    ok 2 - normalizeQuizType: exact literals only — old records and wobble degrade to check-style
+      ---
+      duration_ms: 0.022375
+      type: 'test'
+      ...
+    # Subtest: questionNeedsReveal: checks collapse, predictions never do — both teach tools
+    ok 3 - questionNeedsReveal: checks collapse, predictions never do — both teach tools
+      ---
+      duration_ms: 0.030333
+      type: 'test'
+      ...
+    # Subtest: buildAnswer snapshots the question's role and carries both thinking channels
+    ok 4 - buildAnswer snapshots the question's role and carries both thinking channels
+      ---
+      duration_ms: 0.0545
+      type: 'test'
+      ...
+    # Subtest: compactAnswerForModel: distinct keys for the two channels; legacy `note` folds into thinking
+    ok 5 - compactAnswerForModel: distinct keys for the two channels; legacy `note` folds into thinking
+      ---
+      duration_ms: 0.030125
+      type: 'test'
+      ...
+    # Subtest: the display parse KEEPS the role: quizDisplayInputSchema retains type where the base strips it
+    ok 6 - the display parse KEEPS the role: quizDisplayInputSchema retains type where the base strips it
+      ---
+      duration_ms: 0.064708
+      type: 'test'
+      ...
+    1..6
+ok 19 - the quiz role field (predict | check)
+  ---
+  duration_ms: 0.314667
+  type: 'suite'
+  ...
+1..19
+# tests 69
+# suites 19
+# pass 69
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 178.43025

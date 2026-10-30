@@ -1,0 +1,12 @@
+# Prompt-policy parity review, 0.2.1
+
+The reference implements these teaching choices through prompts and model judgment. CoquiLearn preserves that mechanism; it does not add a deterministic adaptive-testing or mastery algorithm. The policy checks below establish shipped instructions, agent composition and working tool/record seams. They do not establish consistent model adherence, factual correctness or learning effectiveness.
+
+| Entries | Shipped policy | Executed evidence |
+| --- | --- | --- |
+| E007–E008 | Prober clarifies the goal and brackets each strand using correctness, numeric confidence and thinking | `practice-agents` checks the effective prober doctrine; `probe-done` and `chat-flow` validate phase/questions/handoff. The live equality diagnostic asked about the learner's remaining uncertainty and tested the defined-operation boundary before saving its assessment. |
+| E012–E014 | Teacher derives from foundations, uses prediction/check roles, presents the plan and waits for learner confirmation | Teacher `05-method`, `10-planning`, `20-teaching`, `28-predictions`; the native plan/reveal fixtures and live equality transcript show the proposed plan, explicit learner agreement, derivation and a subsequent check. Confirmation remains a prompt rule. |
+| E046–E047 | Practitioner chooses targets and demand modes, uses the R0–R5 ladder, supports repeated traces and waits for explicit Next | `practice-agents` asserts the effective hint/repair/interleaving/pause policies; `practice-record`, `practice-heal`, `practice-flow` and native practice acceptance exercise targets, outcomes, recorded metadata, dismissal and Next. Live practice completed one committed problem and paused. Hint quality across every possible task is not claimed. |
+| E078 | Auditor links proposition identity, without claiming to verify factual truth | `extraction` and `graph` execute structural validation, identity links, fallback creation and provenance merges. Live extraction produced three propositions and a chain. Neither that result nor a successful SVG/demo render certifies domain truth. |
+
+Sources are the pinned LearnHarness 0.4.0 prompt fragments under `packages/engine/src/agent/prompts/`, delivered unchanged unless recorded in the origin manifest. Packaged prompt inspection is an acceptance check. Sanitized actual transcripts are retained in `artifacts/implementation/chatgpt-live-session.jsonl`; private model thinking is omitted. Expert-reviewed pedagogy and delayed retention studies remain product research beyond feature parity.

@@ -1,0 +1,47 @@
+TAP version 13
+# Subtest: pdf-ops — the pdfjs text layer
+    # Subtest: pdfInfo triages every page (count, text lengths, image counts, math density)
+    ok 1 - pdfInfo triages every page (count, text lengths, image counts, math density)
+      ---
+      duration_ms: 341.216
+      type: 'test'
+      ...
+    # Subtest: pdfExtract heads pages and honors the spec
+    ok 2 - pdfExtract heads pages and honors the spec
+      ---
+      duration_ms: 5.968042
+      type: 'test'
+      ...
+    # Subtest: pdfSearch finds hits with page/line + context, literal and regex
+    ok 3 - pdfSearch finds hits with page/line + context, literal and regex
+      ---
+      duration_ms: 7.108708
+      type: 'test'
+      ...
+    # Subtest: pdfProbe accepts the fixture and rejects garbage
+    ok 4 - pdfProbe accepts the fixture and rejects garbage
+      ---
+      duration_ms: 1.969625
+      type: 'test'
+      ...
+    # Subtest: parsePageSpec: all / ranges / lists / clamping
+    ok 5 - parsePageSpec: all / ranges / lists / clamping
+      ---
+      duration_ms: 0.34675
+      type: 'test'
+      ...
+    1..5
+ok 1 - pdf-ops — the pdfjs text layer
+  ---
+  duration_ms: 357.130375
+  type: 'suite'
+  ...
+1..1
+# tests 5
+# suites 1
+# pass 5
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 448.322667

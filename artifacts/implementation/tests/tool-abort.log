@@ -1,0 +1,72 @@
+TAP version 13
+# Subtest: serverExecute abort + timeout guard
+    # Subtest: forwards a live abort signal to the tool's ctx
+    ok 1 - forwards a live abort signal to the tool's ctx
+      ---
+      duration_ms: 0.569084
+      type: 'test'
+      ...
+    # Subtest: a signal-wired tool observes the run's abort
+    ok 2 - a signal-wired tool observes the run's abort
+      ---
+      duration_ms: 253.396542
+      type: 'test'
+      ...
+    # Subtest: rejects a hanging tool at the system-level timeout
+    ok 3 - rejects a hanging tool at the system-level timeout
+      ---
+      duration_ms: 306.019042
+      type: 'test'
+      ...
+    # Subtest: a pre-aborted run rejects immediately with pi's wording
+    ok 4 - a pre-aborted run rejects immediately with pi's wording
+      ---
+      duration_ms: 252.5395
+      type: 'test'
+      ...
+    1..4
+ok 1 - serverExecute abort + timeout guard
+  ---
+  duration_ms: 813.527
+  type: 'suite'
+  ...
+# Subtest: serverExecute: cooperative settle, mapping parity, question bypass
+    # Subtest: a cooperative tool settles partial results before the grace
+    ok 1 - a cooperative tool settles partial results before the grace
+      ---
+      duration_ms: 0.642208
+      type: 'test'
+      ...
+    # Subtest: questionResult is instant, terminates, and carries no details
+    ok 2 - questionResult is instant, terminates, and carries no details
+      ---
+      duration_ms: 0.513417
+      type: 'test'
+      ...
+    # Subtest: authoring failures return an isError result with the retryable problem list
+    ok 3 - authoring failures return an isError result with the retryable problem list
+      ---
+      duration_ms: 0.345666
+      type: 'test'
+      ...
+    # Subtest: toToolResult parity: string verbatim, object as JSON, details rides the raw value
+    ok 4 - toToolResult parity: string verbatim, object as JSON, details rides the raw value
+      ---
+      duration_ms: 0.983834
+      type: 'test'
+      ...
+    1..4
+ok 2 - serverExecute: cooperative settle, mapping parity, question bypass
+  ---
+  duration_ms: 2.7695
+  type: 'suite'
+  ...
+1..2
+# tests 8
+# suites 2
+# pass 8
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 940.748833

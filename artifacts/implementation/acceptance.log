@@ -1,0 +1,22 @@
+PASS Native application launches
+PASS Committed question and dependency plan persist
+PASS Question draft and numeric confidence survive reload
+PASS Answer is committed once and feedback follows
+PASS Stale answer is rejected
+PASS Operation retries are idempotent and conflicting identities fail
+PASS Native restart preserves history and composer draft
+PASS Practice concludes with committed solution and explicit Next
+PASS Imports preview with source anchors and detect duplicates
+PASS Review explicitly rates retrieval and persists scheduler evidence
+PASS Custom endpoint discovery crosses private IPC with revision checks
+PASS All four connection routes are visible without credentials
+PASS Bundled teaching and practice prompts are inspectable
+PASS Interactive demonstration executes without Node, preload or parent access
+PASS Packaged PDF, SVG and Chromium verification runtimes execute
+PASS Native backup and restore verifies a consistent library
+PASS Deletion and Undo restore session identity
+PASS 1000-node graph remains interactive
+PASS Dew appearance and narrow Mac layout render without horizontal overflow
+PASS Reduce Transparency and Reduce Motion are applied
+PASS Utility-process crash reconnects without losing the library
+{"passed":true,"checks":21}

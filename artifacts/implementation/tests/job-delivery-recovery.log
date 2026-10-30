@@ -1,0 +1,141 @@
+TAP version 13
+# Subtest: research: dispatch saves input before spawn and does not overwrite it on repeated dispatch
+ok 1 - research: dispatch saves input before spawn and does not overwrite it on repeated dispatch
+  ---
+  duration_ms: 4.62325
+  type: 'test'
+  ...
+# Subtest: demo: dispatch saves input before spawn and does not overwrite it on repeated dispatch
+ok 2 - demo: dispatch saves input before spawn and does not overwrite it on repeated dispatch
+  ---
+  duration_ms: 0.686875
+  type: 'test'
+  ...
+# Subtest: visual: dispatch saves input before spawn and does not overwrite it on repeated dispatch
+ok 3 - visual: dispatch saves input before spawn and does not overwrite it on repeated dispatch
+  ---
+  duration_ms: 0.673875
+  type: 'test'
+  ...
+# Subtest: pdf: dispatch saves input before spawn and does not overwrite it on repeated dispatch
+ok 4 - pdf: dispatch saves input before spawn and does not overwrite it on repeated dispatch
+  ---
+  duration_ms: 0.647167
+  type: 'test'
+  ...
+# Subtest: saved question survives absent transcript; runner ends while delivery is still pending
+ok 5 - saved question survives absent transcript; runner ends while delivery is still pending
+  ---
+  duration_ms: 7.96675
+  type: 'test'
+  ...
+# Subtest: missing or blank research question records an honest failure without invoking a model
+ok 6 - missing or blank research question records an honest failure without invoking a model
+  ---
+  duration_ms: 1.561625
+  type: 'test'
+  ...
+# Subtest: repeated recovery behind a question yields one handed and one durable marker
+ok 7 - repeated recovery behind a question yields one handed and one durable marker
+  ---
+  duration_ms: 1.540542
+  type: 'test'
+  ...
+# Subtest: duplicate during a 409 wake retains one logical owner
+ok 8 - duplicate during a 409 wake retains one logical owner
+  ---
+  duration_ms: 2021.131792
+  type: 'test'
+  ...
+# Subtest: duplicate during a 403 wake retains one logical owner
+ok 9 - duplicate during a 403 wake retains one logical owner
+  ---
+  duration_ms: 797.281667
+  type: 'test'
+  ...
+# [steer steer_job_725fd7ec42cf413bb5b68446a1e31e2c] delivery remains pending: wake turn did not persist steer (status 503)
+# Subtest: failed start stays quiet across sweeps, then joins a learner run
+ok 10 - failed start stays quiet across sweeps, then joins a learner run
+  ---
+  duration_ms: 1687.134459
+  type: 'test'
+  ...
+# Subtest: HTTP acceptance without a saved marker is not delivery completion or a retry trigger
+ok 11 - HTTP acceptance without a saved marker is not delivery completion or a retry trigger
+  ---
+  duration_ms: 1691.056666
+  type: 'test'
+  ...
+# [job job_0dfe3720f92740349f85a23fbe411936] delivery acknowledgement failed: Error: fixture acknowledgement write failure
+#     at Object.stores.jobStore.updateJob (/Users/kokinmartinez/Documents/ChatGPT/coqui-learning harness/packages/engine/tests/job-delivery-recovery.test.ts:248:70)
+#     at finalizeJob (/Users/kokinmartinez/Documents/ChatGPT/coqui-learning harness/packages/engine/src/server/jobs.ts:655:19)
+#     at finalizeSteer (/Users/kokinmartinez/Documents/ChatGPT/coqui-learning harness/packages/engine/src/server/jobs.ts:215:13)
+#     at noteSteersDurable (/Users/kokinmartinez/Documents/ChatGPT/coqui-learning harness/packages/engine/src/server/jobs.ts:184:34)
+#     at persist (/Users/kokinmartinez/Documents/ChatGPT/coqui-learning harness/packages/engine/tests/job-delivery-recovery.test.ts:63:2)
+#     at TestContext.<anonymous> (/Users/kokinmartinez/Documents/ChatGPT/coqui-learning harness/packages/engine/tests/job-delivery-recovery.test.ts:251:8)
+#     at Test.runInAsyncScope (node:async_hooks:227:14)
+#     at Test.run (node:internal/test_runner/test:1201:25)
+#     at Test.processPendingSubtests (node:internal/test_runner/test:831:18)
+#     at Test.postRun (node:internal/test_runner/test:1330:19)
+# [job job_0dfe3720f92740349f85a23fbe411936] delivery acknowledgement failed: Error: fixture acknowledgement write failure
+#     at Object.stores.jobStore.updateJob (/Users/kokinmartinez/Documents/ChatGPT/coqui-learning harness/packages/engine/tests/job-delivery-recovery.test.ts:248:70)
+#     at finalizeJob (/Users/kokinmartinez/Documents/ChatGPT/coqui-learning harness/packages/engine/src/server/jobs.ts:655:19)
+#     at finalizeSteer (/Users/kokinmartinez/Documents/ChatGPT/coqui-learning harness/packages/engine/src/server/jobs.ts:215:13)
+#     at completeEntry (/Users/kokinmartinez/Documents/ChatGPT/coqui-learning harness/packages/engine/src/server/jobs.ts:198:2)
+#     at noteSteersDurable (/Users/kokinmartinez/Documents/ChatGPT/coqui-learning harness/packages/engine/src/server/jobs.ts:187:67)
+#     at persist (/Users/kokinmartinez/Documents/ChatGPT/coqui-learning harness/packages/engine/tests/job-delivery-recovery.test.ts:63:2)
+#     at TestContext.<anonymous> (/Users/kokinmartinez/Documents/ChatGPT/coqui-learning harness/packages/engine/tests/job-delivery-recovery.test.ts:251:8)
+#     at Test.runInAsyncScope (node:async_hooks:227:14)
+#     at Test.run (node:internal/test_runner/test:1201:25)
+#     at Test.processPendingSubtests (node:internal/test_runner/test:831:18)
+# Subtest: a racing foreground settlement cannot release an outstanding staged wake
+ok 12 - a racing foreground settlement cannot release an outstanding staged wake
+  ---
+  duration_ms: 765.155583
+  type: 'test'
+  ...
+# Subtest: canonical save wins even if delivery bookkeeping fails; no marker replay
+ok 13 - canonical save wins even if delivery bookkeeping fails; no marker replay
+  ---
+  duration_ms: 5.100209
+  type: 'test'
+  ...
+# Subtest: old running results become finished pending work; old terminal records are untouched
+ok 14 - old running results become finished pending work; old terminal records are untouched
+  ---
+  duration_ms: 2.868959
+  type: 'test'
+  ...
+# Subtest: fresh process restores a pending delivery on registration without a jobs poll
+ok 15 - fresh process restores a pending delivery on registration without a jobs poll
+  ---
+  duration_ms: 459.885584
+  type: 'test'
+  ...
+# Subtest: deleting legacy completed work needs no preceding recovery poll
+ok 16 - deleting legacy completed work needs no preceding recovery poll
+  ---
+  duration_ms: 2.25125
+  type: 'test'
+  ...
+# Subtest: deletion still refuses a computing worker or a live turn
+ok 17 - deletion still refuses a computing worker or a live turn
+  ---
+  duration_ms: 0.989458
+  type: 'test'
+  ...
+# Subtest: deleting a session discards its pending deliveries without starting a turn
+ok 18 - deleting a session discards its pending deliveries without starting a turn
+  ---
+  duration_ms: 453.894208
+  type: 'test'
+  ...
+1..18
+# tests 18
+# suites 0
+# pass 18
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 8425.411917

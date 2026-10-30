@@ -1,0 +1,219 @@
+TAP version 13
+# Subtest: plan-tree pure ops
+    # Subtest: createTree builds version 1 with no mutation of its inputs
+    ok 1 - createTree builds version 1 with no mutation of its inputs
+      ---
+      duration_ms: 0.801916
+      type: 'test'
+      ...
+    # Subtest: createTree rejects duplicate node ids
+    ok 2 - createTree rejects duplicate node ids
+      ---
+      duration_ms: 0.112958
+      type: 'test'
+      ...
+    # Subtest: createTree rejects edges with missing endpoints
+    ok 3 - createTree rejects edges with missing endpoints
+      ---
+      duration_ms: 0.058291
+      type: 'test'
+      ...
+    # Subtest: createTree rejects self-loops, duplicates, and cycles
+    ok 4 - createTree rejects self-loops, duplicates, and cycles
+      ---
+      duration_ms: 0.101334
+      type: 'test'
+      ...
+    # Subtest: createTree rejects invalid node shapes
+    ok 5 - createTree rejects invalid node shapes
+      ---
+      duration_ms: 0.074834
+      type: 'test'
+      ...
+    1..5
+ok 1 - plan-tree pure ops
+  ---
+  duration_ms: 1.513166
+  type: 'suite'
+  ...
+# Subtest: plan_init — the author-once mermaid tool (execute against the real store)
+    # Subtest: parses a mermaid block, builds the tree, persists, returns the full tree
+    ok 1 - parses a mermaid block, builds the tree, persists, returns the full tree
+      ---
+      duration_ms: 4.283625
+      type: 'test'
+      ...
+    # Subtest: RE-CALLABLE: a rewrite replaces the tree wholesale (the mutation tools are gone)
+    ok 2 - RE-CALLABLE: a rewrite replaces the tree wholesale (the mutation tools are gone)
+      ---
+      duration_ms: 0.803833
+      type: 'test'
+      ...
+    # Subtest: parse failures collect EVERY problem with line numbers and persist nothing
+    ok 3 - parse failures collect EVERY problem with line numbers and persist nothing
+      ---
+      duration_ms: 0.337666
+      type: 'test'
+      ...
+    # Subtest: structural failures (cycle) become ok:false without persisting
+    ok 4 - structural failures (cycle) become ok:false without persisting
+      ---
+      duration_ms: 0.277792
+      type: 'test'
+      ...
+    # Subtest: only plan_init exists — the seven mutation/tracking tools are gone by design
+    ok 5 - only plan_init exists — the seven mutation/tracking tools are gone by design
+      ---
+      duration_ms: 0.069625
+      type: 'test'
+      ...
+    # Subtest: unknown chat returns ok:false with the empty tree
+    ok 6 - unknown chat returns ok:false with the empty tree
+      ---
+      duration_ms: 0.085166
+      type: 'test'
+      ...
+    1..6
+ok 2 - plan_init — the author-once mermaid tool (execute against the real store)
+  ---
+  duration_ms: 5.997916
+  type: 'suite'
+  ...
+# Subtest: parseMermaidPlan (the constrained mermaid subset)
+    # Subtest: accepts graph TD and flowchart TB headers (case-insensitive), comments, and blank lines
+    ok 1 - accepts graph TD and flowchart TB headers (case-insensitive), comments, and blank lines
+      ---
+      duration_ms: 0.089417
+      type: 'test'
+      ...
+    # Subtest: bare ids fall back to id-as-title; bracket and paren labels both work
+    ok 2 - bare ids fall back to id-as-title; bracket and paren labels both work
+      ---
+      duration_ms: 0.042083
+      type: 'test'
+      ...
+    # Subtest: edges register bare endpoints as nodes and dedupe duplicate edges
+    ok 3 - edges register bare endpoints as nodes and dedupe duplicate edges
+      ---
+      duration_ms: 0.035583
+      type: 'test'
+      ...
+    # Subtest: labels on both edge endpoints survive; forward references are fine
+    ok 4 - labels on both edge endpoints survive; forward references are fine
+      ---
+      duration_ms: 0.050542
+      type: 'test'
+      ...
+    # Subtest: rejects: non-slug ids (with the SPECIFIC message), self-loops, subgraphs, missing header, empty
+    ok 5 - rejects: non-slug ids (with the SPECIFIC message), self-loops, subgraphs, missing header, empty
+      ---
+      duration_ms: 0.101375
+      type: 'test'
+      ...
+    # Subtest: free-form pass (2026-09-11): underscores, chains, arrow synonyms, any direction, quoted titles
+    ok 6 - free-form pass (2026-09-11): underscores, chains, arrow synonyms, any direction, quoted titles
+      ---
+      duration_ms: 0.091125
+      type: 'test'
+      ...
+    # Subtest: the first label wins when a node line repeats (relabeling mid-block is ignored)
+    ok 7 - the first label wins when a node line repeats (relabeling mid-block is ignored)
+      ---
+      duration_ms: 0.035667
+      type: 'test'
+      ...
+    1..7
+ok 3 - parseMermaidPlan (the constrained mermaid subset)
+  ---
+  duration_ms: 0.505084
+  type: 'suite'
+  ...
+# Subtest: derivePlanStatuses (the map tracks position, not completion)
+    # Subtest: empty transcript → no current, nothing visited (no fallback current)
+    ok 1 - empty transcript → no current, nothing visited (no fallback current)
+      ---
+      duration_ms: 0.094167
+      type: 'test'
+      ...
+    # Subtest: current = the node of the most recent tagged CALL — regardless of state or outcome
+    ok 2 - current = the node of the most recent tagged CALL — regardless of state or outcome
+      ---
+      duration_ms: 0.05075
+      type: 'test'
+      ...
+    # Subtest: visited = earlier tagged nodes, sticky; results feed nothing
+    ok 3 - visited = earlier tagged nodes, sticky; results feed nothing
+      ---
+      duration_ms: 0.047625
+      type: 'test'
+      ...
+    # Subtest: revisits keep both: A→B→A gives current A, visited {A,B}
+    ok 4 - revisits keep both: A→B→A gives current A, visited {A,B}
+      ---
+      duration_ms: 0.052292
+      type: 'test'
+      ...
+    # Subtest: several checks on one node hold the map still
+    ok 5 - several checks on one node hold the map still
+      ---
+      duration_ms: 0.029667
+      type: 'test'
+      ...
+    # Subtest: untagged checks and unknown nodeIds are ad-hoc — they move nothing
+    ok 6 - untagged checks and unknown nodeIds are ad-hoc — they move nothing
+      ---
+      duration_ms: 0.024291
+      type: 'test'
+      ...
+    # Subtest: a rewritten map derives against the CURRENT tree — dropped slugs stop counting
+    ok 7 - a rewritten map derives against the CURRENT tree — dropped slugs stop counting
+      ---
+      duration_ms: 0.03775
+      type: 'test'
+      ...
+    # Subtest: derivedNodeStatus: current wins over visited; upcoming otherwise
+    ok 8 - derivedNodeStatus: current wins over visited; upcoming otherwise
+      ---
+      duration_ms: 0.032208
+      type: 'test'
+      ...
+    1..8
+ok 4 - derivePlanStatuses (the map tracks position, not completion)
+  ---
+  duration_ms: 0.423792
+  type: 'suite'
+  ...
+# Subtest: derivePlanStatuses: tagged explain calls move the map like quiz calls
+    # Subtest: a tagged explain call is the current position; earlier ones are visited
+    ok 1 - a tagged explain call is the current position; earlier ones are visited
+      ---
+      duration_ms: 0.046334
+      type: 'test'
+      ...
+    # Subtest: untagged explain calls move nothing
+    ok 2 - untagged explain calls move nothing
+      ---
+      duration_ms: 0.02025
+      type: 'test'
+      ...
+    # Subtest: mixed mechanics (an old quiz record, then an explain) still derive one run
+    ok 3 - mixed mechanics (an old quiz record, then an explain) still derive one run
+      ---
+      duration_ms: 0.022541
+      type: 'test'
+      ...
+    1..3
+ok 5 - derivePlanStatuses: tagged explain calls move the map like quiz calls
+  ---
+  duration_ms: 0.127708
+  type: 'suite'
+  ...
+1..5
+# tests 29
+# suites 5
+# pass 29
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 137.026333

@@ -1,0 +1,35 @@
+TAP version 13
+# [job job_c9a0ec732294495d9f0fd19725c3375b] refused — {"error":"Claude Code is unavailable. Enable and set it up in Settings → Providers.","code":"provider_key_missing","provider":"claude-code","slots":["cheap"]}
+# Subtest: opt-in parses strictly and malformed stored values never enable the CLI
+ok 1 - opt-in parses strictly and malformed stored values never enable the CLI
+  ---
+  duration_ms: 0.754333
+  type: 'test'
+  ...
+# Subtest: default off even with an installed binary; section writes toggle availability but preserve saved model pins and unrelated settings
+ok 2 - default off even with an installed binary; section writes toggle availability but preserve saved model pins and unrelated settings
+  ---
+  duration_ms: 7.301542
+  type: 'test'
+  ...
+# Subtest: off cannot launch a version probe even through an otherwise authorized HTTP request
+ok 3 - off cannot launch a version probe even through an otherwise authorized HTTP request
+  ---
+  duration_ms: 0.915333
+  type: 'test'
+  ...
+# Subtest: a saved CLI background job is refused before model execution while opt-in is off
+ok 4 - a saved CLI background job is refused before model execution while opt-in is off
+  ---
+  duration_ms: 2.419125
+  type: 'test'
+  ...
+1..4
+# tests 4
+# suites 0
+# pass 4
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 641.715958

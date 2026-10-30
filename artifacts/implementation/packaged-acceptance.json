@@ -1,0 +1,230 @@
+{
+  "startedAt": "2026-10-30T20:20:43.991Z",
+  "packaged": true,
+  "checks": [
+    {
+      "name": "Native application launches",
+      "passed": true
+    },
+    {
+      "name": "Committed question and dependency plan persist",
+      "passed": true,
+      "sessionId": "chat_58598afb75854117be6e83396a0c1d90"
+    },
+    {
+      "name": "Question draft and numeric confidence survive reload",
+      "passed": true
+    },
+    {
+      "name": "Answer is committed once and feedback follows",
+      "passed": true
+    },
+    {
+      "name": "Stale answer is rejected",
+      "passed": true
+    },
+    {
+      "name": "Operation retries are idempotent and conflicting identities fail",
+      "passed": true
+    },
+    {
+      "name": "Native restart preserves history and composer draft",
+      "passed": true
+    },
+    {
+      "name": "Practice concludes with committed solution and explicit Next",
+      "passed": true
+    },
+    {
+      "name": "Imports preview with source anchors and detect duplicates",
+      "passed": true
+    },
+    {
+      "name": "Review explicitly rates retrieval and persists scheduler evidence",
+      "passed": true
+    },
+    {
+      "name": "Custom endpoint discovery crosses private IPC with revision checks",
+      "passed": true
+    },
+    {
+      "name": "All four connection routes are visible without credentials",
+      "passed": true
+    },
+    {
+      "name": "Bundled teaching and practice prompts are inspectable",
+      "passed": true
+    },
+    {
+      "name": "Interactive demonstration executes without Node, preload or parent access",
+      "passed": true
+    },
+    {
+      "name": "Packaged PDF, SVG and Chromium verification runtimes execute",
+      "passed": true,
+      "svgBytes": 296,
+      "pdfBytes": 24357,
+      "demo": {
+        "consoleErrors": [],
+        "pageErrors": [],
+        "failedRequests": [],
+        "probeResult": 4,
+        "ok": true
+      }
+    },
+    {
+      "name": "Native backup and restore verifies a consistent library",
+      "passed": true
+    },
+    {
+      "name": "Deletion and Undo restore session identity",
+      "passed": true
+    },
+    {
+      "name": "1000-node graph remains interactive",
+      "passed": true,
+      "frames": {
+        "medianMs": 8.300000000000182,
+        "p95Ms": 10.099999999999909,
+        "maxMs": 11.5,
+        "samples": 120
+      }
+    },
+    {
+      "name": "Dew appearance and narrow Mac layout render without horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "Reduce Transparency and Reduce Motion are applied",
+      "passed": true
+    },
+    {
+      "name": "Utility-process crash reconnects without losing the library",
+      "passed": true
+    }
+  ],
+  "screenshots": [
+    "lesson-moonforest.png",
+    "lesson-chat-moonforest.png",
+    "practice-moonforest.png",
+    "connections-moonforest.png",
+    "map-1000-moonforest.png",
+    "map-dew.png",
+    "narrow-dew.png"
+  ],
+  "errors": [],
+  "build": {
+    "version": "0.2.1",
+    "packaged": true,
+    "electron": "44.10.0",
+    "node": "24.22.1",
+    "upstreamCommit": "dc4c398d5167865b84b0ccb3ec809eb88bf8f65f",
+    "appPayloadSha256": "b1bb6f098e7b4f70a9a0ef77ae9c73d9e366ef8b5e273757d2da8aeaaf468453"
+  },
+  "environment": {
+    "version": "0.2.1",
+    "reduceMotion": false,
+    "reduceTransparency": false,
+    "dark": true,
+    "fixture": true,
+    "zoom": 1
+  },
+  "connections": {
+    "chatgpt": {
+      "available": true,
+      "pending": false,
+      "hasPendingRegistration": false,
+      "needsPlanConfirmation": false,
+      "allowBackgroundUse": true,
+      "activeId": null,
+      "accounts": [],
+      "error": null,
+      "catalogError": null
+    },
+    "native": [
+      {
+        "providerId": "github-copilot",
+        "available": true,
+        "connected": false,
+        "pending": false,
+        "committing": false,
+        "allowBackgroundUse": true,
+        "connectionId": null,
+        "epoch": 0,
+        "authorityRevision": 0,
+        "revision": 1
+      },
+      {
+        "providerId": "xai",
+        "available": true,
+        "connected": false,
+        "pending": false,
+        "committing": false,
+        "allowBackgroundUse": true,
+        "connectionId": null,
+        "epoch": 0,
+        "authorityRevision": 0,
+        "revision": 1
+      }
+    ]
+  },
+  "claude": {
+    "version": "2.1.241",
+    "minimumVersion": "2.1.259",
+    "state": "update-required"
+  },
+  "performance": {
+    "medianMs": 8.300000000000182,
+    "p95Ms": 10.099999999999909,
+    "maxMs": 11.5,
+    "samples": 120
+  },
+  "memory": [
+    {
+      "type": "Browser",
+      "memory": {
+        "workingSetSize": 247280,
+        "peakWorkingSetSize": 265136
+      }
+    },
+    {
+      "type": "GPU",
+      "memory": {
+        "workingSetSize": 146400,
+        "peakWorkingSetSize": 154576
+      }
+    },
+    {
+      "type": "Utility",
+      "name": "Network Service",
+      "memory": {
+        "workingSetSize": 46960,
+        "peakWorkingSetSize": 47648
+      }
+    },
+    {
+      "type": "Tab",
+      "memory": {
+        "workingSetSize": 361424,
+        "peakWorkingSetSize": 375264
+      }
+    },
+    {
+      "type": "Tab",
+      "memory": {
+        "workingSetSize": 99056,
+        "peakWorkingSetSize": 99232
+      }
+    },
+    {
+      "type": "Utility",
+      "name": "CoquiLearn learning service",
+      "memory": {
+        "workingSetSize": 238864,
+        "peakWorkingSetSize": 240416
+      }
+    }
+  ],
+  "passed": true,
+  "finishedAt": "2026-10-30T20:21:05.160Z"
+}

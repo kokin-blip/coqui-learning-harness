@@ -1,0 +1,260 @@
+{
+  "kind": "analyst-selected-excerpt",
+  "note": "Selected fields from REA summary Evidence; not the complete retained application graph or a canonical Evidence bundle.",
+  "evidence_id": "ev_100e4a845723b1fba2c3cc14d056dc5942fbed2de5fd20e02267672a1c241e2c",
+  "subject": {
+    "name": "app.asar",
+    "digest": {
+      "sha256": "8ff4b4d036faac157dfb7f85b59c6d5ac8044c3037e95b41ec145891fb55dc6b"
+    },
+    "format": "asar",
+    "architecture": null,
+    "local_path": "/Applications/LearnHarness.app/Contents/Resources/app.asar"
+  },
+  "provider": {
+    "id": "rea-analysis-view",
+    "name": "REA analysis view projection",
+    "version": "1"
+  },
+  "operation": "inspect_analysis_view",
+  "parameters": {
+    "parent_evidence_id": "ev_1e17f66b519364ebd393097835e257960d7213389b72c21109bcc086edba46dd",
+    "view": {
+      "kind": "summary"
+    }
+  },
+  "normalized_result": {
+    "kind": "summary",
+    "summary": {
+      "input_path": "/Applications/LearnHarness.app/Contents/Resources/app.asar",
+      "format": "asar",
+      "root_artifact_sha256": "8ff4b4d036faac157dfb7f85b59c6d5ac8044c3037e95b41ec145891fb55dc6b",
+      "statistics": {
+        "relevant_files": 296,
+        "nested_asar_containers": 0,
+        "text_bytes_read": 2292956,
+        "invalid_utf8_files": 0,
+        "parsed_javascript_files": 228,
+        "visited_ast_nodes": 170878,
+        "findings": 1075,
+        "modules": 0,
+        "parse_failures": 0
+      },
+      "electron": {
+        "browser_windows": 2,
+        "explicit_web_preferences": 5,
+        "preload_entrypoints": 1,
+        "context_bridge_apis": 1,
+        "exposed_api_members": 28,
+        "ipc": {
+          "operations": 34,
+          "literal_channels": 13,
+          "dynamic_channel_operations": 0,
+          "renderer_transmissions": 21,
+          "renderer_listeners": 5,
+          "main_handlers": 8,
+          "paired_renderer_transmissions": 21,
+          "ambiguous_renderer_transmissions": 0,
+          "unpaired_literal_renderer_transmissions": 0
+        },
+        "sender_validation_observations": 1,
+        "utility_processes": 0,
+        "resolved_utility_entrypoints": 0,
+        "native_addon_bindings": 0,
+        "resolved_native_addon_bindings": 0
+      },
+      "coverage": {
+        "application": {
+          "status": "partial",
+          "truncated": false,
+          "omitted_count": null,
+          "limits": [
+            {
+              "name": "javascript_analysis_parent_result_budget_bytes",
+              "value": 2047813076,
+              "unit": "bytes"
+            },
+            {
+              "name": "javascript_analysis_semantic_result_budget_bytes",
+              "value": 0,
+              "unit": "bytes"
+            },
+            {
+              "name": "javascript_analysis_semantic_result_budget_bytes",
+              "value": 9256,
+              "unit": "bytes"
+            },
+            {
+              "name": "javascript_analysis_worker_heap_limit_bytes",
+              "value": 2172649472,
+              "unit": "bytes"
+            },
+            {
+              "name": "javascript_analysis_worker_timeout_ms",
+              "value": 60000,
+              "unit": "milliseconds"
+            }
+          ]
+        },
+        "semantic": {
+          "status": "partial",
+          "truncated": true,
+          "omitted_nodes": null,
+          "omitted_relations": null,
+          "limits": [
+            {
+              "name": "javascript_analysis_parent_result_budget_bytes",
+              "value": 2047813076,
+              "unit": "bytes"
+            },
+            {
+              "name": "javascript_analysis_semantic_result_budget_bytes",
+              "value": 0,
+              "unit": "bytes"
+            },
+            {
+              "name": "javascript_analysis_semantic_result_budget_bytes",
+              "value": 9256,
+              "unit": "bytes"
+            },
+            {
+              "name": "javascript_analysis_worker_heap_limit_bytes",
+              "value": 2172649472,
+              "unit": "bytes"
+            },
+            {
+              "name": "javascript_analysis_worker_timeout_ms",
+              "value": 60000,
+              "unit": "milliseconds"
+            }
+          ],
+          "families": [
+            {
+              "family": "boundary",
+              "status": "partial",
+              "retained_relations": 22,
+              "omitted_relations": null,
+              "unknown_count": 195
+            },
+            {
+              "family": "call-flow",
+              "status": "partial",
+              "retained_relations": 1827,
+              "omitted_relations": null,
+              "unknown_count": 2263
+            },
+            {
+              "family": "child-process",
+              "status": "partial",
+              "retained_relations": 0,
+              "omitted_relations": null,
+              "unknown_count": 193
+            },
+            {
+              "family": "closure",
+              "status": "partial",
+              "retained_relations": 1945,
+              "omitted_relations": null,
+              "unknown_count": 193
+            },
+            {
+              "family": "configuration",
+              "status": "partial",
+              "retained_relations": 20,
+              "omitted_relations": null,
+              "unknown_count": 196
+            },
+            {
+              "family": "data-flow",
+              "status": "partial",
+              "retained_relations": 20673,
+              "omitted_relations": null,
+              "unknown_count": 2376
+            },
+            {
+              "family": "event",
+              "status": "partial",
+              "retained_relations": 65,
+              "omitted_relations": null,
+              "unknown_count": 202
+            },
+            {
+              "family": "object-flow",
+              "status": "partial",
+              "retained_relations": 2196,
+              "omitted_relations": null,
+              "unknown_count": 4266
+            },
+            {
+              "family": "promise-ownership",
+              "status": "partial",
+              "retained_relations": 204,
+              "omitted_relations": null,
+              "unknown_count": 331
+            },
+            {
+              "family": "request",
+              "status": "partial",
+              "retained_relations": 0,
+              "omitted_relations": null,
+              "unknown_count": 193
+            },
+            {
+              "family": "resource-lifecycle",
+              "status": "partial",
+              "retained_relations": 0,
+              "omitted_relations": null,
+              "unknown_count": 193
+            },
+            {
+              "family": "timer",
+              "status": "partial",
+              "retained_relations": 16,
+              "omitted_relations": null,
+              "unknown_count": 193
+            }
+          ]
+        },
+        "application_unknowns": 380,
+        "semantic_unknowns": 10794
+      },
+      "limitation_count": 389
+    },
+    "parent_evidence_id": "ev_1e17f66b519364ebd393097835e257960d7213389b72c21109bcc086edba46dd",
+    "parent_digest": "1e17f66b519364ebd393097835e257960d7213389b72c21109bcc086edba46dd",
+    "artifact": {
+      "path": "/Applications/LearnHarness.app/Contents/Resources/app.asar",
+      "sha256": "8ff4b4d036faac157dfb7f85b59c6d5ac8044c3037e95b41ec145891fb55dc6b"
+    },
+    "coverage": {
+      "status": "complete-within-view",
+      "examined": 606,
+      "total": 1407,
+      "next_offset": null,
+      "exhausted": true
+    }
+  },
+  "limitations": [
+    "Boundary extraction covers unshadowed JSON/global coercions plus parse and validation method candidates.",
+    "Child-process extraction covers asynchronous node:child_process creation, literal argv/env/stdio options, exit/error listeners, and kill signals.",
+    "CommonJS and ESM binding relationships were recovered from inert syntax and resolved only within the inventoried artifact container.",
+    "Configuration extraction covers process.env, process.argv, node:fs reads, and direct logical defaults.",
+    "Electron API identity follows proven lexical module aliases. Reassigned bindings, dynamic selections, and visibly overwritten namespace members are unresolved; missing findings do not establish absence. Arbitrary call side effects and runtime registration are not evaluated.",
+    "Electron relationships are derived from inert syntax; runtime registration, reachability, defaults, and enforcement remain unproven.",
+    "Event extraction covers EventEmitter-style literal registrations, removals, and dispatch candidates; dynamic names remain unknown.",
+    "Function fingerprints are static candidates; equal digests can remain ambiguous and do not prove behavioral equivalence.",
+    "Graph coverage is incomplete; unavailable facts remain explicit and must not be read as absence.",
+    "JavaScript and HTML were parsed as inert text; bundle bootstrap code was never executed.",
+    "Local data flow does not claim control-flow-sensitive reaching definitions or arbitrary dynamic property resolution.",
+    "Promise ownership covers explicit unshadowed Promise construction, static factories, aggregation, chaining, and await syntax only.",
+    "Request extraction covers fetch, WebSocket, node:http/node:https construction, direct option fields, and exact local response consumers.",
+    "Resource extraction covers built-in filesystem/network acquisition and exact local close/destroy/end handles.",
+    "Sender, frame, URL, and origin checks are observations only; REA does not claim that they enforce a complete authorization policy.",
+    "Static imports, entrypoints, workers, endpoints, and storage relationships do not prove runtime execution.",
+    "Static paths and relationships may remain unresolved when expressions are dynamic or obfuscated.",
+    "The semantic graph contains static syntax observations and conservative relationship candidates; it does not claim runtime execution.",
+    "Timer extraction covers global or node:timers scheduling and exact local-handle cancellation.",
+    "Webpack/Rspack factories were recovered from AST literals; REA did not invoke push handlers or bundle bootstrap code."
+  ],
+  "source_limitations_count": 400
+}

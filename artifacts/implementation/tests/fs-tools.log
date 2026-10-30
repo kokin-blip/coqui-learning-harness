@@ -1,0 +1,196 @@
+TAP version 13
+# Subtest: glob helpers (fs-shared)
+    # Subtest: basename mode: a pattern without a slash matches at any depth
+    ok 1 - basename mode: a pattern without a slash matches at any depth
+      ---
+      duration_ms: 0.384542
+      type: 'test'
+      ...
+    # Subtest: star does not cross slashes; double-star does
+    ok 2 - star does not cross slashes; double-star does
+      ---
+      duration_ms: 0.113708
+      type: 'test'
+      ...
+    # Subtest: slash patterns get an implied deep prefix unless anchored
+    ok 3 - slash patterns get an implied deep prefix unless anchored
+      ---
+      duration_ms: 0.099375
+      type: 'test'
+      ...
+    # Subtest: brace alternatives expand
+    ok 4 - brace alternatives expand
+      ---
+      duration_ms: 0.315708
+      type: 'test'
+      ...
+    # Subtest: question mark is one char, literals are escaped
+    ok 5 - question mark is one char, literals are escaped
+      ---
+      duration_ms: 0.070625
+      type: 'test'
+      ...
+    1..5
+ok 1 - glob helpers (fs-shared)
+  ---
+  duration_ms: 1.39025
+  type: 'suite'
+  ...
+# Subtest: ls (pi port)
+    # Subtest: lists sorted, dirs suffixed, dotfiles included
+    ok 1 - lists sorted, dirs suffixed, dotfiles included
+      ---
+      duration_ms: 11.860958
+      type: 'test'
+      ...
+    # Subtest: honors the entry limit with pi's truncation notice
+    ok 2 - honors the entry limit with pi's truncation notice
+      ---
+      duration_ms: 0.49125
+      type: 'test'
+      ...
+    # Subtest: missing path and non-directory throw (the model sees the error)
+    ok 3 - missing path and non-directory throw (the model sees the error)
+      ---
+      duration_ms: 0.515958
+      type: 'test'
+      ...
+    1..3
+ok 2 - ls (pi port)
+  ---
+  duration_ms: 13.036208
+  type: 'suite'
+  ...
+# Subtest: find (pi port)
+    # Subtest: finds by glob, relativized to the search root
+    ok 1 - finds by glob, relativized to the search root
+      ---
+      duration_ms: 0.797125
+      type: 'test'
+      ...
+    # Subtest: never enters node_modules or Library
+    ok 2 - never enters node_modules or Library
+      ---
+      duration_ms: 0.440792
+      type: 'test'
+      ...
+    # Subtest: result limit carries pi's notice
+    ok 3 - result limit carries pi's notice
+      ---
+      duration_ms: 0.35375
+      type: 'test'
+      ...
+    # Subtest: no-match message matches pi
+    ok 4 - no-match message matches pi
+      ---
+      duration_ms: 0.323625
+      type: 'test'
+      ...
+    # Subtest: slash patterns match paths, not basenames
+    ok 5 - slash patterns match paths, not basenames
+      ---
+      duration_ms: 0.319917
+      type: 'test'
+      ...
+    1..5
+ok 3 - find (pi port)
+  ---
+  duration_ms: 2.341875
+  type: 'suite'
+  ...
+# Subtest: grep (pi port)
+    # Subtest: formats matches pi-style: rel:line: text
+    ok 1 - formats matches pi-style: rel:line: text
+      ---
+      duration_ms: 1.482458
+      type: 'test'
+      ...
+    # Subtest: ignoreCase and literal flags
+    ok 2 - ignoreCase and literal flags
+      ---
+      duration_ms: 1.265584
+      type: 'test'
+      ...
+    # Subtest: context lines use the dash format
+    ok 3 - context lines use the dash format
+      ---
+      duration_ms: 0.845083
+      type: 'test'
+      ...
+    # Subtest: glob filter restricts files
+    ok 4 - glob filter restricts files
+      ---
+      duration_ms: 0.566125
+      type: 'test'
+      ...
+    # Subtest: single-file search prints basename; match limit notices pi-style
+    ok 5 - single-file search prints basename; match limit notices pi-style
+      ---
+      duration_ms: 0.564625
+      type: 'test'
+      ...
+    # Subtest: no-match message matches pi
+    ok 6 - no-match message matches pi
+      ---
+      duration_ms: 0.796875
+      type: 'test'
+      ...
+    1..6
+ok 4 - grep (pi port)
+  ---
+  duration_ms: 5.633292
+  type: 'suite'
+  ...
+# Subtest: read (home-anchored re-port)
+    # Subtest: reads a fixture file verbatim through the shared slice machinery
+    ok 1 - reads a fixture file verbatim through the shared slice machinery
+      ---
+      duration_ms: 0.459792
+      type: 'test'
+      ...
+    1..1
+ok 5 - read (home-anchored re-port)
+  ---
+  duration_ms: 0.498375
+  type: 'suite'
+  ...
+# Subtest: abort plumbing (the 2026-09-19 cascade fix)
+    # Subtest: walkFiles stops promptly when the signal aborts mid-walk
+    ok 1 - walkFiles stops promptly when the signal aborts mid-walk
+      ---
+      duration_ms: 2.358959
+      type: 'test'
+      ...
+    # Subtest: find honors a pre-aborted signal without walking
+    ok 2 - find honors a pre-aborted signal without walking
+      ---
+      duration_ms: 1.108709
+      type: 'test'
+      ...
+    # Subtest: grep honors a pre-aborted signal without scanning
+    ok 3 - grep honors a pre-aborted signal without scanning
+      ---
+      duration_ms: 0.064542
+      type: 'test'
+      ...
+    # Subtest: grep aborts mid-run with partial results, not a hang
+    ok 4 - grep aborts mid-run with partial results, not a hang
+      ---
+      duration_ms: 20.511333
+      type: 'test'
+      ...
+    1..4
+ok 6 - abort plumbing (the 2026-09-19 cascade fix)
+  ---
+  duration_ms: 24.143417
+  type: 'suite'
+  ...
+1..6
+# tests 24
+# suites 6
+# pass 24
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 160.723708

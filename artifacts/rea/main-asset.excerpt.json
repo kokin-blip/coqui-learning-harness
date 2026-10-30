@@ -1,0 +1,82 @@
+{
+  "kind": "analyst-selected-excerpt",
+  "evidence_id": "ev_eb8ee74e8cbd8c3a1de5f0d20da1200c6a8331c12e3cad433c4511c9af5c788b",
+  "parent_evidence_id": "ev_1e17f66b519364ebd393097835e257960d7213389b72c21109bcc086edba46dd",
+  "artifact": {
+    "path": "/Applications/LearnHarness.app/Contents/Resources/app.asar",
+    "sha256": "8ff4b4d036faac157dfb7f85b59c6d5ac8044c3037e95b41ec145891fb55dc6b"
+  },
+  "item": {
+    "node_id": "jag_node_f1db38a8251ae2cab5e71e02e7bcb64b1396aa35644dbabfc4489dc80c287de7",
+    "kind": "javascript-asset",
+    "path": "electron/main.cjs",
+    "identity": {
+      "strategy": "content-digest",
+      "stability": "global-exact",
+      "sha256": "c216c09dc965d9b587867ebf535bf6b1c8db3189ac9398d7e850599e62cfd5d8"
+    },
+    "hashes": [
+      "c216c09dc965d9b587867ebf535bf6b1c8db3189ac9398d7e850599e62cfd5d8"
+    ],
+    "exports": [],
+    "source_ranges": [],
+    "observations": [
+      {
+        "observation_id": "jag_observation_ff01f21694dd5d8c53cf69a09317a706e9f30dc3dcefdf91e70617f2ccd88cc9",
+        "label": "electron/main.cjs",
+        "properties": {
+          "path": "electron/main.cjs",
+          "bytes": 32953,
+          "inventory_artifact_id": "art_b696ad26d0b56d1d46c3518bd1df81cd3094d440ff1b866412a8aac4675bd530",
+          "unpacked": false,
+          "file_kind": "javascript",
+          "text_status": "included",
+          "parse_status": "partial",
+          "json_parse_status": null,
+          "json_top_level_keys": [],
+          "omitted_json_top_level_keys": 0,
+          "vendor_markers": []
+        },
+        "evidence": {
+          "authority": "artifact-bytes",
+          "state": "observed",
+          "confidence": "exact",
+          "artifact": {
+            "available": true,
+            "artifact_id": "art_c216c09dc965d9b587867ebf535bf6b1c8db3189ac9398d7e850599e62cfd5d8",
+            "sha256": "c216c09dc965d9b587867ebf535bf6b1c8db3189ac9398d7e850599e62cfd5d8"
+          },
+          "location": {
+            "available": true,
+            "value": {
+              "kind": "artifact-path",
+              "path": "electron/main.cjs"
+            }
+          },
+          "extractor": {
+            "name": "rea-javascript-artifact-reconstruction",
+            "version": "1",
+            "operation": "inventory-relevant-file",
+            "executable_sha256": null
+          },
+          "coverage": {
+            "status": "complete",
+            "truncated": false,
+            "omitted_count": 0,
+            "limits": []
+          },
+          "limitations": [],
+          "evidence_ids": []
+        }
+      }
+    ]
+  },
+  "coverage": {
+    "status": "complete-within-view",
+    "examined": 1,
+    "total": 606,
+    "next_offset": null,
+    "exhausted": true
+  },
+  "note": "Whole-summary global limitations are recorded in installed-asar-summary.evidence.json; complete parent graph was not exported."
+}

@@ -1,0 +1,130 @@
+TAP version 13
+# Subtest: keyless probe never forwards a stored key, and clearing removes authentication
+ok 1 - keyless probe never forwards a stored key, and clearing removes authentication
+  ---
+  duration_ms: 8.182458
+  type: 'test'
+  ...
+# Subtest: new keys have no arbitrary minimum; the exact probed key is stored
+ok 2 - new keys have no arbitrary minimum; the exact probed key is stored
+  ---
+  duration_ms: 1.347542
+  type: 'test'
+  ...
+# Subtest: actual GET /api/keys fully redacts every custom key length and preserves other providers
+ok 3 - actual GET /api/keys fully redacts every custom key length and preserves other providers
+  ---
+  duration_ms: 11.235125
+  type: 'test'
+  ...
+# Subtest: changing destination cannot silently reuse an existing credential
+ok 4 - changing destination cannot silently reuse an existing credential
+  ---
+  duration_ms: 0.636333
+  type: 'test'
+  ...
+# Subtest: same-URL unbound development key needs existing explicit reuse consent
+ok 5 - same-URL unbound development key needs existing explicit reuse consent
+  ---
+  duration_ms: 1.140083
+  type: 'test'
+  ...
+# Subtest: generic custom/reserved key writes cannot bypass the atomic binding seam
+ok 6 - generic custom/reserved key writes cannot bypass the atomic binding seam
+  ---
+  duration_ms: 6.701375
+  type: 'test'
+  ...
+# Subtest: same target can retain its effective key
+ok 7 - same target can retain its effective key
+  ---
+  duration_ms: 0.716209
+  type: 'test'
+  ...
+# Subtest: environment ownership is shown; consent uses the environment key in probe and inference
+ok 8 - environment ownership is shown; consent uses the environment key in probe and inference
+  ---
+  duration_ms: 1.144208
+  type: 'test'
+  ...
+# Subtest: cross-origin/opaque/missing-origin and non-JSON writes cannot probe or mutate
+ok 9 - cross-origin/opaque/missing-origin and non-JSON writes cannot probe or mutate
+  ---
+  duration_ms: 0.621917
+  type: 'test'
+  ...
+# Subtest: standalone internal URL uses the addressed Host origin, never forwarded origins
+ok 10 - standalone internal URL uses the addressed Host origin, never forwarded origins
+  ---
+  duration_ms: 0.573583
+  type: 'test'
+  ...
+# Subtest: empty DELETE streams normalize consistently without accepting malformed JSON
+ok 11 - empty DELETE streams normalize consistently without accepting malformed JSON
+  ---
+  duration_ms: 0.872333
+  type: 'test'
+  ...
+# Subtest: desktop capability remains mandatory in desktop mode
+ok 12 - desktop capability remains mandatory in desktop mode
+  ---
+  duration_ms: 0.702
+  type: 'test'
+  ...
+# Subtest: forbidden URL components are rejected before probing
+ok 13 - forbidden URL components are rejected before probing
+  ---
+  duration_ms: 0.875208
+  type: 'test'
+  ...
+# Subtest: redirects/auth failures/model and byte limits cannot be bypassed with typed IDs
+ok 14 - redirects/auth failures/model and byte limits cannot be bypassed with typed IDs
+  ---
+  duration_ms: 8.494417
+  type: 'test'
+  ...
+# Subtest: write size bounds are explicit for streamed bodies
+ok 15 - write size bounds are explicit for streamed bodies
+  ---
+  duration_ms: 0.624208
+  type: 'test'
+  ...
+# Subtest: stale save, pin edit and disconnect all return reload guidance without writing
+ok 16 - stale save, pin edit and disconnect all return reload guidance without writing
+  ---
+  duration_ms: 0.956958
+  type: 'test'
+  ...
+# Subtest: after discovery preserves unrelated edits and rejects intervening custom edits
+ok 17 - after discovery preserves unrelated edits and rejects intervening custom edits
+  ---
+  duration_ms: 0.889459
+  type: 'test'
+  ...
+# Subtest: after discovery rejects a changed effective key
+ok 18 - after discovery rejects a changed effective key
+  ---
+  duration_ms: 0.407125
+  type: 'test'
+  ...
+# Subtest: offline pins accept 512/1, retain support declaration, and do not probe
+ok 19 - offline pins accept 512/1, retain support declaration, and do not probe
+  ---
+  duration_ms: 0.471
+  type: 'test'
+  ...
+# Subtest: settings-write failure restores previous key/config and reports failure
+ok 20 - settings-write failure restores previous key/config and reports failure
+  ---
+  duration_ms: 0.521334
+  type: 'test'
+  ...
+1..20
+# tests 20
+# suites 0
+# pass 20
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 667.074834

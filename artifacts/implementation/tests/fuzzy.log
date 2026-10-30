@@ -1,0 +1,47 @@
+TAP version 13
+# Subtest: fuzzyScore
+    # Subtest: matches across fields case-insensitively
+    ok 1 - matches across fields case-insensitively
+      ---
+      duration_ms: 0.339875
+      type: 'test'
+      ...
+    # Subtest: multi-token queries need every token to match somewhere
+    ok 2 - multi-token queries need every token to match somewhere
+      ---
+      duration_ms: 0.067209
+      type: 'test'
+      ...
+    # Subtest: ranks exact field equality above prefix above buried substring
+    ok 3 - ranks exact field equality above prefix above buried substring
+      ---
+      duration_ms: 0.065375
+      type: 'test'
+      ...
+    # Subtest: rewards whole-query contiguity in a single field
+    ok 4 - rewards whole-query contiguity in a single field
+      ---
+      duration_ms: 0.0485
+      type: 'test'
+      ...
+    # Subtest: empty query matches everything at score 0
+    ok 5 - empty query matches everything at score 0
+      ---
+      duration_ms: 0.038375
+      type: 'test'
+      ...
+    1..5
+ok 1 - fuzzyScore
+  ---
+  duration_ms: 0.951042
+  type: 'suite'
+  ...
+1..1
+# tests 5
+# suites 1
+# pass 5
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 55.387

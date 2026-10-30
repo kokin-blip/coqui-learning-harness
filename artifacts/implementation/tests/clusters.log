@@ -1,0 +1,36 @@
+TAP version 13
+# Subtest: MIN_CLUSTER_SIZE
+    # Subtest: is 3 (the render threshold — below this, no hull)
+    ok 1 - is 3 (the render threshold — below this, no hull)
+      ---
+      duration_ms: 0.194
+      type: 'test'
+      ...
+    1..1
+ok 1 - MIN_CLUSTER_SIZE
+  ---
+  duration_ms: 0.470667
+  type: 'suite'
+  ...
+# Subtest: clusterHue
+    # Subtest: is stable per id and spreads
+    ok 1 - is stable per id and spreads
+      ---
+      duration_ms: 0.113459
+      type: 'test'
+      ...
+    1..1
+ok 2 - clusterHue
+  ---
+  duration_ms: 0.155625
+  type: 'suite'
+  ...
+1..2
+# tests 2
+# suites 2
+# pass 2
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 55.443875

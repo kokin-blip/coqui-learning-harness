@@ -1,0 +1,48 @@
+TAP version 13
+# Subtest: turn liveness registry
+    # Subtest: retains a late-attach failure notice until the next accepted begin
+    ok 1 - retains a late-attach failure notice until the next accepted begin
+      ---
+      duration_ms: 7.703167
+      type: 'test'
+      ...
+    # Subtest: begin/end round trip; a second begin is rejected until the turn ends
+    ok 2 - begin/end round trip; a second begin is rejected until the turn ends
+      ---
+      duration_ms: 0.05975
+      type: 'test'
+      ...
+    1..2
+ok 1 - turn liveness registry
+  ---
+  duration_ms: 8.120083
+  type: 'suite'
+  ...
+# Subtest: turn lifecycle events
+    # Subtest: beginTurn emits turn-started on success only — the 409 double-begin stays silent
+    ok 1 - beginTurn emits turn-started on success only — the 409 double-begin stays silent
+      ---
+      duration_ms: 0.304792
+      type: 'test'
+      ...
+    # Subtest: endTurn emits turn-settled only when a live entry was present
+    ok 2 - endTurn emits turn-settled only when a live entry was present
+      ---
+      duration_ms: 0.067542
+      type: 'test'
+      ...
+    1..2
+ok 2 - turn lifecycle events
+  ---
+  duration_ms: 0.428458
+  type: 'suite'
+  ...
+1..2
+# tests 4
+# suites 2
+# pass 4
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 61.913625

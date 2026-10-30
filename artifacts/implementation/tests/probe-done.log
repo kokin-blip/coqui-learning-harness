@@ -1,0 +1,137 @@
+TAP version 13
+# [chat chat_8a5e24f95d344739bf4de0257cb7b676] probe handoff queueing failed: Error: queue exploded
+#     at Object.deliver (/Users/kokinmartinez/Documents/ChatGPT/coqui-learning harness/packages/engine/tests/probe-done.test.ts:139:11)
+#     at <anonymous> (/Users/kokinmartinez/Documents/ChatGPT/coqui-learning harness/packages/engine/src/agent/tools/probe.ts:81:10)
+#     at <anonymous> (/Users/kokinmartinez/Documents/ChatGPT/coqui-learning harness/packages/engine/src/agent/tool-execute.ts:210:54)
+#     at <anonymous> (/Users/kokinmartinez/Documents/ChatGPT/coqui-learning harness/packages/engine/src/agent/tool-execute.ts:102:16)
+# Subtest: probe_done: the probe→planning seam
+    # Subtest: ok path: records the assessment and queues the handoff steer (deterministic id)
+    ok 1 - ok path: records the assessment and queues the handoff steer (deterministic id)
+      ---
+      duration_ms: 4.22
+      type: 'test'
+      ...
+    # Subtest: REFUSES while a question is still open — resolve it first
+    ok 2 - REFUSES while a question is still open — resolve it first
+      ---
+      duration_ms: 0.626458
+      type: 'test'
+      ...
+    # Subtest: REFUSES a second conclusion — probe_done fires exactly once
+    ok 3 - REFUSES a second conclusion — probe_done fires exactly once
+      ---
+      duration_ms: 0.591208
+      type: 'test'
+      ...
+    # Subtest: REFUSES an unknown chat defensively
+    ok 4 - REFUSES an unknown chat defensively
+      ---
+      duration_ms: 0.137417
+      type: 'test'
+      ...
+    # Subtest: a deliver failure never fails the call — the assessment records; the wake is recoverable-by-design
+    ok 5 - a deliver failure never fails the call — the assessment records; the wake is recoverable-by-design
+      ---
+      duration_ms: 1.475333
+      type: 'test'
+      ...
+    1..5
+ok 1 - probe_done: the probe→planning seam
+  ---
+  duration_ms: 7.430125
+  type: 'suite'
+  ...
+# Subtest: probe completion: matched successful results only (PR130 foundation)
+    # Subtest: unmatched call keeps probing open and allows a fresh conclusion
+    ok 1 - unmatched call keeps probing open and allows a fresh conclusion
+      ---
+      duration_ms: 1.233166
+      type: 'test'
+      ...
+    # Subtest: errored result keeps probing open and allows a fresh conclusion
+    ok 2 - errored result keeps probing open and allows a fresh conclusion
+      ---
+      duration_ms: 0.58125
+      type: 'test'
+      ...
+    # Subtest: explicit refusal without isError keeps probing open and allows a fresh conclusion
+    ok 3 - explicit refusal without isError keeps probing open and allows a fresh conclusion
+      ---
+      duration_ms: 0.603542
+      type: 'test'
+      ...
+    # Subtest: result without a call keeps probing open and allows a fresh conclusion
+    ok 4 - result without a call keeps probing open and allows a fresh conclusion
+      ---
+      duration_ms: 0.498041
+      type: 'test'
+      ...
+    # Subtest: wrong call id keeps probing open and allows a fresh conclusion
+    ok 5 - wrong call id keeps probing open and allows a fresh conclusion
+      ---
+      duration_ms: 0.701375
+      type: 'test'
+      ...
+    # Subtest: wrong result tool name keeps probing open and allows a fresh conclusion
+    ok 6 - wrong result tool name keeps probing open and allows a fresh conclusion
+      ---
+      duration_ms: 0.526208
+      type: 'test'
+      ...
+    # Subtest: wrong call tool name keeps probing open and allows a fresh conclusion
+    ok 7 - wrong call tool name keeps probing open and allows a fresh conclusion
+      ---
+      duration_ms: 0.543375
+      type: 'test'
+      ...
+    # Subtest: result before the call keeps probing open and allows a fresh conclusion
+    ok 8 - result before the call keeps probing open and allows a fresh conclusion
+      ---
+      duration_ms: 0.649084
+      type: 'test'
+      ...
+    # Subtest: failed calling generation keeps probing open and allows a fresh conclusion
+    ok 9 - failed calling generation keeps probing open and allows a fresh conclusion
+      ---
+      duration_ms: 0.608708
+      type: 'test'
+      ...
+    # Subtest: aborted calling generation keeps probing open and allows a fresh conclusion
+    ok 10 - aborted calling generation keeps probing open and allows a fresh conclusion
+      ---
+      duration_ms: 0.627834
+      type: 'test'
+      ...
+    # Subtest: current acknowledgment concludes exactly at the matching result
+    ok 11 - current acknowledgment concludes exactly at the matching result
+      ---
+      duration_ms: 0.0655
+      type: 'test'
+      ...
+    # Subtest: older clean acknowledgment without details concludes exactly at the matching result
+    ok 12 - older clean acknowledgment without details concludes exactly at the matching result
+      ---
+      duration_ms: 0.040166
+      type: 'test'
+      ...
+    # Subtest: older clean acknowledgment without ok concludes exactly at the matching result
+    ok 13 - older clean acknowledgment without ok concludes exactly at the matching result
+      ---
+      duration_ms: 0.03175
+      type: 'test'
+      ...
+    1..13
+ok 2 - probe completion: matched successful results only (PR130 foundation)
+  ---
+  duration_ms: 6.934583
+  type: 'suite'
+  ...
+1..2
+# tests 18
+# suites 2
+# pass 18
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 137.334084

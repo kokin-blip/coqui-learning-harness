@@ -1,0 +1,392 @@
+{
+  "source_commit": "dc4c398d5167865b84b0ccb3ec809eb88bf8f65f",
+  "evidence_type": "static source inventory; no endpoints invoked",
+  "route_file_count": 34,
+  "method_count": 45,
+  "routes": [
+    {
+      "path": "/api/activity/abort",
+      "source": "app/api/activity/abort/route.ts",
+      "operations": [
+        {
+          "method": "POST",
+          "line": 22
+        }
+      ]
+    },
+    {
+      "path": "/api/activity",
+      "source": "app/api/activity/route.ts",
+      "operations": [
+        {
+          "method": "GET",
+          "line": 12
+        }
+      ]
+    },
+    {
+      "path": "/api/chat",
+      "source": "app/api/chat/route.ts",
+      "operations": [
+        {
+          "method": "POST",
+          "line": 3
+        }
+      ]
+    },
+    {
+      "path": "/api/chats/[id]/artifact-ui",
+      "source": "app/api/chats/[id]/artifact-ui/route.ts",
+      "operations": [
+        {
+          "method": "POST",
+          "line": 15
+        }
+      ]
+    },
+    {
+      "path": "/api/chats/[id]/dismiss",
+      "source": "app/api/chats/[id]/dismiss/route.ts",
+      "operations": [
+        {
+          "method": "POST",
+          "line": 25
+        }
+      ]
+    },
+    {
+      "path": "/api/chats/[id]/markdown",
+      "source": "app/api/chats/[id]/markdown/route.ts",
+      "operations": [
+        {
+          "method": "GET",
+          "line": 26
+        }
+      ]
+    },
+    {
+      "path": "/api/chats/[id]",
+      "source": "app/api/chats/[id]/route.ts",
+      "operations": [
+        {
+          "method": "GET",
+          "line": 3
+        },
+        {
+          "method": "PUT",
+          "line": 36
+        },
+        {
+          "method": "DELETE",
+          "line": 68
+        }
+      ]
+    },
+    {
+      "path": "/api/chats/[id]/settings",
+      "source": "app/api/chats/[id]/settings/route.ts",
+      "operations": [
+        {
+          "method": "PUT",
+          "line": 27
+        }
+      ]
+    },
+    {
+      "path": "/api/chats/[id]/steer",
+      "source": "app/api/chats/[id]/steer/route.ts",
+      "operations": [
+        {
+          "method": "POST",
+          "line": 16
+        }
+      ]
+    },
+    {
+      "path": "/api/chats/[id]/stream",
+      "source": "app/api/chats/[id]/stream/route.ts",
+      "operations": [
+        {
+          "method": "GET",
+          "line": 18
+        }
+      ]
+    },
+    {
+      "path": "/api/chats",
+      "source": "app/api/chats/route.ts",
+      "operations": [
+        {
+          "method": "GET",
+          "line": 13
+        },
+        {
+          "method": "POST",
+          "line": 22
+        }
+      ]
+    },
+    {
+      "path": "/api/claude-code",
+      "source": "app/api/claude-code/route.ts",
+      "operations": [
+        {
+          "method": "GET",
+          "line": 4
+        }
+      ]
+    },
+    {
+      "path": "/api/custom-provider",
+      "source": "app/api/custom-provider/route.ts",
+      "operations": [
+        {
+          "method": "GET",
+          "line": 6
+        },
+        {
+          "method": "POST",
+          "line": 7
+        },
+        {
+          "method": "PATCH",
+          "line": 8
+        },
+        {
+          "method": "DELETE",
+          "line": 9
+        }
+      ]
+    },
+    {
+      "path": "/api/events",
+      "source": "app/api/events/route.ts",
+      "operations": [
+        {
+          "method": "GET",
+          "line": 13
+        }
+      ]
+    },
+    {
+      "path": "/api/graph/costs",
+      "source": "app/api/graph/costs/route.ts",
+      "operations": [
+        {
+          "method": "GET",
+          "line": 17
+        }
+      ]
+    },
+    {
+      "path": "/api/graph/coverage/extract",
+      "source": "app/api/graph/coverage/extract/route.ts",
+      "operations": [
+        {
+          "method": "POST",
+          "line": 17
+        }
+      ]
+    },
+    {
+      "path": "/api/graph/import",
+      "source": "app/api/graph/import/route.ts",
+      "operations": [
+        {
+          "method": "POST",
+          "line": 43
+        }
+      ]
+    },
+    {
+      "path": "/api/graph/nodes/[id]",
+      "source": "app/api/graph/nodes/[id]/route.ts",
+      "operations": [
+        {
+          "method": "DELETE",
+          "line": 20
+        }
+      ]
+    },
+    {
+      "path": "/api/graph/positions",
+      "source": "app/api/graph/positions/route.ts",
+      "operations": [
+        {
+          "method": "PUT",
+          "line": 16
+        }
+      ]
+    },
+    {
+      "path": "/api/graph/render-settings",
+      "source": "app/api/graph/render-settings/route.ts",
+      "operations": [
+        {
+          "method": "GET",
+          "line": 19
+        },
+        {
+          "method": "PUT",
+          "line": 23
+        }
+      ]
+    },
+    {
+      "path": "/api/graph",
+      "source": "app/api/graph/route.ts",
+      "operations": [
+        {
+          "method": "GET",
+          "line": 11
+        }
+      ]
+    },
+    {
+      "path": "/api/graph/status",
+      "source": "app/api/graph/status/route.ts",
+      "operations": [
+        {
+          "method": "GET",
+          "line": 14
+        }
+      ]
+    },
+    {
+      "path": "/api/jobs",
+      "source": "app/api/jobs/route.ts",
+      "operations": [
+        {
+          "method": "GET",
+          "line": 14
+        }
+      ]
+    },
+    {
+      "path": "/api/keys/[id]",
+      "source": "app/api/keys/[id]/route.ts",
+      "operations": [
+        {
+          "method": "PUT",
+          "line": 25
+        },
+        {
+          "method": "DELETE",
+          "line": 44
+        }
+      ]
+    },
+    {
+      "path": "/api/keys",
+      "source": "app/api/keys/route.ts",
+      "operations": [
+        {
+          "method": "GET",
+          "line": 24
+        }
+      ]
+    },
+    {
+      "path": "/api/models",
+      "source": "app/api/models/route.ts",
+      "operations": [
+        {
+          "method": "GET",
+          "line": 9
+        }
+      ]
+    },
+    {
+      "path": "/api/search",
+      "source": "app/api/search/route.ts",
+      "operations": [
+        {
+          "method": "GET",
+          "line": 16
+        }
+      ]
+    },
+    {
+      "path": "/api/settings/[section]",
+      "source": "app/api/settings/[section]/route.ts",
+      "operations": [
+        {
+          "method": "PUT",
+          "line": 53
+        }
+      ]
+    },
+    {
+      "path": "/api/settings/prompts/[...segment]",
+      "source": "app/api/settings/prompts/[...segment]/route.ts",
+      "operations": [
+        {
+          "method": "PUT",
+          "line": 45
+        },
+        {
+          "method": "DELETE",
+          "line": 63
+        }
+      ]
+    },
+    {
+      "path": "/api/settings/prompts",
+      "source": "app/api/settings/prompts/route.ts",
+      "operations": [
+        {
+          "method": "GET",
+          "line": 23
+        }
+      ]
+    },
+    {
+      "path": "/api/settings",
+      "source": "app/api/settings/route.ts",
+      "operations": [
+        {
+          "method": "GET",
+          "line": 21
+        }
+      ]
+    },
+    {
+      "path": "/api/stt/token",
+      "source": "app/api/stt/token/route.ts",
+      "operations": [
+        {
+          "method": "GET",
+          "line": 18
+        }
+      ]
+    },
+    {
+      "path": "/api/subscriptions/browser",
+      "source": "app/api/subscriptions/browser/route.ts",
+      "operations": [
+        {
+          "method": "GET",
+          "line": 5
+        },
+        {
+          "method": "POST",
+          "line": 6
+        }
+      ]
+    },
+    {
+      "path": "/api/subscriptions",
+      "source": "app/api/subscriptions/route.ts",
+      "operations": [
+        {
+          "method": "GET",
+          "line": 5
+        },
+        {
+          "method": "POST",
+          "line": 6
+        }
+      ]
+    }
+  ]
+}

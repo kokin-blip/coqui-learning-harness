@@ -1,0 +1,265 @@
+TAP version 13
+# Subtest: normalizeBaseUrl
+    # Subtest: drops trailing slashes and keeps the path
+    ok 1 - drops trailing slashes and keeps the path
+      ---
+      duration_ms: 0.290041
+      type: 'test'
+      ...
+    # Subtest: rejects non-http(s) schemes and junk with empty string
+    ok 2 - rejects non-http(s) schemes and junk with empty string
+      ---
+      duration_ms: 0.059583
+      type: 'test'
+      ...
+    1..2
+ok 1 - normalizeBaseUrl
+  ---
+  duration_ms: 0.663917
+  type: 'suite'
+  ...
+# Subtest: customProviderUsable
+    # Subtest: is true exactly when a base URL is set (the key is optional)
+    ok 1 - is true exactly when a base URL is set (the key is optional)
+      ---
+      duration_ms: 0.050083
+      type: 'test'
+      ...
+    1..1
+ok 2 - customProviderUsable
+  ---
+  duration_ms: 0.088333
+  type: 'suite'
+  ...
+# Subtest: sanitizeUserSettings — customProvider
+    # Subtest: normalizes the base URL and cleans the model list (trim, dedupe, image flag)
+    ok 1 - normalizes the base URL and cleans the model list (trim, dedupe, image flag)
+      ---
+      duration_ms: 0.431875
+      type: 'test'
+      ...
+    # Subtest: keeps image:true and drops a non-array models list / invalid base URL
+    ok 2 - keeps image:true and drops a non-array models list / invalid base URL
+      ---
+      duration_ms: 0.045125
+      type: 'test'
+      ...
+    # Subtest: keeps reasoning:true and drops a non-true reasoning flag
+    ok 3 - keeps reasoning:true and drops a non-true reasoning flag
+      ---
+      duration_ms: 0.065
+      type: 'test'
+      ...
+    1..3
+ok 3 - sanitizeUserSettings — customProvider
+  ---
+  duration_ms: 0.611292
+  type: 'suite'
+  ...
+# Subtest: sanitizeUserSettings / sanitizeCustomModelOverrides — pins
+    # Subtest: keeps all positive integer pins and reasoning:false
+    ok 1 - keeps all positive integer pins and reasoning:false
+      ---
+      duration_ms: 0.113542
+      type: 'test'
+      ...
+    # Subtest: prunes pins for models the endpoint no longer advertises — the single prune law
+    ok 2 - prunes pins for models the endpoint no longer advertises — the single prune law
+      ---
+      duration_ms: 0.080625
+      type: 'test'
+      ...
+    # Subtest: drops an invalid overrides section from the record entirely
+    ok 3 - drops an invalid overrides section from the record entirely
+      ---
+      duration_ms: 0.05225
+      type: 'test'
+      ...
+    1..3
+ok 4 - sanitizeUserSettings / sanitizeCustomModelOverrides — pins
+  ---
+  duration_ms: 0.330875
+  type: 'suite'
+  ...
+# Subtest: parseCustomModelOverridesBody — the strict write side
+    # Subtest: accepts whole counts at or above the floor and the tri-state reasoning pin
+    ok 1 - accepts whole counts at or above the floor and the tri-state reasoning pin
+      ---
+      duration_ms: 0.132042
+      type: 'test'
+      ...
+    # Subtest: rejects a count under the floor, naming the floor
+    ok 2 - rejects a count under the floor, naming the floor
+      ---
+      duration_ms: 0.032208
+      type: 'test'
+      ...
+    # Subtest: rejects a fractional count, a non-boolean reasoning, and a missing overrides map
+    ok 3 - rejects a fractional count, a non-boolean reasoning, and a missing overrides map
+      ---
+      duration_ms: 0.032916
+      type: 'test'
+      ...
+    1..3
+ok 5 - parseCustomModelOverridesBody — the strict write side
+  ---
+  duration_ms: 0.237417
+  type: 'suite'
+  ...
+# Subtest: resolveSettings — customProvider
+    # Subtest: resolves an absent section to concrete defaults
+    ok 1 - resolves an absent section to concrete defaults
+      ---
+      duration_ms: 0.122333
+      type: 'test'
+      ...
+    # Subtest: carries stored pins through to the concrete view
+    ok 2 - carries stored pins through to the concrete view
+      ---
+      duration_ms: 0.04625
+      type: 'test'
+      ...
+    # Subtest: carries stored manual model ids through to the concrete view
+    ok 3 - carries stored manual model ids through to the concrete view
+      ---
+      duration_ms: 0.033584
+      type: 'test'
+      ...
+    1..3
+ok 6 - resolveSettings — customProvider
+  ---
+  duration_ms: 0.235209
+  type: 'suite'
+  ...
+# Subtest: manual model ids
+    # Subtest: parseModelIds splits a typed list on commas and whitespace, trims and dedupes
+    ok 1 - parseModelIds splits a typed list on commas and whitespace, trims and dedupes
+      ---
+      duration_ms: 0.092125
+      type: 'test'
+      ...
+    # Subtest: parseModelIds accepts a string array and ignores non-strings and junk
+    ok 2 - parseModelIds accepts a string array and ignores non-strings and junk
+      ---
+      duration_ms: 0.025625
+      type: 'test'
+      ...
+    # Subtest: the sanitizer keeps a clean manual list and drops an empty one
+    ok 3 - the sanitizer keeps a clean manual list and drops an empty one
+      ---
+      duration_ms: 0.051542
+      type: 'test'
+      ...
+    # Subtest: mergeManualModels adds typed ids with defaults and never replaces discovered metadata
+    ok 4 - mergeManualModels adds typed ids with defaults and never replaces discovered metadata
+      ---
+      duration_ms: 0.07325
+      type: 'test'
+      ...
+    # Subtest: mergeManualModels alone builds the list when discovery found nothing
+    ok 5 - mergeManualModels alone builds the list when discovery found nothing
+      ---
+      duration_ms: 0.0375
+      type: 'test'
+      ...
+    1..5
+ok 7 - manual model ids
+  ---
+  duration_ms: 0.318542
+  type: 'suite'
+  ...
+# Subtest: buildOpenAiCompatibleProvider / syncCustomProvider
+    # Subtest: maps ids to defaults and marks image-capable models image-input
+    ok 1 - maps ids to defaults and marks image-capable models image-input
+      ---
+      duration_ms: 0.218875
+      type: 'test'
+      ...
+    # Subtest: carries endpoint token limits when present
+    ok 2 - carries endpoint token limits when present
+      ---
+      duration_ms: 0.035708
+      type: 'test'
+      ...
+    # Subtest: a user pin beats the endpoint, which beats the compiled default
+    ok 3 - a user pin beats the endpoint, which beats the compiled default
+      ---
+      duration_ms: 0.0405
+      type: 'test'
+      ...
+    # Subtest: the thinking pin is tri-state: false beats a detected-true endpoint, true beats silence
+    ok 4 - the thinking pin is tri-state: false beats a detected-true endpoint, true beats silence
+      ---
+      duration_ms: 0.055334
+      type: 'test'
+      ...
+    # Subtest: gives a reasoning-capable model the standard thinking levels (others stay "off")
+    ok 5 - gives a reasoning-capable model the standard thinking levels (others stay "off")
+      ---
+      duration_ms: 0.038583
+      type: 'test'
+      ...
+    # Subtest: registers the native provider in the shared collection
+    ok 6 - registers the native provider in the shared collection
+      ---
+      duration_ms: 0.9485
+      type: 'test'
+      ...
+    1..6
+ok 8 - buildOpenAiCompatibleProvider / syncCustomProvider
+  ---
+  duration_ms: 1.448125
+  type: 'suite'
+  ...
+# Subtest: discoverModels
+    # Subtest: reads OpenAI {data:[{id}]} and Ollama {models:[{id}]} shapes
+    ok 1 - reads OpenAI {data:[{id}]} and Ollama {models:[{id}]} shapes
+      ---
+      duration_ms: 3.216709
+      type: 'test'
+      ...
+    # Subtest: detects image capability from common modality fields
+    ok 2 - detects image capability from common modality fields
+      ---
+      duration_ms: 0.226875
+      type: 'test'
+      ...
+    # Subtest: detects token limits from common metadata fields
+    ok 3 - detects token limits from common metadata fields
+      ---
+      duration_ms: 0.149334
+      type: 'test'
+      ...
+    # Subtest: detects reasoning from endpoint metadata only — never from the model name
+    ok 4 - detects reasoning from endpoint metadata only — never from the model name
+      ---
+      duration_ms: 0.179916
+      type: 'test'
+      ...
+    # Subtest: guards the scheme before any fetch
+    ok 5 - guards the scheme before any fetch
+      ---
+      duration_ms: 0.044541
+      type: 'test'
+      ...
+    # Subtest: reports a non-2xx and an unparseable shape as honest errors
+    ok 6 - reports a non-2xx and an unparseable shape as honest errors
+      ---
+      duration_ms: 0.191
+      type: 'test'
+      ...
+    1..6
+ok 9 - discoverModels
+  ---
+  duration_ms: 4.083333
+  type: 'suite'
+  ...
+1..9
+# tests 32
+# suites 9
+# pass 32
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 493.637125

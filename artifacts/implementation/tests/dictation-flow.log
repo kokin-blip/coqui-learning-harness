@@ -1,0 +1,100 @@
+TAP version 13
+# Subtest: waits for the saved language; reconnect preserves it and finals still flush exactly once
+ok 1 - waits for the saved language; reconnect preserves it and finals still flush exactly once
+  ---
+  duration_ms: 54.310625
+  type: 'test'
+  ...
+# Subtest: a failed save keeps the previous language, including a shortcut pressed while saving
+ok 2 - a failed save keeps the previous language, including a shortcut pressed while saving
+  ---
+  duration_ms: 2.488292
+  type: 'test'
+  ...
+# Subtest: confirmed choices stay cached across navigation; failed explicit refreshes block capture
+ok 3 - confirmed choices stay cached across navigation; failed explicit refreshes block capture
+  ---
+  duration_ms: 1.975209
+  type: 'test'
+  ...
+# Subtest: a shortcut waits for a language save made by the separate settings control
+ok 4 - a shortcut waits for a language save made by the separate settings control
+  ---
+  duration_ms: 1.17775
+  type: 'test'
+  ...
+# Subtest: a saved-language refresh gates capture even when an older choice is cached
+ok 5 - a saved-language refresh gates capture even when an older choice is cached
+  ---
+  duration_ms: 1.15725
+  type: 'test'
+  ...
+# Subtest: a stale settings refresh cannot overwrite a newer confirmed choice
+ok 6 - a stale settings refresh cannot overwrite a newer confirmed choice
+  ---
+  duration_ms: 1.06825
+  type: 'test'
+  ...
+# Subtest: cancel while settings load does not open a microphone or socket later
+ok 7 - cancel while settings load does not open a microphone or socket later
+  ---
+  duration_ms: 1.005833
+  type: 'test'
+  ...
+# Subtest: reopening settings during a save shares its busy state and rejects a competing selection
+ok 8 - reopening settings during a save shares its busy state and rejects a competing selection
+  ---
+  duration_ms: 1.199625
+  type: 'test'
+  ...
+# Subtest: a confirmed save applies to capture even when subsequent settings GET requests would fail
+ok 9 - a confirmed save applies to capture even when subsequent settings GET requests would fail
+  ---
+  duration_ms: 1.029083
+  type: 'test'
+  ...
+# Subtest: unmount during a pending language read prevents orphaned capture
+ok 10 - unmount during a pending language read prevents orphaned capture
+  ---
+  duration_ms: 0.753667
+  type: 'test'
+  ...
+# Subtest: unmount during recording stops resources and discards the departing page's buffered text
+ok 11 - unmount during recording stops resources and discards the departing page's buffered text
+  ---
+  duration_ms: 0.861166
+  type: 'test'
+  ...
+# Subtest: microphone permission resolving after unmount immediately stops the late stream
+ok 12 - microphone permission resolving after unmount immediately stops the late stream
+  ---
+  duration_ms: 1.394375
+  type: 'test'
+  ...
+# Subtest: microphone denial releases the active state and leaves no socket or input
+ok 13 - microphone denial releases the active state and leaves no socket or input
+  ---
+  duration_ms: 0.632833
+  type: 'test'
+  ...
+# Subtest: cancel discards buffered finals and late socket events
+ok 14 - cancel discards buffered finals and late socket events
+  ---
+  duration_ms: 0.754042
+  type: 'test'
+  ...
+# Subtest: send waits for stop/flush and keeps the completed transcript exactly once
+ok 15 - send waits for stop/flush and keeps the completed transcript exactly once
+  ---
+  duration_ms: 0.782334
+  type: 'test'
+  ...
+1..15
+# tests 15
+# suites 0
+# pass 15
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 197.026958

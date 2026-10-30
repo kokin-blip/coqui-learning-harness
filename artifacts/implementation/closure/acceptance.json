@@ -1,0 +1,202 @@
+{
+  "at": "2026-10-30T20:21:33.880Z",
+  "packaged": true,
+  "checks": [
+    {
+      "name": "Native session metadata/kinds and invalid input refusal",
+      "features": [
+        "E001",
+        "E002",
+        "E015"
+      ],
+      "passed": true
+    },
+    {
+      "name": "Persistent deletion history restores a session through Settings after native restart",
+      "features": [
+        "E094",
+        "U011",
+        "U013"
+      ],
+      "passed": true
+    },
+    {
+      "name": "Probe assessment, one automatic teacher handoff, native plan and phase survive reload",
+      "features": [
+        "E005",
+        "E006",
+        "E009",
+        "E010",
+        "E011",
+        "U003",
+        "U008",
+        "U035",
+        "U048"
+      ],
+      "passed": true
+    },
+    {
+      "name": "Sibling answers stay adjacent and only the last starts a reaction",
+      "features": [
+        "E037",
+        "E097",
+        "E099"
+      ],
+      "passed": true
+    },
+    {
+      "name": "Real specialist workers finish behind a question; restart delivers each saved result exactly once",
+      "features": [
+        "E050",
+        "E100",
+        "E101",
+        "E102",
+        "U057",
+        "U071",
+        "U073"
+      ],
+      "passed": true
+    },
+    {
+      "name": "SVG natural size, CSS isolation, persistent inversion and focus pan/zoom/fit",
+      "features": [
+        "U059",
+        "U060"
+      ],
+      "passed": true
+    },
+    {
+      "name": "Failed, canceled and already-finished background work retain honest delivery states",
+      "features": [
+        "E103",
+        "U057",
+        "U072"
+      ],
+      "passed": true
+    },
+    {
+      "name": "Leaving a stream preserves computation; live steering/abort retain one input and partial native output",
+      "features": [
+        "E016",
+        "E018",
+        "E098",
+        "E099",
+        "U038",
+        "U039"
+      ],
+      "passed": true
+    },
+    {
+      "name": "Silent practice dismissal synthesizes one durable conclusion on Next and exposes recorded metadata",
+      "features": [
+        "E044",
+        "E046",
+        "U051"
+      ],
+      "passed": true
+    },
+    {
+      "name": "Actual compaction retains the full archive and appends a summary marker without losing the pending question",
+      "features": [
+        "E105",
+        "E106",
+        "U012",
+        "U048"
+      ],
+      "passed": true
+    },
+    {
+      "name": "Transient record-read failure preserves the visible lesson and committed question",
+      "features": [
+        "U038",
+        "U093"
+      ],
+      "passed": true
+    },
+    {
+      "name": "Dedicated context selection has Done, preserves draft, hides deletion and prepends context before input",
+      "features": [
+        "E004",
+        "E093",
+        "U006",
+        "U030"
+      ],
+      "passed": true
+    },
+    {
+      "name": "Map Find targets proposition search even with a retained lesson",
+      "features": [
+        "U021",
+        "U094"
+      ],
+      "passed": true
+    },
+    {
+      "name": "Graph display/physics controls persist through actual private-IPC route without resetting data",
+      "features": [
+        "U033",
+        "U034",
+        "U020"
+      ],
+      "passed": true
+    },
+    {
+      "name": "Native graph keyboard pan, cursor wheel zoom, persisted camera and live node drag commit",
+      "features": [
+        "U016",
+        "U017",
+        "U018",
+        "U019",
+        "U020"
+      ],
+      "passed": true
+    },
+    {
+      "name": "Prompt override write/enable/reset and invalid registered-path refusal cross the process boundary",
+      "features": [
+        "E117",
+        "U085"
+      ],
+      "passed": true
+    },
+    {
+      "name": "Compaction floor rejects invalid input; extraction floor and independent graph switches preserve stored knowledge",
+      "features": [
+        "E096",
+        "E116",
+        "U084",
+        "U086",
+        "U087",
+        "U097"
+      ],
+      "passed": true
+    },
+    {
+      "name": "OS-backed File drop resolves its native path into atomic composer chips without upload",
+      "features": [
+        "U061",
+        "U062"
+      ],
+      "passed": true
+    },
+    {
+      "name": "Packaged renderer exposes the preload projection without Node globals",
+      "features": [
+        "U098",
+        "U102",
+        "U104"
+      ],
+      "passed": true
+    }
+  ],
+  "errors": [],
+  "build": {
+    "version": "0.2.1",
+    "packaged": true,
+    "electron": "44.10.0",
+    "node": "24.22.1",
+    "upstreamCommit": "dc4c398d5167865b84b0ccb3ec809eb88bf8f65f",
+    "appPayloadSha256": "b1bb6f098e7b4f70a9a0ef77ae9c73d9e366ef8b5e273757d2da8aeaaf468453"
+  },
+  "passed": true
+}

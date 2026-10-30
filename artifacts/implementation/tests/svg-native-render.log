@@ -1,0 +1,41 @@
+TAP version 13
+# Subtest: native renderSvg (resvg in-process, browser fallback)
+    # Subtest: renders an attribute-sized SVG at its intrinsic size
+    ok 1 - renders an attribute-sized SVG at its intrinsic size
+      ---
+      duration_ms: 69.919417
+      type: 'test'
+      ...
+    # Subtest: viewBox-only SVG gets the 900px-wide default
+    ok 2 - viewBox-only SVG gets the 900px-wide default
+      ---
+      duration_ms: 65.254792
+      type: 'test'
+      ...
+    # Subtest: width/height opts override for viewBox-only SVGs
+    ok 3 - width/height opts override for viewBox-only SVGs
+      ---
+      duration_ms: 58.503584
+      type: 'test'
+      ...
+    # Subtest: text-bearing SVG renders with system fonts (non-trivial output)
+    ok 4 - text-bearing SVG renders with system fonts (non-trivial output)
+      ---
+      duration_ms: 58.833542
+      type: 'test'
+      ...
+    1..4
+ok 1 - native renderSvg (resvg in-process, browser fallback)
+  ---
+  duration_ms: 252.990583
+  type: 'suite'
+  ...
+1..1
+# tests 4
+# suites 1
+# pass 4
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 341.470792

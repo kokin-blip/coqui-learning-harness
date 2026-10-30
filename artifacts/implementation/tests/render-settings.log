@@ -1,0 +1,175 @@
+TAP version 13
+# Subtest: sanitizeRenderSettings
+    # Subtest: garbage in → full defaults out
+    ok 1 - garbage in → full defaults out
+      ---
+      duration_ms: 0.693333
+      type: 'test'
+      ...
+    # Subtest: partial input → defaults fill the gaps
+    ok 2 - partial input → defaults fill the gaps
+      ---
+      duration_ms: 0.078292
+      type: 'test'
+      ...
+    # Subtest: out-of-range values snap to ladder ends; wrong types reset
+    ok 3 - out-of-range values snap to ladder ends; wrong types reset
+      ---
+      duration_ms: 0.061625
+      type: 'test'
+      ...
+    # Subtest: the ladder law: any finite value snaps to the nearest stop
+    ok 4 - the ladder law: any finite value snaps to the nearest stop
+      ---
+      duration_ms: 0.057417
+      type: 'test'
+      ...
+    # Subtest: clusterLabelSize snaps to its own ladder
+    ok 5 - clusterLabelSize snaps to its own ladder
+      ---
+      duration_ms: 0.075625
+      type: 'test'
+      ...
+    # Subtest: the low ends accept small sizes (ladder floors)
+    ok 6 - the low ends accept small sizes (ladder floors)
+      ---
+      duration_ms: 0.081042
+      type: 'test'
+      ...
+    # Subtest: a fully valid object passes through unchanged
+    ok 7 - a fully valid object passes through unchanged
+      ---
+      duration_ms: 0.056083
+      type: 'test'
+      ...
+    # Subtest: supports settings are GONE (chains-primary, 2026-09-30): stale keys silently drop
+    ok 8 - supports settings are GONE (chains-primary, 2026-09-30): stale keys silently drop
+      ---
+      duration_ms: 0.043083
+      type: 'test'
+      ...
+    # Subtest: the pre-2026-09-13 stored shape (flat, no regions/physics) still loads
+    ok 9 - the pre-2026-09-13 stored shape (flat, no regions/physics) still loads
+      ---
+      duration_ms: 0.059875
+      type: 'test'
+      ...
+    # Subtest: the 2026-09-15 world-unit pivot: legacy files reset ONLY the size fields
+    ok 10 - the 2026-09-15 world-unit pivot: legacy files reset ONLY the size fields
+      ---
+      duration_ms: 0.093375
+      type: 'test'
+      ...
+    # Subtest: a stamped world-unit file keeps its size values
+    ok 11 - a stamped world-unit file keeps its size values
+      ---
+      duration_ms: 0.046541
+      type: 'test'
+      ...
+    # Subtest: the 2026-09-17 defaults are the user's live-tuned bake
+    ok 12 - the 2026-09-17 defaults are the user's live-tuned bake
+      ---
+      duration_ms: 0.0515
+      type: 'test'
+      ...
+    # Subtest: nested sections sanitize: garbage snaps inside them without touching the rest
+    ok 13 - nested sections sanitize: garbage snaps inside them without touching the rest
+      ---
+      duration_ms: 0.062208
+      type: 'test'
+      ...
+    # Subtest: the pre-wave stored shape (no labelSize) still loads
+    ok 14 - the pre-wave stored shape (no labelSize) still loads
+      ---
+      duration_ms: 0.044083
+      type: 'test'
+      ...
+    1..14
+ok 1 - sanitizeRenderSettings
+  ---
+  duration_ms: 1.978875
+  type: 'suite'
+  ...
+# Subtest: ladder mapping (11 stops, default-centered)
+    # Subtest: every ladder has 11 stops; every default is stop \#5 (dead-center)
+    ok 1 - every ladder has 11 stops; every default is stop \#5 (dead-center)
+      ---
+      duration_ms: 0.050416
+      type: 'test'
+      ...
+    # Subtest: every value is a nice number (clean decimal, no float artifacts)
+    ok 2 - every value is a nice number (clean decimal, no float artifacts)
+      ---
+      duration_ms: 0.108042
+      type: 'test'
+      ...
+    # Subtest: round-trips: positions 0-100 step 10 hit every stop and back
+    ok 3 - round-trips: positions 0-100 step 10 hit every stop and back
+      ---
+      duration_ms: 0.1255
+      type: 'test'
+      ...
+    # Subtest: off-ladder positions snap to the nearest stop; extremes clamp
+    ok 4 - off-ladder positions snap to the nearest stop; extremes clamp
+      ---
+      duration_ms: 0.04325
+      type: 'test'
+      ...
+    # Subtest: display units are absolute (ratio / 0.5): 8× is the tuned default
+    ok 5 - display units are absolute (ratio / 0.5): 8× is the tuned default
+      ---
+      duration_ms: 0.030625
+      type: 'test'
+      ...
+    1..5
+ok 2 - ladder mapping (11 stops, default-centered)
+  ---
+  duration_ms: 0.413792
+  type: 'suite'
+  ...
+# Subtest: physics sliders (fine-grained log, unchanged 2026-09-17)
+    # Subtest: every region/physics default sits dead-center at position 50
+    ok 1 - every region/physics default sits dead-center at position 50
+      ---
+      duration_ms: 0.065917
+      type: 'test'
+      ...
+    # Subtest: the 2026-09-17 charge bump: default −240, dead-center
+    ok 2 - the 2026-09-17 charge bump: default −240, dead-center
+      ---
+      duration_ms: 0.019417
+      type: 'test'
+      ...
+    # Subtest: off-slider mapping: position 0 ↔ value 0; the log part round-trips
+    ok 3 - off-slider mapping: position 0 ↔ value 0; the log part round-trips
+      ---
+      duration_ms: 0.059417
+      type: 'test'
+      ...
+    # Subtest: blur is WORLD units (2026-09-15): free values, snapped to the ladder
+    ok 4 - blur is WORLD units (2026-09-15): free values, snapped to the ladder
+      ---
+      duration_ms: 0.071042
+      type: 'test'
+      ...
+    # Subtest: enabled is the compute off switch: only an explicit false turns it off
+    ok 5 - enabled is the compute off switch: only an explicit false turns it off
+      ---
+      duration_ms: 0.044916
+      type: 'test'
+      ...
+    1..5
+ok 3 - physics sliders (fine-grained log, unchanged 2026-09-17)
+  ---
+  duration_ms: 0.324041
+  type: 'suite'
+  ...
+1..3
+# tests 24
+# suites 3
+# pass 24
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 125.69075

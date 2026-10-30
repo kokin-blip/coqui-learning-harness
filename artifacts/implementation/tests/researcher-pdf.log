@@ -1,0 +1,73 @@
+TAP version 13
+# Subtest: researcher pdf tools — download + triage
+    # Subtest: web_fetch_pdf downloads, triages, and returns a usable summary
+    ok 1 - web_fetch_pdf downloads, triages, and returns a usable summary
+      ---
+      duration_ms: 322.112792
+      type: 'test'
+      ...
+    # Subtest: the follow-up tools read the download page-level (extract + search)
+    ok 2 - the follow-up tools read the download page-level (extract + search)
+      ---
+      duration_ms: 9.906042
+      type: 'test'
+      ...
+    # Subtest: rejects non-PDF responses and non-http(s) schemes with error strings
+    ok 3 - rejects non-PDF responses and non-http(s) schemes with error strings
+      ---
+      duration_ms: 0.428417
+      type: 'test'
+      ...
+    1..3
+ok 1 - researcher pdf tools — download + triage
+  ---
+  duration_ms: 332.91
+  type: 'suite'
+  ...
+# Subtest: researcher pdf tools — the temp-dir wall
+    # Subtest: path-taking tools refuse anything outside the job dir
+    ok 1 - path-taking tools refuse anything outside the job dir
+      ---
+      duration_ms: 0.295125
+      type: 'test'
+      ...
+    # Subtest: pdf_info reports per-page triage signals for a real download
+    ok 2 - pdf_info reports per-page triage signals for a real download
+      ---
+      duration_ms: 6.36525
+      type: 'test'
+      ...
+    1..2
+ok 2 - researcher pdf tools — the temp-dir wall
+  ---
+  duration_ms: 6.759833
+  type: 'suite'
+  ...
+# Subtest: web_fetch — PDF pointer + source header
+    # Subtest: a PDF URL points at web_fetch_pdf instead of dead-ending
+    ok 1 - a PDF URL points at web_fetch_pdf instead of dead-ending
+      ---
+      duration_ms: 0.294833
+      type: 'test'
+      ...
+    # Subtest: output carries the source line with HTTP status
+    ok 2 - output carries the source line with HTTP status
+      ---
+      duration_ms: 0.201292
+      type: 'test'
+      ...
+    1..2
+ok 3 - web_fetch — PDF pointer + source header
+  ---
+  duration_ms: 0.5595
+  type: 'suite'
+  ...
+1..3
+# tests 7
+# suites 3
+# pass 7
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 550.044667

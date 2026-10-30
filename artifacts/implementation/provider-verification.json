@@ -1,0 +1,79 @@
+{
+  "build": "0.2.1",
+  "at": "2026-10-30T20:23:41.537Z",
+  "apiKeyUsed": false,
+  "providers": {
+    "chatgpt": {
+      "live": [
+        "browser sign-in",
+        "selected-account model discovery",
+        "diagnostic and teaching",
+        "practice conclusion and explicit Next",
+        "restart persistence",
+        "completed extraction",
+        "verified interactive demo and durable delivery",
+        "final-package display of saved demonstration",
+        "logout and browser reconnect with exact saved lesson/draft preserved",
+        "static SVG maker with render/vision inspection and durable delivery",
+        "local PDF specialist extraction, page citations and rendered-page inspection",
+        "research specialist fetching a supplied primary RFC URL without a search key",
+        "final 0.2.1 plan inference and saved demo interaction/isolation"
+      ],
+      "fixtureOnly": [
+        "refresh",
+        "expired registration",
+        "quota/eligibility",
+        "account races/switching",
+        "background-consent boundaries"
+      ],
+      "pending": []
+    },
+    "github-copilot": {
+      "live": false,
+      "reason": "No connected eligible account",
+      "liveDeferredByUser": true
+    },
+    "grok": {
+      "live": false,
+      "reason": "No connected eligible account",
+      "liveDeferredByUser": true
+    },
+    "claude-code": {
+      "live": false,
+      "reason": "Installed2.1.241 below required2.1.259; unchanged",
+      "liveDeferredByUser": true
+    },
+    "api-providers": {
+      "live": false,
+      "reason": "No API-key inference performed",
+      "liveDeferredByUser": true
+    },
+    "search": {
+      "live": false,
+      "reason": "No service key",
+      "liveDeferredByUser": true,
+      "knownUrlResearch": "Live ChatGPT researcher web_fetch succeeded; Tavily/Brave search inference remains unverified without keys."
+    },
+    "deepgram": {
+      "live": false,
+      "reason": "No service key/physical microphone roundtrip",
+      "liveDeferredByUser": true
+    }
+  },
+  "evidence": [
+    "chatgpt-live-connection.json",
+    "chatgpt-live-session.jsonl",
+    "chatgpt-live-demo.png",
+    "chatgpt-live-reconnect.json"
+  ],
+  "liveScope": "User requested ChatGPT-only live testing on 2026-10-30; retain other subscription providers for friends to test after release.",
+  "primaryWorkflowBuild": "0.2.0",
+  "finalSmokeBuild": {
+    "version": "0.2.1",
+    "packaged": true,
+    "electron": "44.10.0",
+    "node": "24.22.1",
+    "upstreamCommit": "dc4c398d5167865b84b0ccb3ec809eb88bf8f65f",
+    "appPayloadSha256": "b1bb6f098e7b4f70a9a0ef77ae9c73d9e366ef8b5e273757d2da8aeaaf468453"
+  }
+}

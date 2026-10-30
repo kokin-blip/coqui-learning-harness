@@ -1,0 +1,12 @@
+{
+  "at": "2026-10-30T19:30:21.259Z",
+  "packaged": true,
+  "checks": [
+    "Explicit log out disconnects ChatGPT while retaining its registration for reconnect",
+    "Disconnected inference is refused before input persistence without API billing fallback",
+    "Lesson history and unsent draft survive disconnect",
+    "Browser reconnect restores account-specific ChatGPT catalog",
+    "Reconnect preserves the exact committed lesson and unsent draft"
+  ],
+  "passed": true
+}

@@ -1,0 +1,94 @@
+TAP version 13
+# Subtest: already-fit image bytes are unchanged, MIME aliases normalize, and transfer leaves input intact
+ok 1 - already-fit image bytes are unchanged, MIME aliases normalize, and transfer leaves input intact
+  ---
+  duration_ms: 81.450084
+  type: 'test'
+  ...
+# Subtest: native default dimensions are 2000x2000 and dimension hints use the native mapping
+ok 2 - native default dimensions are 2000x2000 and dimension hints use the native mapping
+  ---
+  duration_ms: 107.804
+  type: 'test'
+  ...
+# Subtest: model dimensions use sequential rounding, not a one-step scale
+ok 3 - model dimensions use sequential rounding, not a one-step scale
+  ---
+  duration_ms: 85.948708
+  type: 'test'
+  ...
+# Subtest: native cap is strict and measures base64 bytes, not binary bytes
+ok 4 - native cap is strict and measures base64 bytes, not binary bytes
+  ---
+  duration_ms: 76.009792
+  type: 'test'
+  ...
+# Subtest: PNG wins first under cap even when JPEG is smaller
+ok 5 - PNG wins first under cap even when JPEG is smaller
+  ---
+  duration_ms: 41.192916
+  type: 'test'
+  ...
+# Subtest: JPEG quality selection is native first-fit [80,85,70,55,40], not smallest output
+ok 6 - JPEG quality selection is native first-fit [80,85,70,55,40], not smallest output
+  ---
+  duration_ms: 190.142458
+  type: 'test'
+  ...
+# Subtest: all encodings over cap reduce each dimension by floor(0.75), eventually omitting at 1x1
+ok 7 - all encodings over cap reduce each dimension by floor(0.75), eventually omitting at 1x1
+  ---
+  duration_ms: 130.482042
+  type: 'test'
+  ...
+# Subtest: BMP converts to PNG and reports the native conversion hint
+ok 8 - BMP converts to PNG and reports the native conversion hint
+  ---
+  duration_ms: 36.412208
+  type: 'test'
+  ...
+# Subtest: EXIF-oriented dimensions govern resizing, with native unchanged-byte behavior when already fit
+ok 9 - EXIF-oriented dimensions govern resizing, with native unchanged-byte behavior when already fit
+  ---
+  duration_ms: 492.385709
+  type: 'test'
+  ...
+# Subtest: EXIF mirrors and rotations preserve exact pixel placement for JPEG and both WebP EXIF layouts
+ok 10 - EXIF mirrors and rotations preserve exact pixel placement for JPEG and both WebP EXIF layouts
+  ---
+  duration_ms: 1.160833
+  type: 'test'
+  ...
+# Subtest: corrupt supported input is omitted, unsupported conversion fails, and explicit autoResizeImages=false retains native bypass
+ok 11 - corrupt supported input is omitted, unsupported conversion fails, and explicit autoResizeImages=false retains native bypass
+  ---
+  duration_ms: 39.836209
+  type: 'test'
+  ...
+# Subtest: MIME sniffing matches native supported signatures and rejects APNG/JPEG-LS/malformed BMP
+ok 12 - MIME sniffing matches native supported signatures and rejects APNG/JPEG-LS/malformed BMP
+  ---
+  duration_ms: 2.444958
+  type: 'test'
+  ...
+# Subtest: unbundled Node worker responds with tagged output and matches the in-process fallback
+ok 13 - unbundled Node worker responds with tagged output and matches the in-process fallback
+  ---
+  duration_ms: 76.542708
+  type: 'test'
+  ...
+# Subtest: missing cwd-relative worker falls back in-process without altering the caller bytes
+ok 14 - missing cwd-relative worker falls back in-process without altering the caller bytes
+  ---
+  duration_ms: 13.893125
+  type: 'test'
+  ...
+1..14
+# tests 14
+# suites 0
+# pass 14
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 1465.320958

@@ -1,0 +1,41 @@
+TAP version 13
+# Subtest: the SQLite settings store
+    # Subtest: reads null on first boot without a settings record
+    ok 1 - reads null on first boot without a settings record
+      ---
+      duration_ms: 3.063208
+      type: 'test'
+      ...
+    # Subtest: write/read round-trips through the sanitizer
+    ok 2 - write/read round-trips through the sanitizer
+      ---
+      duration_ms: 0.518042
+      type: 'test'
+      ...
+    # Subtest: a legacy chat default section is ignored while sibling settings survive
+    ok 3 - a legacy chat default section is ignored while sibling settings survive
+      ---
+      duration_ms: 0.200875
+      type: 'test'
+      ...
+    # Subtest: corrupt settings JSON has first-boot semantics without hiding other SQLite failures
+    ok 4 - corrupt settings JSON has first-boot semantics without hiding other SQLite failures
+      ---
+      duration_ms: 0.209083
+      type: 'test'
+      ...
+    1..4
+ok 1 - the SQLite settings store
+  ---
+  duration_ms: 4.375625
+  type: 'suite'
+  ...
+1..1
+# tests 4
+# suites 1
+# pass 4
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 68.803333

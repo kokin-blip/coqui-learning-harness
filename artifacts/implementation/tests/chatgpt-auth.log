@@ -1,0 +1,226 @@
+TAP version 13
+# Subtest: PKCE/state/nonce/host identity and exact ephemeral 127.0.0.1 callback; no secret renderer snapshot
+ok 1 - PKCE/state/nonce/host identity and exact ephemeral 127.0.0.1 callback; no secret renderer snapshot
+  ---
+  duration_ms: 27.105875
+  type: 'test'
+  ...
+# Subtest: returning sign-in reuses issued client/host and fresh PKCE; rejects account/client mismatch without replacing active credentials
+ok 2 - returning sign-in reuses issued client/host and fresh PKCE; rejects account/client mismatch without replacing active credentials
+  ---
+  duration_ms: 5.418042
+  type: 'test'
+  ...
+# Subtest: rejects invalid ID-token nonce
+ok 3 - rejects invalid ID-token nonce
+  ---
+  duration_ms: 2.0575
+  type: 'test'
+  ...
+# Subtest: rejects invalid ID-token issuer
+ok 4 - rejects invalid ID-token issuer
+  ---
+  duration_ms: 1.84925
+  type: 'test'
+  ...
+# Subtest: rejects invalid ID-token audience
+ok 5 - rejects invalid ID-token audience
+  ---
+  duration_ms: 1.819708
+  type: 'test'
+  ...
+# Subtest: rejects invalid ID-token expiry
+ok 6 - rejects invalid ID-token expiry
+  ---
+  duration_ms: 1.74025
+  type: 'test'
+  ...
+# Subtest: cancel and timeout close the listener without exchanging or replacing an active account
+ok 7 - cancel and timeout close the listener without exchanging or replacing an active account
+  ---
+  duration_ms: 18.099084
+  type: 'test'
+  ...
+# Subtest: missing plan scope retains verified registration but refuses inference and catalog
+ok 8 - missing plan scope retains verified registration but refuses inference and catalog
+  ---
+  duration_ms: 2.624792
+  type: 'test'
+  ...
+# Subtest: durable file save failure never activates a pending login
+ok 9 - durable file save failure never activates a pending login
+  ---
+  duration_ms: 1.904417
+  type: 'test'
+  ...
+# Subtest: rotated-token persistence failure invalidates existing leases and never reloads the stale saved token
+ok 10 - rotated-token persistence failure invalidates existing leases and never reloads the stale saved token
+  ---
+  duration_ms: 2.080833
+  type: 'test'
+  ...
+# Subtest: serialized concurrent refresh rotates once and persists before leases
+ok 11 - serialized concurrent refresh rotates once and persists before leases
+  ---
+  duration_ms: 1.751958
+  type: 'test'
+  ...
+# Subtest: logout wins an in-flight refresh and retains only account/client/host mapping
+ok 12 - logout wins an in-flight refresh and retains only account/client/host mapping
+  ---
+  duration_ms: 1.844
+  type: 'test'
+  ...
+# Subtest: account catalog is scoped, visibility filtered, and cleared on disconnect
+ok 13 - account catalog is scoped, visibility filtered, and cleared on disconnect
+  ---
+  duration_ms: 1.592708
+  type: 'test'
+  ...
+# Subtest: private JSON file round-trips global state; creation and atomic replacement are owner-only
+ok 14 - private JSON file round-trips global state; creation and atomic replacement are owner-only
+  ---
+  duration_ms: 29.876125
+  type: 'test'
+  ...
+# Subtest: revocation endpoint remains restricted to the exact secure issuer
+ok 15 - revocation endpoint remains restricted to the exact secure issuer
+  ---
+  duration_ms: 0.084958
+  type: 'test'
+  ...
+# Subtest: invalid rotating replacement is durably revocation-only; verified mapping and prior validated ID survive restart
+ok 16 - invalid rotating replacement is durably revocation-only; verified mapping and prior validated ID survive restart
+  ---
+  duration_ms: 4.159708
+  type: 'test'
+  ...
+# Subtest: invalid rotating replacement is durably revocation-only; verified mapping and prior validated ID survive restart (held JWKS regression)
+ok 17 - invalid rotating replacement is durably revocation-only; verified mapping and prior validated ID survive restart (held JWKS regression)
+  ---
+  duration_ms: 3.300917
+  type: 'test'
+  ...
+# Subtest: observed file write failure invalidates all work; status, consent and resume cannot reload stale credentials or repair authority
+ok 18 - observed file write failure invalidates all work; status, consent and resume cannot reload stale credentials or repair authority
+  ---
+  duration_ms: 3.751334
+  type: 'test'
+  ...
+# Subtest: observed file write failure invalidates all work; status, consent and resume cannot reload stale credentials or repair authority (held JWKS regression)
+ok 19 - observed file write failure invalidates all work; status, consent and resume cannot reload stale credentials or repair authority (held JWKS regression)
+  ---
+  duration_ms: 3.003542
+  type: 'test'
+  ...
+# Subtest: strict JSON schema rejects malformed marker/duplicates/token/active identity without changing original bytes
+ok 20 - strict JSON schema rejects malformed marker/duplicates/token/active identity without changing original bytes
+  ---
+  duration_ms: 5.755125
+  type: 'test'
+  ...
+# Subtest: consent OFF wins an older ON save; foreground catalog authority remains unchanged
+ok 21 - consent OFF wins an older ON save; foreground catalog authority remains unchanged
+  ---
+  duration_ms: 2.002
+  type: 'test'
+  ...
+# Subtest: cancellation during verified durable save cannot activate late credentials
+ok 22 - cancellation during verified durable save cannot activate late credentials
+  ---
+  duration_ms: 1.394625
+  type: 'test'
+  ...
+# Subtest: scope-disabled credentials remain revocable and unconfirmed revoke never claims success
+ok 23 - scope-disabled credentials remain revocable and unconfirmed revoke never claims success
+  ---
+  duration_ms: 203.252833
+  type: 'test'
+  ...
+# Subtest: repeated real verified sign-in creates one visible account while preserving separately bound registrations until explicit forgetting
+ok 24 - repeated real verified sign-in creates one visible account while preserving separately bound registrations until explicit forgetting
+  ---
+  duration_ms: 10.440917
+  type: 'test'
+  ...
+# Subtest: repeated real verified sign-in creates one visible account while preserving separately bound registrations until explicit forgetting (held JWKS regression)
+ok 25 - repeated real verified sign-in creates one visible account while preserving separately bound registrations until explicit forgetting (held JWKS regression)
+  ---
+  duration_ms: 5.145041
+  type: 'test'
+  ...
+# Subtest: verified identity grouping hides legacy duplicate registrations without merging client credentials or matching emails
+ok 26 - verified identity grouping hides legacy duplicate registrations without merging client credentials or matching emails
+  ---
+  duration_ms: 3.914333
+  type: 'test'
+  ...
+# Subtest: explicit disconnect forgets all exact-identity registrations/handles, aborts active leases, and never auto-selects a same-email distinct account
+ok 27 - explicit disconnect forgets all exact-identity registrations/handles, aborts active leases, and never auto-selects a same-email distinct account
+  ---
+  duration_ms: 4.016292
+  type: 'test'
+  ...
+# Subtest: disconnecting an inactive identity preserves the active identity/credentials/catalog authority
+ok 28 - disconnecting an inactive identity preserves the active identity/credentials/catalog authority
+  ---
+  duration_ms: 3.265375
+  type: 'test'
+  ...
+# Subtest: signed-out legacy registrations can be explicitly forgotten; failed revocation never retains forgotten handles
+ok 29 - signed-out legacy registrations can be explicitly forgotten; failed revocation never retains forgotten handles
+  ---
+  duration_ms: 5.213667
+  type: 'test'
+  ...
+# Subtest: disconnect racing refresh revokes the latest rotated handle before forgetting, never its stale predecessor
+ok 30 - disconnect racing refresh revokes the latest rotated handle before forgetting, never its stale predecessor
+  ---
+  duration_ms: 3.914583
+  type: 'test'
+  ...
+# Subtest: disconnect persistence failure is not reported as local forgetting and leaves stored state fail-closed
+ok 31 - disconnect persistence failure is not reported as local forgetting and leaves stored state fail-closed
+  ---
+  duration_ms: 2.130416
+  type: 'test'
+  ...
+# Subtest: one app-wide background preference defaults ON over legacy OFF, persists with zero accounts, and never changes on auth/account operations
+ok 32 - one app-wide background preference defaults ON over legacy OFF, persists with zero accounts, and never changes on auth/account operations
+  ---
+  duration_ms: 5.808666
+  type: 'test'
+  ...
+# Subtest: one app-wide background preference defaults ON over legacy OFF, persists with zero accounts, and never changes on auth/account operations (completion held beyond old wait budget)
+ok 33 - one app-wide background preference defaults ON over legacy OFF, persists with zero accounts, and never changes on auth/account operations (completion held beyond old wait budget)
+  ---
+  duration_ms: 7.853334
+  type: 'test'
+  ...
+# Subtest: private leases bind active account, authority revision and raw visible model membership
+ok 34 - private leases bind active account, authority revision and raw visible model membership
+  ---
+  duration_ms: 1.7715
+  type: 'test'
+  ...
+# Subtest: issued client registration is durable before exchange and survives restart without activating an account
+ok 35 - issued client registration is durable before exchange and survives restart without activating an account
+  ---
+  duration_ms: 1.414958
+  type: 'test'
+  ...
+# Subtest: first plan-use confirmation persists once across account controller restarts
+ok 36 - first plan-use confirmation persists once across account controller restarts
+  ---
+  duration_ms: 1.745583
+  type: 'test'
+  ...
+1..36
+# tests 36
+# suites 0
+# pass 36
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 494.190959

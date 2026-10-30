@@ -1,0 +1,115 @@
+TAP version 13
+# Subtest: messageMarkdown
+    # Subtest: renders speaker blocks with the id anchor
+    ok 1 - renders speaker blocks with the id anchor
+      ---
+      duration_ms: 0.3535
+      type: 'test'
+      ...
+    # Subtest: anchors off — the same document without the ids (the user export)
+    ok 2 - anchors off — the same document without the ids (the user export)
+      ---
+      duration_ms: 0.044958
+      type: 'test'
+      ...
+    # Subtest: quiz blocks: question + outcome + the learner's note
+    ok 3 - quiz blocks: question + outcome + the learner's note
+      ---
+      duration_ms: 0.172458
+      type: 'test'
+      ...
+    # Subtest: explain results: the learner's own words are shown
+    ok 4 - explain results: the learner's own words are shown
+      ---
+      duration_ms: 0.061292
+      type: 'test'
+      ...
+    # Subtest: probe-phase questions export under their own names (owner, 2026-10-09)
+    ok 5 - probe-phase questions export under their own names (owner, 2026-10-09)
+      ---
+      duration_ms: 0.063458
+      type: 'test'
+      ...
+    # Subtest: ask blocks: question + chosen options + free text
+    ok 6 - ask blocks: question + chosen options + free text
+      ---
+      duration_ms: 0.079292
+      type: 'test'
+      ...
+    # Subtest: other clean tool results: one line; failed calls and markers: nothing
+    ok 7 - other clean tool results: one line; failed calls and markers: nothing
+      ---
+      duration_ms: 0.05575
+      type: 'test'
+      ...
+    1..7
+ok 1 - messageMarkdown
+  ---
+  duration_ms: 1.200167
+  type: 'suite'
+  ...
+# Subtest: sessionMarkdown — the practice join (owner-approved, 2026-10-06)
+    # Subtest: a problem result renders the POSE's statement, joined off the call id
+    ok 1 - a problem result renders the POSE's statement, joined off the call id
+      ---
+      duration_ms: 0.147167
+      type: 'test'
+      ...
+    # Subtest: a conclude result renders outcome + verdict + the pose's model solution as the reveal
+    ok 2 - a conclude result renders outcome + verdict + the pose's model solution as the reveal
+      ---
+      duration_ms: 0.149125
+      type: 'test'
+      ...
+    # Subtest: a dismissed problem concludes without leaking the model solution
+    ok 3 - a dismissed problem concludes without leaking the model solution
+      ---
+      duration_ms: 0.095208
+      type: 'test'
+      ...
+    # Subtest: an errored pose renders nothing — the failed-tool law holds for practice
+    ok 4 - an errored pose renders nothing — the failed-tool law holds for practice
+      ---
+      duration_ms: 0.052083
+      type: 'test'
+      ...
+    1..4
+ok 2 - sessionMarkdown — the practice join (owner-approved, 2026-10-06)
+  ---
+  duration_ms: 0.535959
+  type: 'suite'
+  ...
+# Subtest: sessionMarkdown
+    # Subtest: assembles blocks in order under the title header, skipping nothings
+    ok 1 - assembles blocks in order under the title header, skipping nothings
+      ---
+      duration_ms: 0.063875
+      type: 'test'
+      ...
+    # Subtest: no title → no header; anchors default on
+    ok 2 - no title → no header; anchors default on
+      ---
+      duration_ms: 0.032583
+      type: 'test'
+      ...
+    # Subtest: the seam split (owner, 2026-09-28): teacher prose renders in BOTH; the rest renders ONLY here
+    ok 3 - the seam split (owner, 2026-09-28): teacher prose renders in BOTH; the rest renders ONLY here
+      ---
+      duration_ms: 0.055375
+      type: 'test'
+      ...
+    1..3
+ok 3 - sessionMarkdown
+  ---
+  duration_ms: 0.19475
+  type: 'suite'
+  ...
+1..3
+# tests 14
+# suites 3
+# pass 14
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 119.611375

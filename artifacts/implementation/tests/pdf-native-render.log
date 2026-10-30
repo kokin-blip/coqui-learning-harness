@@ -1,0 +1,96 @@
+TAP version 13
+# Subtest: PDF pre-allocation canvas geometry
+    # Subtest: uses decimal 16 megapixels and an 8192-pixel side limit
+    ok 1 - uses decimal 16 megapixels and an 8192-pixel side limit
+      ---
+      duration_ms: 0.253875
+      type: 'test'
+      ...
+    # Subtest: preserves ordinary requested DPI, including fractional ceil dimensions and low DPI
+    ok 2 - preserves ordinary requested DPI, including fractional ceil dimensions and low DPI
+      ---
+      duration_ms: 0.335666
+      type: 'test'
+      ...
+    # Subtest: bounds extreme aspect ratios, huge geometry, sides, and rounded pixel area without upscaling
+    ok 3 - bounds extreme aspect ratios, huge geometry, sides, and rounded pixel area without upscaling
+      ---
+      duration_ms: 0.13825
+      type: 'test'
+      ...
+    # Subtest: uses rotated viewport dimensions symmetrically
+    ok 4 - uses rotated viewport dimensions symmetrically
+      ---
+      duration_ms: 0.059167
+      type: 'test'
+      ...
+    # Subtest: rejects nonfinite or nonpositive dimensions and DPI cleanly
+    ok 5 - rejects nonfinite or nonpositive dimensions and DPI cleanly
+      ---
+      duration_ms: 0.259125
+      type: 'test'
+      ...
+    1..5
+ok 1 - PDF pre-allocation canvas geometry
+  ---
+  duration_ms: 1.415667
+  type: 'suite'
+  ...
+# Subtest: native pdf_render (pdfjs paints, @napi-rs/canvas hosts)
+    # Subtest: the shared font directory ends in pdfjs's required slash on every OS
+    ok 1 - the shared font directory ends in pdfjs's required slash on every OS
+      ---
+      duration_ms: 0.2165
+      type: 'test'
+      ...
+    # Subtest: renders fixture pages as canonical single-IDAT PNGs
+    ok 2 - renders fixture pages as canonical single-IDAT PNGs
+      ---
+      duration_ms: 523.904292
+      type: 'test'
+      ...
+    # Subtest: dpi arithmetic: 72dpi base doubles at 144dpi
+    ok 3 - dpi arithmetic: 72dpi base doubles at 144dpi
+      ---
+      duration_ms: 43.9625
+      type: 'test'
+      ...
+    # Subtest: bounds a synthetic oversized rotated PDF before native canvas allocation
+    ok 4 - bounds a synthetic oversized rotated PDF before native canvas allocation
+      ---
+      duration_ms: 256.416083
+      type: 'test'
+      ...
+    # Subtest: rejects invalid DPI before opening the PDF
+    ok 5 - rejects invalid DPI before opening the PDF
+      ---
+      duration_ms: 0.287625
+      type: 'test'
+      ...
+    # Subtest: skips out-of-range page numbers silently
+    ok 6 - skips out-of-range page numbers silently
+      ---
+      duration_ms: 12.079333
+      type: 'test'
+      ...
+    # Subtest: renders with NO browser present (available() may be false)
+    ok 7 - renders with NO browser present (available() may be false)
+      ---
+      duration_ms: 11.141625
+      type: 'test'
+      ...
+    1..7
+ok 2 - native pdf_render (pdfjs paints, @napi-rs/canvas hosts)
+  ---
+  duration_ms: 848.284416
+  type: 'suite'
+  ...
+1..2
+# tests 12
+# suites 2
+# pass 12
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 939.743708

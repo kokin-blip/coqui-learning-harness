@@ -1,0 +1,648 @@
+TAP version 13
+# Subtest: postInputEvent (the 409 identity-retry)
+    # Subtest: the model's default fetch is RECEIVER-SAFE (the browser 'Illegal invocation' pin)
+    ok 1 - the model's default fetch is RECEIVER-SAFE (the browser 'Illegal invocation' pin)
+      ---
+      duration_ms: 8.436708
+      type: 'test'
+      ...
+    # Subtest: passes non-409 responses through untouched
+    ok 2 - passes non-409 responses through untouched
+      ---
+      duration_ms: 0.405042
+      type: 'test'
+      ...
+    # Subtest: waits out the turn, then re-POSTs the SAME event body (identity retry)
+    ok 3 - waits out the turn, then re-POSTs the SAME event body (identity retry)
+      ---
+      duration_ms: 25.034333
+      type: 'test'
+      ...
+    # Subtest: never reads the record — the event is the only payload
+    ok 4 - never reads the record — the event is the only payload
+      ---
+      duration_ms: 10.617084
+      type: 'test'
+      ...
+    # Subtest: loops on repeated 409s, re-POSTing the same event each time
+    ok 5 - loops on repeated 409s, re-POSTing the same event each time
+      ---
+      duration_ms: 24.934041
+      type: 'test'
+      ...
+    # Subtest: gives up after the deadline and surfaces the last 409
+    ok 6 - gives up after the deadline and surfaces the last 409
+      ---
+      duration_ms: 122.390833
+      type: 'test'
+      ...
+    1..6
+ok 1 - postInputEvent (the 409 identity-retry)
+  ---
+  duration_ms: 192.4755
+  type: 'suite'
+  ...
+# Subtest: send (one input event, verbatim consumption)
+    # Subtest: optimistically appends the text, POSTs {chatId, input}, consumes to [DONE]
+    ok 1 - optimistically appends the text, POSTs {chatId, input}, consumes to [DONE]
+      ---
+      duration_ms: 10.317333
+      type: 'test'
+      ...
+    # Subtest: N id-less updates replace the SAME tail slot (the per-chunk divider bug pin)
+    ok 2 - N id-less updates replace the SAME tail slot (the per-chunk divider bug pin)
+      ---
+      duration_ms: 6.215291
+      type: 'test'
+      ...
+    # Subtest: a 503 refusal surfaces the RAW body text (parseModelsRefusal's contract)
+    ok 3 - a 503 refusal surfaces the RAW body text (parseModelsRefusal's contract)
+      ---
+      duration_ms: 0.30225
+      type: 'test'
+      ...
+    # Subtest: the optimistic answer result attaches to the pending quiz part at once
+    ok 4 - the optimistic answer result attaches to the pending quiz part at once
+      ---
+      duration_ms: 0.585375
+      type: 'test'
+      ...
+    # Subtest: ignores the question placeholder's clean execution end (fork 2) and keeps errors
+    ok 5 - ignores the question placeholder's clean execution end (fork 2) and keeps errors
+      ---
+      duration_ms: 4.941
+      type: 'test'
+      ...
+    # Subtest: Wave C: markers injected mid-run (custom role, follow-up delivery) append to the tail by id
+    ok 6 - Wave C: markers injected mid-run (custom role, follow-up delivery) append to the tail by id
+      ---
+      duration_ms: 0.396584
+      type: 'test'
+      ...
+    # Subtest: a provider error rides VERBATIM (owner ruling) — no masking anywhere
+    ok 7 - a provider error rides VERBATIM (owner ruling) — no masking anywhere
+      ---
+      duration_ms: 0.504209
+      type: 'test'
+      ...
+    1..7
+ok 2 - send (one input event, verbatim consumption)
+  ---
+  duration_ms: 23.563625
+  type: 'suite'
+  ...
+# Subtest: provider-error banner (live and saved)
+    # Subtest: restores an empty failed response on load and full sync without adding a transcript card
+    ok 1 - restores an empty failed response on load and full sync without adding a transcript card
+      ---
+      duration_ms: 0.288583
+      type: 'test'
+      ...
+    # Subtest: uses the existing fallback wording when the saved failure has no error text
+    ok 2 - uses the existing fallback wording when the saved failure has no error text
+      ---
+      duration_ms: 0.075917
+      type: 'test'
+      ...
+    # Subtest: substantive later input/output supersedes the failure, including aborts
+    ok 3 - substantive later input/output supersedes the failure, including aborts
+      ---
+      duration_ms: 0.282792
+      type: 'test'
+      ...
+    # Subtest: plan and compaction markers preserve the banner on sync, adoption and reopen
+    ok 4 - plan and compaction markers preserve the banner on sync, adoption and reopen
+      ---
+      duration_ms: 0.625833
+      type: 'test'
+      ...
+    # Subtest: a newer live message supersedes the failure before its response finishes
+    ok 5 - a newer live message supersedes the failure before its response finishes
+      ---
+      duration_ms: 0.192792
+      type: 'test'
+      ...
+    # Subtest: does not treat an unfinished assistant's error-shaped partial as a completed failure
+    ok 6 - does not treat an unfinished assistant's error-shaped partial as a completed failure
+      ---
+      duration_ms: 0.097583
+      type: 'test'
+      ...
+    # Subtest: hides the old failure during the optimistic text wait, then shows a new live failure
+    ok 7 - hides the old failure during the optimistic text wait, then shows a new live failure
+      ---
+      duration_ms: 2.302209
+      type: 'test'
+      ...
+    # Subtest: hides the old failure during the optimistic continue wait, then shows a new live failure
+    ok 8 - hides the old failure during the optimistic continue wait, then shows a new live failure
+      ---
+      duration_ms: 0.4795
+      type: 'test'
+      ...
+    # Subtest: hides the old failure during the optimistic retry wait, then shows a new live failure
+    ok 9 - hides the old failure during the optimistic retry wait, then shows a new live failure
+      ---
+      duration_ms: 1.759041
+      type: 'test'
+      ...
+    # Subtest: hides the old failure immediately on fresh-mount reattach, and restores final-entry truth at idle
+    ok 10 - hides the old failure immediately on fresh-mount reattach, and restores final-entry truth at idle
+      ---
+      duration_ms: 0.167959
+      type: 'test'
+      ...
+    # Subtest: recovers a failure that settled before the submitter could attach to its stream
+    ok 11 - recovers a failure that settled before the submitter could attach to its stream
+      ---
+      duration_ms: 0.25525
+      type: 'test'
+      ...
+    # Subtest: a newer live provider failure replaces an earlier attachment error immediately
+    ok 12 - a newer live provider failure replaces an earlier attachment error immediately
+      ---
+      duration_ms: 0.235375
+      type: 'test'
+      ...
+    # Subtest: an aborted older consume cannot restore the old banner during a replacement reattach
+    ok 13 - an aborted older consume cannot restore the old banner during a replacement reattach
+      ---
+      duration_ms: 0.308917
+      type: 'test'
+      ...
+    # Subtest: keeps loop/request errors transient, with the existing precedence and clearError behavior
+    ok 14 - keeps loop/request errors transient, with the existing precedence and clearError behavior
+      ---
+      duration_ms: 0.184625
+      type: 'test'
+      ...
+    1..14
+ok 3 - provider-error banner (live and saved)
+  ---
+  duration_ms: 7.510834
+  type: 'suite'
+  ...
+# Subtest: truncated stream recovery
+    # Subtest: reattaches once after EOF without DONE and replaces the incomplete replay
+    ok 1 - reattaches once after EOF without DONE and replaces the incomplete replay
+      ---
+      duration_ms: 0.459792
+      type: 'test'
+      ...
+    # Subtest: surfaces an error after a second truncation without retrying the input
+    ok 2 - surfaces an error after a second truncation without retrying the input
+      ---
+      duration_ms: 0.360791
+      type: 'test'
+      ...
+    # Subtest: reports the approved connection error when the recovery record read fails
+    ok 3 - reports the approved connection error when the recovery record read fails
+      ---
+      duration_ms: 0.255041
+      type: 'test'
+      ...
+    # Subtest: accepts turn-settled when the original turn finished during the disconnection
+    ok 4 - accepts turn-settled when the original turn finished during the disconnection
+      ---
+      duration_ms: 0.280875
+      type: 'test'
+      ...
+    # Subtest: also recovers a rejected body read but does not relabel event-application bugs
+    ok 5 - also recovers a rejected body read but does not relabel event-application bugs
+      ---
+      duration_ms: 0.513084
+      type: 'test'
+      ...
+    # Subtest: recovers an AbortError body rejection unless the view was actually cancelled
+    ok 6 - recovers an AbortError body rejection unless the view was actually cancelled
+      ---
+      duration_ms: 0.32425
+      type: 'test'
+      ...
+    # Subtest: uses the approved drop message when recovery record headers arrive but its body read fails
+    ok 7 - uses the approved drop message when recovery record headers arrive but its body read fails
+      ---
+      duration_ms: 0.3115
+      type: 'test'
+      ...
+    # Subtest: preserves malformed-event diagnostics rather than calling them network drops
+    ok 8 - preserves malformed-event diagnostics rather than calling them network drops
+      ---
+      duration_ms: 0.269959
+      type: 'test'
+      ...
+    # Subtest: reports a failed recovery stream request without attempting a third attachment
+    ok 9 - reports a failed recovery stream request without attempting a third attachment
+      ---
+      duration_ms: 0.210833
+      type: 'test'
+      ...
+    # Subtest: a superseded consume cannot recover or overwrite its replacement's state
+    ok 10 - a superseded consume cannot recover or overwrite its replacement's state
+      ---
+      duration_ms: 0.232375
+      type: 'test'
+      ...
+    1..10
+ok 4 - truncated stream recovery
+  ---
+  duration_ms: 3.351667
+  type: 'suite'
+  ...
+# Subtest: automatic continuation after recovery failure
+    # Subtest: a retained failure seeds the banner and blocks continuation even after banner dismissal
+    ok 1 - a retained failure seeds the banner and blocks continuation even after banner dismissal
+      ---
+      duration_ms: 0.352625
+      type: 'test'
+      ...
+    # Subtest: a new server-owned turn clears the retained banner without releasing Thinking
+    ok 2 - a new server-owned turn clears the retained banner without releasing Thinking
+      ---
+      duration_ms: 0.082542
+      type: 'test'
+      ...
+    # Subtest: a live failed save cannot auto-continue the accepted answer during canonical sync
+    ok 3 - a live failed save cannot auto-continue the accepted answer during canonical sync
+      ---
+      duration_ms: 0.078083
+      type: 'test'
+      ...
+    # Subtest: a healthy owed continuation still starts once through the normal send gate
+    ok 4 - a healthy owed continuation still starts once through the normal send gate
+      ---
+      duration_ms: 0.203167
+      type: 'test'
+      ...
+    1..4
+ok 5 - automatic continuation after recovery failure
+  ---
+  duration_ms: 0.791
+  type: 'suite'
+  ...
+# Subtest: answer submission recovery
+    # Subtest: restores the question after a failed POST and checks the record before another POST
+    ok 1 - restores the question after a failed POST and checks the record before another POST
+      ---
+      duration_ms: 0.632417
+      type: 'test'
+      ...
+    # Subtest: retains all submitted draft channels until the canonical answer resolves the call
+    ok 2 - retains all submitted draft channels until the canonical answer resolves the call
+      ---
+      duration_ms: 0.211625
+      type: 'test'
+      ...
+    # Subtest: a final 409 restores the question instead of leaving an optimistic answer
+    ok 3 - a final 409 restores the question instead of leaving an optimistic answer
+      ---
+      duration_ms: 0.143
+      type: 'test'
+      ...
+    # Subtest: does not repost an answer whose acceptance acknowledgement was lost
+    ok 4 - does not repost an answer whose acceptance acknowledgement was lost
+      ---
+      duration_ms: 0.254208
+      type: 'test'
+      ...
+    # Subtest: reattaches to an accepted running turn instead of posting another answer
+    ok 5 - reattaches to an accepted running turn instead of posting another answer
+      ---
+      duration_ms: 0.227375
+      type: 'test'
+      ...
+    # Subtest: keeps the question and makes no further POST while reconciliation is unreachable
+    ok 6 - keeps the question and makes no further POST while reconciliation is unreachable
+      ---
+      duration_ms: 0.213667
+      type: 'test'
+      ...
+    # Subtest: does not undo an acknowledged dismissal when an unrelated send's record read fails
+    ok 7 - does not undo an acknowledged dismissal when an unrelated send's record read fails
+      ---
+      duration_ms: 0.306167
+      type: 'test'
+      ...
+    # Subtest: restores an unconfirmed optimistic answer when the post-ack record read fails
+    ok 8 - restores an unconfirmed optimistic answer when the post-ack record read fails
+      ---
+      duration_ms: 0.236709
+      type: 'test'
+      ...
+    # Subtest: preserves the existing POST/409-wait path for a new text submission after an error
+    ok 9 - preserves the existing POST/409-wait path for a new text submission after an error
+      ---
+      duration_ms: 3.002209
+      type: 'test'
+      ...
+    # Subtest: preserves the existing POST/409-wait path for a new thinking submission after an error
+    ok 10 - preserves the existing POST/409-wait path for a new thinking submission after an error
+      ---
+      duration_ms: 0.4275
+      type: 'test'
+      ...
+    # Subtest: accepts immediate/recovery submissions and dismissals while a live question placeholder is in the tail
+    ok 11 - accepts immediate/recovery submissions and dismissals while a live question placeholder is in the tail
+      ---
+      duration_ms: 0.377083
+      type: 'test'
+      ...
+    # Subtest: does not mistake an old same-id answer for resolution of the current question during recovery
+    ok 12 - does not mistake an old same-id answer for resolution of the current question during recovery
+      ---
+      duration_ms: 0.235875
+      type: 'test'
+      ...
+    # Subtest: adopts a newer same-id occurrence instead of reposting an older question's answer
+    ok 13 - adopts a newer same-id occurrence instead of reposting an older question's answer
+      ---
+      duration_ms: 0.1595
+      type: 'test'
+      ...
+    # Subtest: rejects stale render callbacks locally, including same-id silent dismissals
+    ok 14 - rejects stale render callbacks locally, including same-id silent dismissals
+      ---
+      duration_ms: 0.0775
+      type: 'test'
+      ...
+    # Subtest: uses the newest occurrence's tool for optimistic answers and dismissals
+    ok 15 - uses the newest occurrence's tool for optimistic answers and dismissals
+      ---
+      duration_ms: 0.209666
+      type: 'test'
+      ...
+    # Subtest: does not leak drafts between same-id questions, and preserves unique-id live handover
+    ok 16 - does not leak drafts between same-id questions, and preserves unique-id live handover
+      ---
+      duration_ms: 0.073583
+      type: 'test'
+      ...
+    # Subtest: adopts a changed pending question instead of sending the stale answer
+    ok 17 - adopts a changed pending question instead of sending the stale answer
+      ---
+      duration_ms: 0.177584
+      type: 'test'
+      ...
+    1..17
+ok 6 - answer submission recovery
+  ---
+  duration_ms: 7.173083
+  type: 'suite'
+  ...
+# Subtest: resumeStream (the reattach path)
+    # Subtest: refetches the record, then GETs the stream endpoint
+    ok 1 - refetches the record, then GETs the stream endpoint
+      ---
+      duration_ms: 0.331625
+      type: 'test'
+      ...
+    # Subtest: ATTACH-FIRST (owner, reattach round 2026-10-02): a fresh-mount reattach skips the blocking record refetch
+    ok 2 - ATTACH-FIRST (owner, reattach round 2026-10-02): a fresh-mount reattach skips the blocking record refetch
+      ---
+      duration_ms: 0.15275
+      type: 'test'
+      ...
+    # Subtest: OPTIMISTIC SUBMIT (owner, optimistic round 2026-10-02): send flips status synchronously — the placeholder is live before the server answers anything
+    ok 3 - OPTIMISTIC SUBMIT (owner, optimistic round 2026-10-02): send flips status synchronously — the placeholder is live before the server answers anything
+      ---
+      duration_ms: 0.119375
+      type: 'test'
+      ...
+    # Subtest: PROTOCOL EVENTS RELEASE NOTHING (owner, optimistic round 3): agent_start keeps the placeholder; the first APPLIED event flips streaming
+    ok 4 - PROTOCOL EVENTS RELEASE NOTHING (owner, optimistic round 3): agent_start keeps the placeholder; the first APPLIED event flips streaming
+      ---
+      duration_ms: 54.830208
+      type: 'test'
+      ...
+    # Subtest: SESSION START SURVIVES A STOP() RACING THE SUBMIT (owner, 2026-10-10 — the dead-practice-start postmortem)
+    ok 5 - SESSION START SURVIVES A STOP() RACING THE SUBMIT (owner, 2026-10-10 — the dead-practice-start postmortem)
+      ---
+      duration_ms: 6.77025
+      type: 'test'
+      ...
+    # Subtest: REATTACH REPLAYS ONTO A CLEAN SLATE (owner, optimistic round 3): an aborted attempt's partials never double
+    ok 6 - REATTACH REPLAYS ONTO A CLEAN SLATE (owner, optimistic round 3): an aborted attempt's partials never double
+      ---
+      duration_ms: 27.987292
+      type: 'test'
+      ...
+    # Subtest: turn-settled fires the settle hook and ends cleanly
+    ok 7 - turn-settled fires the settle hook and ends cleanly
+      ---
+      duration_ms: 0.225167
+      type: 'test'
+      ...
+    # Subtest: a replayed CONTINUATION mounts BESIDE the seeded message (the SDK replace-last seam is dead)
+    ok 8 - a replayed CONTINUATION mounts BESIDE the seeded message (the SDK replace-last seam is dead)
+      ---
+      duration_ms: 0.1955
+      type: 'test'
+      ...
+    # Subtest: survives a body split byte-by-byte across reads (the framing pin)
+    ok 9 - survives a body split byte-by-byte across reads (the framing pin)
+      ---
+      duration_ms: 1.166834
+      type: 'test'
+      ...
+    # Subtest: an unhappy endpoint surfaces the error banner
+    ok 10 - an unhappy endpoint surfaces the error banner
+      ---
+      duration_ms: 0.150042
+      type: 'test'
+      ...
+    1..10
+ok 7 - resumeStream (the reattach path)
+  ---
+  duration_ms: 92.083167
+  type: 'suite'
+  ...
+# Subtest: adoptRecord — append-only adoption
+    # Subtest: splices a server-added steer between the record and the live tail
+    ok 1 - splices a server-added steer between the record and the live tail
+      ---
+      duration_ms: 0.14175
+      type: 'test'
+      ...
+    # Subtest: a missing base id (record rewrite) bails — the idle full sync is the net
+    ok 2 - a missing base id (record rewrite) bails — the idle full sync is the net
+      ---
+      duration_ms: 0.055083
+      type: 'test'
+      ...
+    # Subtest: absorbs the optimistic entries the record has taken over (no doubled bubbles)
+    ok 3 - absorbs the optimistic entries the record has taken over (no doubled bubbles)
+      ---
+      duration_ms: 0.085584
+      type: 'test'
+      ...
+    # Subtest: setMessages is the full snapshot swap (the idle settle sync)
+    ok 4 - setMessages is the full snapshot swap (the idle settle sync)
+      ---
+      duration_ms: 0.05775
+      type: 'test'
+      ...
+    1..4
+ok 8 - adoptRecord — append-only adoption
+  ---
+  duration_ms: 0.383583
+  type: 'suite'
+  ...
+# Subtest: needsContinuation (the native lastAssistantMessageIsCompleteWithToolCalls)
+    # Subtest: a record ending on a fully-answered tool call continues
+    ok 1 - a record ending on a fully-answered tool call continues
+      ---
+      duration_ms: 0.093125
+      type: 'test'
+      ...
+    # Subtest: text-tailed records never continue
+    ok 2 - text-tailed records never continue
+      ---
+      duration_ms: 0.037708
+      type: 'test'
+      ...
+    # Subtest: a dangling question never fires a turn (the dock owns it)
+    ok 3 - a dangling question never fires a turn (the dock owns it)
+      ---
+      duration_ms: 0.039917
+      type: 'test'
+      ...
+    # Subtest: parallel quizzes: only ALL-answered continues (the dock still owns the open one)
+    ok 4 - parallel quizzes: only ALL-answered continues (the dock still owns the open one)
+      ---
+      duration_ms: 0.056583
+      type: 'test'
+      ...
+    # Subtest: an orphan result (no asking assistant) never continues
+    ok 5 - an orphan result (no asking assistant) never continues
+      ---
+      duration_ms: 0.035625
+      type: 'test'
+      ...
+    1..5
+ok 9 - needsContinuation (the native lastAssistantMessageIsCompleteWithToolCalls)
+  ---
+  duration_ms: 0.307333
+  type: 'suite'
+  ...
+# Subtest: the dismissal pause (needsContinuation + endsInDismissal)
+    # Subtest: an all-dismissed tail demands NO continuation — the session waits for the user
+    ok 1 - an all-dismissed tail demands NO continuation — the session waits for the user
+      ---
+      duration_ms: 0.2245
+      type: 'test'
+      ...
+    # Subtest: parallel dismissals: each silent write its own call — still paused
+    ok 2 - parallel dismissals: each silent write its own call — still paused
+      ---
+      duration_ms: 0.110125
+      type: 'test'
+      ...
+    # Subtest: mixed tail answered-then-dismissed: the LAST resolution decides — no wake (round-1 incident)
+    ok 3 - mixed tail answered-then-dismissed: the LAST resolution decides — no wake (round-1 incident)
+      ---
+      duration_ms: 0.069708
+      type: 'test'
+      ...
+    # Subtest: mixed tail dismissed-then-answered: the answer IS owed its reaction (round-2 wake)
+    ok 4 - mixed tail dismissed-then-answered: the answer IS owed its reaction (round-2 wake)
+      ---
+      duration_ms: 0.075209
+      type: 'test'
+      ...
+    # Subtest: any user message un-pauses (the derived tail flips)
+    ok 5 - any user message un-pauses (the derived tail flips)
+      ---
+      duration_ms: 0.056125
+      type: 'test'
+      ...
+    # Subtest: a normal answer is not a dismissal (the predicate stays honest)
+    ok 6 - a normal answer is not a dismissal (the predicate stays honest)
+      ---
+      duration_ms: 0.0425
+      type: 'test'
+      ...
+    1..6
+ok 10 - the dismissal pause (needsContinuation + endsInDismissal)
+  ---
+  duration_ms: 0.6535
+  type: 'suite'
+  ...
+# Subtest: pendingCallTool
+    # Subtest: finds the dangling call's tool name (the optimistic answer's stamp)
+    ok 1 - finds the dangling call's tool name (the optimistic answer's stamp)
+      ---
+      duration_ms: 0.047875
+      type: 'test'
+      ...
+    1..1
+ok 11 - pendingCallTool
+  ---
+  duration_ms: 0.071583
+  type: 'suite'
+  ...
+# Subtest: newAnswerResult two audiences
+    # Subtest: MODEL sees the compact learner-only record; details keeps the FULL graded answer
+    ok 1 - MODEL sees the compact learner-only record; details keeps the FULL graded answer
+      ---
+      duration_ms: 0.165833
+      type: 'test'
+      ...
+    1..1
+ok 12 - newAnswerResult two audiences
+  ---
+  duration_ms: 0.182792
+  type: 'suite'
+  ...
+# Subtest: the live-view law — live is positive evidence, not session busyness
+    # Subtest: a settled problem call NEVER renders live during another turn (the two-spinner bug)
+    ok 1 - a settled problem call NEVER renders live during another turn (the two-spinner bug)
+      ---
+      duration_ms: 0.100833
+      type: 'test'
+      ...
+    # Subtest: a call in THIS turn's streaming message stays input-streaming (the shimmer's true home)
+    ok 2 - a call in THIS turn's streaming message stays input-streaming (the shimmer's true home)
+      ---
+      duration_ms: 0.155375
+      type: 'test'
+      ...
+    # Subtest: a DANGLING call in a settled message is the dock's pending — not a mid-turn shimmer
+    ok 3 - a DANGLING call in a settled message is the dock's pending — not a mid-turn shimmer
+      ---
+      duration_ms: 0.065625
+      type: 'test'
+      ...
+    1..3
+ok 13 - the live-view law — live is positive evidence, not session busyness
+  ---
+  duration_ms: 0.360166
+  type: 'suite'
+  ...
+# Subtest: absorbed — the custom role (the doubled thinking card)
+    # Subtest: absorbs the optimistic thinking marker by customType + details
+    ok 1 - absorbs the optimistic thinking marker by customType + details
+      ---
+      duration_ms: 0.108042
+      type: 'test'
+      ...
+    # Subtest: the adoption window cannot double the card (model-level end-to-end)
+    ok 2 - the adoption window cannot double the card (model-level end-to-end)
+      ---
+      duration_ms: 0.114209
+      type: 'test'
+      ...
+    1..2
+ok 14 - absorbed — the custom role (the doubled thinking card)
+  ---
+  duration_ms: 0.246333
+  type: 'suite'
+  ...
+1..14
+# tests 90
+# suites 14
+# pass 90
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 550.618375

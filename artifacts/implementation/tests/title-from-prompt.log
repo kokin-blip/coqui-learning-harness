@@ -1,0 +1,53 @@
+TAP version 13
+# Subtest: titleFromPrompt (smart truncation)
+    # Subtest: short prompts pass through untouched — no ellipsis, whitespace collapsed
+    ok 1 - short prompts pass through untouched — no ellipsis, whitespace collapsed
+      ---
+      duration_ms: 0.273833
+      type: 'test'
+      ...
+    # Subtest: exactly at the cap: unchanged, no ellipsis
+    ok 2 - exactly at the cap: unchanged, no ellipsis
+      ---
+      duration_ms: 0.04675
+      type: 'test'
+      ...
+    # Subtest: over the cap: the cut snaps to the last word boundary under it
+    ok 3 - over the cap: the cut snaps to the last word boundary under it
+      ---
+      duration_ms: 0.07875
+      type: 'test'
+      ...
+    # Subtest: boundary landing exactly at the cap is a clean cut (no mid-word split)
+    ok 4 - boundary landing exactly at the cap is a clean cut (no mid-word split)
+      ---
+      duration_ms: 0.048833
+      type: 'test'
+      ...
+    # Subtest: a single word longer than the cap splits at the cap
+    ok 5 - a single word longer than the cap splits at the cap
+      ---
+      duration_ms: 0.043958
+      type: 'test'
+      ...
+    # Subtest: the kept title never carries a trailing space
+    ok 6 - the kept title never carries a trailing space
+      ---
+      duration_ms: 0.046541
+      type: 'test'
+      ...
+    1..6
+ok 1 - titleFromPrompt (smart truncation)
+  ---
+  duration_ms: 0.917875
+  type: 'suite'
+  ...
+1..1
+# tests 6
+# suites 1
+# pass 6
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 53.559458

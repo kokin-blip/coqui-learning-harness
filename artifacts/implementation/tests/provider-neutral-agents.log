@@ -1,0 +1,227 @@
+TAP version 13
+# Subtest: provider-neutral raw agent loops
+    # Subtest: visual: every actual stream request has NO credential override (recording faux engine)
+    ok 1 - visual: every actual stream request has NO credential override (recording faux engine)
+      ---
+      duration_ms: 85.93675
+      type: 'test'
+      ...
+    # Subtest: visual: abort still reaches the stream and retains the loop's failure semantics
+    ok 2 - visual: abort still reaches the stream and retains the loop's failure semantics
+      ---
+      duration_ms: 0.507125
+      type: 'test'
+      ...
+    # Subtest: pdf: every actual stream request has NO credential override (recording faux engine)
+    ok 3 - pdf: every actual stream request has NO credential override (recording faux engine)
+      ---
+      duration_ms: 399.926666
+      type: 'test'
+      ...
+    # Subtest: pdf: abort still reaches the stream and retains the loop's failure semantics
+    ok 4 - pdf: abort still reaches the stream and retains the loop's failure semantics
+      ---
+      duration_ms: 1.546625
+      type: 'test'
+      ...
+    # Subtest: visual: native opencode-go/anthropic-messages endpoint, payload and live per-request auth
+    ok 5 - visual: native opencode-go/anthropic-messages endpoint, payload and live per-request auth
+      ---
+      duration_ms: 84.573292
+      type: 'test'
+      ...
+    # Subtest: visual: opencode-go missing selected key does not fall back to configured OpenRouter
+    ok 6 - visual: opencode-go missing selected key does not fall back to configured OpenRouter
+      ---
+      duration_ms: 0.473083
+      type: 'test'
+      ...
+    # Subtest: pdf: native opencode-go/anthropic-messages endpoint, payload and live per-request auth
+    ok 7 - pdf: native opencode-go/anthropic-messages endpoint, payload and live per-request auth
+      ---
+      duration_ms: 47.387875
+      type: 'test'
+      ...
+    # Subtest: pdf: opencode-go missing selected key does not fall back to configured OpenRouter
+    ok 8 - pdf: opencode-go missing selected key does not fall back to configured OpenRouter
+      ---
+      duration_ms: 1.23725
+      type: 'test'
+      ...
+    # Subtest: visual: native opencode-go/google-generative-ai endpoint, payload and live per-request auth
+    ok 9 - visual: native opencode-go/google-generative-ai endpoint, payload and live per-request auth
+      ---
+      duration_ms: 97.077875
+      type: 'test'
+      ...
+    # Subtest: visual: opencode-go missing selected key does not fall back to configured OpenRouter
+    ok 10 - visual: opencode-go missing selected key does not fall back to configured OpenRouter
+      ---
+      duration_ms: 0.379667
+      type: 'test'
+      ...
+    # Subtest: pdf: native opencode-go/google-generative-ai endpoint, payload and live per-request auth
+    ok 11 - pdf: native opencode-go/google-generative-ai endpoint, payload and live per-request auth
+      ---
+      duration_ms: 47.833375
+      type: 'test'
+      ...
+    # Subtest: pdf: opencode-go missing selected key does not fall back to configured OpenRouter
+    ok 12 - pdf: opencode-go missing selected key does not fall back to configured OpenRouter
+      ---
+      duration_ms: 1.122667
+      type: 'test'
+      ...
+    # Subtest: visual: native opencode-go/openai-completions endpoint, payload and live per-request auth
+    ok 13 - visual: native opencode-go/openai-completions endpoint, payload and live per-request auth
+      ---
+      duration_ms: 46.8855
+      type: 'test'
+      ...
+    # Subtest: visual: opencode-go missing selected key does not fall back to configured OpenRouter
+    ok 14 - visual: opencode-go missing selected key does not fall back to configured OpenRouter
+      ---
+      duration_ms: 0.350958
+      type: 'test'
+      ...
+    # Subtest: pdf: native opencode-go/openai-completions endpoint, payload and live per-request auth
+    ok 15 - pdf: native opencode-go/openai-completions endpoint, payload and live per-request auth
+      ---
+      duration_ms: 45.778875
+      type: 'test'
+      ...
+    # Subtest: pdf: opencode-go missing selected key does not fall back to configured OpenRouter
+    ok 16 - pdf: opencode-go missing selected key does not fall back to configured OpenRouter
+      ---
+      duration_ms: 1.233709
+      type: 'test'
+      ...
+    # Subtest: visual: native opencode-go/openai-responses endpoint, payload and live per-request auth
+    ok 17 - visual: native opencode-go/openai-responses endpoint, payload and live per-request auth
+      ---
+      duration_ms: 41.664458
+      type: 'test'
+      ...
+    # Subtest: visual: opencode-go missing selected key does not fall back to configured OpenRouter
+    ok 18 - visual: opencode-go missing selected key does not fall back to configured OpenRouter
+      ---
+      duration_ms: 0.462833
+      type: 'test'
+      ...
+    # Subtest: pdf: native opencode-go/openai-responses endpoint, payload and live per-request auth
+    ok 19 - pdf: native opencode-go/openai-responses endpoint, payload and live per-request auth
+      ---
+      duration_ms: 45.417833
+      type: 'test'
+      ...
+    # Subtest: pdf: opencode-go missing selected key does not fall back to configured OpenRouter
+    ok 20 - pdf: opencode-go missing selected key does not fall back to configured OpenRouter
+      ---
+      duration_ms: 1.215875
+      type: 'test'
+      ...
+    # Subtest: visual: native openrouter/openai-completions endpoint, payload and live per-request auth
+    ok 21 - visual: native openrouter/openai-completions endpoint, payload and live per-request auth
+      ---
+      duration_ms: 40.88525
+      type: 'test'
+      ...
+    # Subtest: pdf: native openrouter/openai-completions endpoint, payload and live per-request auth
+    ok 22 - pdf: native openrouter/openai-completions endpoint, payload and live per-request auth
+      ---
+      duration_ms: 45.157583
+      type: 'test'
+      ...
+    # Subtest: visual: native openai/openai-responses endpoint, payload and live per-request auth
+    ok 23 - visual: native openai/openai-responses endpoint, payload and live per-request auth
+      ---
+      duration_ms: 41.295916
+      type: 'test'
+      ...
+    # Subtest: visual: openai missing selected key does not fall back to configured OpenRouter
+    ok 24 - visual: openai missing selected key does not fall back to configured OpenRouter
+      ---
+      duration_ms: 0.365834
+      type: 'test'
+      ...
+    # Subtest: pdf: native openai/openai-responses endpoint, payload and live per-request auth
+    ok 25 - pdf: native openai/openai-responses endpoint, payload and live per-request auth
+      ---
+      duration_ms: 45.482
+      type: 'test'
+      ...
+    # Subtest: pdf: openai missing selected key does not fall back to configured OpenRouter
+    ok 26 - pdf: openai missing selected key does not fall back to configured OpenRouter
+      ---
+      duration_ms: 1.09475
+      type: 'test'
+      ...
+    # Subtest: visual: native anthropic/anthropic-messages endpoint, payload and live per-request auth
+    ok 27 - visual: native anthropic/anthropic-messages endpoint, payload and live per-request auth
+      ---
+      duration_ms: 41.299291
+      type: 'test'
+      ...
+    # Subtest: visual: anthropic missing selected key does not fall back to configured OpenRouter
+    ok 28 - visual: anthropic missing selected key does not fall back to configured OpenRouter
+      ---
+      duration_ms: 0.338583
+      type: 'test'
+      ...
+    # Subtest: pdf: native anthropic/anthropic-messages endpoint, payload and live per-request auth
+    ok 29 - pdf: native anthropic/anthropic-messages endpoint, payload and live per-request auth
+      ---
+      duration_ms: 45.344167
+      type: 'test'
+      ...
+    # Subtest: pdf: anthropic missing selected key does not fall back to configured OpenRouter
+    ok 30 - pdf: anthropic missing selected key does not fall back to configured OpenRouter
+      ---
+      duration_ms: 1.186917
+      type: 'test'
+      ...
+    # Subtest: visual: native google/google-generative-ai endpoint, payload and live per-request auth
+    ok 31 - visual: native google/google-generative-ai endpoint, payload and live per-request auth
+      ---
+      duration_ms: 40.02625
+      type: 'test'
+      ...
+    # Subtest: visual: google missing selected key does not fall back to configured OpenRouter
+    ok 32 - visual: google missing selected key does not fall back to configured OpenRouter
+      ---
+      duration_ms: 0.292583
+      type: 'test'
+      ...
+    # Subtest: pdf: native google/google-generative-ai endpoint, payload and live per-request auth
+    ok 33 - pdf: native google/google-generative-ai endpoint, payload and live per-request auth
+      ---
+      duration_ms: 44.09025
+      type: 'test'
+      ...
+    # Subtest: pdf: google missing selected key does not fall back to configured OpenRouter
+    ok 34 - pdf: google missing selected key does not fall back to configured OpenRouter
+      ---
+      duration_ms: 1.032167
+      type: 'test'
+      ...
+    # Subtest: all AUTH_PROVIDER_KEYS resolve their own plain-key env values in a fresh in-memory Models collection
+    ok 35 - all AUTH_PROVIDER_KEYS resolve their own plain-key env values in a fresh in-memory Models collection
+      ---
+      duration_ms: 0.783333
+      type: 'test'
+      ...
+    1..35
+ok 1 - provider-neutral raw agent loops
+  ---
+  duration_ms: 1300.970709
+  type: 'suite'
+  ...
+1..1
+# tests 35
+# suites 1
+# pass 35
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 1724.68325

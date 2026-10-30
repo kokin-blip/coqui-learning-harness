@@ -1,0 +1,64 @@
+TAP version 13
+# Subtest: system prompt joins all system content, then the live sections
+ok 1 - system prompt joins all system content, then the live sections
+  ---
+  duration_ms: 0.475666
+  type: 'test'
+  ...
+# Subtest: tools reflect toolsAdded minus toolsRemoved
+ok 2 - tools reflect toolsAdded minus toolsRemoved
+  ---
+  duration_ms: 0.277209
+  type: 'test'
+  ...
+# Subtest: single user message passes through as text
+ok 3 - single user message passes through as text
+  ---
+  duration_ms: 0.067667
+  type: 'test'
+  ...
+# Subtest: history renders user, assistant text, tool call name+JSON args and tool result text in order before the latest user message
+ok 4 - history renders user, assistant text, tool call name+JSON args and tool result text in order before the latest user message
+  ---
+  duration_ms: 0.092708
+  type: 'test'
+  ...
+# Subtest: error tool results are marked as errors in the replay
+ok 5 - error tool results are marked as errors in the replay
+  ---
+  duration_ms: 0.063625
+  type: 'test'
+  ...
+# Subtest: images in user and tool-result content become base64 image blocks
+ok 6 - images in user and tool-result content become base64 image blocks
+  ---
+  duration_ms: 0.0855
+  type: 'test'
+  ...
+# Subtest: transcript ending on a tool result renders as history with no trailing user turn
+ok 7 - transcript ending on a tool result renders as history with no trailing user turn
+  ---
+  duration_ms: 0.065125
+  type: 'test'
+  ...
+# Subtest: thinking blocks are omitted from replay
+ok 8 - thinking blocks are omitted from replay
+  ---
+  duration_ms: 0.047333
+  type: 'test'
+  ...
+# Subtest: toStreamJsonLine emits {"type":"user","message":{"role":"user","content":[...]}}
+ok 9 - toStreamJsonLine emits {"type":"user","message":{"role":"user","content":[...]}}
+  ---
+  duration_ms: 0.062291
+  type: 'test'
+  ...
+1..9
+# tests 9
+# suites 0
+# pass 9
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 58.560541

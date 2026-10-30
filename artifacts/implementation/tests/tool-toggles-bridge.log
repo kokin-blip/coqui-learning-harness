@@ -1,0 +1,66 @@
+TAP version 13
+# Subtest: AgentBuildOptions.toolToggles (the P2 bridge)
+    # Subtest: flows into the teacher's registry: a job-tool delta is a no-op on the bare set
+    ok 1 - flows into the teacher's registry: a job-tool delta is a no-op on the bare set
+      ---
+      duration_ms: 0.873417
+      type: 'test'
+      ...
+    # Subtest: flows into the prober's registry; probe_done survives everything
+    ok 2 - flows into the prober's registry; probe_done survives everything
+      ---
+      duration_ms: 3.429791
+      type: 'test'
+      ...
+    # Subtest: an explicitly injected opts.tools registry is NEVER toggle-filtered
+    ok 3 - an explicitly injected opts.tools registry is NEVER toggle-filtered
+      ---
+      duration_ms: 0.1165
+      type: 'test'
+      ...
+    1..3
+ok 1 - AgentBuildOptions.toolToggles (the P2 bridge)
+  ---
+  duration_ms: 4.763709
+  type: 'suite'
+  ...
+# Subtest: parseAgentSettingsBody: tool keys validate at write time
+    # Subtest: a valid job-tool delta parses
+    ok 1 - a valid job-tool delta parses
+      ---
+      duration_ms: 0.2715
+      type: 'test'
+      ...
+    # Subtest: the quizzing-mechanics key (explain) is writable (owner 2026-09-27)
+    ok 2 - the quizzing-mechanics key (explain) is writable (owner 2026-09-27)
+      ---
+      duration_ms: 0.065541
+      type: 'test'
+      ...
+    # Subtest: unknown keys are rejected with the supported list (the quiz wedge never persists)
+    ok 3 - unknown keys are rejected with the supported list (the quiz wedge never persists)
+      ---
+      duration_ms: 0.088666
+      type: 'test'
+      ...
+    # Subtest: absent tools field is fine (absent = enabled everywhere)
+    ok 4 - absent tools field is fine (absent = enabled everywhere)
+      ---
+      duration_ms: 0.045
+      type: 'test'
+      ...
+    1..4
+ok 2 - parseAgentSettingsBody: tool keys validate at write time
+  ---
+  duration_ms: 0.566459
+  type: 'suite'
+  ...
+1..2
+# tests 7
+# suites 2
+# pass 7
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 528.765541

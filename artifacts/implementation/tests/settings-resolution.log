@@ -1,0 +1,134 @@
+TAP version 13
+# Subtest: resolveSettings
+    # Subtest: null record (first boot): non-model knobs land on factory defaults; every model view is EMPTY
+    ok 1 - null record (first boot): non-model knobs land on factory defaults; every model view is EMPTY
+      ---
+      duration_ms: 0.675375
+      type: 'test'
+      ...
+    # Subtest: explicit record values win over every factory default
+    ok 2 - explicit record values win over every factory default
+      ---
+      duration_ms: 0.114875
+      type: 'test'
+      ...
+    # Subtest: graph rendering (2026-10-06): display-only — off resolves off, extraction untouched
+    ok 3 - graph rendering (2026-10-06): display-only — off resolves off, extraction untouched
+      ---
+      duration_ms: 0.069958
+      type: 'test'
+      ...
+    # Subtest: partial role override: thinkingLevel alone borrows the SLOT's model (or nothing, without one)
+    ok 4 - partial role override: thinkingLevel alone borrows the SLOT's model (or nothing, without one)
+      ---
+      duration_ms: 0.080125
+      type: 'test'
+      ...
+    # Subtest: resolveModelSpec is field-independent per override aspect
+    ok 5 - resolveModelSpec is field-independent per override aspect
+      ---
+      duration_ms: 0.044875
+      type: 'test'
+      ...
+    1..5
+ok 1 - resolveSettings
+  ---
+  duration_ms: 1.3345
+  type: 'suite'
+  ...
+# Subtest: the slot tier (BYOK, owner 2026-09-22)
+    # Subtest: slot alone re-tiers every role of its tier (no role overrides present)
+    ok 1 - slot alone re-tiers every role of its tier (no role overrides present)
+      ---
+      duration_ms: 0.097958
+      type: 'test'
+      ...
+    # Subtest: role override still beats the slot; each field independent
+    ok 2 - role override still beats the slot; each field independent
+      ---
+      duration_ms: 0.055917
+      type: 'test'
+      ...
+    # Subtest: vision slot covers visualMaker AND pdfReader; level-only slots resolve as NULL
+    ok 3 - vision slot covers visualMaker AND pdfReader; level-only slots resolve as NULL
+      ---
+      duration_ms: 0.058125
+      type: 'test'
+      ...
+    # Subtest: resolveSlot: configured iff the model is present
+    ok 4 - resolveSlot: configured iff the model is present
+      ---
+      duration_ms: 0.055875
+      type: 'test'
+      ...
+    # Subtest: resolveRoleSpec: background roles and the conversation pair share the chain
+    ok 5 - resolveRoleSpec: background roles and the conversation pair share the chain
+      ---
+      duration_ms: 0.082833
+      type: 'test'
+      ...
+    1..5
+ok 2 - the slot tier (BYOK, owner 2026-09-22)
+  ---
+  duration_ms: 0.4565
+  type: 'suite'
+  ...
+# Subtest: resolveConversationSpec (the turn gate's chain)
+    # Subtest: chat.model over the strong slot; null when both empty
+    ok 1 - chat.model over the strong slot; null when both empty
+      ---
+      duration_ms: 0.067667
+      type: 'test'
+      ...
+    # Subtest: bare chat thinking level rides the strong slot's model
+    ok 2 - bare chat thinking level rides the strong slot's model
+      ---
+      duration_ms: 0.053333
+      type: 'test'
+      ...
+    1..2
+ok 3 - resolveConversationSpec (the turn gate's chain)
+  ---
+  duration_ms: 0.172583
+  type: 'suite'
+  ...
+# Subtest: the graph channel gates (the wave's seam honoring)
+    # Subtest: WRITE channel (extraction): dies with the master switch — the ONLY graph setting since wave 7
+    ok 1 - WRITE channel (extraction): dies with the master switch — the ONLY graph setting since wave 7
+      ---
+      duration_ms: 0.044834
+      type: 'test'
+      ...
+    # Subtest: the write gate rides resolveSettings' factory defaults (all on → open)
+    ok 2 - the write gate rides resolveSettings' factory defaults (all on → open)
+      ---
+      duration_ms: 0.039583
+      type: 'test'
+      ...
+    # Subtest: PROBER GRAPH TOOLS gate (wave 7, owner ruling 2026-09-23): the agent toggle AND the graph master switch compose
+    ok 3 - PROBER GRAPH TOOLS gate (wave 7, owner ruling 2026-09-23): the agent toggle AND the graph master switch compose
+      ---
+      duration_ms: 0.0445
+      type: 'test'
+      ...
+    # Subtest: graphTools rides resolveSettings: absent record → the empty subsection (ON); a record's delta passes through
+    ok 4 - graphTools rides resolveSettings: absent record → the empty subsection (ON); a record's delta passes through
+      ---
+      duration_ms: 0.027625
+      type: 'test'
+      ...
+    1..4
+ok 4 - the graph channel gates (the wave's seam honoring)
+  ---
+  duration_ms: 0.19475
+  type: 'suite'
+  ...
+1..4
+# tests 16
+# suites 4
+# pass 16
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 65.56225

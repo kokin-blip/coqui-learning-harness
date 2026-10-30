@@ -1,0 +1,8 @@
+{
+  "packaged": true,
+  "passed": true,
+  "appPayloadSha256": "b848a358340cf39758e975e165af66d9996acc98d1009809cb5dc2ac0de618fe",
+  "savedSessionCount": 2,
+  "extractedPropositionCount": 3,
+  "readOnlyEntry": "app.asar/dist/history.mjs"
+}

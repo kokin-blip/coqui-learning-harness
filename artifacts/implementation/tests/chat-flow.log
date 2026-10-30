@@ -1,0 +1,396 @@
+TAP version 13
+# Subtest: teacher chat flow (scripted model)
+    # Subtest: quiz tool call persists as a pending part; the answer continues the lesson
+    ok 1 - quiz tool call persists as a pending part; the answer continues the lesson
+      ---
+      duration_ms: 16.42525
+      type: 'test'
+      ...
+    # Subtest: rejects unknown chats
+    ok 2 - rejects unknown chats
+      ---
+      duration_ms: 0.227291
+      type: 'test'
+      ...
+    # Subtest: refuses malformed inputs with a clean 400 — no liveness effects, no lockout
+    ok 3 - refuses malformed inputs with a clean 400 — no liveness effects, no lockout
+      ---
+      duration_ms: 2.738209
+      type: 'test'
+      ...
+    # Subtest: streams the toolCall partial before tool_execution_start/end (protocol pin for the 'Writing a question…' shimmer)
+    ok 4 - streams the toolCall partial before tool_execution_start/end (protocol pin for the 'Writing a question…' shimmer)
+      ---
+      duration_ms: 3.526042
+      type: 'test'
+      ...
+    # Subtest: a pump-fired wake turn never double-appends its steer (Wave B regression of the 2026-09-18 bug)
+    ok 5 - a pump-fired wake turn never double-appends its steer (Wave B regression of the 2026-09-18 bug)
+      ---
+      duration_ms: 790.72575
+      type: 'test'
+      ...
+    # Subtest: Wave C steering: a mid-run result injects BETWEEN turn units — never splitting a toolCall from its toolResult
+    ok 6 - Wave C steering: a mid-run result injects BETWEEN turn units — never splitting a toolCall from its toolResult
+      ---
+      duration_ms: 488.376167
+      type: 'test'
+      ...
+    # Subtest: the view canon HOISTS reasoning above the message text (owner ruling 2026-09-26)
+    ok 7 - the view canon HOISTS reasoning above the message text (owner ruling 2026-09-26)
+      ---
+      duration_ms: 0.535417
+      type: 'test'
+      ...
+    # Subtest: an arrived-but-empty STREAMING message projects the thinking row; a settled empty one stays hidden (optimistic round 3)
+    ok 8 - an arrived-but-empty STREAMING message projects the thinking row; a settled empty one stays hidden (optimistic round 3)
+      ---
+      duration_ms: 0.197459
+      type: 'test'
+      ...
+# [chat chat_b56694820e1f4069950b900d201822f1] write-ahead persist failed: Error: synthetic write-ahead failure
+#     at Object.chatStore.saveMessages (/Users/kokinmartinez/Documents/ChatGPT/coqui-learning harness/packages/engine/tests/chat-flow.test.ts:860:42)
+#     at <anonymous> (/Users/kokinmartinez/Documents/ChatGPT/coqui-learning harness/packages/engine/src/store/chats.ts:18:61)
+#     at CoquiDatabase.transaction (/Users/kokinmartinez/Documents/ChatGPT/coqui-learning harness/packages/storage/index.ts:122:21)
+#     at saveTurnInput (/Users/kokinmartinez/Documents/ChatGPT/coqui-learning harness/packages/engine/src/store/chats.ts:18:34)
+#     at handleChatInput (/Users/kokinmartinez/Documents/ChatGPT/coqui-learning harness/packages/engine/src/server/chat-handler.ts:368:77)
+# [chat chat_4c27cfe6d98d4e1f97f85c2903630f89] persist failed: Error: synthetic reply save failure
+#     at Object.chatStore.saveMessages (/Users/kokinmartinez/Documents/ChatGPT/coqui-learning harness/packages/engine/tests/chat-flow.test.ts:888:30)
+#     at persistTurn (/Users/kokinmartinez/Documents/ChatGPT/coqui-learning harness/packages/engine/src/server/turn-service.ts:87:13)
+#     at onFinish (/Users/kokinmartinez/Documents/ChatGPT/coqui-learning harness/packages/engine/src/server/chat-handler.ts:578:21)
+#     at settleWith (/Users/kokinmartinez/Documents/ChatGPT/coqui-learning harness/packages/engine/src/server/pi/ui-stream.ts:229:4)
+#     at handle (/Users/kokinmartinez/Documents/ChatGPT/coqui-learning harness/packages/engine/src/server/pi/ui-stream.ts:259:4)
+#     at <anonymous> (/Users/kokinmartinez/Documents/ChatGPT/coqui-learning harness/packages/engine/src/server/pi/ui-stream.ts:265:35)
+#     at Agent.processEvents (/Users/kokinmartinez/Documents/ChatGPT/coqui-learning harness/node_modules/@earendil-works/pi-agent-core/src/agent.ts:620:10)
+#     at <anonymous> (/Users/kokinmartinez/Documents/ChatGPT/coqui-learning harness/node_modules/@earendil-works/pi-agent-core/src/agent.ts:462:21)
+#     at runLoop (/Users/kokinmartinez/Documents/ChatGPT/coqui-learning harness/node_modules/@earendil-works/pi-agent-core/src/agent-loop.ts:329:8)
+#     at async runAgentLoopContinue (/Users/kokinmartinez/Documents/ChatGPT/coqui-learning harness/node_modules/@earendil-works/pi-agent-core/src/agent-loop.ts:158:2) { isAborted: false }
+# [turn] settlement failed: TurnPersistenceError: The reply could not be saved.
+#     at persistTurn (/Users/kokinmartinez/Documents/ChatGPT/coqui-learning harness/packages/engine/src/server/turn-service.ts:91:9)
+#     at onFinish (/Users/kokinmartinez/Documents/ChatGPT/coqui-learning harness/packages/engine/src/server/chat-handler.ts:578:21)
+#     ... 6 lines matching cause stack trace ...
+#     at async runAgentLoopContinue (/Users/kokinmartinez/Documents/ChatGPT/coqui-learning harness/node_modules/@earendil-works/pi-agent-core/src/agent-loop.ts:158:2)
+#     at async <anonymous> (/Users/kokinmartinez/Documents/ChatGPT/coqui-learning harness/node_modules/@earendil-works/pi-agent-core/src/agent.ts:459:4) {
+#   [cause]: Error: synthetic reply save failure
+#       at Object.chatStore.saveMessages (/Users/kokinmartinez/Documents/ChatGPT/coqui-learning harness/packages/engine/tests/chat-flow.test.ts:888:30)
+#       at persistTurn (/Users/kokinmartinez/Documents/ChatGPT/coqui-learning harness/packages/engine/src/server/turn-service.ts:87:13)
+#       at onFinish (/Users/kokinmartinez/Documents/ChatGPT/coqui-learning harness/packages/engine/src/server/chat-handler.ts:578:21)
+#       at settleWith (/Users/kokinmartinez/Documents/ChatGPT/coqui-learning harness/packages/engine/src/server/pi/ui-stream.ts:229:4)
+#       at handle (/Users/kokinmartinez/Documents/ChatGPT/coqui-learning harness/packages/engine/src/server/pi/ui-stream.ts:259:4)
+#       at <anonymous> (/Users/kokinmartinez/Documents/ChatGPT/coqui-learning harness/packages/engine/src/server/pi/ui-stream.ts:265:35)
+#       at Agent.processEvents (/Users/kokinmartinez/Documents/ChatGPT/coqui-learning harness/node_modules/@earendil-works/pi-agent-core/src/agent.ts:620:10)
+#       at <anonymous> (/Users/kokinmartinez/Documents/ChatGPT/coqui-learning harness/node_modules/@earendil-works/pi-agent-core/src/agent.ts:462:21)
+#       at runLoop (/Users/kokinmartinez/Documents/ChatGPT/coqui-learning harness/node_modules/@earendil-works/pi-agent-core/src/agent-loop.ts:329:8)
+#       at async runAgentLoopContinue (/Users/kokinmartinez/Documents/ChatGPT/coqui-learning harness/node_modules/@earendil-works/pi-agent-core/src/agent-loop.ts:158:2)
+# }
+# [turn] settlement failed: Error: synthetic usage write failure
+#     at Object.chatStore.appendTurnUsage (/Users/kokinmartinez/Documents/ChatGPT/coqui-learning harness/packages/engine/tests/chat-flow.test.ts:926:45)
+#     at onFinish (/Users/kokinmartinez/Documents/ChatGPT/coqui-learning harness/packages/engine/src/server/chat-handler.ts:585:23)
+#     at settleWith (/Users/kokinmartinez/Documents/ChatGPT/coqui-learning harness/packages/engine/src/server/pi/ui-stream.ts:229:4)
+#     at handle (/Users/kokinmartinez/Documents/ChatGPT/coqui-learning harness/packages/engine/src/server/pi/ui-stream.ts:259:4)
+#     at <anonymous> (/Users/kokinmartinez/Documents/ChatGPT/coqui-learning harness/packages/engine/src/server/pi/ui-stream.ts:265:35)
+#     at Agent.processEvents (/Users/kokinmartinez/Documents/ChatGPT/coqui-learning harness/node_modules/@earendil-works/pi-agent-core/src/agent.ts:620:10)
+#     at async runLoop (/Users/kokinmartinez/Documents/ChatGPT/coqui-learning harness/node_modules/@earendil-works/pi-agent-core/src/agent-loop.ts:329:2)
+#     at async runAgentLoopContinue (/Users/kokinmartinez/Documents/ChatGPT/coqui-learning harness/node_modules/@earendil-works/pi-agent-core/src/agent-loop.ts:158:2)
+#     at async <anonymous> (/Users/kokinmartinez/Documents/ChatGPT/coqui-learning harness/node_modules/@earendil-works/pi-agent-core/src/agent.ts:459:4)
+#     at async Agent.runWithLifecycle (/Users/kokinmartinez/Documents/ChatGPT/coqui-learning harness/node_modules/@earendil-works/pi-agent-core/src/agent.ts:534:4)
+# [chat chat_b85c1f1a02d44c58b2835c87e1e5d9bb] turn already in flight — request rejected
+# [chat chat_7389256821a34386a828de12d796d2fd] turn refused — {"error":"No model configured — set up your models first","code":"models_not_configured","missing":["strong"]}
+# [chat chat_e92c26707bf9435587e484ae495e4d41] turn refused — {"error":"No Together key is set — add one in Settings → Keys","code":"provider_key_missing","provider":"together","slots":["strong"]}
+    # Subtest: a cancelled view NEVER aborts the turn — it runs to completion (owner ruling 2026-09-25)
+    ok 9 - a cancelled view NEVER aborts the turn — it runs to completion (owner ruling 2026-09-25)
+      ---
+      duration_ms: 34.158417
+      type: 'test'
+      ...
+    # Subtest: an ungradeable quiz is rejected at the call boundary, the error reaches the model, and the model retries
+    ok 10 - an ungradeable quiz is rejected at the call boundary, the error reaches the model, and the model retries
+      ---
+      duration_ms: 7.994875
+      type: 'test'
+      ...
+    # Subtest: structurally invalid quiz input (unhealable garbage) never reaches the dock and retries clean
+    ok 11 - structurally invalid quiz input (unhealable garbage) never reaches the dock and retries clean
+      ---
+      duration_ms: 7.061417
+      type: 'test'
+      ...
+    # Subtest: parallel quiz calls are asked, saved, and answered in the model's call order
+    ok 12 - parallel quiz calls are asked, saved, and answered in the model's call order
+      ---
+      duration_ms: 5.170542
+      type: 'test'
+      ...
+    1..12
+ok 1 - teacher chat flow (scripted model)
+  ---
+  duration_ms: 1358.211125
+  type: 'suite'
+  ...
+# Subtest: chat store
+    # Subtest: round-trips and lists chats
+    ok 1 - round-trips and lists chats
+      ---
+      duration_ms: 0.636667
+      type: 'test'
+      ...
+    # Subtest: persist the per-chat model settings (replace-whole, no updatedAt churn)
+    ok 2 - persist the per-chat model settings (replace-whole, no updatedAt churn)
+      ---
+      duration_ms: 0.770084
+      type: 'test'
+      ...
+    1..2
+ok 2 - chat store
+  ---
+  duration_ms: 1.473291
+  type: 'suite'
+  ...
+# Subtest: canonical persistence failures
+    # Subtest: refuses a failed input save without building an agent or leaving a live turn
+    ok 1 - refuses a failed input save without building an agent or leaving a live turn
+      ---
+      duration_ms: 10.089125
+      type: 'test'
+      ...
+    # Subtest: reports a failed reply save before DONE while keeping the accepted answer durable
+    ok 2 - reports a failed reply save before DONE while keeping the accepted answer durable
+      ---
+      duration_ms: 9.501083
+      type: 'test'
+      ...
+    # Subtest: does not redeliver a persisted learner steer after usage bookkeeping fails
+    ok 3 - does not redeliver a persisted learner steer after usage bookkeeping fails
+      ---
+      duration_ms: 4.14075
+      type: 'test'
+      ...
+    1..3
+ok 3 - canonical persistence failures
+  ---
+  duration_ms: 23.821792
+  type: 'suite'
+  ...
+# Subtest: mid-turn navigation (turn liveness + write-ahead)
+    # Subtest: one turn per chat: a concurrent request is 409'd; the next one after finish is accepted
+    ok 1 - one turn per chat: a concurrent request is 409'd; the next one after finish is accepted
+      ---
+      duration_ms: 5.867042
+      type: 'test'
+      ...
+    # Subtest: write-ahead: the learner's answer is durable BEFORE the turn finishes
+    ok 2 - write-ahead: the learner's answer is durable BEFORE the turn finishes
+      ---
+      duration_ms: 5.242
+      type: 'test'
+      ...
+    1..2
+ok 4 - mid-turn navigation (turn liveness + write-ahead)
+  ---
+  duration_ms: 11.1795
+  type: 'suite'
+  ...
+# Subtest: renameChat (the header's click-to-edit title)
+    # Subtest: persists the title and does NOT bump updatedAt — sidebar order must not churn
+    ok 1 - persists the title and does NOT bump updatedAt — sidebar order must not churn
+      ---
+      duration_ms: 0.89075
+      type: 'test'
+      ...
+    # Subtest: falls back to Untitled session on an all-whitespace title (the honest floor)
+    ok 2 - falls back to Untitled session on an all-whitespace title (the honest floor)
+      ---
+      duration_ms: 0.44925
+      type: 'test'
+      ...
+    1..2
+ok 5 - renameChat (the header's click-to-edit title)
+  ---
+  duration_ms: 1.386875
+  type: 'suite'
+  ...
+# Subtest: the BYOK turn gate (no factory floor — owner, 2026-09-22)
+    # Subtest: a chat with no model refuses the turn with the 503 envelope — nothing lingers
+    ok 1 - a chat with no model refuses the turn with the 503 envelope — nothing lingers
+      ---
+      duration_ms: 0.521209
+      type: 'test'
+      ...
+    # Subtest: a per-chat model alone opens the gate (the setup flow's exact write)
+    ok 2 - a per-chat model alone opens the gate (the setup flow's exact write)
+      ---
+      duration_ms: 3.245666
+      type: 'test'
+      ...
+    1..2
+ok 6 - the BYOK turn gate (no factory floor — owner, 2026-09-22)
+  ---
+  duration_ms: 3.805667
+  type: 'suite'
+  ...
+# Subtest: the key-presence turn gate (provider-key interlude, 2026-09-25)
+    # Subtest: a pinned provider whose key is gone refuses with 503 provider_key_missing — nothing lingers
+    ok 1 - a pinned provider whose key is gone refuses with 503 provider_key_missing — nothing lingers
+      ---
+      duration_ms: 0.660209
+      type: 'test'
+      ...
+    # Subtest: an env-present key passes the gate (gate by what would run)
+    ok 2 - an env-present key passes the gate (gate by what would run)
+      ---
+      duration_ms: 2.555958
+      type: 'test'
+      ...
+    1..2
+ok 7 - the key-presence turn gate (provider-key interlude, 2026-09-25)
+  ---
+  duration_ms: 3.257583
+  type: 'suite'
+  ...
+# Subtest: background-turn runner (owner ruling 2026-09-25: every turn is a server-side process, clients are views)
+    # Subtest: CONNECTION DIET B (owner, 2026-10-10): the POST acks and closes — the response never holds the turn's stream
+    ok 1 - CONNECTION DIET B (owner, 2026-10-10): the POST acks and closes — the response never holds the turn's stream
+      ---
+      duration_ms: 28.447041
+      type: 'test'
+      ...
+    # Subtest: subscribe mid-turn: a second view gets the FULL replay, then live, same dialect
+    ok 2 - subscribe mid-turn: a second view gets the FULL replay, then live, same dialect
+      ---
+      duration_ms: 2.815
+      type: 'test'
+      ...
+    # Subtest: COMPACTION LAW (owner 2026-10-09): the log stores state, not chunks — a chunk burst coalesces to ONE update, slim wire, full content
+    ok 3 - COMPACTION LAW (owner 2026-10-09): the log stores state, not chunks — a chunk burst coalesces to ONE update, slim wire, full content
+      ---
+      duration_ms: 2.123084
+      type: 'test'
+      ...
+    # Subtest: remote abort: any client can stop a running turn; the partial persists; subscribers close cleanly
+    ok 4 - remote abort: any client can stop a running turn; the partial persists; subscribers close cleanly
+      ---
+      duration_ms: 1.82925
+      type: 'test'
+      ...
+    # Subtest: subscribe after settle: the cheap terminal tells the client the record is current
+    ok 5 - subscribe after settle: the cheap terminal tells the client the record is current
+      ---
+      duration_ms: 2.177375
+      type: 'test'
+      ...
+    # Subtest: concurrent two-chat reattach: two turns in flight, two views, both settle independently
+    ok 6 - concurrent two-chat reattach: two turns in flight, two views, both settle independently
+      ---
+      duration_ms: 3.226625
+      type: 'test'
+      ...
+    1..6
+ok 8 - background-turn runner (owner ruling 2026-09-25: every turn is a server-side process, clients are views)
+  ---
+  duration_ms: 40.760125
+  type: 'suite'
+  ...
+# Subtest: explain tool call persists as a pending part; the free-text answer reveals the commitment and reaches the model
+ok 9 - explain tool call persists as a pending part; the free-text answer reveals the commitment and reaches the model
+  ---
+  duration_ms: 4.393292
+  type: 'test'
+  ...
+# Subtest: the silent dismissal (A2)
+    # Subtest: writes the toolResult with NO wake — the next plain message carries it to the model
+    ok 1 - writes the toolResult with NO wake — the next plain message carries it to the model
+      ---
+      duration_ms: 3.840542
+      type: 'test'
+      ...
+    # Subtest: rejects honestly: unknown chat 404, no dangling question 400
+    ok 2 - rejects honestly: unknown chat 404, no dangling question 400
+      ---
+      duration_ms: 0.533167
+      type: 'test'
+      ...
+    # Subtest: parallel quizzes dismiss call-by-call — the composer returns only when nothing dangles
+    ok 3 - parallel quizzes dismiss call-by-call — the composer returns only when nothing dangles
+      ---
+      duration_ms: 1.034792
+      type: 'test'
+      ...
+    1..3
+ok 10 - the silent dismissal (A2)
+  ---
+  duration_ms: 5.460875
+  type: 'suite'
+  ...
+# Subtest: parallel question calls: the answer defers its wake while a sibling dangles
+    # Subtest: the sibling answer wakes NOTHING; the last answer fires the one turn with both results adjacent
+    ok 1 - the sibling answer wakes NOTHING; the last answer fires the one turn with both results adjacent
+      ---
+      duration_ms: 4.791625
+      type: 'test'
+      ...
+    1..1
+ok 11 - parallel question calls: the answer defers its wake while a sibling dangles
+  ---
+  duration_ms: 4.827041
+  type: 'suite'
+  ...
+# Subtest: parallel rounds: the LAST resolution decides the wake (owner ruling 2026-10-03)
+    # Subtest: round 1 — answer then dismiss: NO wake at all (ending on a dismissal pauses)
+    ok 1 - round 1 — answer then dismiss: NO wake at all (ending on a dismissal pauses)
+      ---
+      duration_ms: 3.379625
+      type: 'test'
+      ...
+    # Subtest: round 2 — dismiss then answer: exactly one wake carrying both results
+    ok 2 - round 2 — dismiss then answer: exactly one wake carrying both results
+      ---
+      duration_ms: 3.653083
+      type: 'test'
+      ...
+    1..2
+ok 12 - parallel rounds: the LAST resolution decides the wake (owner ruling 2026-10-03)
+  ---
+  duration_ms: 7.074666
+  type: 'suite'
+  ...
+# Subtest: composer steering: POST /api/chats/[id]/steer
+    # Subtest: honest rejections: 404 unknown chat, 400 bad input, 409 when no turn is live
+    ok 1 - honest rejections: 404 unknown chat, 400 bad input, 409 when no turn is live
+      ---
+      duration_ms: 0.649541
+      type: 'test'
+      ...
+    # Subtest: 200 + the live steering queue when a turn runs; the drain lands the card and the model sees it
+    ok 2 - 200 + the live steering queue when a turn runs; the drain lands the card and the model sees it
+      ---
+      duration_ms: 30.295916
+      type: 'test'
+      ...
+    1..2
+ok 13 - composer steering: POST /api/chats/[id]/steer
+  ---
+  duration_ms: 31.020667
+  type: 'suite'
+  ...
+# Subtest: duplicate provider tool-call ids (the Lacan fix)
+    # Subtest: every `call_0` turn keeps its identity: ask answered as ask, quiz as quiz, ids unique in the record
+    ok 1 - every `call_0` turn keeps its identity: ask answered as ask, quiz as quiz, ids unique in the record
+      ---
+      duration_ms: 6.455709
+      type: 'test'
+      ...
+    1..1
+ok 14 - duplicate provider tool-call ids (the Lacan fix)
+  ---
+  duration_ms: 6.491417
+  type: 'suite'
+  ...
+1..14
+# tests 41
+# suites 13
+# pass 41
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 2131.386541

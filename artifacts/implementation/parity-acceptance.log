@@ -1,0 +1,19 @@
+PASS Native question variant: multi
+PASS Native question variant: probe
+PASS Native question variant: explain
+PASS Native question variant: recall
+PASS Native question variant: ask
+PASS Native question variant: ask-choice
+PASS Native question variant: ask-multi
+PASS Global learner-thinking shortcut expands and collapses recorded reasoning
+PASS I-don’t-know omits confidence/selection; single-choice Other replaces a listed choice
+PASS Practice recall/discrimination/composition render hinted, moved-on and surrendered outcomes and pause for Next
+PASS Markdown, alerts, code/table/TeX/Mermaid copying, diagram focus, literal Find and model shortcut
+PASS Plan rewrite preserves frozen snapshots; focus view supports zoom, fit and one Escape
+PASS Paginated history, persisted kind filter, keyboard search and F2 rename
+PASS Chain hierarchy/search/sort, selection over 64, bulk deletion/Undo and shared-source preservation
+PASS Per-file import identities isolate corrupt files, retain source inspection and detect renamed duplicates
+PASS Native picker grants isolate files; selection skips unselected files and per-file retry recovers a missing file
+PASS Strong and independent background thinking preferences persist; existing session preferences remain unchanged
+PASS Service death during streaming preserves one input and reports an explicit interrupted response
+PASS Native View zoom follows the audited ladder through 200% and resets
