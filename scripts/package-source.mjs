@@ -12,7 +12,14 @@ const revision = spawnSync("git", ["rev-parse", "--verify", "HEAD"], {
   cwd: root,
   encoding: "utf8",
 });
-const gitCommit = revision.status === 0 ? revision.stdout.trim() : null;
+const worktree = spawnSync("git", ["status", "--porcelain"], {
+  cwd: root,
+  encoding: "utf8",
+});
+const gitCommit =
+  revision.status === 0 && worktree.status === 0 && !worktree.stdout.trim()
+    ? revision.stdout.trim()
+    : null;
 fs.mkdirSync(release, { recursive: true });
 const entries = {},
   hashes = [];
@@ -127,6 +134,28 @@ const appPayloadSha256 = sha(
     path.join(release, "mac-arm64/CoquiLearn.app/Contents/Resources/app.asar"),
   ),
 );
+const signature = JSON.parse(
+  fs.readFileSync("artifacts/implementation/signature-acceptance.json", "utf8"),
+);
+const downloaded = JSON.parse(
+  fs.readFileSync(
+    "artifacts/implementation/downloaded-dmg-acceptance.json",
+    "utf8",
+  ),
+);
+assert.equal(signature.version, version);
+assert.equal(signature.passed, true);
+assert.equal(signature.appPayloadSha256, appPayloadSha256);
+assert.equal(downloaded.version, version);
+assert.equal(downloaded.integrityPassed, true);
+assert.equal(
+  downloaded.dmgSha256,
+  artifacts.find((a) => a.file.endsWith(".dmg")).sha256,
+);
+assert.ok(
+  downloaded.defaultGatekeeperAccepted || downloaded.manualApproval?.verified,
+  "Downloaded app must pass Gatekeeper or have an explicitly verified preview approval flow",
+);
 for (const report of [acceptance, parity, closure, setup]) {
   assert.equal(report.passed, true);
   assert.equal(report.packaged, true);
@@ -193,6 +222,15 @@ fs.writeFileSync(
       engineRegression: engine,
       coquiTests: coqui,
       liveProviderVerification: providers,
+      macOSSigning: signature.bundle,
+      notarized: downloaded.notarized,
+      downloadedGatekeeper: {
+        defaultAccepted: downloaded.defaultGatekeeperAccepted,
+        manualApprovalVerified: downloaded.manualApproval?.verified ?? false,
+        browser: "Chrome",
+        quarantineRetained:
+          downloaded.manualApproval?.quarantineRetained ?? false,
+      },
       fullMacOSParityRelease: false,
       openAcceptance: [
         "Other external provider/service live checks explicitly deferred by user",

@@ -2,6 +2,8 @@ appId: com.coquilearn.desktop
 productName: CoquiLearn
 copyright: CoquiLearn contributors; includes LearnHarness by Amos Blomqvist
 asar: true
+forceCodeSigning: true
+afterSign: scripts/after-sign.cjs
 npmRebuild: false
 files:
   - dist/**/*
@@ -11,14 +13,17 @@ files:
 asarUnpack:
   - '**/*.node'
   - '**/*.dylib'
+  - dist/engine/native/**
 directories:
   output: release
 mac:
   icon: apps/desktop/resources/CoquiLearn.icns
   category: public.app-category.education
   minimumSystemVersion: '26.0'
-  identity: null
+  identity: '-'
   hardenedRuntime: false
+  binaries:
+    - Contents/Resources/app.asar.unpacked/dist/engine/native/coqui-ocr
   target:
     - target: zip
       arch: arm64

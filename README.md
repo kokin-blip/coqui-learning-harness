@@ -2,7 +2,7 @@
 
 A local learning studio for Apple Silicon, macOS 26: adaptive lessons, deliberate practice, a knowledge map and explicit spaced review. Electron, React, TypeScript, Vite and SQLite.
 
-**0.2.1 is an unsigned development preview.** ChatGPT teaching, practice, extraction, interactive demonstrations, SVG/PDF/research workflows and logout/browser reconnect have passed without an API key. The final package passes 1,516 domain/Coqui tests and 62 packaged acceptance checks. Full macOS parity release remains gated on the explicitly open acceptance items; other providers are not represented as live-verified.
+**0.2.2 is an ad-hoc-signed, unnotarized development preview.** ChatGPT teaching, practice, extraction, interactive demonstrations, SVG/PDF/research workflows and logout/browser reconnect have passed without an API key. The signing correction adds resource-seal, nested-code, tamper and DMG/ZIP checks. Chrome-download/Gatekeeper results are recorded separately from application acceptance. Full macOS parity release remains gated on the explicitly open acceptance items; other providers are not represented as live-verified.
 
 ## Run and build
 
@@ -19,7 +19,7 @@ npm run desktop:dist
 
 `npm run build` bundles the React renderer, utility-process learning service, native Apple Vision helper, read-only reader and agent guide. `npm start -- --fixture` exercises deterministic lessons in a separate data directory. `COQUI_EXECUTABLE='/absolute/path/CoquiLearn.app/Contents/MacOS/CoquiLearn' node scripts/acceptance.mjs` tests a package. The final sequential native runner is `scripts/verify-package.mjs`; it includes parity, closure, setup, replacement and profiling lanes.
 
-Unsigned arm64 app/ZIP/DMG, corresponding AGPL source and checksums are produced in `release/`. See [installation](docs/implementation/installation.md) and [build-specific verification](docs/implementation/verification.md). Development, packaged and fixture libraries remain separate; LearnHarness data and credentials are not imported automatically.
+Ad-hoc-signed arm64 app/ZIP/DMG, corresponding AGPL source and checksums are produced in `release/`. See [installation](docs/implementation/installation.md) and [build-specific verification](docs/implementation/verification.md). Development, packaged and fixture libraries remain separate; LearnHarness data and credentials are not imported automatically.
 
 ## Implemented surface
 

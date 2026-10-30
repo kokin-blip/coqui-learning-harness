@@ -1,5 +1,5 @@
 {
-  "startedAt": "2026-10-30T20:20:43.991Z",
+  "startedAt": "2026-10-30T22:25:33.814Z",
   "packaged": true,
   "checks": [
     {
@@ -9,7 +9,7 @@
     {
       "name": "Committed question and dependency plan persist",
       "passed": true,
-      "sessionId": "chat_58598afb75854117be6e83396a0c1d90"
+      "sessionId": "chat_e0d4861cf3134f6bb3b7b134e66f7c53"
     },
     {
       "name": "Question draft and numeric confidence survive reload",
@@ -84,9 +84,9 @@
       "name": "1000-node graph remains interactive",
       "passed": true,
       "frames": {
-        "medianMs": 8.300000000000182,
-        "p95Ms": 10.099999999999909,
-        "maxMs": 11.5,
+        "medianMs": 8.299999999999955,
+        "p95Ms": 9.200000000000273,
+        "maxMs": 16.700000000000045,
         "samples": 120
       }
     },
@@ -114,15 +114,15 @@
   ],
   "errors": [],
   "build": {
-    "version": "0.2.1",
+    "version": "0.2.2",
     "packaged": true,
     "electron": "44.10.0",
     "node": "24.22.1",
     "upstreamCommit": "dc4c398d5167865b84b0ccb3ec809eb88bf8f65f",
-    "appPayloadSha256": "b1bb6f098e7b4f70a9a0ef77ae9c73d9e366ef8b5e273757d2da8aeaaf468453"
+    "appPayloadSha256": "0fb20951a91e23d623d0c2a4e615b2a89bd6b78bb6aca5af5966c2d3e16fef0f"
   },
   "environment": {
-    "version": "0.2.1",
+    "version": "0.2.2",
     "reduceMotion": false,
     "reduceTransparency": false,
     "dark": true,
@@ -174,57 +174,57 @@
     "state": "update-required"
   },
   "performance": {
-    "medianMs": 8.300000000000182,
-    "p95Ms": 10.099999999999909,
-    "maxMs": 11.5,
+    "medianMs": 8.299999999999955,
+    "p95Ms": 9.200000000000273,
+    "maxMs": 16.700000000000045,
     "samples": 120
   },
   "memory": [
     {
       "type": "Browser",
       "memory": {
-        "workingSetSize": 247280,
-        "peakWorkingSetSize": 265136
+        "workingSetSize": 191328,
+        "peakWorkingSetSize": 256672
       }
     },
     {
       "type": "GPU",
       "memory": {
-        "workingSetSize": 146400,
-        "peakWorkingSetSize": 154576
+        "workingSetSize": 141104,
+        "peakWorkingSetSize": 148800
       }
     },
     {
       "type": "Utility",
       "name": "Network Service",
       "memory": {
-        "workingSetSize": 46960,
-        "peakWorkingSetSize": 47648
+        "workingSetSize": 41376,
+        "peakWorkingSetSize": 47696
       }
     },
     {
       "type": "Tab",
       "memory": {
-        "workingSetSize": 361424,
-        "peakWorkingSetSize": 375264
+        "workingSetSize": 337168,
+        "peakWorkingSetSize": 351376
       }
     },
     {
       "type": "Tab",
       "memory": {
-        "workingSetSize": 99056,
-        "peakWorkingSetSize": 99232
+        "workingSetSize": 81376,
+        "peakWorkingSetSize": 99264
       }
     },
     {
       "type": "Utility",
       "name": "CoquiLearn learning service",
       "memory": {
-        "workingSetSize": 238864,
-        "peakWorkingSetSize": 240416
+        "workingSetSize": 158640,
+        "peakWorkingSetSize": 235312
       }
     }
   ],
   "passed": true,
-  "finishedAt": "2026-10-30T20:21:05.160Z"
+  "finishedAt": "2026-10-30T22:25:51.054Z"
 }

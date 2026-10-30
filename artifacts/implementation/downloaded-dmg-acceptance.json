@@ -1,0 +1,43 @@
+{
+  "version": "0.2.2",
+  "at": "2026-10-30T22:13:48.497Z",
+  "dmgSha256": "33775d4b6848f20210a12d286c31ec95e8abc27b1a05f1318ed2799a21a20549",
+  "browserQuarantine": "0281;6ae51643;Chrome;4AB7933B-968D-4A00-9050-DC1801A5E188",
+  "appQuarantine": "0281;00000000;;4AB7933B-968D-4A00-9050-DC1801A5E188",
+  "signature": {
+    "identifier": "com.coquilearn.desktop",
+    "kind": "ad-hoc",
+    "teamIdentifier": "not set",
+    "cdhash": "720ea30a614333e0ca285b452156ad24a23b5930",
+    "resourceSealSha256": "fe235dc25647c3501345ecb9def1f73411c16c6e691a8c98e928939c758691ee",
+    "verified": true,
+    "nativeFiles": [
+      "Contents/Resources/app.asar.unpacked/dist/engine/native/coqui-ocr",
+      "Contents/Resources/app.asar.unpacked/node_modules/@napi-rs/canvas-darwin-arm64/skia.darwin-arm64.node",
+      "Contents/Resources/app.asar.unpacked/node_modules/@resvg/resvg-js-darwin-arm64/resvgjs.darwin-arm64.node"
+    ]
+  },
+  "gatekeeper": {
+    "exitCode": 3,
+    "output": "/var/folders/yl/gm0x2l4j3_39zddqdllnnfzw0000gn/T/coqui-gatekeeper-3vMoyQ/Applications/CoquiLearn.app: rejected\n"
+  },
+  "policy": {
+    "exitCode": 70,
+    "output": "---------------------------------------------------------------\nAdhoc Signed App\n    Severity: Warning \n    Full Error: This app is adhoc signed. While it may run locally, adhoc \n        signed apps are not suitable for distribution. \n    Type: Distribution Error \n    Suggested Fix: Sign the app with a valid Developer ID certificate for \n        distribution. \n    Documentation: \n        https://developer.apple.com/documentation/security/notarizing_macos_software_before_distribution \n\nNotary Ticket Missing\n    File: CoquiLearn.app \n    Severity: Fatal \n    Full Error: A Notarization ticket is not stapled to this application. \n    Type: Distribution Error \n    Suggested Fix: If this application has already been uploaded to the Apple \n        notary service, please make sure to attach the ticket with the `stapler \n        staple` command. If not, please upload to the Apple notary service \n        using Xcode or via `notarytool`. \n    Documentation: \n        https://developer.apple.com/documentation/security/notarizing_macos_software_before_distribution. \n\n---------------------------------------------------------------\nApp has failed one or more pre-distribution checks.\n"
+  },
+  "integrityPassed": true,
+  "defaultGatekeeperAccepted": false,
+  "manualApproval": {
+    "verified": true,
+    "method": "User reported successful opening during the test. Running app and rendered saved lesson were observed; exact approval button sequence was not captured.",
+    "gatekeeperRemainedEnabled": true,
+    "quarantineRetained": true,
+    "appTranslocationObserved": true,
+    "runningVersion": "0.2.2",
+    "appPayloadSha256": "0fb20951a91e23d623d0c2a4e615b2a89bd6b78bb6aca5af5966c2d3e16fef0f",
+    "pid": 59726
+  },
+  "environment": "Existing macOS host; real Chrome download from loopback test origin, isolated Applications/profile. Not a clean-Mac result.",
+  "passed": true,
+  "notarized": false
+}

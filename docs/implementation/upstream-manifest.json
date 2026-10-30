@@ -331,7 +331,7 @@
     {
       "path": "package.json",
       "upstreamSha256": "83bdf0a5f3a6d908310ef7b9197c7c080269a3a074e89ceaaf3799da242f3a00",
-      "coquiSha256": "87ce554465b3853cda721be83d05ad162c15a54e4d86a3c85e3c57ef89b64460",
+      "coquiSha256": "50ba423fedd2ec4ef0eff0e826fb6efccc8ec3f75f25b3aa4028fd7113ba910d",
       "modified": true
     },
     {
@@ -2949,5 +2949,5 @@
       "change": "Coqui paths, standalone reader invocation and evidence interpretation."
     }
   ],
-  "edition": "CoquiLearn 0.2.1: atomic input/recovery intent; transactional deletion and source-aware Undo; search index cleanup; retained source regression seams; fixture job/handoff/compaction acceptance."
+  "edition": "CoquiLearn 0.2.2: macOS packaging/signature correction; learning-engine source behavior unchanged from 0.2.1."
 }

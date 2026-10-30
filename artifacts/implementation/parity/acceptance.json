@@ -1,41 +1,41 @@
 {
-  "at": "2026-10-30T20:21:05.333Z",
+  "at": "2026-10-30T22:25:51.244Z",
   "packaged": true,
   "checks": [
     {
       "name": "Native question variant: multi",
       "passed": true,
-      "sessionId": "chat_34ce87206f524819ae194445b2b500d3"
+      "sessionId": "chat_40d7a7f2499e4af49876bd8bc28ef0e2"
     },
     {
       "name": "Native question variant: probe",
       "passed": true,
-      "sessionId": "chat_e6410d88c22e4aac9f301960985c78dd"
+      "sessionId": "chat_93342fdfe6c14129b897410d073a084d"
     },
     {
       "name": "Native question variant: explain",
       "passed": true,
-      "sessionId": "chat_52f6a25d0b104ef1b6cec94d87244766"
+      "sessionId": "chat_48337446945e448bb3cb1913582db0b4"
     },
     {
       "name": "Native question variant: recall",
       "passed": true,
-      "sessionId": "chat_85b0a19ef3974f47beba4785b1f5971b"
+      "sessionId": "chat_b622875249704d13b246ef29bffc557f"
     },
     {
       "name": "Native question variant: ask",
       "passed": true,
-      "sessionId": "chat_6f6fc737d1db4c969b1b062bf4c1a6d7"
+      "sessionId": "chat_8fab54e1fd2d42abbeeb9ef27337baae"
     },
     {
       "name": "Native question variant: ask-choice",
       "passed": true,
-      "sessionId": "chat_9e3893db3b044c3d8377a2c2bb4a6dd6"
+      "sessionId": "chat_762f7bfcad594b2db6494837ab0704a2"
     },
     {
       "name": "Native question variant: ask-multi",
       "passed": true,
-      "sessionId": "chat_ce5a5c5c6a304894a233eb475703d9d4"
+      "sessionId": "chat_c1594f65d06541d48f061a87c5462b43"
     },
     {
       "name": "Global learner-thinking shortcut expands and collapses recorded reasoning",
@@ -88,12 +88,12 @@
   ],
   "errors": [],
   "build": {
-    "version": "0.2.1",
+    "version": "0.2.2",
     "packaged": true,
     "electron": "44.10.0",
     "node": "24.22.1",
     "upstreamCommit": "dc4c398d5167865b84b0ccb3ec809eb88bf8f65f",
-    "appPayloadSha256": "b1bb6f098e7b4f70a9a0ef77ae9c73d9e366ef8b5e273757d2da8aeaaf468453"
+    "appPayloadSha256": "0fb20951a91e23d623d0c2a4e615b2a89bd6b78bb6aca5af5966c2d3e16fef0f"
   },
   "passed": true
 }

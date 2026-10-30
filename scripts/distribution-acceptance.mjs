@@ -9,7 +9,7 @@ import crypto from "node:crypto";
 const currentVersion = JSON.parse(
   fs.readFileSync("package.json", "utf8"),
 ).version;
-const previousVersion = "0.2.0";
+const previousVersion = "0.2.1";
 const root = fs.mkdtempSync(path.join(os.tmpdir(), "coqui-install-"));
 const install = path.join(root, "Temporary Applications");
 fs.mkdirSync(install);

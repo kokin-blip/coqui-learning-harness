@@ -75,5 +75,7 @@
     "node": "24.22.1",
     "upstreamCommit": "dc4c398d5167865b84b0ccb3ec809eb88bf8f65f",
     "appPayloadSha256": "b1bb6f098e7b4f70a9a0ef77ae9c73d9e366ef8b5e273757d2da8aeaaf468453"
-  }
+  },
+  "packagingRevalidatedBuild": "0.2.2",
+  "liveEvidenceUnchangedFromPriorBuild": true
 }

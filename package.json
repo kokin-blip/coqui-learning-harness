@@ -1,7 +1,7 @@
 {
   "name": "coquilearn",
   "productName": "CoquiLearn",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "private": true,
   "type": "module",
   "license": "AGPL-3.0-only",
@@ -23,7 +23,7 @@
     "typecheck": "tsc --noEmit",
     "test": "node --import tsx --test --test-reporter=tap tests/*.test.ts",
     "test:engine": "node scripts/test-engine.mjs",
-    "desktop:dist": "npm run build && electron-builder --mac zip dmg --arm64 --publish never",
+    "desktop:dist": "npm run build && electron-builder --mac zip dmg --arm64 --publish never && node scripts/verify-distribution.mjs",
     "start": "electron .",
     "smoke": "node scripts/smoke.mjs",
     "test:acceptance": "node scripts/acceptance.mjs",

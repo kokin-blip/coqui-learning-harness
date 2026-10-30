@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "build": "0.2.1",
+  "build": "0.2.2",
   "upstreamCommit": "dc4c398d5167865b84b0ccb3ec809eb88bf8f65f",
   "method": "Authored acceptance bindings reviewed against actual application seams. The assertion index records executed names; source existence alone is not a pass. Manual checks remain pending. Prompt-policy parity is distinct from empirical learning efficacy.",
   "cases": {
@@ -3277,6 +3277,7 @@
     "Import limits reject oversized files independently and reject oversized batches explicitly",
     "Backups restore the database, assets and review state without secrets",
     "FSRS histories replay deterministically with fixed clocks and persist ratings separately from confidence",
+    "macOS release check rejects the unsealed bundle regression and detects post-signing tampering",
     "Background context includes disjoint caches, excludes double-counted reasoning and preserves unknown accounting",
     "A process death after write-ahead input yields an explicit retry without duplicating the input",
     "Chain hierarchy uses conclusion birth, retains singletons, ranks aliases, and sorts deterministically",

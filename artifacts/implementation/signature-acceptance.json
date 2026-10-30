@@ -1,0 +1,51 @@
+{
+  "version": "0.2.2",
+  "at": "2026-10-30T22:25:47.012Z",
+  "notarized": false,
+  "checks": [
+    "ZIP retains complete bundle and nested signatures",
+    "Signed native OCR helper executes and recognizes the generated sample from the extracted ZIP",
+    "DMG checksum, bundle seal and nested signatures verify after mounting"
+  ],
+  "bundle": {
+    "identifier": "com.coquilearn.desktop",
+    "kind": "ad-hoc",
+    "teamIdentifier": "not set",
+    "cdhash": "720ea30a614333e0ca285b452156ad24a23b5930",
+    "resourceSealSha256": "fe235dc25647c3501345ecb9def1f73411c16c6e691a8c98e928939c758691ee",
+    "verified": true,
+    "nativeFiles": [
+      "Contents/Resources/app.asar.unpacked/dist/engine/native/coqui-ocr",
+      "Contents/Resources/app.asar.unpacked/node_modules/@napi-rs/canvas-darwin-arm64/skia.darwin-arm64.node",
+      "Contents/Resources/app.asar.unpacked/node_modules/@resvg/resvg-js-darwin-arm64/resvgjs.darwin-arm64.node"
+    ]
+  },
+  "zip": {
+    "identifier": "com.coquilearn.desktop",
+    "kind": "ad-hoc",
+    "teamIdentifier": "not set",
+    "cdhash": "720ea30a614333e0ca285b452156ad24a23b5930",
+    "resourceSealSha256": "fe235dc25647c3501345ecb9def1f73411c16c6e691a8c98e928939c758691ee",
+    "verified": true,
+    "nativeFiles": [
+      "Contents/Resources/app.asar.unpacked/dist/engine/native/coqui-ocr",
+      "Contents/Resources/app.asar.unpacked/node_modules/@napi-rs/canvas-darwin-arm64/skia.darwin-arm64.node",
+      "Contents/Resources/app.asar.unpacked/node_modules/@resvg/resvg-js-darwin-arm64/resvgjs.darwin-arm64.node"
+    ]
+  },
+  "dmg": {
+    "identifier": "com.coquilearn.desktop",
+    "kind": "ad-hoc",
+    "teamIdentifier": "not set",
+    "cdhash": "720ea30a614333e0ca285b452156ad24a23b5930",
+    "resourceSealSha256": "fe235dc25647c3501345ecb9def1f73411c16c6e691a8c98e928939c758691ee",
+    "verified": true,
+    "nativeFiles": [
+      "Contents/Resources/app.asar.unpacked/dist/engine/native/coqui-ocr",
+      "Contents/Resources/app.asar.unpacked/node_modules/@napi-rs/canvas-darwin-arm64/skia.darwin-arm64.node",
+      "Contents/Resources/app.asar.unpacked/node_modules/@resvg/resvg-js-darwin-arm64/resvgjs.darwin-arm64.node"
+    ]
+  },
+  "appPayloadSha256": "0fb20951a91e23d623d0c2a4e615b2a89bd6b78bb6aca5af5966c2d3e16fef0f",
+  "passed": true
+}
